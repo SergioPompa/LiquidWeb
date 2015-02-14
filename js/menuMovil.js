@@ -45,17 +45,6 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
 
   function gestionaInstalaciones()
   {
-    event.preventDefault();
-
+    $(this).toggleClass( 'selected');
     $('.instalacionesList').slideToggle("slow");
-    $('.instalaciones').css('background', '#F59B23').css('background', '#1F264A');
-    $('.instalaciones').on('click', salirInstalaciones);
-
-    //function salirInstalaciones()
-    //{
-    //  $('.instalaciones').css('background', '#1F264A');
-
-
-    //}
-    // event.preventDefault();
   }

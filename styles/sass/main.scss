@@ -202,6 +202,10 @@ header
         color: #EEE;
         text-align: center;
     }
+    .selected
+    {
+        background: $color_orange;
+    }
     .instalacionesList
     {
         display: none;
