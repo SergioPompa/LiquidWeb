@@ -27,3 +27,13 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
         $('.menu-movil').css('display', 'none');
       }
     }
+
+    //función para gestionar la apertura del menú del movil
+
+  $('.iconoMenu').on('click', gestionaMenu);
+
+
+  function gestionaMenu()
+  {
+    $('#menu').slideToggle("slow");
+  }
