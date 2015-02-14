@@ -393,6 +393,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/iconomenu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206,
+		"inputAbbreviatedPath": "\/img\/iconomenu.png",
+		"outputAbbreviatedPath": "\/img\/iconomenu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/instalacion_suelo.png": {
 		"fileType": 32768,
 		"ignore": 0,
