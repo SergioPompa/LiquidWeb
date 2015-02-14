@@ -113,9 +113,15 @@ header .logo {
   display: none; }
 .menu-right .iconoMenu img {
   display: block;
+<<<<<<< HEAD
   max-width: 40px;
   height: 40px;
   margin: -6em 0 3em 80%; }
+=======
+  max-width: 30px;
+  height: 30px;
+  margin: -5.5em 0 3em 80%; }
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
 
 #menu {
   display: none;
@@ -137,8 +143,11 @@ header .logo {
   #menu .instalaciones {
     color: #EEE;
     text-align: center; }
+<<<<<<< HEAD
   #menu .selected {
     background: #F59B23; }
+=======
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
   #menu .instalacionesList {
     display: none; }
     #menu .instalacionesList li {
@@ -155,7 +164,11 @@ header .logo {
   header .logo {
     width: 73px;
     height: 101px;
+<<<<<<< HEAD
     padding-top: 1em; }
+=======
+    padding: 1.5em; }
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
 
   .menu-right {
     margin: -7em 0 0 30%;
@@ -174,6 +187,16 @@ header .logo {
       display: -webkit-flex;
       /* NEW - Chrome */
       display: flex;
+<<<<<<< HEAD
+=======
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-box-orient: vertical;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      flex-direction: column;
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
       -webkit-justify-content: space-around;
       -ms-justify-content: space-around;
       -moz-justify-content: space-around;
@@ -189,8 +212,37 @@ header .logo {
       align-items: center;
       width: 70%;
       margin-left: 25%; }
+<<<<<<< HEAD
       .menu-right .menu-contact p {
         font-weight: 400;
+=======
+      .menu-right .menu-contact div {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        display: flex; }
+        .menu-right .menu-contact div p {
+          -webkit-flex-direction: row;
+          -moz-flex-direction: row;
+          -ms-flex-direction: row;
+          -webkit-box-orient: horizontal;
+          -moz-box-orient: horizontal;
+          -o-box-orient: horizontal;
+          flex-direction: row;
+          margin-left: -9%; }
+        .menu-right .menu-contact div .mailcontact {
+          margin-left: 1.5em; }
+        .menu-right .menu-contact div .mailcontact, .menu-right .menu-contact div .telcontact {
+          margin-top: -1em;
+          font-weight: 300; }
+      .menu-right .menu-contact p {
+        font-weight: 800;
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
         margin-left: -17%; }
       .menu-right .menu-contact a {
         display: none; }
@@ -297,6 +349,7 @@ header .logo {
 @media only screen and (min-width: 37.5em) {
   .menu-movil {
     display: none !important; } }
+<<<<<<< HEAD
 .cover img {
   width: 100%; }
 .cover .cover-text {
@@ -312,6 +365,25 @@ header .logo {
   .cover .cover-text span {
     font-weight: 800;
     font-size: 1.1em; }
+=======
+.cover {
+  position: relative; }
+  .cover img {
+    width: 100%; }
+  .cover .cover-text {
+    width: 60%;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+    top: 1em;
+    left: 20%;
+    color: #1F264A;
+    font-weight: 600;
+    line-height: 1.3em; }
+    .cover .cover-text span {
+      font-weight: 800;
+      font-size: 1.1em; }
+>>>>>>> c967e1e7a39bd8b4a5a200b1ea96ccc2e92b3b6b
 
 @media only screen and (min-width: 37.5em) {
   .cover .cover-text {
