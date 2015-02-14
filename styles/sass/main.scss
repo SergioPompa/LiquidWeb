@@ -112,6 +112,7 @@ $color_orange: #F59B23;
 $darkpurple: #1F264A;
 $grey:#E5E6E9;
 $blue:#C6E0F3;
+$white: #FFFFFF;
 
 
 /* Variables para el uso de la tipografía */
@@ -192,6 +193,28 @@ header
                 display: inline;
                 color: #EEE;
                 text-decoration: none;
+                padding: 0.8em 0;
+            }
+        }
+    }
+    .instalaciones
+    {
+        color: #EEE;
+        text-align: center;
+    }
+    .instalacionesList
+    {
+        display: none;
+        li
+        {
+            background: $white;
+            line-height: 3em;
+            text-align: center;
+            border-bottom: 1px solid $darkpurple;
+            a
+            {
+                display: inline;
+                color: $darkpurple;
                 padding: 0.8em 0;
             }
         }
