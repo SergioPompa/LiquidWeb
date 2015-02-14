@@ -5,6 +5,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 html { color: #222; font-size: 1em; line-height: 1.4; }
 
+li, ol, ul a { list-style: none; }
+
 /* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301  These selection rule sets have to be separate. Customize the background color to match your design. */
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
 
@@ -38,10 +40,11 @@ header .logo { display: inline-block; width: 55px; height: 75px; padding: .7em; 
 
 .menu-right .menu-nav, .menu-right .menu-contact { display: none; }
 .menu-right .iconoMenu img { display: block; max-width: 40px; height: 40px; margin: -4.8em 0 1.4em 80%; }
-.menu-right nav { display: none; margin: 2em 0 0; background: #1F264A; width: 100%; }
-.menu-right nav ul { padding: 0; margin: 0; }
-.menu-right nav ul li { line-height: 3em; text-align: center; border-bottom: 1px solid #ffffff; }
-.menu-right nav ul li a { display: inline; color: #EEE; text-decoration: none; padding: 0.8em 0; }
+
+#menu { display: none; margin: 2em 0 0; background: #1F264A; width: 100%; }
+#menu ul { padding: 0; margin: 0; }
+#menu ul li { line-height: 3em; text-align: center; border-bottom: 1px solid #ffffff; }
+#menu ul li a { display: inline; color: #EEE; text-decoration: none; padding: 0.8em 0; }
 
 @media only screen and (min-width: 37.5em) { header .logo { width: 73px; height: 101px; padding-top: 3em; }
   .menu-right { margin: -7em 0 0 30%; width: 70%; }
@@ -52,8 +55,7 @@ header .logo { display: inline-block; width: 55px; height: 75px; padding: .7em; 
 .menu-nav { display: -webkit-box !important; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box !important; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox !important; /* TWEENER - IE 10 */ display: -webkit-flex !important; /* NEW - Chrome */ display: flex !important; -webkit-justify-content: space-around; -ms-justify-content: space-around; -moz-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-pack: justify; /*android*/ width: 100%; background-color: #ffffff; margin: 0 0 0 -5%; }
 .menu-nav ul { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; -webkit-justify-content: space-around; -ms-justify-content: space-around; -moz-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-pack: justify; /*android*/ width: 100%; margin: 0 0 0.5em 0; }
 .menu-nav ul li a { font-size: 16px; color: #1F264A; margin: 0; padding: 0; position: relative; }
-.menu-nav ul li a:after { content: ""; position: absolute; border-bottom: 3px solid #1F264A; width: 0%; height: 100%; left: 0; bottom: -13px; opacity: 1; -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */ transition: width 1s; }
-.menu-nav ul li a:hover:after { width: 100%; }
+.menu-nav ul li li:hover { background-color: 3px solid #F59B23; -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */ transition: width 1s; }
 .menu-nav ul #phone-movil { display: none; }
 
 @media only screen and (min-width: 48em) { header .logo { width: 200px; height: 95px; }
