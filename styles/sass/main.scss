@@ -321,6 +321,7 @@ header
             }
         }
 }
+
 @media only screen and (min-width: $bp3){
     header
     {
@@ -423,15 +424,126 @@ header
     }
     .cover-text
     {
-        width: 80%;
-        
+        width: 60%;
         text-align: center;
-        font-size: .8em;
-        margin: 2em 0 4em 67%;
-        color: #ffffff;
-        font-weight: $normal;
+        font-size: 1em;
+        position: absolute;
+        top:8em;
+        left: 20%;        
+        color: $darkpurple;
+        font-weight: $lighttitular;
         line-height: 1.3em;
-        font-style: italic;
+    span 
+    {
+        font-weight: $titular;
+        font-size: 1.1em;
+    } 
+    }   
+}
+@media only screen and (min-width: $bp2){
+    .cover
+    {
+        .cover-text
+        {
+        width: 65%;
+        text-align: center;
+        font-size: 1em;
+        position: absolute;
+        top:16.8em;
+        left: 18%;
+        
+        span 
+        {
+        
+        font-size: 1.1em;
+    }
+    }
+    .subcover-text
+    {
+        width: 65%;
+        text-align: center;
+        font-size: .6em;
+        position: absolute;
+        top:33em;
+        left: 18%;   
+    }
+    
+}
+}
+@media only screen and (min-width: $bp3){
+    .cover
+    {
+        .cover-text
+        {
+        width: 65%;
+        text-align: center;
+        font-size: 1em;
+        position: absolute;
+        top:50em;
+        left: 18%;
+        
+        span 
+        {
+        
+        font-size: 1.1em;
+    }
+    }
+    .subcover-text
+    {
+        width: 65%;
+        text-align: center;
+        font-size: .6em;
+        position: absolute;
+        top:33em;
+        left: 18%;   
+    }
+    
+}
+}
+@media only screen and (min-width: $bp4){
+    .cover
+    {
+        .cover-text
+        {
+        width: 65%;
+        text-align: center;
+        font-size: 1em;
+        position: absolute;
+        top:16.8em;
+        left: 18%;
+        
+        span 
+        {
+        
+        font-size: 1.1em;
+    }
+    }
+    .subcover-text
+    {
+        width: 65%;
+        text-align: center;
+        font-size: .6em;
+        position: absolute;
+        top:33em;
+        left: 18%;   
+    }
+    
+}
+}
+@media only screen and (min-width: $bp5){
+    .cover
+    {
+        img
+        {
+            max-width: 100%;
+        }
+        .cover-text
+        {
+            width: 25%;
+            font-size: 1.5em;
+            margin: -7em 0 4em 69%;
+            line-height: 1.7em;
+        }
     }
 }
 

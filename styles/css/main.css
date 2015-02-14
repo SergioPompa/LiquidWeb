@@ -75,8 +75,20 @@ header .logo { display: inline-block; width: 55px; height: 75px; padding: .7em .
 
 @media only screen and (min-width: 37.5em) { .menu-movil { display: none !important; } }
 .cover img { width: 100%; }
-.cover .cover-text { width: 80%; text-align: center; font-size: .8em; margin: 2em 0 4em 67%; color: #ffffff; font-weight: 400; line-height: 1.3em; font-style: italic; }
+.cover .cover-text { width: 60%; text-align: center; font-size: 1em; position: absolute; top: 8em; left: 20%; color: #1F264A; font-weight: 600; line-height: 1.3em; }
+.cover .cover-text span { font-weight: 800; font-size: 1.1em; }
 
+@media only screen and (min-width: 37.5em) { .cover .cover-text { width: 65%; text-align: center; font-size: 1em; position: absolute; top: 16.8em; left: 18%; }
+  .cover .cover-text span { font-size: 1.1em; }
+  .cover .subcover-text { width: 65%; text-align: center; font-size: .6em; position: absolute; top: 33em; left: 18%; } }
+@media only screen and (min-width: 48em) { .cover .cover-text { width: 65%; text-align: center; font-size: 1em; position: absolute; top: 50em; left: 18%; }
+  .cover .cover-text span { font-size: 1.1em; }
+  .cover .subcover-text { width: 65%; text-align: center; font-size: .6em; position: absolute; top: 33em; left: 18%; } }
+@media only screen and (min-width: 56.25em) { .cover .cover-text { width: 65%; text-align: center; font-size: 1em; position: absolute; top: 16.8em; left: 18%; }
+  .cover .cover-text span { font-size: 1.1em; }
+  .cover .subcover-text { width: 65%; text-align: center; font-size: .6em; position: absolute; top: 33em; left: 18%; } }
+@media only screen and (min-width: 87em) { .cover img { max-width: 100%; }
+  .cover .cover-text { width: 25%; font-size: 1.5em; margin: -7em 0 4em 69%; line-height: 1.7em; } }
 /* ========================================================================== Helper classes ========================================================================== */
 /* Hide visually and from screen readers: http://juicystudio.com/article/screen-readers-display-none.php */
 .hidden { display: none !important; visibility: hidden; }
