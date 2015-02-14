@@ -15,8 +15,16 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+body{
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
 li, ol, ul a{
     list-style: none;
+}
+a{
+    text-decoration: none;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -143,7 +151,7 @@ header
         display: inline-block;
         width: 55px;
         height: 75px;
-        padding: .7em;
+        padding: .7em .7em 1.5em .7em;
     }
 
 }
@@ -160,7 +168,7 @@ header
         display: block;
         max-width: 40px;
         height: 40px;
-        margin:  -4.8em 0 1.4em 80%;
+        margin:  -6em 0 3em 80%;
         }
     }
 }
@@ -198,7 +206,7 @@ header
         {
             width: 73px;
             height: 101px;
-            padding-top:3em;
+            padding-top:1em;
 
         }
     }
@@ -206,7 +214,8 @@ header
     {
         margin: -7em 0 0 30%;
         width: 70%;
-        p{
+        p
+        {
         font-size: 14px;
         }
         .iconoMenu
@@ -242,10 +251,13 @@ header
                 font-weight: $normal;
                 margin-left: -17%;
             }
+            a{
+                display: none;
+            }
             
         }
     }
-}
+
 
 .menu-nav
         {
@@ -308,6 +320,7 @@ header
                 }
             }
         }
+}
 @media only screen and (min-width: $bp3){
     header
     {
@@ -377,7 +390,6 @@ header
     {
         width: 45px;
         height: 45px;
-        opacity: 0.6;
         position: fixed;
         top: 3px;
         right: 30px;
@@ -403,7 +415,25 @@ header
     }
 }
 
-
+.cover
+{
+    img
+    {
+        width: 100%;
+    }
+    .cover-text
+    {
+        width: 80%;
+        
+        text-align: center;
+        font-size: .8em;
+        margin: 2em 0 4em 67%;
+        color: #ffffff;
+        font-weight: $normal;
+        line-height: 1.3em;
+        font-style: italic;
+    }
+}
 
 
 
