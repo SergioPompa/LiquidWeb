@@ -118,17 +118,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/aire-acondicionado.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1096,
-		"inputAbbreviatedPath": "\/img\/aire-acondicionado.png",
-		"outputAbbreviatedPath": "\/img\/aire-acondicionado.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/aire_acondicionado.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -136,6 +125,17 @@
 		"initialSize": 556358,
 		"inputAbbreviatedPath": "\/img\/aire_acondicionado.jpg",
 		"outputAbbreviatedPath": "\/img\/aire_acondicionado.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/aire_acondicionado.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2422,
+		"inputAbbreviatedPath": "\/img\/aire_acondicionado.png",
+		"outputAbbreviatedPath": "\/img\/aire_acondicionado.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -151,13 +151,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/azul.png": {
+	"\/img\/asesoramiento.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1041,
-		"inputAbbreviatedPath": "\/img\/azul.png",
-		"outputAbbreviatedPath": "\/img\/azul.png",
+		"initialSize": 6319,
+		"inputAbbreviatedPath": "\/img\/asesoramiento.png",
+		"outputAbbreviatedPath": "\/img\/asesoramiento.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/asesoramientoMovil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2008,
+		"inputAbbreviatedPath": "\/img\/asesoramientoMovil.png",
+		"outputAbbreviatedPath": "\/img\/asesoramientoMovil.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -261,35 +272,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/direccion.png": {
+	"\/img\/eficiencia.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 768,
-		"inputAbbreviatedPath": "\/img\/direccion.png",
-		"outputAbbreviatedPath": "\/img\/direccion.png",
+		"initialSize": 5633,
+		"inputAbbreviatedPath": "\/img\/eficiencia.png",
+		"outputAbbreviatedPath": "\/img\/eficiencia.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/documento-legal.png": {
+	"\/img\/eficienciaMovil.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 604,
-		"inputAbbreviatedPath": "\/img\/documento-legal.png",
-		"outputAbbreviatedPath": "\/img\/documento-legal.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/eficiencia_energetica.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 665869,
-		"inputAbbreviatedPath": "\/img\/eficiencia_energetica.jpg",
-		"outputAbbreviatedPath": "\/img\/eficiencia_energetica.jpg",
+		"initialSize": 1916,
+		"inputAbbreviatedPath": "\/img\/eficienciaMovil.png",
+		"outputAbbreviatedPath": "\/img\/eficienciaMovil.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -316,13 +316,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galp.png": {
+	"\/img\/formacion.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8957,
-		"inputAbbreviatedPath": "\/img\/galp.png",
-		"outputAbbreviatedPath": "\/img\/galp.png",
+		"initialSize": 4102,
+		"inputAbbreviatedPath": "\/img\/formacion.png",
+		"outputAbbreviatedPath": "\/img\/formacion.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/formacionMovil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1083,
+		"inputAbbreviatedPath": "\/img\/formacionMovil.png",
+		"outputAbbreviatedPath": "\/img\/formacionMovil.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95199,
+		"inputAbbreviatedPath": "\/img\/galp.jpg",
+		"outputAbbreviatedPath": "\/img\/galp.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -353,7 +375,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9695,
+		"initialSize": 9588,
 		"inputAbbreviatedPath": "\/img\/gasnatural.png",
 		"outputAbbreviatedPath": "\/img\/gasnatural.png",
 		"outputPathIsOutsideProject": 0,
@@ -367,6 +389,17 @@
 		"initialSize": 611,
 		"inputAbbreviatedPath": "\/img\/google_plus.png",
 		"outputAbbreviatedPath": "\/img\/google_plus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/grohe.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1269,
+		"inputAbbreviatedPath": "\/img\/grohe.png",
+		"outputAbbreviatedPath": "\/img\/grohe.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -393,6 +426,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/home_menos_resolucion.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 497781,
+		"inputAbbreviatedPath": "\/img\/home_menos_resolucion.jpg",
+		"outputAbbreviatedPath": "\/img\/home_menos_resolucion.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/iconArrowUp.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -404,13 +448,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/iconomenu.png": {
+	"\/img\/iconMenu.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 206,
-		"inputAbbreviatedPath": "\/img\/iconomenu.png",
-		"outputAbbreviatedPath": "\/img\/iconomenu.png",
+		"inputAbbreviatedPath": "\/img\/iconMenu.png",
+		"outputAbbreviatedPath": "\/img\/iconMenu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -422,6 +466,17 @@
 		"initialSize": 1453,
 		"inputAbbreviatedPath": "\/img\/instalacion_suelo.png",
 		"outputAbbreviatedPath": "\/img\/instalacion_suelo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/instalaciones.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5793,
+		"inputAbbreviatedPath": "\/img\/instalaciones.png",
+		"outputAbbreviatedPath": "\/img\/instalaciones.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -470,6 +525,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/jacob.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 958,
+		"inputAbbreviatedPath": "\/img\/jacob.png",
+		"outputAbbreviatedPath": "\/img\/jacob.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/junkers.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -492,24 +558,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/liquid-instalaciones-logo.png": {
+	"\/img\/liquid_instalaciones_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1393,
-		"inputAbbreviatedPath": "\/img\/liquid-instalaciones-logo.png",
-		"outputAbbreviatedPath": "\/img\/liquid-instalaciones-logo.png",
+		"initialSize": 2803,
+		"inputAbbreviatedPath": "\/img\/liquid_instalaciones_logo.png",
+		"outputAbbreviatedPath": "\/img\/liquid_instalaciones_logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/madrilenagas.png": {
-		"fileType": 32768,
+	"\/img\/Madrileña_red_de_gas.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7235,
-		"inputAbbreviatedPath": "\/img\/madrilenagas.png",
-		"outputAbbreviatedPath": "\/img\/madrilenagas.png",
+		"initialSize": 463225,
+		"inputAbbreviatedPath": "\/img\/Madrileña_red_de_gas.jpg",
+		"outputAbbreviatedPath": "\/img\/Madrileña_red_de_gas.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -543,6 +609,17 @@
 		"initialSize": 1693,
 		"inputAbbreviatedPath": "\/img\/mundoclima.png",
 		"outputAbbreviatedPath": "\/img\/mundoclima.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/obra_nueva.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1123,
+		"inputAbbreviatedPath": "\/img\/obra_nueva.png",
+		"outputAbbreviatedPath": "\/img\/obra_nueva.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -602,13 +679,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/saunier-duval.png": {
+	"\/img\/roca.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1295,
-		"inputAbbreviatedPath": "\/img\/saunier-duval.png",
-		"outputAbbreviatedPath": "\/img\/saunier-duval.png",
+		"initialSize": 1081,
+		"inputAbbreviatedPath": "\/img\/roca.png",
+		"outputAbbreviatedPath": "\/img\/roca.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/saunier_duval.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2276,
+		"inputAbbreviatedPath": "\/img\/saunier_duval.png",
+		"outputAbbreviatedPath": "\/img\/saunier_duval.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -679,6 +767,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/uponor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 807,
+		"inputAbbreviatedPath": "\/img\/uponor.png",
+		"outputAbbreviatedPath": "\/img\/uponor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/vaillant.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -689,6 +788,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
@@ -756,6 +864,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/styles\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/styles\/css\/normalize.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -764,6 +881,22 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/styles\/sass\/main.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/sass\/main.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/main.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/tile-wide.png": {
 		"fileType": 32768,
@@ -790,7 +923,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Mac-Serswtaiger",
+"lastSavedByUser": "MacQuínez",
 "manualImportLinks": {
 	},
 "projectAttributes": {
