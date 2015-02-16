@@ -9,6 +9,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 html {
   color: #222;
   font-size: 1em;
@@ -110,6 +111,11 @@ header .logo {
   height: 75px;
   padding: .7em .7em 1.5em .7em; }
 
+@media only screen and (min-width: 37.5em) {
+  header .logo {
+    width: 73px;
+    height: 101px;
+    padding: 1.5em; } }
 .menu-right .menu-nav, .menu-right .menu-contact {
   display: none; }
 .menu-right .iconoMenu img {
@@ -118,6 +124,62 @@ header .logo {
   height: 30px;
   margin: -5.5em 0 3em 80%; }
 
+@media only screen and (min-width: 37.5em) {
+  .menu-right {
+    margin: -7em 0 3em 30%;
+    width: 60%;
+    text-align: center; }
+    .menu-right p {
+      font-size: 14px; }
+    .menu-right .iconoMenu {
+      display: none; }
+    .menu-right .menu-contact {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-box-orient: vertical;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 60%;
+      margin-left: 50%; }
+      .menu-right .menu-contact div {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -o-box-orient: horizontal;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -webkit-box-pack: between;
+        width: 95%;
+        margin-top: -1.7em; }
+        .menu-right .menu-contact div .mailcontact, .menu-right .menu-contact div .telcontact {
+          font-weight: 300; }
+      .menu-right .menu-contact p {
+        font-weight: 800;
+        margin-left: -17%; }
+      .menu-right .menu-contact a {
+        display: none; } }
 #menu {
   display: none;
   margin: 2em 0 0;
@@ -152,6 +214,49 @@ header .logo {
         color: #1F264A;
         padding: 0.8em 0; }
 
+@media only screen and (min-width: 37.5em) {
+  .menu-nav {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-pack: justify;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0 0 0 -5%; }
+    .menu-nav ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-pack: justify;
+      width: 100%;
+      margin: 0 0 0.5em 0; }
+      .menu-nav ul li a {
+        font-size: 16px;
+        color: #1F264A;
+        margin: 0;
+        padding: 0;
+        position: relative; }
+      .menu-nav ul li li:hover {
+        background-color: 3px solid #F59B23;
+        -webkit-transition: width 1s;
+        /* For Safari 3.1 to 6.0 */
+        transition: width 1s; }
+      .menu-nav ul #phone-movil {
+        display: none; } }
 .menu-movil {
   width: 100%;
   height: 50px;
@@ -212,13 +317,15 @@ header .logo {
   color: #ffffff;
   padding: 1em;
   text-align: center;
-  margin-top: -3.3em; }
-  .claim p {
-    font-weight: 300; }
+  font-weight: 300; }
 
 .claimdisplay {
   display: none; }
 
+@media only screen and (min-width: 37.5em) {
+  .claimdisplay {
+    font-weight: 300;
+    display: block; } }
 .serviciosmovil {
   display: -webkit-box;
   display: -moz-box;
@@ -262,9 +369,61 @@ header .logo {
       font-size: 18px;
       text-align: center; }
 
+@media only screen and (min-width: 37.5em) {
+  .serviciosmovil {
+    display: none; } }
 .serviciosdesktop {
   display: none; }
 
+@media only screen and (min-width: 37.5em) {
+  .serviciosdesktop {
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    text-align: center; }
+    .serviciosdesktop article {
+      width: 70%;
+      margin-left: 10%; }
+    .serviciosdesktop img {
+      width: 50%;
+      padding: 1em; }
+    .serviciosdesktop h2 {
+      font-size: 14px;
+      background-color: #F59B23;
+      color: #ffffff;
+      font-weight: 300;
+      line-height: 50px; }
+    .serviciosdesktop a {
+      display: inline-block;
+      color: #ffffff;
+      padding: .1px; }
+    .serviciosdesktop .more {
+      background-color: #1F264A;
+      padding: .5em; }
+    .serviciosdesktop p {
+      font-size: 14px; }
+    .serviciosdesktop .tituloservicios2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 1em;
+      margin-left: 10%;
+      width: 20%;
+      text-align: left; }
+    .serviciosdesktop .tituloservicios3 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 1em;
+      margin-left: 9%;
+      width: 70%;
+      text-align: left; }
+    .serviciosdesktop .tipoestilo2 {
+      font-weight: 800;
+      font-size: 22px; } }
+/*AQUI LO DEJO*/
 .caracteristicas {
   display: -webkit-box;
   display: -moz-box;

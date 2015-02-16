@@ -116,7 +116,7 @@ textarea
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 /* Variables para los colores corporativos */
 $color_orange: #F59B23;
 $darkpurple: #1F264A;
@@ -127,11 +127,14 @@ $white: #FFFFFF;
 
 /* Variables para el uso de la tipografía */
 $tipografia: 'Open Sans', sans-serif;
-
+$tipografia2:'Open Sans Condensed', sans-serif;
 $titular: 800;
+$titular2: 700;
 $lighttitular:600;
 $normal: 400;
 $texto: 300;
+$texto2:300;
+
 
 /* Variables para los breakpoints */
 $bp1 : 30em;      // 480px
@@ -163,7 +166,18 @@ header
         height: 75px;
         padding: .7em .7em 1.5em .7em;
     }
+}
+@media only screen and (min-width: $bp2){
+    header
+    {
+        .logo
+        {
+            width: 73px;
+            height: 101px;
+            padding:1.5em;
 
+        }
+    }
 }
 .menu-right
 {
@@ -179,6 +193,79 @@ header
         max-width: 30px;
         height: 30px;
         margin:  -5.5em 0 3em 80%;
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+        .menu-right
+        {
+            margin: -7em 0 3em 30%;
+            width: 60%;
+            text-align: center;
+        p
+        {
+        font-size: 14px;
+        }
+        .iconoMenu
+        {
+            display: none;
+        }
+        .menu-contact
+        {
+            display: -webkit-box; 
+            display: -moz-box;     
+            display: -ms-flexbox;     
+            display: -webkit-flex;    
+            display: flex;
+            -webkit-flex-direction: column;   
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            -moz-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width:60%;
+            margin-left: 50%;
+            div 
+            {
+                display: -webkit-box; 
+                display: -moz-box;    
+                display: -webkit-flex;    
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                -o-box-orient: horizontal;
+                flex-direction: row;
+                -webkit-justify-content: space-between;
+                -ms-justify-content: space-between;
+                -moz-justify-content: space-between;
+                -ms-flex-pack: distribute;
+                justify-content: space-between;
+                -webkit-box-pack: between;
+                width: 95%;
+                margin-top: -1.7em;
+                .mailcontact, .telcontact
+                {
+                  font-weight: $texto;
+                }
+            }
+            p
+            {
+                font-weight: $titular;
+                margin-left: -17%; 
+            }
+            a
+            {
+                display: none;
+            } 
         }
     }
 }
@@ -229,6 +316,69 @@ header
                 display: inline;
                 color: $darkpurple;
                 padding: 0.8em 0;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+   .menu-nav
+    {
+        display: -webkit-box !important; 
+        display: -moz-box !important; 
+        display: -ms-flexbox !important;     
+        display: -webkit-flex !important;    
+        display: flex !important;
+
+        -webkit-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-pack: justify;
+
+        width: 100%;
+        background-color: #ffffff;
+        margin: 0 0 0 -5%;
+        ul
+        {
+            display: -webkit-box; 
+            display: -moz-box;    
+            display: -ms-flexbox;     
+            display: -webkit-flex;   
+            display: flex;
+
+            -webkit-justify-content: space-around;
+            -ms-justify-content: space-around;
+            -moz-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-pack: justify;
+
+            width: 100%;
+            margin: 0 0 0.5em 0;
+            li
+            {
+
+                a
+                {
+                    font-size: 16px;
+                    color: $darkpurple;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                }
+                li:hover
+                {
+                    
+                    background-color: 3px solid $color_orange;
+                    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+                    transition: width 1s;
+                }
+                
+            }
+            #phone-movil
+            {
+                display: none;
             }
         }
     }
@@ -312,19 +462,22 @@ header
     color:#ffffff;
     padding:1em;
     text-align: center;
-    margin-top: -3.3em;
-    p 
-    {
-        font-weight: $texto;
-
-    }
+    font-weight:$texto2;
+    
 }
 .claimdisplay
 {
-    
-        display: none;
+    display: none;
 }
+@media only screen and (min-width: $bp2){
 
+    .claimdisplay
+    {
+        font-weight: $texto2;
+        display: block;
+
+    }
+}
 .serviciosmovil
 {
     display: -webkit-box;
@@ -337,8 +490,6 @@ header
         text-align: center;
         font-size: 14px;
         padding:0 1em;
-
-
     }
 
     .tituloservicios 
@@ -387,10 +538,92 @@ header
     }
 
 }
+@media only screen and (min-width: $bp2){
+    .serviciosmovil{
+        display: none;
+    }
+}
 .serviciosdesktop
 {
     display: none;
 }
+@media only screen and (min-width: $bp2){
+    .serviciosdesktop
+    {
+        display: block;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        article
+        {
+            width: 70%;
+            margin-left: 10%;
+        }
+        img
+         {
+            width: 50%;
+            padding:1em;
+            
+         }
+         h2
+         {
+           font-size: 14px;
+           background-color:$color_orange;
+           color: #ffffff;
+           font-weight: $texto2;
+           line-height:50px;          
+         }
+        a
+        {
+            display:inline-block;
+            color:#ffffff;
+            padding:.1px;           
+        }
+        .more 
+        {
+            background-color:$darkpurple;
+            padding:.5em;
+        }
+        p 
+        {
+            font-size: 14px;
+        }
+        .tituloservicios2
+        {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 1em; 
+            margin-left: 10%;
+            width: 20%;
+            text-align: left;
+        }
+        .tituloservicios3
+        {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 1em; 
+            margin-left: 9%;
+            width:70%;
+            text-align: left;
+        }
+        .tipoestilo2
+        {
+            font-weight: $titular;
+            font-size: 22px;
+        }
+    }
+}
+
+
+/*AQUI LO DEJO*/
+
+
+
+
 .caracteristicas
 {
     display: -webkit-box;
@@ -446,6 +679,9 @@ header
             margin-left: 29%;
         }
     }
+}
+@media only screen and (min-width: $bp2){
+
 }
 .logosinstalacion
 {
