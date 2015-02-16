@@ -10,20 +10,24 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+html 
+{
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-body{
+body
+{
     width: 100%;
     margin: 0;
     padding:0;
 }
-li, ol, ul a{
+li, ol, ul a
+{
     list-style: none;
 }
-a{
+a
+{
     text-decoration: none;
     font-style: none;
 }
@@ -49,7 +53,8 @@ a{
  * A better looking default horizontal rule
  */
 
-hr {
+hr 
+{
     display: block;
     height: 1px;
     border: 0;
@@ -69,7 +74,8 @@ canvas,
 iframe,
 img,
 svg,
-video {
+video 
+{
     vertical-align: middle;
 }
 
@@ -77,7 +83,8 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
+fieldset 
+{
     border: 0;
     margin: 0;
     padding: 0;
@@ -87,7 +94,8 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+textarea 
+{
     resize: vertical;
 }
 
@@ -95,7 +103,8 @@ textarea {
    Browser Upgrade Prompt
    ========================================================================== */
 
-.browserupgrade {
+.browserupgrade 
+{
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -135,7 +144,6 @@ body
 {
     font-family: $tipografia;
     color: $darkpurple;
-
 }
 #org-content
 {
@@ -281,11 +289,11 @@ header
         color: $darkpurple;
         font-weight: $lighttitular;
         line-height: 1.3em;
-    span 
-    {
-        font-weight: $titular;
-        font-size: 1.1em;
-    } 
+        span 
+        {
+            font-weight: $titular;
+            font-size: 1.1em;
+        } 
     }
     .subcover-text
     {
@@ -311,11 +319,10 @@ header
 
     }
 }
-.display
+.claimdisplay
 {
     
         display: none;
-   
 }
 
 .serviciosmovil
@@ -325,15 +332,26 @@ header
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
-    p 
+    p
     {
         text-align: center;
+        font-size: 14px;
+        padding:0 1em;
+
+
+    }
+
+    .tituloservicios 
+    {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1em;
        
     }
     .tipoestilo
     {
         font-weight: $titular;
+        font-size: 22px;
     }
     article
     {
@@ -353,6 +371,7 @@ header
         margin-bottom: 32px;
         width: 90%;
         margin: 5%;
+        padding-bottom:1em;
 
         a
         {
@@ -362,7 +381,7 @@ header
         }
         h2
         {
-
+           font-size: 18px;
            text-align: center;
         }
     }
@@ -387,46 +406,68 @@ header
     -moz-box-orient: vertical;             
     flex-direction: column;
     background-color:#E5E6E9;
-    padding:1.2em;
+    padding:3em 1.2em 1.2em 1.2em;
    
 
     article
     {
-      display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    div 
-    {
-        margin: -1.7em 0 .8em 30%;
-        p 
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        .especial
         {
-            margin-top: -1em;
+            width: 65px;
+            margin-left: -50%;
         }
-    }
+        img
+        {
+            width: 58px;
+            height: 62px;
+        }
+        div 
+        {
+            margin: -1.7em 0 .8em 30%;
+            
+            p 
+            {
+                margin-top: -.6em;
+                font-size: 14px;
+            }
+            
+            h2
+            {
+                font-size: 18px;
+            }
+        }
+        .especialdiv
+        {
+            margin-left: 29%;
+        }
     }
 }
 .logosinstalacion
 {
     div
     {
-    h1
-    {
-      font-weight: $lighttitular;
-      text-align: center;
-      
-      span
-      {
-        font-weight: $titular;
-      }  
-    }
+        h1
+        {
+          font-weight: $lighttitular;
+          text-align: center;
+          font-size: 20px;
+          
+          span
+          {
+            font-weight: $titular;
+          }  
+        }
     }
    img
     {
         width: 30%;
         text-align: center;
-        margin-left: 2%;
+        margin: 1em 1% 1.5em 1%;
     }
 }
 .contacto 
@@ -434,7 +475,17 @@ header
     background-color: $darkpurple;
     color: #ffffff; 
     height: auto;
-    padding-bottom:3em;
+    padding:1em 5% 3em 5%;
+    .contactpregunta
+    {
+        margin-left: -1%;
+    }
+    .contactext 
+    {
+        font-size: 14px;
+        margin: -1.5em 0 2em 0;
+        width: 90%;
+    }
 }
 .izda
 {
@@ -460,17 +511,31 @@ header
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
     }
-    
-    img{
+    img
+    {
         width: 39px;
         height: 39px;
+        margin-left: -12%;
+        margin-top: .3em;
+        
+    }
+    .house
+    {
+       margin-top: -.7em; 
     }
     div
     {
-        margin-left: 2%;
+        margin-left: 10%;
         
+    }
+    p 
+    {
+        font-size: 14px;
+    }
+    a 
+    {
+        color: #ffffff;
     }
     .contactrow
     {
@@ -486,8 +551,13 @@ header
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;             
     flex-direction: column;
+    margin-bottom: 1em;
+    p 
+    {
+        margin-top: -.8em;
     }
     }
+}
 .dcha
 {
     p 
@@ -523,7 +593,8 @@ footer
     .plus
     {
         margin:.4em 0 0 40%; 
-        img{
+        img
+        {
         width: 30px;
         height: 30px;
         }
@@ -548,7 +619,8 @@ footer
  * http://juicystudio.com/article/screen-readers-display-none.php
  */
 
-.hidden {
+.hidden 
+{
     display: none !important;
     visibility: hidden;
 }
@@ -558,7 +630,8 @@ footer
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.visuallyhidden {
+.visuallyhidden 
+{
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;

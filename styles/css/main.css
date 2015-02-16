@@ -216,7 +216,7 @@ header .logo {
   .claim p {
     font-weight: 300; }
 
-.display {
+.claimdisplay {
   display: none; }
 
 .serviciosmovil {
@@ -226,9 +226,16 @@ header .logo {
   display: -webkit-flex;
   display: flex; }
   .serviciosmovil p {
-    text-align: center; }
+    text-align: center;
+    font-size: 14px;
+    padding: 0 1em; }
+  .serviciosmovil .tituloservicios {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em; }
   .serviciosmovil .tipoestilo {
-    font-weight: 800; }
+    font-weight: 800;
+    font-size: 22px; }
   .serviciosmovil article {
     background-color: #FEFCF7;
     display: -webkit-box;
@@ -245,12 +252,14 @@ header .logo {
     flex-direction: column;
     margin-bottom: 32px;
     width: 90%;
-    margin: 5%; }
+    margin: 5%;
+    padding-bottom: 1em; }
     .serviciosmovil article a {
       display: inline-block;
       width: 100%;
       text-align: center; }
     .serviciosmovil article h2 {
+      font-size: 18px;
       text-align: center; }
 
 .serviciosdesktop {
@@ -270,33 +279,51 @@ header .logo {
   -moz-box-orient: vertical;
   flex-direction: column;
   background-color: #E5E6E9;
-  padding: 1.2em; }
+  padding: 3em 1.2em 1.2em 1.2em; }
   .caracteristicas article {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
+    .caracteristicas article .especial {
+      width: 65px;
+      margin-left: -50%; }
+    .caracteristicas article img {
+      width: 58px;
+      height: 62px; }
     .caracteristicas article div {
       margin: -1.7em 0 .8em 30%; }
       .caracteristicas article div p {
-        margin-top: -1em; }
+        margin-top: -.6em;
+        font-size: 14px; }
+      .caracteristicas article div h2 {
+        font-size: 18px; }
+    .caracteristicas article .especialdiv {
+      margin-left: 29%; }
 
 .logosinstalacion div h1 {
   font-weight: 600;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px; }
   .logosinstalacion div h1 span {
     font-weight: 800; }
 .logosinstalacion img {
   width: 30%;
   text-align: center;
-  margin-left: 2%; }
+  margin: 1em 1% 1.5em 1%; }
 
 .contacto {
   background-color: #1F264A;
   color: #ffffff;
   height: auto;
-  padding-bottom: 3em; }
+  padding: 1em 5% 3em 5%; }
+  .contacto .contactpregunta {
+    margin-left: -1%; }
+  .contacto .contactext {
+    font-size: 14px;
+    margin: -1.5em 0 2em 0;
+    width: 90%; }
 
 .izda {
   display: -webkit-box;
@@ -320,9 +347,17 @@ header .logo {
     display: flex; }
   .izda img {
     width: 39px;
-    height: 39px; }
+    height: 39px;
+    margin-left: -12%;
+    margin-top: .3em; }
+  .izda .house {
+    margin-top: -.7em; }
   .izda div {
-    margin-left: 2%; }
+    margin-left: 10%; }
+  .izda p {
+    font-size: 14px; }
+  .izda a {
+    color: #ffffff; }
   .izda .contactrow {
     display: -webkit-box;
     display: -moz-box;
@@ -335,7 +370,10 @@ header .logo {
     -o-box-orient: vertical;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 1em; }
+    .izda .contactrow p {
+      margin-top: -.8em; }
 
 .dcha p {
   text-align: center; }
