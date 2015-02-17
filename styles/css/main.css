@@ -372,58 +372,121 @@ header .logo {
 @media only screen and (min-width: 37.5em) {
   .serviciosmovil {
     display: none; } }
-.serviciosdesktop {
+.serviciosdesktop, .especialistas, .especialistasp {
   display: none; }
 
 @media only screen and (min-width: 37.5em) {
   .serviciosdesktop {
     display: block;
+    width: 100%;
+    text-align: center; }
+
+  .hacemos, .comohacer {
+    width: 100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    width: 100%;
-    text-align: center; }
-    .serviciosdesktop article {
-      width: 70%;
-      margin-left: 10%; }
-    .serviciosdesktop img {
-      width: 50%;
-      padding: 1em; }
-    .serviciosdesktop h2 {
-      font-size: 14px;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row; }
+    .hacemos article, .comohacer article {
+      width: 100%;
+      margin: -.5em 10% 0 10%; }
+    .hacemos img, .comohacer img {
+      width: 20vw; }
+    .hacemos h2, .comohacer h2 {
+      width: 20vw;
+      font-size: 10px;
       background-color: #F59B23;
       color: #ffffff;
       font-weight: 300;
-      line-height: 50px; }
-    .serviciosdesktop a {
+      line-height: 30px;
+      margin-left: 16%; }
+    .hacemos a, .comohacer a {
       display: inline-block;
       color: #ffffff;
-      padding: .1px; }
-    .serviciosdesktop .more {
+      padding: .1px;
+      font-size: 12px; }
+    .hacemos .more, .comohacer .more {
       background-color: #1F264A;
       padding: .5em; }
-    .serviciosdesktop p {
-      font-size: 14px; }
-    .serviciosdesktop .tituloservicios2 {
-      text-align: center;
-      font-size: 16px;
-      margin-top: 1em;
-      margin-left: 10%;
-      width: 20%;
-      text-align: left; }
-    .serviciosdesktop .tituloservicios3 {
-      text-align: center;
-      font-size: 16px;
-      margin-top: 1em;
-      margin-left: 9%;
-      width: 70%;
-      text-align: left; }
-    .serviciosdesktop .tipoestilo2 {
+    .hacemos p, .comohacer p {
+      margin-bottom: 1em;
+      font-size: 12px; }
+
+  .tituloservicios2 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em;
+    margin-left: 10%;
+    width: 20%;
+    text-align: left; }
+
+  .tituloservicios3 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em;
+    margin-left: 9%;
+    width: 40%;
+    text-align: left; }
+
+  .tipoestilo2 {
+    font-weight: 800;
+    font-size: 22px; } }
+@media only screen and (min-width: 37.5em) {
+  .especialistasp {
+    display: block;
+    font-weight: 600;
+    font-size: 27px;
+    margin-left: 5%; }
+    .especialistasp span {
+      color: #1F264A;
       font-weight: 800;
-      font-size: 22px; } }
-/*AQUI LO DEJO*/
+      font-size: 27px; }
+
+  .especialistas {
+    display: block; }
+    .especialistas .especialup, .especialistas .especialdown {
+      display: block;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      margin-bottom: 2em; }
+    .especialistas .tituloservicios {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 1em; }
+    .especialistas .tipoestilo {
+      font-weight: 800;
+      font-size: 22px; }
+    .especialistas article {
+      background-color: #FEFCF7;
+      width: 100%;
+      margin: -.5em 5% 0 5%;
+      padding: 1em 3% 0 3%; }
+      .especialistas article img {
+        width: 40%; }
+      .especialistas article .imgas {
+        width: 20%; }
+      .especialistas article p {
+        font-size: 14px; }
+      .especialistas article a {
+        display: inline-block;
+        width: 100%;
+        text-align: center; }
+      .especialistas article h2 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 1em; } }
 .caracteristicas {
   display: -webkit-box;
   display: -moz-box;
@@ -461,6 +524,46 @@ header .logo {
     .caracteristicas article .especialdiv {
       margin-left: 29%; }
 
+@media only screen and (min-width: 37.5em) {
+  .caracteristicas {
+    width: 70%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .caracteristicas article img {
+      width: 60px;
+      height: 60px; }
+    .caracteristicas article div {
+      margin: -1.7em 0 .8em 30%; }
+      .caracteristicas article div p {
+        margin-top: -.6em;
+        font-size: 12px; }
+      .caracteristicas article div h2 {
+        font-size: 16px; }
+
+  .team {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    background-color: #E5E6E9; }
+    .team .nosotros {
+      display: block;
+      width: 80%;
+      margin: 1em 5% 0 3%;
+      border-left: 1px solid #b0afaf;
+      height: 35em;
+      padding-top: 5em; }
+      .team .nosotros article h5 {
+        margin-left: 5%;
+        font-size: 30px; }
+      .team .nosotros article p {
+        margin-left: 5%;
+        font-size: 14px; } }
 .logosinstalacion div h1 {
   font-weight: 600;
   text-align: center;
@@ -480,7 +583,6 @@ header .logo {
   .contacto .contactpregunta {
     margin-left: -1%; }
   .contacto .contactext {
-    font-size: 14px;
     margin: -1.5em 0 2em 0;
     width: 90%; }
 
@@ -546,6 +648,25 @@ header .logo {
   height: 42px;
   width: 40%; }
 
+@media only screen and (min-width: 37.5em) {
+  .contacto {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .contacto .contactext .contactpregunta {
+      font-weight: 800;
+      font-size: 18px; }
+    .contacto .contactext p {
+      font-size: 12px; }
+
+  .izda {
+    width: 60%;
+    margin-top: 1.5em; }
+
+  .dcha {
+    width: 50%; } }
 footer {
   background-color: #E5E6E9; }
   footer .social {

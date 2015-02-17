@@ -358,7 +358,6 @@ header
             margin: 0 0 0.5em 0;
             li
             {
-
                 a
                 {
                     font-size: 16px;
@@ -523,7 +522,6 @@ header
         width: 90%;
         margin: 5%;
         padding-bottom:1em;
-
         a
         {
             display: inline-block;
@@ -538,91 +536,176 @@ header
     }
 
 }
+
 @media only screen and (min-width: $bp2){
     .serviciosmovil{
         display: none;
     }
 }
-.serviciosdesktop
+.serviciosdesktop, .especialistas, .especialistasp
 {
     display: none;
 }
 @media only screen and (min-width: $bp2){
+
     .serviciosdesktop
     {
         display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .hacemos, .comohacer
+    {
+        width: 100%;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        width: 100%;
-        text-align: center;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -o-box-orient: horizontal;
+        flex-direction: row;
+
         article
         {
-            width: 70%;
-            margin-left: 10%;
+            width: 100%;
+            margin:-.5em 10% 0 10%;
         }
         img
-         {
-            width: 50%;
-            padding:1em;
-            
-         }
-         h2
-         {
-           font-size: 14px;
-           background-color:$color_orange;
-           color: #ffffff;
-           font-weight: $texto2;
-           line-height:50px;          
-         }
+        {
+
+        width: 20vw;
+        }
+        h2
+        {
+        width: 20vw;
+        font-size: 10px;
+        background-color:$color_orange;
+        color: #ffffff;
+        font-weight: $texto2;
+        line-height:30px;
+        margin-left: 16%;
+        }
         a
         {
-            display:inline-block;
-            color:#ffffff;
-            padding:.1px;           
+        display:inline-block;
+        color:#ffffff;
+        padding:.1px; 
+        font-size: 12px;          
         }
         .more 
         {
-            background-color:$darkpurple;
-            padding:.5em;
+        background-color:$darkpurple;
+        padding:.5em;
         }
         p 
         {
-            font-size: 14px;
+            margin-bottom: 1em;
+        font-size: 12px;
         }
-        .tituloservicios2
+    }
+    .tituloservicios2
+    {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em; 
+    margin-left: 10%;
+    width: 20%;
+    text-align: left;
+    }
+    .tituloservicios3
+    {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 1em; 
+    margin-left: 9%;
+    width:40%;
+    text-align: left;
+    }
+    .tipoestilo2
+    {
+    font-weight: $titular;
+    font-size: 22px;
+    }
+}
+@media only screen and (min-width: $bp2){
+    .especialistasp
+    {
+        display: block;
+        font-weight: $lighttitular;
+        font-size: 27px;
+        margin-left: 5%;
+        span 
+        {
+            color: $darkpurple;
+            font-weight:$titular;
+            font-size: 27px;
+
+        }
+    }
+    .especialistas
+    {
+        display: block;    
+        .especialup, .especialdown
+        {
+        display: block;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;   
+        width: 100%;
+        margin-bottom: 2em;    
+        }
+        .tituloservicios 
         {
             text-align: center;
             font-size: 16px;
-            margin-top: 1em; 
-            margin-left: 10%;
-            width: 20%;
-            text-align: left;
+            margin-top: 1em;
+           
         }
-        .tituloservicios3
-        {
-            text-align: center;
-            font-size: 16px;
-            margin-top: 1em; 
-            margin-left: 9%;
-            width:70%;
-            text-align: left;
-        }
-        .tipoestilo2
+        .tipoestilo
         {
             font-weight: $titular;
             font-size: 22px;
         }
+        article
+        {
+            background-color:#FEFCF7;
+            width: 100%;
+            margin:-.5em 5% 0 5%;
+            padding:1em 3% 0 3%;
+            img
+            {
+                width: 40%;
+            }
+            .imgas 
+            {
+                width: 20%;
+            }
+            p 
+            {
+                font-size: 14px;
+            }
+            a
+            {
+                display: inline-block;
+                width: 100%;
+                text-align: center;  
+            }
+            h2
+            {
+               font-size: 16px;
+               text-align: center;
+               margin-top: 1em;
+            }
+        }
     }
 }
-
-
-/*AQUI LO DEJO*/
-
-
-
 
 .caracteristicas
 {
@@ -640,8 +723,6 @@ header
     flex-direction: column;
     background-color:#E5E6E9;
     padding:3em 1.2em 1.2em 1.2em;
-   
-
     article
     {
         display: -webkit-box;
@@ -681,7 +762,70 @@ header
     }
 }
 @media only screen and (min-width: $bp2){
-
+    .caracteristicas
+    {
+        width: 70%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        article
+        {
+        img
+            {
+                width: 60px;
+                height: 60px;
+            }
+            div 
+            {
+                margin: -1.7em 0 .8em 30%;
+                
+                p 
+                {
+                    margin-top: -.6em;
+                    font-size: 12px;
+                }
+                
+                h2
+                {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .team
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex; 
+        width: 100%;
+        background-color:#E5E6E9;      
+        .nosotros
+        {
+            display: block;
+            width: 80%;
+            margin: 1em 5% 0 3%;
+            border-left: 1px solid rgb(176,175,175);
+            height: 35em;
+            padding-top:5em;
+            article
+            {       
+                h5 
+                {
+                    margin-left: 5%;
+                    font-size: 30px;                
+                }
+                p 
+                {
+                    margin-left: 5%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 .logosinstalacion
 {
@@ -691,15 +835,14 @@ header
         {
           font-weight: $lighttitular;
           text-align: center;
-          font-size: 20px;
-          
+          font-size: 20px;          
           span
           {
             font-weight: $titular;
           }  
         }
     }
-   img
+    img
     {
         width: 30%;
         text-align: center;
@@ -717,8 +860,7 @@ header
         margin-left: -1%;
     }
     .contactext 
-    {
-        font-size: 14px;
+    {        
         margin: -1.5em 0 2em 0;
         width: 90%;
     }
@@ -737,8 +879,7 @@ header
     -o-box-orient: vertical;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;             
-    flex-direction: column;
-    
+    flex-direction: column;    
     article
     {
     width: 100%;
@@ -814,27 +955,57 @@ header
         width: 40%;
     }
 }
-footer
-{
-    background-color:#E5E6E9;
-    .social
+@media only screen and (min-width: $bp2){
+    .contacto 
     {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    padding:1em;
-
-    .plus
-    {
-        margin:.4em 0 0 40%; 
-        img
-        {
-        width: 30px;
-        height: 30px;
-        }
+        .contactext
+        {            
+            .contactpregunta
+            {
+                font-weight: $titular;
+                font-size: 18px;
+            }
+            p 
+            {
+            font-size: 12px;
+            }
+        }   
     }
+    .izda
+    {
+    width: 60%;
+    margin-top: 1.5em;
+    }
+    .dcha
+    {
+    width: 50%;
+    }
+}
+footer
+{
+    background-color:#E5E6E9;
+    .social
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        padding:1em;
+        .plus
+        {
+            margin:.4em 0 0 40%; 
+            img
+            {
+            width: 30px;
+            height: 30px;
+            }
+        }
     }
     p
     {

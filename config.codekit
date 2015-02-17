@@ -118,17 +118,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/aire-acondicionado.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1096,
-		"inputAbbreviatedPath": "\/img\/aire-acondicionado.png",
-		"outputAbbreviatedPath": "\/img\/aire-acondicionado.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/aire_acondicionado.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -151,13 +140,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/asefosam.png": {
-		"fileType": 32768,
+	"\/img\/asefosam.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26591,
-		"inputAbbreviatedPath": "\/img\/asefosam.png",
-		"outputAbbreviatedPath": "\/img\/asefosam.png",
+		"initialSize": 685067,
+		"inputAbbreviatedPath": "\/img\/asefosam.jpg",
+		"outputAbbreviatedPath": "\/img\/asefosam.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -166,7 +155,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6319,
+		"initialSize": 5750,
 		"inputAbbreviatedPath": "\/img\/asesoramiento.png",
 		"outputAbbreviatedPath": "\/img\/asesoramiento.png",
 		"outputPathIsOutsideProject": 0,
@@ -180,17 +169,6 @@
 		"initialSize": 2008,
 		"inputAbbreviatedPath": "\/img\/asesoramientoMovil.png",
 		"outputAbbreviatedPath": "\/img\/asesoramientoMovil.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/azul.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1041,
-		"inputAbbreviatedPath": "\/img\/azul.png",
-		"outputAbbreviatedPath": "\/img\/azul.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -305,22 +283,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/documento-legal.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 604,
-		"inputAbbreviatedPath": "\/img\/documento-legal.png",
-		"outputAbbreviatedPath": "\/img\/documento-legal.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/eficiencia.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5633,
+		"initialSize": 4549,
 		"inputAbbreviatedPath": "\/img\/eficiencia.png",
 		"outputAbbreviatedPath": "\/img\/eficiencia.png",
 		"outputPathIsOutsideProject": 0,
@@ -375,7 +342,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4102,
+		"initialSize": 3737,
 		"inputAbbreviatedPath": "\/img\/formacion.png",
 		"outputAbbreviatedPath": "\/img\/formacion.png",
 		"outputPathIsOutsideProject": 0,
@@ -400,17 +367,6 @@
 		"initialSize": 95199,
 		"inputAbbreviatedPath": "\/img\/galp.jpg",
 		"outputAbbreviatedPath": "\/img\/galp.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/galp.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8957,
-		"inputAbbreviatedPath": "\/img\/galp.png",
-		"outputAbbreviatedPath": "\/img\/galp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -492,17 +448,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/home_menos_resolucion.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 497781,
-		"inputAbbreviatedPath": "\/img\/home_menos_resolucion.jpg",
-		"outputAbbreviatedPath": "\/img\/home_menos_resolucion.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/iconArrowUp.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -540,7 +485,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5793,
+		"initialSize": 8485,
 		"inputAbbreviatedPath": "\/img\/instalaciones.png",
 		"outputAbbreviatedPath": "\/img\/instalaciones.png",
 		"outputPathIsOutsideProject": 0,
@@ -624,17 +569,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/liquid-instalaciones-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1393,
-		"inputAbbreviatedPath": "\/img\/liquid-instalaciones-logo.png",
-		"outputAbbreviatedPath": "\/img\/liquid-instalaciones-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/liquid_instalaciones_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -642,17 +576,6 @@
 		"initialSize": 2803,
 		"inputAbbreviatedPath": "\/img\/liquid_instalaciones_logo.png",
 		"outputAbbreviatedPath": "\/img\/liquid_instalaciones_logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/madrilenagas.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7235,
-		"inputAbbreviatedPath": "\/img\/madrilenagas.png",
-		"outputAbbreviatedPath": "\/img\/madrilenagas.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -774,17 +697,6 @@
 		"initialSize": 1081,
 		"inputAbbreviatedPath": "\/img\/roca.png",
 		"outputAbbreviatedPath": "\/img\/roca.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/saunier-duval.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1295,
-		"inputAbbreviatedPath": "\/img\/saunier-duval.png",
-		"outputAbbreviatedPath": "\/img\/saunier-duval.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -963,6 +875,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/styles\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/styles\/css\/normalize.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -981,6 +902,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/sass\/main.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/main.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/sass\/normalize.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/sass\/normalize.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/normalize.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
