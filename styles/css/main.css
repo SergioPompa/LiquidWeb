@@ -146,40 +146,19 @@ header .logo {
       -webkit-box-orient: vertical;
       -moz-box-orient: vertical;
       flex-direction: column;
-      -webkit-align-items: center;
-      -ms-align-items: center;
-      -moz-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 60%;
-      margin-left: 50%; }
-      .menu-right .menu-contact div {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        -o-box-orient: horizontal;
-        flex-direction: row;
-        -webkit-justify-content: space-between;
-        -ms-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-flex-pack: distribute;
-        justify-content: space-between;
-        -webkit-box-pack: between;
-        width: 95%;
-        margin-top: -1.7em; }
-        .menu-right .menu-contact div .mailcontact, .menu-right .menu-contact div .telcontact {
-          font-weight: 300; }
+      width: 100%; }
       .menu-right .menu-contact p {
         font-weight: 800;
-        margin-left: -17%; }
+        margin-left: 20%; }
       .menu-right .menu-contact a {
-        display: none; } }
+        display: none; }
+      .menu-right .menu-contact .telcontact {
+        margin-top: -.8em;
+        font-size: 16px;
+        font-weight: 300; }
+      .menu-right .menu-contact .mail {
+        font-size: 13px;
+        margin-left: 1.5em; } }
 #menu {
   display: none;
   margin: 2em 0 0;
@@ -291,12 +270,12 @@ header .logo {
   .cover img {
     width: 100%; }
   .cover .cover-text {
-    width: 60%;
+    width: 70%;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.1em;
     position: absolute;
     top: 1em;
-    left: 20%;
+    left: 15%;
     color: #1F264A;
     font-weight: 600;
     line-height: 1.3em; }
@@ -304,12 +283,12 @@ header .logo {
       font-weight: 800;
       font-size: 1.1em; }
   .cover .subcover-text {
-    width: 65%;
+    width: 70%;
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 9em;
-    left: 18%; }
+    top: 8em;
+    left: 15%; }
 
 .claim {
   background-color: #1F264A;
@@ -323,9 +302,18 @@ header .logo {
   display: none; }
 
 @media only screen and (min-width: 37.5em) {
+  .claim {
+    background-color: #1F264A;
+    font-size: .8em;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-weight: 300; }
+
   .claimdisplay {
-    font-weight: 300;
-    display: block; } }
+    font-weight: 600;
+    display: block;
+    font-size: 1.2em; } }
 .serviciosmovil {
   display: -webkit-box;
   display: -moz-box;
@@ -380,65 +368,98 @@ header .logo {
     display: block;
     width: 100%;
     text-align: center; }
-
-  .hacemos, .comohacer {
-    width: 100%;
+    .serviciosdesktop article {
+      width: 100%; }
+      .serviciosdesktop article p {
+        margin-bottom: 1em;
+        font-size: 14px;
+        width: 40%;
+        margin-left: 30%; }
+    .serviciosdesktop img {
+      width: 25vw; }
+    .serviciosdesktop h2 {
+      width: 25vw;
+      font-size: 10px;
+      background-color: #F59B23;
+      color: #ffffff;
+      font-weight: 300;
+      line-height: 30px;
+      margin-left: 37.3%; }
+    .serviciosdesktop a {
+      display: inline-block;
+      color: #ffffff;
+      padding: .1px;
+      font-size: 12px; }
+    .serviciosdesktop .more {
+      background-color: #1F264A;
+      padding: .5em;
+      margin-bottom: 3em; }
+    .serviciosdesktop .tituloservicios2 {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 1em; }
+    .serviciosdesktop .tipoestilo2 {
+      font-weight: 800;
+      font-size: 25px; }
+    .serviciosdesktop .tituloservicios3 {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 2em; } }
+@media only screen and (min-width: 760px) {
+  .serviciosdesktop {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    flex-direction: row; }
-    .hacemos article, .comohacer article {
-      width: 100%;
-      margin: -.5em 10% 0 10%; }
-    .hacemos img, .comohacer img {
+    display: flex; }
+    .serviciosdesktop article {
+      width: 100%; }
+      .serviciosdesktop article p {
+        margin-bottom: 1em;
+        font-size: 12px;
+        width: 50%;
+        margin-left: 25%; }
+    .serviciosdesktop .comohacer {
+      margin-top: -.9em; }
+    .serviciosdesktop img {
       width: 20vw; }
-    .hacemos h2, .comohacer h2 {
+    .serviciosdesktop h2 {
       width: 20vw;
       font-size: 10px;
       background-color: #F59B23;
       color: #ffffff;
       font-weight: 300;
       line-height: 30px;
-      margin-left: 16%; }
-    .hacemos a, .comohacer a {
+      margin-left: 28%; }
+    .serviciosdesktop a {
       display: inline-block;
       color: #ffffff;
       padding: .1px;
       font-size: 12px; }
-    .hacemos .more, .comohacer .more {
+    .serviciosdesktop .more {
       background-color: #1F264A;
-      padding: .5em; }
-    .hacemos p, .comohacer p {
-      margin-bottom: 1em;
-      font-size: 12px; }
+      padding: .5em;
+      margin-top: 1em; }
+    .serviciosdesktop .tipoestilo2 {
+      font-weight: 800;
+      font-size: 14px; }
+    .serviciosdesktop .tituloservicios2 {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 1em;
+      margin-left: 10%;
+      text-align: left; }
+    .serviciosdesktop .tituloservicios3 {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 2em;
+      margin-left: 9%;
+      text-align: left;
+      width: 90%; }
 
-  .tituloservicios2 {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 1em;
-    margin-left: 10%;
-    width: 20%;
-    text-align: left; }
-
-  .tituloservicios3 {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 1em;
-    margin-left: 9%;
-    width: 40%;
-    text-align: left; }
-
-  .tipoestilo2 {
-    font-weight: 800;
-    font-size: 22px; } }
+  .comohacer h2 {
+    margin-left: 31%; } }
 @media only screen and (min-width: 37.5em) {
   .especialistasp {
     display: block;
@@ -667,6 +688,18 @@ header .logo {
 
   .dcha {
     width: 50%; } }
+@media only screen and (min-width: 87em) {
+  .contacto {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .contacto .contactext .contactpregunta {
+      font-weight: 800;
+      font-size: 52px; }
+    .contacto .contactext p {
+      font-size: 12px; } }
 footer {
   background-color: #E5E6E9; }
   footer .social {

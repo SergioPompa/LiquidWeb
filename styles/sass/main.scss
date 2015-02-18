@@ -139,7 +139,7 @@ $texto2:300;
 /* Variables para los breakpoints */
 $bp1 : 30em;      // 480px
 $bp2 : 37.5em;    // 600px
-$bp3 : 48em;      // 768px
+$bp3 : 760px;      // 768px
 $bp4 : 56.25em;   // 900px
 $bp5 : 87em;   // 1400px
 
@@ -197,11 +197,11 @@ header
     }
 }
 @media only screen and (min-width: $bp2){
-        .menu-right
-        {
-            margin: -7em 0 3em 30%;
-            width: 60%;
-            text-align: center;
+    .menu-right
+    {
+        margin: -7em 0 3em 30%;
+        width: 60%;
+        text-align: center;
         p
         {
         font-size: 14px;
@@ -224,48 +224,28 @@ header
             -webkit-box-orient: vertical;
             -moz-box-orient: vertical;
             flex-direction: column;
-            -webkit-align-items: center;
-            -ms-align-items: center;
-            -moz-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            width:60%;
-            margin-left: 50%;
-            div 
-            {
-                display: -webkit-box; 
-                display: -moz-box;    
-                display: -webkit-flex;    
-                display: flex;
-                -webkit-flex-direction: row;
-                -moz-flex-direction: row;
-                -ms-flex-direction: row;
-                -webkit-box-orient: horizontal;
-                -moz-box-orient: horizontal;
-                -o-box-orient: horizontal;
-                flex-direction: row;
-                -webkit-justify-content: space-between;
-                -ms-justify-content: space-between;
-                -moz-justify-content: space-between;
-                -ms-flex-pack: distribute;
-                justify-content: space-between;
-                -webkit-box-pack: between;
-                width: 95%;
-                margin-top: -1.7em;
-                .mailcontact, .telcontact
-                {
-                  font-weight: $texto;
-                }
-            }
+            width:100%;
             p
             {
                 font-weight: $titular;
-                margin-left: -17%; 
+                margin-left: 20%;
             }
             a
             {
                 display: none;
-            } 
+            }
+            .telcontact
+            {
+                margin-top: -.8em;
+                font-size: 16px;
+                font-weight: $texto;
+
+            }
+            .mail 
+            {
+                font-size: 13px;
+                margin-left: 1.5em;
+            }
         }
     }
 }
@@ -419,7 +399,6 @@ header
         display: none !important;
     }
 }
-
 .cover
 {
     position:relative;
@@ -429,12 +408,12 @@ header
     }
     .cover-text
     {
-        width: 60%;
+        width: 70%;
         text-align: center;
-        font-size: 1em;
+        font-size: 1.1em;
         position: absolute;
         top:1em;
-        left: 20%;        
+        left: 15%;        
         color: $darkpurple;
         font-weight: $lighttitular;
         line-height: 1.3em;
@@ -446,12 +425,13 @@ header
     }
     .subcover-text
     {
-        width: 65%;
+        width: 70%;
         text-align: center;
         font-size: .6em;
         position: absolute;
-        top:9em;
-        left: 18%; 
+        top:8em;
+        left: 15%;
+        
     }
 }
 .claim
@@ -461,7 +441,7 @@ header
     color:#ffffff;
     padding:1em;
     text-align: center;
-    font-weight:$texto2;
+    font-weight:$texto;
     
 }
 .claimdisplay
@@ -469,11 +449,20 @@ header
     display: none;
 }
 @media only screen and (min-width: $bp2){
-
+    .claim
+    {
+    background-color:$darkpurple;
+    font-size: .8em;
+    color:#ffffff;
+    padding:1em;
+    text-align: center;
+    font-weight:$texto;
+    }
     .claimdisplay
     {
-        font-weight: $texto2;
+        font-weight: $lighttitular;
         display: block;
+        font-size: 1.2em;
 
     }
 }
@@ -536,7 +525,6 @@ header
     }
 
 }
-
 @media only screen and (min-width: $bp2){
     .serviciosmovil{
         display: none;
@@ -546,38 +534,95 @@ header
 {
     display: none;
 }
-@media only screen and (min-width: $bp2){
-
-    .serviciosdesktop
+ @media only screen and (min-width: $bp2){
+     .serviciosdesktop
     {
         display: block;
         width: 100%;
-        text-align: center;
-    }
-    .hacemos, .comohacer
-    {
+        text-align:center;
+        article
+        {             
+            width: 100%; 
+            p 
+            {
+            margin-bottom: 1em;
+            font-size: 14px;  
+            width: 40%; 
+            margin-left: 30%;     
+            }         
+        }
+        img
+        {
+        width: 25vw;
+        }
+        h2
+        {
+        width: 25vw;
+        font-size: 10px;
+        background-color:$color_orange;
+        color: #ffffff;
+        font-weight: $texto2;
+        line-height:30px;
+        margin-left: 37.3%;
+        }
+        a
+        {
+        display:inline-block;
+        color:#ffffff;
+        padding:.1px; 
+        font-size: 12px;          
+        }
+        .more
+        {
+        background-color:$darkpurple;
+        padding:.5em;
+        margin-bottom: 3em;
+        }        
+        .tituloservicios2
+        {
         width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 1em;        
+        }
+        .tipoestilo2
+        {
+        font-weight: $titular;
+        font-size: 25px;
+        }
+        .tituloservicios3
+        {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 2em;              
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .serviciosdesktop
+    {       
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        -o-box-orient: horizontal;
-        flex-direction: row;
-
         article
+        {             
+            width: 100%; 
+            p 
+            {
+            margin-bottom: 1em;
+            font-size: 12px;  
+            width: 50%; 
+            margin-left: 25%;     
+            }         
+        }
+        .comohacer
         {
-            width: 100%;
-            margin:-.5em 10% 0 10%;
+        margin-top: -.9em;
         }
         img
         {
-
         width: 20vw;
         }
         h2
@@ -588,7 +633,7 @@ header
         color: #ffffff;
         font-weight: $texto2;
         line-height:30px;
-        margin-left: 16%;
+        margin-left: 28%;
         }
         a
         {
@@ -597,41 +642,69 @@ header
         padding:.1px; 
         font-size: 12px;          
         }
-        .more 
+        .more
         {
         background-color:$darkpurple;
         padding:.5em;
+        margin-top: 1em;
         }
-        p 
-        {
-            margin-bottom: 1em;
-        font-size: 12px;
-        }
+        .tipoestilo2
+    {
+    font-weight: $titular;
+    font-size: 14px;
     }
     .tituloservicios2
     {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 1em; 
     margin-left: 10%;
-    width: 20%;
+  
     text-align: left;
     }
     .tituloservicios3
     {
     text-align: center;
-    font-size: 16px;
-    margin-top: 1em; 
-    margin-left: 9%;
-    width:40%;
+    font-size: 14px;
+    margin-top: 2em; 
+    margin-left: 9%;    
     text-align: left;
+    width: 90%;
     }
-    .tipoestilo2
+    }
+    .comohacer
     {
-    font-weight: $titular;
-    font-size: 22px;
-    }
+        
+        h2{
+            margin-left: 31%;
+        }
+    }   
+   
 }
+ // @media only screen and (min-width: $bp4){
+ //     .serviciosdesktop
+ //    {
+ //         display: block;
+ //         width: 100%;
+ //         display: -webkit-box;
+ //    display: -moz-box;
+ //     display: -ms-flexbox;
+ //     display: -webkit-flex;
+ //     display: flex;
+
+
+ //     section 
+ //     {
+ //         display: -webkit-box;
+ //     display: -moz-box;
+ //     display: -ms-flexbox;
+ //     display: -webkit-flex;
+ //    display: flex;
+
+ //     }
+ //     }
+
+ // }
 @media only screen and (min-width: $bp2){
     .especialistasp
     {
@@ -706,7 +779,6 @@ header
         }
     }
 }
-
 .caracteristicas
 {
     display: -webkit-box;
@@ -985,6 +1057,29 @@ header
     {
     width: 50%;
     }
+}
+@media only screen and (min-width: $bp5){
+    .contacto 
+    {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+        .contactext
+        {            
+            .contactpregunta
+            {
+                font-weight: $titular;
+                font-size: 52px;
+            }
+            p 
+            {
+            font-size: 12px;
+            }
+        }   
+    }
+
 }
 footer
 {
