@@ -100,7 +100,7 @@ body {
   color: #1F264A; }
 
 #org-content {
-  max-width: 87em;
+  max-width: 1919px;
   margin: 0 auto; }
 
 header .logo-a {
@@ -324,13 +324,6 @@ header .logo {
     text-align: center;
     font-size: 14px;
     padding: 0 1em; }
-  .serviciosmovil .tituloservicios {
-    text-align: center;
-    font-size: 16px;
-    margin-top: 1em; }
-  .serviciosmovil .tipoestilo {
-    font-weight: 800;
-    font-size: 22px; }
   .serviciosmovil article {
     background-color: #FEFCF7;
     display: -webkit-box;
@@ -364,6 +357,32 @@ header .logo {
   display: none; }
 
 @media only screen and (min-width: 37.5em) {
+  .tituloserviciosdesktop {
+    display: none; }
+
+  .tituloserviciostablet {
+    font-size: 20px;
+    text-align: center; }
+
+  .tipoestilotablet {
+    font-weight: 800;
+    font-size: 25px; }
+
+  .cabecera {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 1em; }
+    .cabecera .tituloservicios2 {
+      width: 100%;
+      font-size: 20px;
+      text-align: center; }
+    .cabecera .tipoestilo2 {
+      font-weight: 800;
+      font-size: 25px; }
+
   .serviciosdesktop {
     display: block;
     width: 100%;
@@ -393,20 +412,28 @@ header .logo {
     .serviciosdesktop .more {
       background-color: #1F264A;
       padding: .5em;
-      margin-bottom: 3em; }
-    .serviciosdesktop .tituloservicios2 {
-      width: 100%;
-      text-align: center;
-      font-size: 20px;
-      margin-top: 1em; }
-    .serviciosdesktop .tipoestilo2 {
-      font-weight: 800;
-      font-size: 25px; }
-    .serviciosdesktop .tituloservicios3 {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 2em; } }
+      margin-bottom: 3em; } }
 @media only screen and (min-width: 760px) {
+  .tituloserviciostablet {
+    display: none; }
+
+  .cabecera {
+    margin-top: 1em;
+    width: 100%; }
+    .cabecera .tituloservicios2 {
+      width: 30%;
+      font-size: 16px;
+      text-align: left;
+      margin-left: 13%; }
+    .cabecera .tituloserviciosdesktop {
+      width: 30%;
+      display: block;
+      font-size: 16px;
+      text-align: left;
+      margin-left: 20%; }
+    .cabecera .tipoestilo2 {
+      font-size: 16px; }
+
   .serviciosdesktop {
     display: -webkit-box;
     display: -moz-box;
@@ -420,18 +447,62 @@ header .logo {
         font-size: 12px;
         width: 50%;
         margin-left: 25%; }
-    .serviciosdesktop .comohacer {
-      margin-top: -.9em; }
     .serviciosdesktop img {
       width: 20vw; }
     .serviciosdesktop h2 {
       width: 20vw;
       font-size: 10px;
+      margin-left: 28%; }
+    .serviciosdesktop .more {
+      background-color: #1F264A;
+      padding: .5em;
+      margin-top: 1em; }
+
+  .comohacer h2 {
+    margin-left: 31%; } }
+@media only screen and (min-width: 56.25em) {
+  .cabecera .tituloservicios2 {
+    font-size: 15px;
+    margin-left: 5%;
+    width: 30%; }
+  .cabecera .tituloserviciosdesktop {
+    font-size: 15px;
+    margin-top: 1em;
+    width: 40%; }
+  .cabecera .tipoestilo2 {
+    font-size: 14px; }
+
+  .serviciosdesktop {
+    display: block;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .serviciosdesktop section {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 100%; }
+    .serviciosdesktop article {
+      width: 80%; }
+      .serviciosdesktop article p {
+        font-size: 12px;
+        width: 80%;
+        margin-left: 10%; }
+    .serviciosdesktop img {
+      width: 15vw; }
+    .serviciosdesktop h2 {
+      width: 15vw;
+      font-size: 10px;
       background-color: #F59B23;
       color: #ffffff;
       font-weight: 300;
       line-height: 30px;
-      margin-left: 28%; }
+      margin-left: 20%; }
     .serviciosdesktop a {
       display: inline-block;
       color: #ffffff;
@@ -440,26 +511,7 @@ header .logo {
     .serviciosdesktop .more {
       background-color: #1F264A;
       padding: .5em;
-      margin-top: 1em; }
-    .serviciosdesktop .tipoestilo2 {
-      font-weight: 800;
-      font-size: 14px; }
-    .serviciosdesktop .tituloservicios2 {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 1em;
-      margin-left: 10%;
-      text-align: left; }
-    .serviciosdesktop .tituloservicios3 {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 2em;
-      margin-left: 9%;
-      text-align: left;
-      width: 90%; }
-
-  .comohacer h2 {
-    margin-left: 31%; } }
+      margin-top: 1em; } }
 @media only screen and (min-width: 37.5em) {
   .especialistasp {
     display: block;
@@ -688,7 +740,7 @@ header .logo {
 
   .dcha {
     width: 50%; } }
-@media only screen and (min-width: 87em) {
+@media only screen and (min-width: 1400px) {
   .contacto {
     display: -webkit-box;
     display: -moz-box;
