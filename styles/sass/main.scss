@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html 
+html
 {
     color: #222;
     font-size: 1em;
@@ -117,31 +117,9 @@ textarea
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-/* Variables para los colores corporativos */
-$color_orange: #F59B23;
-$darkpurple: #1F264A;
-$grey:#E5E6E9;
-$blue:#C6E0F3;
-$white: #FFFFFF;
-
-
-/* Variables para el uso de la tipografía */
-$tipografia: 'Open Sans', sans-serif;
-$tipografia2:'Open Sans Condensed', sans-serif;
-$titular: 800;
-$titular2: 700;
-$lighttitular:600;
-$normal: 400;
-$texto: 300;
-$texto2:300;
-
-
-/* Variables para los breakpoints */
-$bp1 : 30em;      // 480px
-$bp2 : 37.5em;    // 600px
-$bp3 : 760px;      // 768px
-$bp4 : 56.25em;   // 900px
-$bp5 : 1400px;   // 1400px
+@import 'breakpoints.scss';
+@import 'tipografia.scss';
+@import 'colores.scss';
 
 html{
 
@@ -150,14 +128,16 @@ body
 {
     font-family: $tipografia;
     color: $darkpurple;
-
 }
 #org-content
 {
     max-width: 1400px;
     margin: 0 auto;
-   
+}
 
+.instalaciones, .especialistas-wrapper
+{
+    display: none;
 }
 // @media only screen and (min-width: $bp5) {
 //     #org-content
@@ -318,10 +298,10 @@ header
 @media only screen and (min-width: $bp2){
    .menu-nav
     {
-        display: -webkit-box !important; 
-        display: -moz-box !important; 
-        display: -ms-flexbox !important;     
-        display: -webkit-flex !important;    
+        display: -webkit-box !important;
+        display: -moz-box !important;
+        display: -ms-flexbox !important;
+        display: -webkit-flex !important;
         display: flex !important;
 
         -webkit-justify-content: space-around;
@@ -336,10 +316,10 @@ header
         margin: 0 0 0 -5%;
         ul
         {
-            display: -webkit-box; 
-            display: -moz-box;    
-            display: -ms-flexbox;     
-            display: -webkit-flex;   
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
 
             -webkit-justify-content: space-around;
@@ -363,12 +343,10 @@ header
                 }
                 li:hover
                 {
-                    
                     background-color: 3px solid $color_orange;
                     -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
                     transition: width 1s;
                 }
-                
             }
             #phone-movil
             {
@@ -428,15 +406,14 @@ header
         font-size: 1.1em;
         position: absolute;
         top:-.5em;
-        left: 15%;        
+        left: 15%;
         color: $darkpurple;
         font-weight: $lighttitular;
         line-height: 1.3em;
-        span 
+        span
         {
             font-weight: $titular;
-            
-        } 
+        }
     }
     .subcover-text
     {
@@ -445,26 +422,26 @@ header
         font-size: .6em;
         position: absolute;
         top:9.5em;
-        left: 15%;        
+        left: 15%;
     }
 }
 @media only screen and (min-width: $bp2){
-    .cover{
-
-
-    .cover-text{
-        margin-top: 2em;
-        font-size: 1.2em;
-    }
-    .subcover-text
+    .cover
     {
-        width: 70%;
-        text-align: center;
-        font-size: .8em;
-        position: absolute;
-        top:5.5em;
-        left: 15%;        
-    }
+        .cover-text
+        {
+            margin-top: 2em;
+            font-size: 1.2em;
+        }
+        .subcover-text
+        {
+            width: 70%;
+            text-align: center;
+            font-size: .8em;
+            position: absolute;
+            top:5.5em;
+            left: 15%;
+        }
     }
 }
 .claim
@@ -475,11 +452,16 @@ header
     padding:1em;
     text-align: center;
     font-weight:$texto;
-    margin-top: 0;   
-}
-.claimdisplay
-{
-    display: none;
+    margin: 0;
+    p
+    {
+        width: 90%;
+        margin: 1em 5%;
+    }
+    .claimdisplay
+    {
+        display: none;
+    }
 }
 @media only screen and (min-width: $bp2){
     .claim
@@ -490,13 +472,19 @@ header
         padding:1em;
         text-align: center;
         font-weight:$texto;
-    }
-    .claimdisplay
-    {
-        font-weight: $lighttitular;
-        display: block;
-        font-size: 1.2em;
-
+        p
+        {
+            width: 60%;
+            margin: 1em 20% 0;
+        }
+        .claimdisplay
+        {
+            font-weight: $lighttitular;
+            display: block;
+            font-size: 1.2em;
+            width: 80%;
+            margin: 0.3em 10% 1em;
+        }
     }
 }
 //  @media only screen and (min-width: $bp5){
@@ -517,113 +505,168 @@ header
 
 //     }
 // }
-  
 .serviciosdesktop
+{
+    width: 90%;
+    margin: 2em 5%;
+    text-align:center;
+    .tituloservicios
     {
-        width: 100%;
-        text-align:center;        
-        .tituloservicios
-        {
-           font-size: 18px;
-           font-weight: $lighttitular; 
-        }
-        .tipoestilo
-        {
+        text-align: left;
+        font-size: 12px;
+        font-weight: $lighttitular;
+        width: 60%;
+        margin: 0 20%;
+    }
+    .tipoestilo
+    {
+        text-align: left;
+        width: 60%;
+        font-size: 22px;
         font-weight: $titular;
-        }        
-        
-        article
-        {             
-             width: 100%;     
-        }
-        img
+        margin: 0 20% 1em;
+        line-height: 14px;
+    }
+    article
+    {
+         width: 100%;
+         img
         {
             width: 37vw;
         }
         h2
         {
-            
-            width: 37vw;
-            font-size: 10px;
+            width: 60%;
+            margin: 0 20%;
+            font-size: 12px;
             background-color:$color_orange;
             color: #ffffff;
             font-weight: $texto2;
             line-height:30px;
-            margin-left: 31%;        
+            text-align: center;
         }
-         p 
-            {
-            width: 60%;
-            font-size: 12px;           
-            margin-left: 20%;
-            text-align: center;     
-            }  
+        p
+        {
+            width: 46%;
+            font-size: 9px;
+            margin: 0 27% 1.5em;
+            line-height: 18px;
+            text-align: center;
+        }
         .more
         {
             display:inline-block;
             color:#ffffff;
             background-color:$darkpurple;
-            padding:.5em;
-            margin-bottom:1.5em;
-            font-size: 12px;
-        }        
-    }
-@media only screen and (min-width: $bp2){
-    .serviciosdesktop
-    { 
-        width: 100%;
-    .tituloservicios
-    {
-        text-align: left;
-        margin-left: 14.5%;
-    }     
-        article
-        {  width: 100%;          
-            p 
-            {
-            margin-left: 20%;
-            font-size: 12px;  
-            width: 30vw;             
-           
-            }         
+            padding:.6em;
+            margin-bottom:4em;
+            font-size: 10px;
         }
+    }
+    .fontaneria-movil, .calefaccion-movil, .aire-movil
+    {
         img
         {
-            width: 20vw;
+            width: 25%;
+            padding: 1em;
         }
-        h2
+    }
+    .gas-movil
+    {
+        img
         {
-            width: 20vw;
-            font-size: 10px;       
-            margin-left: 29.5%;
+            width: 15%;
+            padding: 1em;
         }
-        .more
+    }
+}
+@media only screen and (min-width: $bp2){
+    .serviciosdesktop
+    {
+        .fontaneria-movil, .calefaccion-movil, .gas-movil, .aire-movil
         {
-            background-color:$darkpurple;
-          
+            display: none;
+        }
+        .tituloservicios
+        {
+            font-size: 14px;
+            width: 72%;
+            margin: 0 14%;
+        }
+        .tipoestilo
+        {
+            width: 72%;
+            font-size: 26px;
+            margin: 0 14% 1em;
+        }
+        .asesor
+        {
+            margin-top: 2em;
+        }
+        article
+        {
+            p
+            {
+                width: 46%;
+                font-size: 9px;
+                margin: 1.5em 27%;
+                line-height: 18px;
+                text-align: center;
+            }
+            img
+            {
+                width: 45%;
+            }
+            h2
+            {
+                width: 45%;
+                margin: 0 27.5% 0.7em;
+                font-size: 10px;
+                background-color:$color_orange;
+                color: #ffffff;
+                font-weight: $texto2;
+                line-height:30px;
+            }
+            .more
+            {
+                background-color:$darkpurple;
+                width: 20%;
+                text-align: center;
+                margin: 0 auto;
+            }
         }
     }
     .hacemos
     {
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;                
-   
-  
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        .instalaciones
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+        }
     }
     .comohacer
     {
         display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-                
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
     }
-    
 }
  // @media only screen and (min-width: $bp4){
  //    .cabecera
@@ -682,7 +725,7 @@ header
  //            width: 15vw;
  //            font-size: 10px;
  //            background-color:$color_orange;
- //            color: #ffffff;
+ //            color: $white;
  //            font-weight: $texto2;
  //            line-height:30px;
  //            margin-left: 20%;
@@ -690,7 +733,7 @@ header
  //        a
  //        {
  //            display:inline-block;
- //            color:#ffffff;
+ //            color: $white;
  //            padding:.1px; 
  //            font-size: 12px; 
  //        }
@@ -702,17 +745,17 @@ header
  //        }
  //     }
  // }
-.especialistasp
+/*.especialistasp
 {
     display: block;
     font-weight: $lighttitular;
     font-size: 18px;
     margin-left: 5%;
     text-align: center;
-    span 
+    span
     {
         color: $darkpurple;
-        font-weight:$titular;        
+        font-weight:$titular;
     }
 }
 .especialistas
@@ -744,120 +787,208 @@ header
             width: 13vw;
         }
     }
-}
+}*/
 @media only screen and (min-width: $bp2){
-    .especialistasp 
+    .especialistas-wrapper
     {
-        text-align: left;
-
-    }
-    .especialistas
-    {  
-        .especialup, .especialdown
-        {
-            display: block;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;   
-            width: 100%;
-            margin-bottom: 2em;    
-        }
-        .tituloservicios 
+        display: inline-block;
+        .especialistasp
         {
             text-align: center;
-            font-size: 16px;
-            margin-top: 1em;
-           
+            font-weight: $titular;
+            font-size: 18px;
+            width: 80%;
+            margin: 1em 10% 2em;
+            span
+            {
+                font-weight: $lighttitular;
+            }
         }
-        article
+        .especialistas
         {
-            background-color:#FEFCF7;
-            width: 100%;
-            margin:-.5em 5% 0 5%;
-            padding:1em 3% 0 3%;
-            img
+            .especialup, .especialdown
             {
-                width: 30%;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                width: 80%;
+                margin: 0 10%;
+                margin-bottom: 2em;
             }
-            .imgas 
+            article
             {
-                width: 15%;
-            }
-            p 
-            {
-                font-size: 14px;
-                text-align: left;
-               width: 100%;
-                margin-left: 2%;
-            }
-            a
-            {
-                display: inline-block;
-                width: 100%;
-                text-align: center;  
-            }
-            h2
-            {
-               font-size: 16px;
-               text-align: center;
-               margin-top: 1em;
+                background-color: $yellow;
+                margin:-.5em 5% 0 5%;
+                padding:1em 3% 0 3%;
+                img
+                {
+                    width: 30%;
+                }
+                .imgas
+                {
+                    width: 15%;
+                    margin-top: 1em;
+                }
+                p
+                {
+                    font-size: 9px;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 2%;
+                }
+                .pgas
+                {
+                    margin-top: 3em;
+                }
+                a
+                {
+                    display: inline-block;
+                    width: 100%;
+                    height: 4em;
+                    text-align: center;
+                }
+                h2
+                {
+                   font-size: 14px;
+                   text-align: center;
+                   margin-top: 0.5em;
+                }
             }
         }
     }
 }
-.caracteristicas
+.team
 {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;   
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;             
-    flex-direction: column;
-    background-color:#E5E6E9;
-    padding:3em 1.2em 1.2em 1.2em;
-    article
+    width: 100%;
+    .caracteristicas
     {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        .especial
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        flex-direction: column;
+        background-color: $grey;
+        padding: 3em 1.2em 1.2em 1.2em;
+        article
         {
-            width: 65px;
-            margin-left: -50%;
-        }
-        img
-        {
-            width: 58px;
-            height: 62px;
-        }
-        div 
-        {
-            margin: -1.7em 0 .8em 30%;
-            
-            p 
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+            height: 5em;
+
+            /*img
             {
-                margin-top: -.6em;
-                font-size: 14px;
+                width: 80%;
             }
-            
-            h2
+            .especial
             {
-                font-size: 18px;
+                width: 90%;
+            }
+            div
+            {
+                margin: -1.7em 0 .8em 30%;
+                p
+                {
+                    margin-top: -.6em;
+                    font-size: 9px;
+                }
+                h2
+                {
+                    font-size: 14px;
+                }
+            }
+            .especialdiv
+            {
+                width: 80%;
+            }*/
+        }
+        .legal
+        {
+            a
+            {
+                text-align: center;
+                width: 30%;
+                img
+                {
+                    width: 40%;
+                }
+            }
+            .especialdiv
+            {
+                width: 70%;
+                p
+                {
+                    font-size: 9px;
+                }
+                h2
+                {
+                    font-size: 14px;
+                    margin-top: 0;
+                }
             }
         }
-        .especialdiv
+        .rapidez
         {
-            margin-left: 29%;
+            a
+            {
+                text-align: center;
+                width: 30%;
+                img
+                {
+                    width: 50%;
+                }
+            }
+            .especialdiv
+            {
+                width: 70%;
+                p
+                {
+                    font-size: 9px;
+                }
+                h2
+                {
+                    font-size: 14px;
+                    margin-top: 0;
+                }
+            }
+        }
+        .precio, .seguridad, .calidad
+        {
+            a
+            {
+                text-align: center;
+                width: 30%;
+                img
+                {
+                    width: 40%;
+                }
+            }
+            div
+            {
+                width: 70%;
+                p
+                {
+                    font-size: 9px;
+                }
+                h2
+                {
+                    font-size: 14px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
