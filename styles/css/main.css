@@ -114,7 +114,7 @@ header .logo {
   height: 75px;
   padding: .7em .7em 1.5em .7em; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   header .logo {
     width: 73px;
     height: 101px;
@@ -127,7 +127,7 @@ header .logo {
   height: 30px;
   margin: -5.5em 0 3em 80%; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .menu-right {
     margin: -7em 0 3em 35%;
     width: 60%;
@@ -162,6 +162,20 @@ header .logo {
       .menu-right .menu-contact .mail {
         font-size: 13px;
         margin-left: 1.5em; } }
+@media only screen and (min-width: 1040px) {
+  .menu-right .menu-contact {
+    margin-top: -.7em; }
+    .menu-right .menu-contact p {
+      font-size: 20px;
+      margin-left: 20%; }
+    .menu-right .menu-contact .telcontact {
+      margin-top: -1em;
+      margin-bottom: -1em;
+      font-size: 25px;
+      font-weight: 300; }
+    .menu-right .menu-contact .mail {
+      font-size: 18px;
+      margin-left: 1.5em; } }
 #menu {
   display: none;
   margin: 2em 0 0;
@@ -196,7 +210,7 @@ header .logo {
         color: #1F264A;
         padding: 0.8em 0; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .menu-nav {
     display: -webkit-box !important;
     display: -moz-box !important;
@@ -265,7 +279,7 @@ header .logo {
     padding: 0.5em;
     border-radius: 3px; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .menu-movil {
     display: none !important; } }
 .cover {
@@ -273,15 +287,14 @@ header .logo {
   .cover img {
     width: 100%; }
   .cover .cover-text {
-    width: 70%;
+    width: 90%;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 14px;
     position: absolute;
-    top: -.5em;
-    left: 15%;
+    top: 1em;
+    left: 5%;
     color: #1F264A;
-    font-weight: 600;
-    line-height: 1.3em; }
+    font-weight: 600; }
     .cover .cover-text span {
       font-weight: 800; }
   .cover .subcover-text {
@@ -289,19 +302,49 @@ header .logo {
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 9.5em;
+    top: 7em;
     left: 15%; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .cover .cover-text {
-    margin-top: 2em;
-    font-size: 1.2em; }
+    width: 80%;
+    left: 10%;
+    top: .5em;
+    font-size: 20px; }
+  .cover .subcover-text {
+    width: 80%;
+    font-size: 12px;
+    top: 7em;
+    left: 10%; } }
+@media only screen and (min-width: 760px) {
+  .cover .cover-text {
+    width: 80%;
+    left: 10%;
+    font-size: 25px; }
+  .cover .subcover-text {
+    width: 70%;
+    font-size: 14px;
+    top: 7em;
+    left: 15%; } }
+@media only screen and (min-width: 1040px) {
+  .cover .cover-text {
+    top: -.2em;
+    font-size: 35px; }
+  .cover .subcover-text {
+    font-size: 15px;
+    left: 15%;
+    top: 8em; } }
+@media only screen and (min-width: 1200px) {
+  .cover .cover-text {
+    font-weight: 300;
+    top: -.2em;
+    font-size: 40px; }
   .cover .subcover-text {
     width: 70%;
     text-align: center;
-    font-size: .8em;
+    font-size: 20px;
     position: absolute;
-    top: 5.5em;
+    top: 7em;
     left: 15%; } }
 .claim {
   background-color: #1F264A;
@@ -317,7 +360,7 @@ header .logo {
   .claim .claimdisplay {
     display: none; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .claim {
     background-color: #1F264A;
     font-size: .8em;
@@ -334,6 +377,9 @@ header .logo {
       font-size: 1.2em;
       width: 80%;
       margin: 0.3em 10% 1em; } }
+.tituloservicios2, .tipoestilo2, .tituloservicios3 {
+  display: none; }
+
 .serviciosdesktop {
   width: 90%;
   margin: 2em 5%;
@@ -384,7 +430,7 @@ header .logo {
     width: 15%;
     padding: 1em; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .serviciosdesktop .fontaneria-movil, .serviciosdesktop .calefaccion-movil, .serviciosdesktop .gas-movil, .serviciosdesktop .aire-movil {
     display: none; }
   .serviciosdesktop .tituloservicios {
@@ -445,58 +491,73 @@ header .logo {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; } }
-/*.especialistasp
-{
-    display: block;
-    font-weight: $lighttitular;
-    font-size: 18px;
-    margin-left: 5%;
-    text-align: center;
-    span
-    {
-        color: $darkpurple;
-        font-weight:$titular;
-    }
-}
-.especialistas
-{
+@media only screen and (min-width: 760px) {
+  .tituloservicios, .tipoestilo {
+    display: none; }
+
+  .cabecera {
+    margin-top: 1rem;
     width: 100%;
-    text-align: center;
-    article
-    {
-        margin-bottom: 2em;
-        img
-        {
-            width: 25vw;
-        }
-        h2
-        {
-            font-size: 16px;
-        }
-        p{
-           width: 70%;
-            font-size: 12px;
-            text-align: center;
-            margin-left: 15%;
-         }               
-    }
-    .gas 
-    {
-        img
-        {
-            width: 13vw;
-        }
-    }
-}*/
-@media only screen and (min-width: 37.5em) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .cabecera .tituloservicios2 {
+      display: block;
+      width: 50%;
+      font-size: 1.1em;
+      margin-left: 11.5%;
+      line-height: 1.2em; }
+    .cabecera .tituloservicios3 {
+      display: block;
+      width: 50%;
+      font-size: 1.1em;
+      margin-left: -8%;
+      line-height: 1.2em; }
+    .cabecera .tipoestilo2 {
+      display: block;
+      font-size: 1.875em;
+      font-weight: 800; }
+
+  .serviciosdesktop {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .serviciosdesktop article p {
+      width: 90%;
+      font-size: 12px;
+      margin: 1.5em 5%;
+      height: 18em;
+      text-align: center; }
+    .serviciosdesktop article img {
+      width: 85%; }
+    .serviciosdesktop article h2 {
+      width: 85%;
+      margin: 0 8% 0.7em;
+      font-size: 10px;
+      background-color: #F59B23;
+      color: #ffffff;
+      font-weight: 300;
+      line-height: 30px; }
+    .serviciosdesktop article .more {
+      background-color: #1F264A;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto; } }
+@media only screen and (min-width: 600px) {
   .especialistas-wrapper {
     display: inline-block; }
     .especialistas-wrapper .especialistasp {
       text-align: center;
       font-weight: 800;
       font-size: 18px;
-      width: 80%;
-      margin: 1em 10% 2em; }
+      width: 100%; }
       .especialistas-wrapper .especialistasp span {
         font-weight: 600; }
     .especialistas-wrapper .especialistas .especialup, .especialistas-wrapper .especialistas .especialdown {
@@ -506,7 +567,7 @@ header .logo {
       display: -webkit-flex;
       display: flex;
       width: 80%;
-      margin: 0 10%;
+      margin-left: 10%;
       margin-bottom: 2em; }
     .especialistas-wrapper .especialistas article {
       background-color: #FEFCF7;
@@ -621,7 +682,7 @@ header .logo {
         margin-top: 0;
         margin-bottom: 0; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .caracteristicas {
     width: 70%;
     display: -webkit-box;
@@ -745,7 +806,7 @@ header .logo {
   height: 42px;
   width: 40%; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
   .contacto {
     display: -webkit-box;
     display: -moz-box;
@@ -764,7 +825,7 @@ header .logo {
 
   .dcha {
     width: 50%; } }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .contacto {
     display: -webkit-box;
     display: -moz-box;
