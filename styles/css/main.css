@@ -162,7 +162,7 @@ header .logo {
       .menu-right .menu-contact .mail {
         font-size: 13px;
         margin-left: 1.5em; } }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1024px) {
   .menu-right .menu-contact {
     margin-top: -.7em; }
     .menu-right .menu-contact p {
@@ -302,7 +302,7 @@ header .logo {
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 7em;
+    top: 8em;
     left: 15%; }
 
 @media only screen and (min-width: 600px) {
@@ -316,7 +316,7 @@ header .logo {
     font-size: 12px;
     top: 7em;
     left: 10%; } }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
   .cover .cover-text {
     width: 80%;
     left: 10%;
@@ -326,7 +326,7 @@ header .logo {
     font-size: 14px;
     top: 7em;
     left: 15%; } }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1024px) {
   .cover .cover-text {
     top: -.2em;
     font-size: 35px; }
@@ -334,7 +334,7 @@ header .logo {
     font-size: 15px;
     left: 15%;
     top: 8em; } }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .cover .cover-text {
     font-weight: 300;
     top: -.2em;
@@ -348,35 +348,42 @@ header .logo {
     left: 15%; } }
 .claim {
   background-color: #1F264A;
-  font-size: 1em;
+  font-size: 14px;
   color: #ffffff;
-  padding: 1em;
+  padding: 3em 0;
   text-align: center;
-  font-weight: 300;
-  margin: 0; }
+  font-weight: 300; }
   .claim p {
     width: 90%;
-    margin: 1em 5%; }
+    margin-left: 5%; }
   .claim .claimdisplay {
     display: none; }
 
 @media only screen and (min-width: 600px) {
   .claim {
-    background-color: #1F264A;
-    font-size: .8em;
-    color: #ffffff;
-    padding: 1em;
-    text-align: center;
-    font-weight: 300; }
+    font-size: 14px; }
     .claim p {
-      width: 60%;
-      margin: 1em 20% 0; }
+      width: 90%;
+      margin-left: 5%; }
     .claim .claimdisplay {
       font-weight: 600;
       display: block;
-      font-size: 1.2em;
-      width: 80%;
-      margin: 0.3em 10% 1em; } }
+      font-size: 14px; } }
+@media only screen and (min-width: 768px) {
+  .claim {
+    font-size: 16px; }
+    .claim .claimdisplay {
+      font-size: 18px; } }
+@media only screen and (min-width: 1024px) {
+  .claim {
+    font-size: 18px; }
+    .claim .claimdisplay {
+      font-size: 20px; } }
+@media only screen and (min-width: 1280px) {
+  .claim {
+    font-size: 20px; }
+    .claim .claimdisplay {
+      font-size: 25px; } }
 .tituloservicios2, .tipoestilo2, .tituloservicios3 {
   display: none; }
 
@@ -490,13 +497,14 @@ header .logo {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; } }
-@media only screen and (min-width: 760px) {
+    display: flex;
+    margin-top: .13em; } }
+@media only screen and (min-width: 768px) {
   .tituloservicios, .tipoestilo {
     display: none; }
 
   .cabecera {
-    margin-top: 1rem;
+    margin-top: 1em;
     width: 100%;
     display: -webkit-box;
     display: -moz-box;
@@ -540,16 +548,64 @@ header .logo {
     .serviciosdesktop article h2 {
       width: 85%;
       margin: 0 8% 0.7em;
-      font-size: 10px;
-      background-color: #F59B23;
-      color: #ffffff;
-      font-weight: 300;
-      line-height: 30px; }
+      font-size: 10px; }
     .serviciosdesktop article .more {
-      background-color: #1F264A;
       width: 40%;
       text-align: center;
       margin: 0 auto; } }
+@media only screen and (min-width: 1024px) {
+  .cabecera .tituloservicios2 {
+    font-size: 1.250em;
+    margin-left: 16%;
+    line-height: 1.5em; }
+  .cabecera .tituloservicios3 {
+    font-size: 1.36em;
+    margin-left: -13%;
+    line-height: 1.3em; }
+  .cabecera .tipoestilo2 {
+    display: block;
+    font-size: 1.875em;
+    font-weight: 800; }
+
+  .serviciosdesktop {
+    width: 70%;
+    margin-left: 15%; }
+    .serviciosdesktop article p {
+      height: 14em; } }
+@media only screen and (min-width: 1280px) {
+  .cabecera {
+    margin-bottom: -.9em; }
+    .cabecera .tituloservicios2 {
+      font-size: 1.4em;
+      margin-left: 21%;
+      line-height: 1.3em; }
+    .cabecera .tituloservicios3 {
+      font-size: 1.4em;
+      margin-left: -18%; }
+    .cabecera .tipoestilo2 {
+      font-size: 1.9em; }
+
+  .serviciosdesktop {
+    width: 60%;
+    margin-left: 20%; }
+    .serviciosdesktop article p {
+      height: 14em; } }
+@media only screen and (min-width: 1400px) {
+  .cabecera {
+    margin-bottom: -.9em; }
+    .cabecera .tituloservicios2 {
+      font-size: 1.6em; }
+    .cabecera .tituloservicios3 {
+      font-size: 1.6em;
+      margin-left: -19%; }
+    .cabecera .tipoestilo2 {
+      font-size: 1.9em; }
+
+  .serviciosdesktop {
+    width: 60%;
+    margin-left: 20%; }
+    .serviciosdesktop article p {
+      height: 14em; } }
 @media only screen and (min-width: 600px) {
   .especialistas-wrapper {
     display: inline-block; }
@@ -618,32 +674,7 @@ header .logo {
       display: -webkit-flex;
       display: flex;
       width: 100%;
-      height: 5em;
-      /*img
-      {
-          width: 80%;
-      }
-      .especial
-      {
-          width: 90%;
-      }
-      div
-      {
-          margin: -1.7em 0 .8em 30%;
-          p
-          {
-              margin-top: -.6em;
-              font-size: 9px;
-          }
-          h2
-          {
-              font-size: 14px;
-          }
-      }
-      .especialdiv
-      {
-          width: 80%;
-      }*/ }
+      height: 5em; }
     .team .caracteristicas .legal a {
       text-align: center;
       width: 30%; }
@@ -825,7 +856,7 @@ header .logo {
 
   .dcha {
     width: 50%; } }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .contacto {
     display: -webkit-box;
     display: -moz-box;

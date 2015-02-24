@@ -446,7 +446,7 @@ header
         text-align: center;
         font-size: .6em;
         position: absolute;
-        top:7em;
+        top:8em;
         left: 15%;
     }
 }
@@ -528,19 +528,19 @@ header
     }
 }
 .claim
-{
+{   
     background-color:$darkpurple;
-    font-size: 1em;
+    font-size:14px;
     color:#ffffff;
-    padding:1em;
+    padding:3em 0;
     text-align: center;
     font-weight:$texto;
-    margin: 0;
-    p
-    {
-        width: 90%;
-        margin: 1em 5%;
-    }
+    p 
+        {
+            width: 90%;
+            margin-left: 5%;
+            
+        }
     .claimdisplay
     {
         display: none;
@@ -549,24 +549,50 @@ header
 @media only screen and (min-width: $bp2){
     .claim
     {
-        background-color:$darkpurple;
-        font-size: .8em;
-        color:#ffffff;
-        padding:1em;
-        text-align: center;
-        font-weight:$texto;
-        p
+        font-size: 14px;      
+        p 
         {
-            width: 60%;
-            margin: 1em 20% 0;
+            width: 90%;
+            margin-left: 5%;
         }
         .claimdisplay
         {
             font-weight: $lighttitular;
             display: block;
-            font-size: 1.2em;
-            width: 80%;
-            margin: 0.3em 10% 1em;
+            font-size: 14px;                     
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .claim
+    {
+        font-size: 16px;
+
+        .claimdisplay
+        {
+           font-size: 18px;             
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .claim
+    {
+        font-size: 18px;
+
+        .claimdisplay
+        {
+           font-size: 20px;             
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .claim
+    {
+        font-size: 20px;
+
+        .claimdisplay
+        {
+           font-size: 25px;             
         }
     }
 }
@@ -736,6 +762,7 @@ header
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        margin-top: .13em;
     }
 }
 @media only screen and (min-width: $bp3){
@@ -743,39 +770,38 @@ header
     {
         display: none;
     }
-    
     .cabecera
     {
-        margin-top: 1rem;        
-        width: 100%;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-   
-    .tituloservicios2
-    {
-        display: block;
-        width: 50%;
-        font-size: 1.1em;
-        margin-left: 11.5%;
-        line-height: 1.2em;
-    }
-    .tituloservicios3
-    {
-        display: block;
-        width: 50%;
-        font-size: 1.1em;
-        margin-left: -8%;
-        line-height: 1.2em;
-    }
-    .tipoestilo2
-    {
-        display: block;
-        font-size: 1.875em;
-        font-weight: $titular;
-    }
+            margin-top: 1em;        
+            width: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+       
+        .tituloservicios2
+        {
+            display: block;
+            width: 50%;
+            font-size: 1.1em;
+            margin-left: 11.5%;
+            line-height: 1.2em;
+        }
+        .tituloservicios3
+        {
+            display: block;
+            width: 50%;
+            font-size: 1.1em;
+            margin-left: -8%;
+            line-height: 1.2em;
+        }
+        .tipoestilo2
+        {
+            display: block;
+            font-size: 1.875em;
+            font-weight: $titular;
+        }
     }
         .serviciosdesktop
         {
@@ -806,14 +832,10 @@ header
                 width: 85%;
                 margin: 0 8% 0.7em;
                 font-size: 10px;
-                background-color:$color_orange;
-                color: #ffffff;
-                font-weight: $texto2;
-                line-height:30px;
             }
             .more
             {
-                background-color:$darkpurple;
+                
                 width: 40%;
                 text-align: center;
                 margin: 0 auto;
@@ -821,84 +843,110 @@ header
         }
     }
 }
-// @media only screen and (min-width: $bp4){
-//     .tituloservicios, .tipoestilo
-//     {
-//         display: none;
-//     }
-    
-//     .cabecera
-//     {
-        
-//      }
-//     .tituloservicios2
-//     {
-//         display: block;
-//         width: 50%;
-//         font-size: 1.250rem;
-//         margin-left: 16%;
-//         line-height: 1.5em;
-   
-//     .tituloservicios3
-//     {
-//         display: block;
-//         width: 50%;
-//         font-size: 1.375em;
-//         margin-left: -13%;
-//         line-height: 1.3em;
-//     }
-//     .tipoestilo2
-//     {
-//         display: block;
-//         font-size: 1.9em;
-//         font-weight: $titular;
-//     }
-//     }
-//         .serviciosdesktop
-//         {
-//         width: 70%;
-//         margin-left: 15%; 
-//         margin-top: 0; 
-//         display: -webkit-box;
-//         display: -moz-box;
-//         display: -ms-flexbox;
-//         display: -webkit-flex;
-//         display: flex;
-//         article
-//         {
-//             p
-//             {
-//                 width:90%;
-//                 font-size: 12px;
-//                 margin: 1.5em 5%;
-//                 height: 13em;
-//                 text-align: center;
-//             }
-//             img
-//             {
-//                 width:85%;
-//             }
-//             h2
-//             {
-//                 width: 85%;
-//                 margin: 0 8% 0.7em;
-//                 font-size: 10px;
-//                 background-color:$color_orange;
-//                 color: #ffffff;
-//                 font-weight: $texto2;
-//                 line-height:30px;
-//             }
-//             .more
-//             {
-//                 background-color:$darkpurple;
-//                 width: 30%;
-//                 text-align: center;
-//                 margin: 0 auto;
-//             }
-//         }
-//     }
-// }
+@media only screen and (min-width: $bp4){
+    .cabecera
+    {
+          
+        .tituloservicios2
+        {
+            font-size: 1.250em;
+            margin-left: 16%;
+            line-height: 1.5em;
+        }       
+        .tituloservicios3
+        {
+            font-size: 1.36em;
+            margin-left: -13%;
+            line-height: 1.3em;
+        }
+        .tipoestilo2
+        {
+            display: block;
+            font-size: 1.875em;
+            font-weight: $titular;
+        }
+    }
+        .serviciosdesktop
+        {
+        width: 70%;
+        margin-left: 15%; 
+        article
+        {
+            p
+            {
+                height: 14em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .cabecera
+    {
+       margin-bottom: -.9em;   
+        .tituloservicios2
+        {
+            font-size: 1.4em;
+            margin-left: 21%;
+            line-height: 1.3em;
 
+        }       
+        .tituloservicios3
+        {
+            font-size: 1.4em;
+            margin-left: -18%;
+            
+        }
+        .tipoestilo2
+        {
+           
+            font-size: 1.9em;
+         
+        }
+    }
+        .serviciosdesktop
+        {
+        width: 60%;
+        margin-left: 20%; 
+        article
+        {
+            p
+            {
+                height: 14em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .cabecera
+    {
+       margin-bottom: -.9em;   
+        .tituloservicios2
+        {
+            font-size: 1.6em;
+        }       
+        .tituloservicios3
+        {
+            font-size: 1.6em;
+            margin-left: -19%;            
+        }
+        .tipoestilo2
+        {           
+            font-size: 1.9em;         
+        }
+    }
+        .serviciosdesktop
+        {
+        width: 60%;
+        margin-left: 20%; 
+        article
+        {
+            p
+            {
+                height: 14em;
+            }
+        }
+    }
+}
 @media only screen and (min-width: $bp2){
     .especialistas-wrapper
     {
@@ -1069,31 +1117,31 @@ header
             width: 100%;
             height: 5em;
 
-            /*img
-            {
-                width: 80%;
-            }
-            .especial
-            {
-                width: 90%;
-            }
-            div
-            {
-                margin: -1.7em 0 .8em 30%;
-                p
-                {
-                    margin-top: -.6em;
-                    font-size: 9px;
-                }
-                h2
-                {
-                    font-size: 14px;
-                }
-            }
-            .especialdiv
-            {
-                width: 80%;
-            }*/
+            // img
+            // {
+            //     width: 80%;
+            // }
+            // .especial
+            // {
+            //     width: 90%;
+            // }
+            // div
+            // {
+            //     margin: -1.7em 0 .8em 30%;
+            //     p
+            //     {
+            //         margin-top: -.6em;
+            //         font-size: 9px;
+            //     }
+            //     h2
+            //     {
+            //         font-size: 14px;
+            //     }
+            // }
+            // .especialdiv
+            // {
+            //     width: 80%;
+            // }
         }
         .legal
         {
