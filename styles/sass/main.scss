@@ -947,149 +947,203 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp2){
-    .especialistas-wrapper
-    {
-        display: inline-block;
-        .especialistasp
-        {
-            text-align: center;
-            font-weight: $titular;
-            font-size: 18px;
-            width: 100%;            
-            span
-            {
-                font-weight: $lighttitular;
-            }
-        }
-        .especialistas
-        {
-            .especialup, .especialdown
-            {
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                width: 80%;
-                margin-left:10%;
-                margin-bottom: 2em;
-            }
-            article
-            {
-                background-color: $yellow;
-                margin:-.5em 5% 0 5%;
-                padding:1em 3% 0 3%;
-                img
-                {
-                    width: 30%;
-                }
-                .imgas
-                {
-                    width: 15%;
-                    margin-top: 1em;
-                }
-                p
-                {
-                    font-size: 9px;
-                    text-align: left;
-                    width: 100%;
-                    margin-left: 2%;
-                }
-                .pgas
-                {
-                    margin-top: 3em;
-                }
-                a
-                {
-                    display: inline-block;
-                    width: 100%;
-                    height: 4em;
-                    text-align: center;
-                }
-                h2
-                {
-                   font-size: 14px;
-                   text-align: center;
-                   margin-top: 0.5em;
-                }
-            }
-        }
-    }
-}
-// @media only screen and (min-width: $bp3){
+// @media only screen and (min-width: $bp2){
 
 //     .especialistas-wrapper
-//     {
-//         display: inline-block;
+//     {   
+//         width:90%; 
+//         display: block;
+//         margin-left:5%;
+
+//        .especialup, .especialdown
+//         {
+//         display: -webkit-box;
+//         display: -moz-box;
+//         display: -ms-flexbox;
+//         display: -webkit-flex;
+//         display: flex;
+//         }
 //         .especialistasp
 //         {
 //             text-align: center;
 //             font-weight: $titular;
-//             font-size: 18px;
-//             width: 80%;
-//             margin: 1em 10% 2em;
+//             font-size: 20px;
+//             width: 100%;            
 //             span
 //             {
 //                 font-weight: $lighttitular;
 //             }
 //         }
+
+//     }
+//     .especialistas
+//     {
+//         img 
+//         {
+//             width: 50%;
+//         }
+   
+
+//             .calefaccion
+//             {
+//                 position: relative;
+//                 h2
+//                 {
+//                     position:absolute;
+//                     top:.5em;
+//                     left: 18%;
+//                     font-size: 16px;
+//                 }
+//             }
+//             .fontaneria
+//             {
+//                 margin-right: 7%;
+//                 position: relative;
+//                 h2
+//                 {
+//                     position:absolute;
+//                     top:.5em;
+//                     left: 17%;
+//                     font-size: 16px;
+
+//                 }
+//             }
+//             .gas
+//             {
+
+//                 position: relative;
+//                 h2
+//                 {
+//                     position:absolute;
+//                     top:.2em;
+//                     left: 27%;
+//                     font-size: 16px;
+//                 }
+//                 img{
+//                     width: 45%;
+//                 }
+//             }
+//             .aire
+//             {
+//                 position: relative;
+            
+//             h2
+//             {
+//                 position:absolute;
+//                 top:.5em;
+//                 left: 2%;
+//                 font-size: 16px;
+//             }
+
+//             }
+//  }
+// }
+
+// @media only screen and (min-width: $bp3){
+//     .especialistas-wrapper
+//     {
+
+//          width: 100%;
+//         .especialistasp
+//         {
+//             text-align: center;
+//             font-weight: $titular;
+//             font-size: 20px;
+//             width: 100%;            
+//             span
+//             {
+//                 font-weight: $lighttitular;
+//             }
+//         }
+
+//     }
+       
 //         .especialistas
-//         {   width: 80%;
+//         {     
+                
+//                 margin-left: 10%;
 //                 display: -webkit-box;
 //                 display: -moz-box;
 //                 display: -ms-flexbox;
 //                 display: -webkit-flex;
 //                 display: flex;
-//             .especialup, .especialdown
+//                 img 
+//                 {
+//                     width: 90%;
+//                 }
+//         }
+
+//             .calefaccion
 //             {
-                
-//             }
-//             article
-//             {
-//                 background-color: $yellow;
-//                 margin:-.5em 5% 0 5%;
-//                 padding:1em 3% 0 3%;
-//                 img
-//                 {
-//                     width: 30%;
-//                 }
-//                 .imgas
-//                 {
-//                     width: 15%;
-//                     margin-top: 1em;
-//                 }
-//                 p
-//                 {
-//                     font-size: 9px;
-//                     text-align: left;
-//                     width: 100%;
-//                     margin-left: 2%;
-//                 }
-//                 .pgas
-//                 {
-//                     margin-top: 3em;
-//                 }
-//                 a
-//                 {
-//                     display: inline-block;
-//                     width: 100%;
-//                     height: 4em;
-//                     text-align: center;
-//                 }
+//                 position: relative;
 //                 h2
 //                 {
-//                    font-size: 14px;
-//                    text-align: center;
-//                    margin-top: 0.5em;
+//                     position:absolute;
+//                     top:.5em;
+//                     left: 18%;
+//                     font-size: 16px;
 //                 }
 //             }
-//         }
-//     }
+//             .fontaneria
+//             {
+//                 margin-right: 7%;
+//                 position: relative;
+//                 h2
+//                 {
+//                     position:absolute;
+//                     top:.5em;
+//                     left: 17%;
+//                     font-size: 16px;
+
+//                 }
+//             }
+//             .gas
+//             {
+
+//                 position: relative;
+//                 h2
+//                 {
+//                     position:absolute;
+//                     top:.5em;
+//                     left: 27%;
+//                     font-size: 16px;
+//                 }
+//                 img 
+//                 {
+//                     width: 48%;
+//                 }
+//                 p 
+//                 {
+//                     width: 40%;
+//                 }
+//                 margin-left:5%; 
+//             }
+//             .aire
+//             {
+//                 position: relative;
+//                 margin-right:10%;
+            
+//             h2
+//             {
+//                 position:absolute;
+//                 top:.5em;
+//                 left: 2%;
+//                 font-size: 16px;
+
+//             }
+//                 img 
+//                 {
+//                     width:50%;
+//                 }
+//             }
 // }
 
 .team
 {
+.nosotros
+{
+    display: none;
+}
     width: 100%;
     .caracteristicas
     {
@@ -1107,6 +1161,10 @@ header
         flex-direction: column;
         background-color: $grey;
         padding: 3em 1.2em 1.2em 1.2em;
+        p 
+        {
+            font-size: 10px;
+        }
         article
         {
             display: -webkit-box;
@@ -1115,77 +1173,48 @@ header
             display: -webkit-flex;
             display: flex;
             width: 100%;
-            height: 5em;
-
-            // img
-            // {
-            //     width: 80%;
-            // }
-            // .especial
-            // {
-            //     width: 90%;
-            // }
-            // div
-            // {
-            //     margin: -1.7em 0 .8em 30%;
-            //     p
-            //     {
-            //         margin-top: -.6em;
-            //         font-size: 9px;
-            //     }
-            //     h2
-            //     {
-            //         font-size: 14px;
-            //     }
-            // }
-            // .especialdiv
-            // {
-            //     width: 80%;
-            // }
+            img
+            {
+                width:50px;
+                height: 45px;
+                padding:1em;
+            }
+            div
+            {
+                margin:.6em 0 0 10%;
+                
+                h2
+                {
+                    font-size: 14px;
+                    line-height:1em;
+                }
+            }
         }
         .legal
         {
-            a
+            img
             {
-                text-align: center;
-                width: 30%;
-                img
-                {
-                    width: 40%;
-                }
+                width:50px;
+                height: 50px;
+                padding:1em;
             }
             .especialdiv
             {
                 width: 70%;
-                p
-                {
-                    font-size: 9px;
-                }
+                
                 h2
                 {
                     font-size: 14px;
-                    margin-top: 0;
+                    
                 }
             }
         }
         .rapidez
         {
-            a
-            {
-                text-align: center;
-                width: 30%;
-                img
-                {
-                    width: 50%;
-                }
-            }
-            .especialdiv
+            div
             {
                 width: 70%;
-                p
-                {
-                    font-size: 9px;
-                }
+                
                 h2
                 {
                     font-size: 14px;
@@ -1195,22 +1224,10 @@ header
         }
         .precio, .seguridad, .calidad
         {
-            a
-            {
-                text-align: center;
-                width: 30%;
-                img
-                {
-                    width: 40%;
-                }
-            }
             div
             {
                 width: 70%;
-                p
-                {
-                    font-size: 9px;
-                }
+                
                 h2
                 {
                     font-size: 14px;
@@ -1221,39 +1238,7 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp2){
-    .caracteristicas
-    {
-        width: 70%;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        article
-        {
-        img
-            {
-                width: 60px;
-                height: 60px;
-            }
-            div 
-            {
-                margin: -1.7em 0 .8em 30%;
-                
-                p 
-                {
-                    margin-top: -.6em;
-                    font-size: 12px;
-                }
-                
-                h2
-                {
-                    font-size: 16px;
-                }
-            }
-        }
-    }
+@media only screen and (min-width: $bp2){ 
     .team
     {
         display: -webkit-box;
@@ -1262,51 +1247,398 @@ header
         display: -webkit-flex;
         display: flex; 
         width: 100%;
-        background-color:#E5E6E9;      
+        background-color:#E5E6E9;
+        .caracteristicas
+        {       
+            width: 70%;
+            border-right: 1px solid rgb(176,175,175);
+            article
+            {
+                img
+                {
+                    width:60px;
+                    height: 60px;
+                    margin: 1em 0;
+                }
+                
+            }
+            p
+            {
+                
+                font-size: 10px;
+            }
+            h2
+            {
+                font-size: 14px;
+                line-height:1em;
+            }
+            .legal
+            {
+                img
+                {
+                    width:60px;
+                    height: 60px;
+                    padding:1em;
+                }
+                .especialdiv
+                {
+                    width: 70%;
+                    
+                    h2
+                    {
+                        font-size: 14px;
+                        
+                    }
+                }
+            }      
+        }         
         .nosotros
         {
             display: block;
             width: 80%;
-            margin: 1em 5% 0 3%;
-            border-left: 1px solid rgb(176,175,175);
-            height: 35em;
-            padding-top:5em;
+            margin: 7em 5% 0 3%;            
+            height: 35em;      
             article
             {       
                 h5 
                 {
                     margin-left: 5%;
-                    font-size: 30px;                
+                    font-size: 40px;
+                    font-weight: $titular;
+                    span 
+                    {
+                        font-weight: $texto;
+                    }                
                 }
                 p 
                 {
                     margin-left: 5%;
+                    margin-top: -2em;
+                    font-size: 12px;
+                    line-height: 1.5em;
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){ 
+    .team
+    {
+        .caracteristicas
+        {           
+            p
+            {                
+                font-size: 12px;
+            }
+            .legal
+            {                
+                .especialdiv
+                {                    
+                    h2
+                    {
+                        font-size: 16px;
+                        
+                    }
+                }
+            }
+            .rapidez
+            {
+                div
+                {
+                    h2
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .precio, .seguridad, .calidad
+            {
+                div
+                {
+                    h2
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }         
+        .nosotros
+        {
+            margin: 4em 5% 0 3%;                
+            article
+            {       
+                h5 
+                {
+                    font-size: 55px;                
+                }
+                p 
+                {
+                    margin-top: -4em;
+                    font-size: 14px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){ 
+    .team
+    {
+        .caracteristicas
+        {  margin-left: 8%;         
+            p
+            {                
+                font-size: 14px;
+            }
+            .legal
+            {                
+                .especialdiv
+                {                    
+                    h2
+                    {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+            .rapidez
+            {
+                div
+                {
+                    h2
+                    {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .precio, .seguridad, .calidad
+            {
+                div
+                {
+                    h2
+                    {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }         
+        .nosotros
+        {
+            margin: 2em 5% 0 3%;                
+            article
+            {       
+                h5 
+                {
+                    font-size: 65px;                
+                }
+                p 
+                {
+                    margin-top: -5em;
                     font-size: 14px;
                 }
             }
         }
     }
 }
-.logosinstalacion
+.logosmarcas
 {
-    div
+    display: none;
+}
+.logosinstalacion
+{   
+    h1
     {
+      font-weight: $lighttitular;
+      text-align: center;
+      font-size: 16px;          
+      span
+      {
+        font-weight: $titular;
+      }  
+    }
+    .logosempresas{
+
+        img
+        {
+            width: 25%;
+            text-align: center;
+            margin: 1em 1% 1.5em 5%;
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+    .logosinstalacion
+    {
+        width: 90%;
+        margin-left: 5%;
         h1
         {
-          font-weight: $lighttitular;
-          text-align: center;
-          font-size: 20px;          
+          text-align: left;
+          font-size: 20px;
+          margin: 2em 0 1em 10%;          
+          span
+          {
+            font-size: 30px;
+          }  
+        }
+        div
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            margin-bottom: 2em;            
+            img 
+            {
+                height: 65px;
+            }
+        }
+    }
+    .logosmarcas
+    {
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        h2
+        {
+          font-weight: $texto;          
+          font-size: 20px;
+          margin: 1em 0 1em 18%;          
           span
           {
             font-weight: $titular;
           }  
         }
+        .marcas
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            margin-bottom: 4em;
+            margin-left: -5%;            
+            img 
+            {
+                width:50%;
+                height: 30px;
+                margin-left: 5%;
+            }
+        }
     }
-    img
+}
+@media only screen and (min-width: $bp3){
+    .logosinstalacion
+    { 
+        h1
+        {
+          font-size: 25px;          
+          span
+          {
+            font-size: 50px;
+          }  
+        }
+    }
+    .logosmarcas
     {
-        width: 30%;
-        text-align: center;
-        margin: 1em 1% 1.5em 1%;
+      
+        h2
+        {          
+          font-size: 26px;
+          margin-left: 15%;           
+        }
+        .marcas
+        {
+            margin: 1em 0 4em -5%;         
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .logosinstalacion
+    {
+        h1
+        {
+          font-size: 30px;         
+          span
+          {
+            font-size: 50px;
+          }  
+        }
+    }
+    .logosmarcas
+    {
+        margin-top: 5em;
+        width: 80%;
+        margin-left: 10%;
+        h2
+        {          
+          font-size: 30px;                   
+        }
+    }
+
+}
+@media only screen and (min-width: $bp5){
+    .logosinstalacion
+    {
+       h1
+        {
+          font-size: 40px;
+               
+          span
+          {
+            font-size: 60px;
+          }  
+        }
+    }
+    .logosmarcas
+    {
+        margin-top: 5em;
+        width: 80%;
+        margin-left: 10%;
+        h2
+        {          
+          font-size: 40px;
+          margin:0 0 1em 15%;
+                  
+        }
+        .marcas
+        {
+            margin-bottom: 4em;
+            margin-left: -5%;            
+            img 
+            {
+                width:20%;
+                height: 50px;
+                margin-left: 5%;
+            }
+
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .logosinstalacion
+    {
+        h1
+        {
+          font-size: 43px;
+               
+          span
+          {
+            font-size: 64px;
+          }  
+        }
+    }
+    .logosmarcas
+    {
+        margin-top: 5em;
+        margin-left: 10%;
+        h2
+        {          
+          font-size: 40px;
+          margin-left: 20%;       
+        }
     }
 }
 .contacto 
@@ -1326,8 +1658,7 @@ header
     }
 }
 .izda
-{
-    
+{    
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1354,8 +1685,7 @@ header
         width: 39px;
         height: 39px;
         margin-left: -12%;
-        margin-top: .3em;
-        
+        margin-top: .3em;        
     }
     .house
     {
@@ -1496,10 +1826,7 @@ footer
         font-size: 12px;
     }
 }
-.nosotros, .logosmarcas,
-{
-    display: none;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
