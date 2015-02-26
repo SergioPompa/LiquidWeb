@@ -608,9 +608,9 @@ header .logo {
       height: 14em; } }
 @media only screen and (min-width: 600px) {
   .especialistas-wrapper {
-    width: 90%;
+    width: 80%;
     display: block;
-    margin-left: 5%; }
+    margin-left: 15%; }
     .especialistas-wrapper p {
       font-size: 12px;
       width: 70%; }
@@ -661,7 +661,8 @@ header .logo {
       left: 2%; } }
 @media only screen and (min-width: 768px) {
   .especialistas-wrapper {
-    width: 100%; }
+    width: 80%;
+    margin-left: 15%; }
     .especialistas-wrapper .especialistasp {
       text-align: center;
       font-weight: 800;
@@ -671,54 +672,22 @@ header .logo {
         font-weight: 600; }
 
   .especialistas {
-    margin-left: 10%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
-    .especialistas img {
-      width: 90%; }
 
-  .calefaccion {
-    position: relative; }
-    .calefaccion h2 {
-      position: absolute;
-      top: .5em;
-      left: 18%;
-      font-size: 16px; }
+  .calefaccion img {
+    width: 120%; }
 
-  .fontaneria {
-    margin-right: 7%;
-    position: relative; }
-    .fontaneria h2 {
-      position: absolute;
-      top: .5em;
-      left: 17%;
-      font-size: 16px; }
+  .gas img {
+    width: 28%; }
+  .gas p {
+    width: 40%; }
 
-  .gas {
-    position: relative;
-    margin-left: 5%; }
-    .gas h2 {
-      position: absolute;
-      top: .5em;
-      left: 27%;
-      font-size: 16px; }
-    .gas img {
-      width: 48%; }
-    .gas p {
-      width: 40%; }
-
-  .aire {
-    position: relative; }
-    .aire h2 {
-      position: absolute;
-      top: .5em;
-      left: 2%;
-      font-size: 16px; }
-    .aire img {
-      width: 50%; } }
+  .aire img {
+    width: 80%; } }
 .team {
   width: 100%; }
   .team .nosotros {
@@ -1058,7 +1027,36 @@ header .logo {
     margin-top: 1.5em; }
 
   .dcha {
-    width: 50%; } }
+    width: 50%; }
+    .dcha p {
+      font-weight: 800;
+      font-size: 18px; }
+    .dcha .required_comentarios {
+      height: 8em; } }
+@media only screen and (min-width: 1024px) {
+  .izda .contactrow {
+    width: 70%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    margin-bottom: -1em; }
+    .izda .contactrow p {
+      margin-top: -.2em; } }
 @media only screen and (min-width: 1280px) {
   .contacto {
     display: -webkit-box;
@@ -1068,9 +1066,17 @@ header .logo {
     display: flex; }
     .contacto .contactext .contactpregunta {
       font-weight: 800;
-      font-size: 52px; }
+      font-size: 24px; }
     .contacto .contactext p {
-      font-size: 12px; } }
+      font-size: 12px; }
+
+  .izda {
+    margin-left: 10%; }
+
+  .dcha {
+    margin-right: 10%; }
+    .dcha p {
+      font-size: 24px; } }
 footer {
   background-color: #E5E6E9; }
   footer .social {
@@ -1079,16 +1085,37 @@ footer {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    padding: 1em; }
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    margin-left: 5%;
+    padding-top: 1em; }
+    footer .social .firma {
+      width: 60%;
+      font-size: 9px;
+      text-align: center;
+      margin-top: 1em; }
     footer .social .plus {
-      margin: .4em 0 0 40%; }
+      margin-right: 5%; }
+
+@media only screen and (min-width: 600px) {
+  footer {
+    background-color: #E5E6E9; }
+    footer .social {
+      width: 80%;
+      padding-top: 1em; }
+      footer .social .firma {
+        margin-left: 10%;
+        font-size: 9px; }
       footer .social .plus img {
         width: 30px;
-        height: 30px; }
-  footer p {
-    text-align: center;
-    font-size: 12px; }
-
+        margin-left: 150%; }
+    footer p {
+      text-align: center;
+      font-size: 12px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

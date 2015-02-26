@@ -951,9 +951,9 @@ header
 
     .especialistas-wrapper
     {   
-        width:90%; 
+        width:80%; 
         display: block;
-        margin-left:5%;
+        margin-left:15%;
         p 
         {
             font-size: 12px;
@@ -1044,7 +1044,9 @@ header
 @media only screen and (min-width: $bp3){
     .especialistas-wrapper
     {
-         width: 100%;
+         width: 80%;
+         margin-left: 15%;
+
         .especialistasp
         {
             text-align: center;
@@ -1060,77 +1062,45 @@ header
     .especialistas
     {     
             
-        margin-left: 10%;
+       
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        img 
-        {
-            width: 90%;
-        }
+         
+        
     }
     .calefaccion
     {
-        position: relative;
-        h2
+        img 
         {
-            position:absolute;
-            top:.5em;
-            left: 18%;
-            font-size: 16px;
+            width: 120%;
         }
     }
     .fontaneria
     {
-        margin-right: 7%;
-        position: relative;
-        h2
-        {
-            position:absolute;
-            top:.5em;
-            left: 17%;
-            font-size: 16px;
-
-        }
+       
     }
     .gas
     {
-        position: relative;
-        h2
-        {
-            position:absolute;
-            top:.5em;
-            left: 27%;
-            font-size: 16px;
-        }
+        
         img 
         {
-            width: 48%;
+            width: 28%;
         }
         p 
         {
             width: 40%;
         }
-        margin-left:5%; 
+       
     }
     .aire
     {
-        position: relative;
        
-    
-    h2
-    {
-        position:absolute;
-        top:.5em;
-        left: 2%;
-        font-size: 16px;
-
-    }
         img 
         {
-            width:50%;
+            width:80%;
         }
     }
 }
@@ -1702,23 +1672,23 @@ header
     }
     .contactrow
     {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;   
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;             
-    flex-direction: column;
-    margin-bottom: 1em;
-    p 
-    {
-        margin-top: -.8em;
-    }
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;   
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;             
+        flex-direction: column;
+        margin-bottom: 1em;
+        p 
+        {
+            margin-top: -.8em;
+        }
     }
 }
 .dcha
@@ -1770,6 +1740,47 @@ header
     .dcha
     {
     width: 50%;
+    p 
+    {
+        font-weight: $titular;
+                font-size: 18px;
+    }
+    .required_comentarios{
+        height: 8em;
+    }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .izda{
+    .contactrow
+    {
+        width: 70%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+       -moz-box-orient: horizontal;
+        -o-box-orient: horizontal;
+        flex-direction: row;
+
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -webkit-box-pack: justify;        
+        margin-bottom: -1em;
+        p 
+        {     
+            margin-top: -.2em;
+        }
+    }
     }
 }
 @media only screen and (min-width: $bp5){
@@ -1785,13 +1796,25 @@ header
             .contactpregunta
             {
                 font-weight: $titular;
-                font-size: 52px;
+                font-size: 24px;
             }
             p 
             {
             font-size: 12px;
             }
         }   
+    }
+    .izda
+    {
+    margin-left: 10%;
+    }
+    .dcha 
+    {
+        margin-right:10%; 
+        p 
+        {
+            font-size: 24px;
+        }
     }
 
 }
@@ -1804,25 +1827,68 @@ footer
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex;
-        padding:1em;
-        .plus
+        display: flex; 
+
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -webkit-box-pack: justify;  
+        margin-left: 5%;        
+        padding-top: 1em; 
+        .asefosam 
         {
-            margin:.4em 0 0 40%; 
-            img
-            {
-            width: 30px;
-            height: 30px;
-            }
+           
+        }
+        .firma
+        {
+            width:60%;
+            font-size: 9px;
+            text-align:center;
+            margin-top: 1em;
+            
+            
+        }
+        .plus 
+        {
+          margin-right: 5%;
         }
     }
-    p
+        
+}
+@media only screen and (min-width: $bp2){
+
+    footer
     {
-        text-align: center;
-        font-size: 12px;
+        background-color:#E5E6E9;
+        .social
+        {    
+            width: 80%;
+            padding-top: 1em; 
+            .firma 
+            {
+                margin-left: 10%;
+                font-size: 9px;
+            }       
+           
+            .plus
+            {
+               
+                img 
+                {
+                    width: 30px;
+                    margin-left: 150%;
+                }               
+            }
+        }
+        p
+        {
+            text-align: center;
+            font-size: 12px;
+        }
     }
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
