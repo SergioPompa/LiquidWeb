@@ -53,7 +53,7 @@ a
  * A better looking default horizontal rule
  */
 
-hr 
+hr
 {
     display: block;
     height: 1px;
@@ -74,7 +74,7 @@ canvas,
 iframe,
 img,
 svg,
-video 
+video
 {
     vertical-align: middle;
 }
@@ -83,7 +83,7 @@ video
  * Remove default fieldset styles.
  */
 
-fieldset 
+fieldset
 {
     border: 0;
     margin: 0;
@@ -94,7 +94,7 @@ fieldset
  * Allow only vertical resizing of textareas.
  */
 
-textarea 
+textarea
 {
     resize: vertical;
 }
@@ -103,7 +103,7 @@ textarea
    Browser Upgrade Prompt
    ========================================================================== */
 
-.browserupgrade 
+.browserupgrade
 {
     margin: 0.2em 0;
     background: #ccc;
@@ -139,21 +139,12 @@ body
 {
     display: none;
 }
-// @media only screen and (min-width: $bp5) {
-//     #org-content
-//     {
-//        background-color: rgb(255,255,255);
-//     }
-//     body
-//     {
-//         background-color: rgb(228,229,232);
-//     }
-// }
 header
 {
     .logo-a
     {
         display: inline-block;
+        margin-left: 8%;
     }
     .logo
     {
@@ -170,8 +161,7 @@ header
         {
             width: 73px;
             height: 101px;
-            padding:1.5em;
-
+            padding: 0.7em 1.5em 0em;
         }
     }
 }
@@ -185,35 +175,31 @@ header
     {
         img
         {
-        display: block;
-        max-width: 30px;
-        height: 30px;
-        margin:  -5.5em 0 3em 80%;
+            display: block;
+            max-width: 30px;
+            height: 25px;
+            margin:  -5.5em 0 3em 80%;
         }
     }
 }
 @media only screen and (min-width: $bp2){
     .menu-right
     {
-        margin: -7em 0 3em 35%;
+        margin: -6em 0 1em 35%;
         width: 60%;
         text-align: center;
-        p
-        {
-        font-size: 14px;
-        }
         .iconoMenu
         {
             display: none;
         }
         .menu-contact
         {
-            display: -webkit-box; 
-            display: -moz-box;     
-            display: -ms-flexbox;     
-            display: -webkit-flex;    
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
-            -webkit-flex-direction: column;   
+            -webkit-flex-direction: column;
             -moz-flex-direction: column;
             -ms-flex-direction: column;
             -o-box-orient: vertical;
@@ -225,6 +211,7 @@ header
             {
                 font-weight: $titular;
                 margin-left: 20%;
+                font-size: 14px;
             }
             a
             {
@@ -236,7 +223,7 @@ header
                 font-size: 16px;
                 font-weight: $texto;
             }
-            .mail 
+            .mail
             {
                 font-size: 13px;
                 margin-left: 1.5em;
@@ -245,30 +232,48 @@ header
     }
 }
 @media only screen and (min-width: $bp4){
-.menu-right{
-    .menu-contact
+    .menu-right
+    {
+        .menu-contact
         {
-            margin-top: -.7em;
-
+            margin: 0em auto 3.5em;
             p
             {
-                font-size:20px;
-                margin-left: 20%;
+                font-size: 18px;
             }
             .telcontact
             {
                 margin-top: -1em;
                 margin-bottom: -1em;
-                font-size:25px;
-                font-weight: $texto;
+                font-size: 18px;
             }
-            .mail 
+            .mail
             {
                 font-size: 18px;
-                margin-left: 1.5em;
             }
         }
+    }
 }
+@media only screen and (min-width: $bp6){
+    .menu-right
+    {
+        .menu-contact
+        {
+            margin: 0em auto 3.2em;
+            p
+            {
+                font-size: 20px;
+            }
+            .telcontact
+            {
+                font-size: 20px;
+            }
+            .mail
+            {
+                font-size: 20px;
+            }
+        }
+    }
 }
 #menu
 {
@@ -284,20 +289,22 @@ header
         {
             line-height: 3em;
             text-align: center;
-            border-bottom: 1px solid #ffffff;
             a
             {
                 display: inline;
                 color: #EEE;
                 text-decoration: none;
-                padding: 0.8em 0;
+                padding: 1.8em 10%;
+                font-size: 10px;
             }
         }
     }
-    .instalaciones
+    .instalacionesMenu
     {
         color: #EEE;
         text-align: center;
+        font-size: 10px;
+        line-height: 50px;
     }
     .selected
     {
@@ -322,21 +329,19 @@ header
     }
 }
 @media only screen and (min-width: $bp2){
-   .menu-nav
+    .menu-nav
     {
         display: -webkit-box !important;
         display: -moz-box !important;
         display: -ms-flexbox !important;
         display: -webkit-flex !important;
         display: flex !important;
-
         -webkit-justify-content: space-around;
         -ms-justify-content: space-around;
         -moz-justify-content: space-around;
         -ms-flex-pack: distribute;
         justify-content: space-around;
         -webkit-box-pack: justify;
-
         width: 100%;
         background-color: #ffffff;
         margin: 0 0 0 -5%;
@@ -347,14 +352,12 @@ header
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-
             -webkit-justify-content: space-around;
             -ms-justify-content: space-around;
             -moz-justify-content: space-around;
             -ms-flex-pack: distribute;
             justify-content: space-around;
             -webkit-box-pack: justify;
-
             width: 100%;
             margin: 0 0 0.5em 0;
             li
@@ -487,33 +490,29 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp4){
-    .cover
-    {
-        .cover-text
-        {
-            
-           
-            top:-.2em;
-            font-size: 35px;
-        }
-        .subcover-text
-        {
-            
-            font-size: 15px;
-            left: 15%;
-            top:8em;
-            
-        }
-    }
-}
 @media only screen and (min-width: $bp5){
     .cover
     {
         .cover-text
         {
+            top:-.2em;
+            font-size: 35px;
+        }
+        .subcover-text
+        {
+            font-size: 15px;
+            left: 15%;
+            top:8em;
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .cover
+    {
+        .cover-text
+        {
             font-weight: $texto2;
-            top:-.2em;        
+            top:-.2em;
             font-size: 40px;
         }
         .subcover-text
@@ -528,18 +527,17 @@ header
     }
 }
 .claim
-{   
+{
     background-color:$darkpurple;
     font-size:14px;
     color:#ffffff;
     padding:3em 0;
     text-align: center;
     font-weight:$texto;
-    p 
+    p
         {
             width: 90%;
             margin-left: 5%;
-            
         }
     .claimdisplay
     {
@@ -549,8 +547,8 @@ header
 @media only screen and (min-width: $bp2){
     .claim
     {
-        font-size: 14px;      
-        p 
+        font-size: 14px;
+        p
         {
             width: 90%;
             margin-left: 5%;
@@ -559,7 +557,7 @@ header
         {
             font-weight: $lighttitular;
             display: block;
-            font-size: 14px;                     
+            font-size: 14px;
         }
     }
 }
@@ -567,39 +565,36 @@ header
     .claim
     {
         font-size: 16px;
-
         .claimdisplay
         {
-           font-size: 18px;             
-        }
-    }
-}
-@media only screen and (min-width: $bp4){
-    .claim
-    {
-        font-size: 18px;
-
-        .claimdisplay
-        {
-           font-size: 20px;             
+           font-size: 18px;
         }
     }
 }
 @media only screen and (min-width: $bp5){
     .claim
     {
-        font-size: 20px;
-
+        font-size: 18px;
         .claimdisplay
         {
-           font-size: 25px;             
+           font-size: 20px;
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .claim
+    {
+        font-size: 20px;
+        .claimdisplay
+        {
+           font-size: 25px;
         }
     }
 }
 .tituloservicios2, .tipoestilo2, .tituloservicios3
-    {
-        display: none;
-    }
+{
+    display: none;
+}
 .serviciosdesktop
 {
     width: 90%;
@@ -624,8 +619,8 @@ header
     }
     article
     {
-         width: 100%;
-         img
+        width: 100%;
+        img
         {
             width: 37vw;
         }
@@ -675,7 +670,6 @@ header
         }
     }
 }
-
 @media only screen and (min-width: $bp2){
     .serviciosdesktop
     {
@@ -772,14 +766,13 @@ header
     }
     .cabecera
     {
-            margin-top: 1em;        
-            width: 100%;
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-       
+        margin-top: 1em;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
         .tituloservicios2
         {
             display: block;
@@ -803,8 +796,8 @@ header
             font-weight: $titular;
         }
     }
-        .serviciosdesktop
-        {
+    .serviciosdesktop
+    {
         width: 80%;
         margin-left: 10%; 
         margin-top: 0; 
@@ -835,7 +828,6 @@ header
             }
             .more
             {
-                
                 width: 40%;
                 text-align: center;
                 margin: 0 auto;
@@ -843,16 +835,15 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp4){
+@media only screen and (min-width: $bp5){
     .cabecera
     {
-          
         .tituloservicios2
         {
             font-size: 1.250em;
             margin-left: 16%;
             line-height: 1.5em;
-        }       
+        }
         .tituloservicios3
         {
             font-size: 1.36em;
@@ -879,34 +870,30 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp5){
+@media only screen and (min-width: $bp6){
     .cabecera
     {
-       margin-bottom: -.9em;   
+        margin-bottom: -.9em;
         .tituloservicios2
         {
             font-size: 1.4em;
             margin-left: 21%;
             line-height: 1.3em;
-
-        }       
+        }
         .tituloservicios3
         {
             font-size: 1.4em;
             margin-left: -18%;
-            
         }
         .tipoestilo2
         {
-           
             font-size: 1.9em;
-         
         }
     }
-        .serviciosdesktop
+    .serviciosdesktop
         {
         width: 60%;
-        margin-left: 20%; 
+        margin-left: 20%;
         article
         {
             p
@@ -916,28 +903,28 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp6){
+@media only screen and (min-width: $bp7){
     .cabecera
     {
-       margin-bottom: -.9em;   
+       margin-bottom: -.9em;
         .tituloservicios2
         {
             font-size: 1.6em;
-        }       
+        }
         .tituloservicios3
         {
             font-size: 1.6em;
-            margin-left: -19%;            
+            margin-left: -19%;
         }
         .tipoestilo2
-        {           
-            font-size: 1.9em;         
+        {
+            font-size: 1.9em;
         }
     }
-        .serviciosdesktop
+    .serviciosdesktop
         {
         width: 60%;
-        margin-left: 20%; 
+        margin-left: 20%;
         article
         {
             p
@@ -948,13 +935,12 @@ header
     }
 }
 @media only screen and (min-width: $bp2){
-
     .especialistas-wrapper
-    {   
-        width:80%; 
+    {
+        width:80%;
         display: block;
         margin-left:15%;
-        p 
+        p
         {
             font-size: 12px;
             width: 70%;
@@ -972,7 +958,7 @@ header
             text-align: center;
             font-weight: $titular;
             font-size: 20px;
-            width: 100%;            
+            width: 100%;
             span
             {
                 font-weight: $lighttitular;
@@ -981,11 +967,11 @@ header
     }
     .especialistas
     {
-        img 
+        img
         {
             width: 70%;
         }
-        h2 
+        h2
         {
             font-size: 12px;
         }
@@ -997,7 +983,6 @@ header
                 position:absolute;
                 top:.5em;
                 left: 18%;
-                
             }
         }
         .fontaneria
@@ -1009,8 +994,6 @@ header
                 position:absolute;
                 top:.5em;
                 left: 17%;
-               
-
             }
         }
         .gas
@@ -1021,7 +1004,6 @@ header
                 position:absolute;
                 top:.2em;
                 left: 27%;
-              
             }
             img{
                 width: 65%;
@@ -1035,12 +1017,10 @@ header
                 position:absolute;
                 top:.5em;
                 left: 2%;
-                
             }
         }
     }
 }
-
 @media only screen and (min-width: $bp3){
     .especialistas-wrapper
     {
@@ -1052,65 +1032,53 @@ header
             text-align: center;
             font-weight: $titular;
             font-size: 20px;
-            width: 100%;            
+            width: 100%;
             span
             {
                 font-weight: $lighttitular;
             }
         }
-    }       
+    }
     .especialistas
-    {     
-            
-       
+    {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-         
-        
     }
     .calefaccion
     {
-        img 
+        img
         {
             width: 120%;
         }
     }
-    .fontaneria
-    {
-       
-    }
     .gas
     {
-        
-        img 
+        img
         {
             width: 28%;
         }
-        p 
+        p
         {
             width: 40%;
         }
-       
     }
     .aire
     {
-       
-        img 
+        img
         {
             width:80%;
         }
     }
 }
-
 .team
 {
-.nosotros
-{
-    display: none;
-}
+    .nosotros
+    {
+        display: none;
+    }
     width: 100%;
     .caracteristicas
     {
@@ -1128,7 +1096,7 @@ header
         flex-direction: column;
         background-color: $grey;
         padding: 3em 1.2em 1.2em 1.2em;
-        p 
+        p
         {
             font-size: 10px;
         }
@@ -1149,10 +1117,9 @@ header
             div
             {
                 margin:.6em 0 0 10%;
-                
                 h2
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     line-height:1em;
                 }
             }
@@ -1168,11 +1135,9 @@ header
             .especialdiv
             {
                 width: 70%;
-                
                 h2
                 {
-                    font-size: 14px;
-                    
+                    font-size: 12px;
                 }
             }
         }
@@ -1181,10 +1146,9 @@ header
             div
             {
                 width: 70%;
-                
                 h2
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     margin-top: 0;
                 }
             }
@@ -1194,10 +1158,9 @@ header
             div
             {
                 width: 70%;
-                
                 h2
                 {
-                    font-size: 14px;
+                    font-size: 12px;
                     margin-top: 0;
                     margin-bottom: 0;
                 }
@@ -1205,18 +1168,18 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp2){ 
+@media only screen and (min-width: $bp2){
     .team
     {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex; 
+        display: flex;
         width: 100%;
         background-color:#E5E6E9;
         .caracteristicas
-        {       
+        {
             width: 70%;
             border-right: 1px solid rgb(176,175,175);
             article
@@ -1227,11 +1190,9 @@ header
                     height: 60px;
                     margin: 1em 0;
                 }
-                
             }
             p
             {
-                
                 font-size: 10px;
             }
             h2
@@ -1250,62 +1211,58 @@ header
                 .especialdiv
                 {
                     width: 70%;
-                    
                     h2
                     {
                         font-size: 14px;
-                        
                     }
                 }
-            }      
-        }         
+            }
+        }
         .nosotros
         {
             display: block;
             width: 80%;
-            margin: 7em 5% 0 3%;            
-            height: 35em;      
+            margin: 7em 5% 0 3%;
+            height: 35em;
             article
-            {       
-                h5 
+            {
+                h5
                 {
                     margin-left: 5%;
                     font-size: 40px;
                     font-weight: $titular;
-                    span 
+                    span
                     {
                         font-weight: $texto;
-                    }                
+                    }
                 }
-                p 
+                p
                 {
                     margin-left: 5%;
                     margin-top: -2em;
                     font-size: 12px;
                     line-height: 1.5em;
                 }
-
             }
         }
     }
 }
-@media only screen and (min-width: $bp4){ 
+@media only screen and (min-width: $bp5){
     .team
     {
         .caracteristicas
-        {           
+        {
             p
-            {                
+            {
                 font-size: 12px;
             }
             .legal
-            {                
+            {
                 .especialdiv
-                {                    
+                {
                     h2
                     {
                         font-size: 16px;
-                        
                     }
                 }
             }
@@ -1329,17 +1286,17 @@ header
                     }
                 }
             }
-        }         
+        }
         .nosotros
         {
-            margin: 4em 5% 0 3%;                
+            margin: 4em 5% 0 3%;
             article
-            {       
-                h5 
+            {
+                h5
                 {
-                    font-size: 55px;                
+                    font-size: 55px;
                 }
-                p 
+                p
                 {
                     margin-top: -4em;
                     font-size: 14px;
@@ -1349,23 +1306,22 @@ header
         }
     }
 }
-@media only screen and (min-width: $bp5){ 
+@media only screen and (min-width: $bp6){
     .team
     {
         .caracteristicas
-        {  margin-left: 8%;         
+        {  margin-left: 8%;
             p
-            {                
+            {
                 font-size: 14px;
             }
             .legal
-            {                
+            {
                 .especialdiv
-                {                    
+                {
                     h2
                     {
                         font-size: 18px;
-                        
                     }
                 }
             }
@@ -1389,17 +1345,17 @@ header
                     }
                 }
             }
-        }         
+        }
         .nosotros
         {
-            margin: 2em 5% 0 3%;                
+            margin: 2em 5% 0 3%;
             article
-            {       
-                h5 
+            {
+                h5
                 {
-                    font-size: 65px;                
+                    font-size: 65px;
                 }
-                p 
+                p
                 {
                     margin-top: -5em;
                     font-size: 14px;
@@ -1408,24 +1364,25 @@ header
         }
     }
 }
-.logosmarcas
-{
-    display: none;
-}
 .logosinstalacion
-{   
+{
+    width: 90%;
+    margin: 0 5%;
     h1
     {
-      font-weight: $lighttitular;
-      text-align: center;
-      font-size: 16px;          
-      span
-      {
-        font-weight: $titular;
-      }  
+        width: 60%;
+        margin: 1.5em auto 0;
+        font-weight: $texto;
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        span
+        {
+            font-weight: $titular;
+            font-size: 22px;
+        }
     }
     .logosempresas{
-
         img
         {
             width: 25%;
@@ -1434,6 +1391,10 @@ header
         }
     }
 }
+.logosmarcas
+{
+    display: none;
+}
 @media only screen and (min-width: $bp2){
     .logosinstalacion
     {
@@ -1441,13 +1402,13 @@ header
         margin-left: 5%;
         h1
         {
-          text-align: left;
-          font-size: 20px;
-          margin: 2em 0 1em 10%;          
-          span
-          {
-            font-size: 30px;
-          }  
+            text-align: left;
+            font-size: 20px;
+            margin: 2em 0 1em 10%;
+            span
+            {
+                font-size: 30px;
+            }
         }
         div
         {
@@ -1456,8 +1417,8 @@ header
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            margin-bottom: 2em;            
-            img 
+            margin-bottom: 2em;
+            img
             {
                 height: 70px;
             }
@@ -1470,13 +1431,13 @@ header
         margin-left: 5%;
         h2
         {
-          font-weight: $texto;          
-          font-size: 20px;
-          margin: 1em 0 1em 18%;          
-          span
-          {
-            font-weight: $titular;
-          }  
+            font-weight: $texto;
+            font-size: 20px;
+            margin: 1em 0 1em 18%;
+            span
+            {
+                font-weight: $titular;
+            }
         }
         .marcas
         {
@@ -1486,8 +1447,8 @@ header
             display: -webkit-flex;
             display: flex;
             margin-bottom: 4em;
-            margin-left: -5%;            
-            img 
+            margin-left: -5%;
+            img
             {
                 width:50%;
                 height: 30px;
@@ -1498,64 +1459,39 @@ header
 }
 @media only screen and (min-width: $bp3){
     .logosinstalacion
-    { 
+    {
         h1
         {
-          font-size: 25px;          
-          span
-          {
-            font-size: 50px;
-          }  
+            font-size: 25px;
+            span
+            {
+                font-size: 50px;
+            }
         }
     }
     .logosmarcas
     {
-      
         h2
-        {          
-          font-size: 26px;
-          margin-left: 15%;           
+        {
+            font-size: 26px;
+            margin-left: 15%;
         }
         .marcas
         {
-            margin: 1em 0 4em -5%;         
-        }
-    }
-}
-@media only screen and (min-width: $bp4){
-    .logosinstalacion
-    {
-        h1
-        {
-          font-size: 30px;         
-          span
-          {
-            font-size: 50px;
-          }  
-        }
-    }
-    .logosmarcas
-    {
-        margin-top: 5em;
-        width: 80%;
-        margin-left: 10%;
-        h2
-        {          
-          font-size: 30px;                   
+            margin: 1em 0 4em -5%;
         }
     }
 }
 @media only screen and (min-width: $bp5){
     .logosinstalacion
     {
-       h1
+        h1
         {
-          font-size: 40px;
-               
-          span
-          {
-            font-size: 60px;
-          }  
+            font-size: 30px;
+            span
+            {
+                font-size: 50px;
+            }
         }
     }
     .logosmarcas
@@ -1564,36 +1500,56 @@ header
         width: 80%;
         margin-left: 10%;
         h2
-        {          
-          font-size: 40px;
-          margin:0 0 1em 15%;
-                  
-        }
-        .marcas
         {
-            margin-bottom: 4em;
-            margin-left: -5%;            
-            img 
-            {
-                width:20%;
-                height: 50px;
-                margin-left: 5%;
-            }
-
+            font-size: 30px;
         }
     }
 }
 @media only screen and (min-width: $bp6){
     .logosinstalacion
     {
+       h1
+        {
+            font-size: 40px;
+            span
+            {
+                font-size: 60px;
+            }
+        }
+    }
+    .logosmarcas
+    {
+        margin-top: 5em;
+        width: 80%;
+        margin-left: 10%;
+        h2
+        {
+            font-size: 40px;
+            margin:0 0 1em 15%;
+        }
+        .marcas
+        {
+            margin-bottom: 4em;
+            margin-left: -5%;
+            img
+            {
+                width:20%;
+                height: 50px;
+                margin-left: 5%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp7){
+    .logosinstalacion
+    {
         h1
         {
-          font-size: 43px;
-               
-          span
-          {
-            font-size: 64px;
-          }  
+            font-size: 43px;
+            span
+            {
+                font-size: 64px;
+            }
         }
     }
     .logosmarcas
@@ -1601,42 +1557,42 @@ header
         margin-top: 5em;
         margin-left: 10%;
         h2
-        {          
+        {
           font-size: 40px;
-          margin-left: 20%;       
+          margin-left: 20%;
         }
     }
 }
-.contacto 
+.contacto
 {
     background-color: $darkpurple;
-    color: #ffffff; 
+    color: #ffffff;
     height: auto;
     padding:1em 5% 3em 5%;
     .contactpregunta
     {
         margin-left: -1%;
     }
-    .contactext 
-    {        
+    .contactext
+    {
         margin: -1.5em 0 2em 0;
         width: 90%;
     }
 }
 .izda
-{    
+{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;   
+    -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     -o-box-orient: vertical;
     -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;             
-    flex-direction: column;    
+    -moz-box-orient: vertical;
+    flex-direction: column;
     article
     {
         width: 100%;
@@ -1651,22 +1607,21 @@ header
         width: 39px;
         height: 39px;
         margin-left: -12%;
-        margin-top: .3em;        
+        margin-top: .3em;
     }
     .house
     {
-       margin-top: -.7em; 
+       margin-top: -.7em;
     }
     div
     {
         margin-left: 10%;
-        
     }
-    p 
+    p
     {
         font-size: 14px;
     }
-    a 
+    a
     {
         color: #ffffff;
     }
@@ -1677,15 +1632,15 @@ header
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-        -webkit-flex-direction: column;   
+        -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         -o-box-orient: vertical;
         -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;             
+        -moz-box-orient: vertical;
         flex-direction: column;
         margin-bottom: 1em;
-        p 
+        p
         {
             margin-top: -.8em;
         }
@@ -1693,7 +1648,7 @@ header
 }
 .dcha
 {
-    p 
+    p
     {
         text-align: center;
     }
@@ -1712,111 +1667,112 @@ header
     }
 }
 @media only screen and (min-width: $bp2){
-    .contacto 
+    .contacto
     {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-        .contactext
-        {            
-            .contactpregunta
-            {
-                font-weight: $titular;
-                font-size: 18px;
-            }
-            p 
-            {
-            font-size: 12px;
-            }
-        }   
-    }
-    .izda
-    {
-    width: 60%;
-    margin-top: 1.5em;
-    }
-    .dcha
-    {
-    width: 50%;
-    p 
-    {
-        font-weight: $titular;
-                font-size: 18px;
-    }
-    .required_comentarios{
-        height: 8em;
-    }
-    }
-}
-@media only screen and (min-width: $bp4){
-    .izda{
-    .contactrow
-    {
-        width: 70%;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        -webkit-box-orient: horizontal;
-       -moz-box-orient: horizontal;
-        -o-box-orient: horizontal;
-        flex-direction: row;
-
-        -webkit-justify-content: space-between;
-        -ms-justify-content: space-between;
-        -moz-justify-content: space-between;
-        -ms-flex-pack: distribute;
-        justify-content: space-between;
-        -webkit-box-pack: justify;        
-        margin-bottom: -1em;
-        p 
-        {     
-            margin-top: -.2em;
+        .contactext
+        {
+            .contactpregunta
+            {
+                font-weight: $titular;
+                font-size: 18px;
+            }
+            p
+            {
+            font-size: 12px;
+            }
         }
     }
+    .izda
+    {
+        width: 60%;
+        margin-top: 1.5em;
+    }
+    .dcha
+    {
+        width: 50%;
+        p
+        {
+            font-weight: $titular;
+            font-size: 18px;
+        }
+        .required_comentarios
+        {
+            height: 8em;
+        }
     }
 }
 @media only screen and (min-width: $bp5){
-    .contacto 
+    .izda
     {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+        .contactrow
+        {
+            width: 70%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            -webkit-box-orient: horizontal;
+           -moz-box-orient: horizontal;
+            -o-box-orient: horizontal;
+            flex-direction: row;
+
+            -webkit-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-flex-pack: distribute;
+            justify-content: space-between;
+            -webkit-box-pack: justify;
+            margin-bottom: -1em;
+            p
+            {
+                margin-top: -.2em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .contacto
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
         .contactext
-        {            
+        {
             .contactpregunta
             {
                 font-weight: $titular;
                 font-size: 24px;
             }
-            p 
+            p
             {
-            font-size: 12px;
+                font-size: 12px;
             }
-        }   
+        }
     }
     .izda
     {
-    margin-left: 10%;
+        margin-left: 10%;
     }
-    .dcha 
+    .dcha
     {
         margin-right:10%; 
-        p 
+        p
         {
             font-size: 24px;
         }
     }
-
 }
 footer
 {
@@ -1827,59 +1783,48 @@ footer
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex; 
-
+        display: flex;
         -webkit-justify-content: space-between;
         -ms-justify-content: space-between;
         -moz-justify-content: space-between;
         -ms-flex-pack: distribute;
         justify-content: space-between;
-        -webkit-box-pack: justify;  
-        margin-left: 5%;        
-        padding-top: 1em; 
-        .asefosam 
-        {
-           
-        }
+        -webkit-box-pack: justify;
+        margin-left: 5%;
+        padding-top: 1em;
         .firma
         {
             width:60%;
             font-size: 9px;
             text-align:center;
             margin-top: 1em;
-            
-            
         }
-        .plus 
+        .plus
         {
-          margin-right: 5%;
+            margin-right: 5%;
         }
     }
-        
 }
 @media only screen and (min-width: $bp2){
-
     footer
     {
         background-color:#E5E6E9;
         .social
-        {    
+        {
             width: 80%;
-            padding-top: 1em; 
-            .firma 
+            padding-top: 1em;
+            .firma
             {
                 margin-left: 10%;
                 font-size: 9px;
-            }       
-           
+            }
             .plus
             {
-               
-                img 
+                img
                 {
                     width: 30px;
                     margin-left: 150%;
-                }               
+                }
             }
         }
         p
@@ -1898,7 +1843,7 @@ footer
  * http://juicystudio.com/article/screen-readers-display-none.php
  */
 
-.hidden 
+.hidden
 {
     display: none !important;
     visibility: hidden;
@@ -1909,7 +1854,7 @@ footer
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.visuallyhidden 
+.visuallyhidden
 {
     border: 0;
     clip: rect(0 0 0 0);

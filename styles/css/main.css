@@ -107,7 +107,8 @@ body {
   display: none; }
 
 header .logo-a {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 8%; }
 header .logo {
   display: inline-block;
   width: 55px;
@@ -118,22 +119,20 @@ header .logo {
   header .logo {
     width: 73px;
     height: 101px;
-    padding: 1.5em; } }
+    padding: 0.7em 1.5em 0em; } }
 .menu-right .menu-nav, .menu-right .menu-contact {
   display: none; }
 .menu-right .iconoMenu img {
   display: block;
   max-width: 30px;
-  height: 30px;
+  height: 25px;
   margin: -5.5em 0 3em 80%; }
 
 @media only screen and (min-width: 600px) {
   .menu-right {
-    margin: -7em 0 3em 35%;
+    margin: -6em 0 1em 35%;
     width: 60%;
     text-align: center; }
-    .menu-right p {
-      font-size: 14px; }
     .menu-right .iconoMenu {
       display: none; }
     .menu-right .menu-contact {
@@ -152,7 +151,8 @@ header .logo {
       width: 100%; }
       .menu-right .menu-contact p {
         font-weight: 800;
-        margin-left: 20%; }
+        margin-left: 20%;
+        font-size: 14px; }
       .menu-right .menu-contact a {
         display: none; }
       .menu-right .menu-contact .telcontact {
@@ -162,20 +162,26 @@ header .logo {
       .menu-right .menu-contact .mail {
         font-size: 13px;
         margin-left: 1.5em; } }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 900px) {
   .menu-right .menu-contact {
-    margin-top: -.7em; }
+    margin: 0em auto 3.5em; }
     .menu-right .menu-contact p {
-      font-size: 20px;
-      margin-left: 20%; }
+      font-size: 18px; }
     .menu-right .menu-contact .telcontact {
       margin-top: -1em;
       margin-bottom: -1em;
-      font-size: 25px;
-      font-weight: 300; }
+      font-size: 18px; }
     .menu-right .menu-contact .mail {
-      font-size: 18px;
-      margin-left: 1.5em; } }
+      font-size: 18px; } }
+@media only screen and (min-width: 1280px) {
+  .menu-right .menu-contact {
+    margin: 0em auto 3.2em; }
+    .menu-right .menu-contact p {
+      font-size: 20px; }
+    .menu-right .menu-contact .telcontact {
+      font-size: 20px; }
+    .menu-right .menu-contact .mail {
+      font-size: 20px; } }
 #menu {
   display: none;
   margin: 2em 0 0;
@@ -186,16 +192,18 @@ header .logo {
     margin: 0; }
     #menu ul li {
       line-height: 3em;
-      text-align: center;
-      border-bottom: 1px solid #ffffff; }
+      text-align: center; }
       #menu ul li a {
         display: inline;
         color: #EEE;
         text-decoration: none;
-        padding: 0.8em 0; }
-  #menu .instalaciones {
+        padding: 1.8em 10%;
+        font-size: 10px; }
+  #menu .instalacionesMenu {
     color: #EEE;
-    text-align: center; }
+    text-align: center;
+    font-size: 10px;
+    line-height: 50px; }
   #menu .selected {
     background: #F59B23; }
   #menu .instalacionesList {
@@ -723,7 +731,7 @@ header .logo {
       .team .caracteristicas article div {
         margin: .6em 0 0 10%; }
         .team .caracteristicas article div h2 {
-          font-size: 14px;
+          font-size: 12px;
           line-height: 1em; }
     .team .caracteristicas .legal img {
       width: 50px;
@@ -732,16 +740,16 @@ header .logo {
     .team .caracteristicas .legal .especialdiv {
       width: 70%; }
       .team .caracteristicas .legal .especialdiv h2 {
-        font-size: 14px; }
+        font-size: 12px; }
     .team .caracteristicas .rapidez div {
       width: 70%; }
       .team .caracteristicas .rapidez div h2 {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 0; }
     .team .caracteristicas .precio div, .team .caracteristicas .seguridad div, .team .caracteristicas .calidad div {
       width: 70%; }
       .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 0;
         margin-bottom: 0; }
 
@@ -825,19 +833,26 @@ header .logo {
     .team .nosotros article p {
       margin-top: -5em;
       font-size: 14px; } }
+.logosinstalacion {
+  width: 90%;
+  margin: 0 5%; }
+  .logosinstalacion h1 {
+    width: 60%;
+    margin: 1.5em auto 0;
+    font-weight: 300;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px; }
+    .logosinstalacion h1 span {
+      font-weight: 800;
+      font-size: 22px; }
+  .logosinstalacion .logosempresas img {
+    width: 25%;
+    text-align: center;
+    margin: 1em 1% 1.5em 5%; }
+
 .logosmarcas {
   display: none; }
-
-.logosinstalacion h1 {
-  font-weight: 600;
-  text-align: center;
-  font-size: 16px; }
-  .logosinstalacion h1 span {
-    font-weight: 800; }
-.logosinstalacion .logosempresas img {
-  width: 25%;
-  text-align: center;
-  margin: 1em 1% 1.5em 5%; }
 
 @media only screen and (min-width: 600px) {
   .logosinstalacion {
