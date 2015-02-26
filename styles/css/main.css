@@ -606,6 +606,119 @@ header .logo {
     margin-left: 20%; }
     .serviciosdesktop article p {
       height: 14em; } }
+@media only screen and (min-width: 600px) {
+  .especialistas-wrapper {
+    width: 90%;
+    display: block;
+    margin-left: 5%; }
+    .especialistas-wrapper p {
+      font-size: 12px;
+      width: 70%; }
+    .especialistas-wrapper .especialup, .especialistas-wrapper .especialdown {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    .especialistas-wrapper .especialistasp {
+      text-align: center;
+      font-weight: 800;
+      font-size: 20px;
+      width: 100%; }
+      .especialistas-wrapper .especialistasp span {
+        font-weight: 600; }
+
+  .especialistas img {
+    width: 70%; }
+  .especialistas h2 {
+    font-size: 12px; }
+  .especialistas .calefaccion {
+    position: relative; }
+    .especialistas .calefaccion h2 {
+      position: absolute;
+      top: .5em;
+      left: 18%; }
+  .especialistas .fontaneria {
+    margin-right: 7%;
+    position: relative; }
+    .especialistas .fontaneria h2 {
+      position: absolute;
+      top: .5em;
+      left: 17%; }
+  .especialistas .gas {
+    position: relative; }
+    .especialistas .gas h2 {
+      position: absolute;
+      top: .2em;
+      left: 27%; }
+    .especialistas .gas img {
+      width: 65%; }
+  .especialistas .aire {
+    position: relative; }
+    .especialistas .aire h2 {
+      position: absolute;
+      top: .5em;
+      left: 2%; } }
+@media only screen and (min-width: 768px) {
+  .especialistas-wrapper {
+    width: 100%; }
+    .especialistas-wrapper .especialistasp {
+      text-align: center;
+      font-weight: 800;
+      font-size: 20px;
+      width: 100%; }
+      .especialistas-wrapper .especialistasp span {
+        font-weight: 600; }
+
+  .especialistas {
+    margin-left: 10%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .especialistas img {
+      width: 90%; }
+
+  .calefaccion {
+    position: relative; }
+    .calefaccion h2 {
+      position: absolute;
+      top: .5em;
+      left: 18%;
+      font-size: 16px; }
+
+  .fontaneria {
+    margin-right: 7%;
+    position: relative; }
+    .fontaneria h2 {
+      position: absolute;
+      top: .5em;
+      left: 17%;
+      font-size: 16px; }
+
+  .gas {
+    position: relative;
+    margin-left: 5%; }
+    .gas h2 {
+      position: absolute;
+      top: .5em;
+      left: 27%;
+      font-size: 16px; }
+    .gas img {
+      width: 48%; }
+    .gas p {
+      width: 40%; }
+
+  .aire {
+    position: relative; }
+    .aire h2 {
+      position: absolute;
+      top: .5em;
+      left: 2%;
+      font-size: 16px; }
+    .aire img {
+      width: 50%; } }
 .team {
   width: 100%; }
   .team .nosotros {
@@ -775,7 +888,7 @@ header .logo {
       display: flex;
       margin-bottom: 2em; }
       .logosinstalacion div img {
-        height: 65px; }
+        height: 70px; }
 
   .logosmarcas {
     display: block;
