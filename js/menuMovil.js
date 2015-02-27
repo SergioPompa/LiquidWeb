@@ -40,7 +40,7 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
 
 //función para gestionar la apertura del menú apartado de instalaciones
 
-  $('.instalaciones').on('click', gestionaInstalaciones);
+  $('.instalacionesMenu').on('click', gestionaInstalaciones);
 
 
   function gestionaInstalaciones()
