@@ -100,7 +100,6 @@ body {
   color: #1F264A; }
 
 #org-content {
-  max-width: 1400px;
   margin: 0 auto; }
 
 .instalaciones, .especialistas-wrapper {
@@ -174,46 +173,48 @@ header .logo {
     .menu-right .menu-contact .mail {
       font-size: 18px; } }
 @media only screen and (min-width: 1280px) {
-  .menu-right .menu-contact {
-    margin: 0em auto 3.2em; }
-    .menu-right .menu-contact p {
-      font-size: 20px; }
-    .menu-right .menu-contact .telcontact {
-      font-size: 20px; }
-    .menu-right .menu-contact .mail {
-      font-size: 20px; } }
-#menu {
+  .menu-right {
+    margin: -6em 0 1em 40%; }
+    .menu-right .menu-contact {
+      margin: 0em auto 3.2em; }
+      .menu-right .menu-contact p {
+        font-size: 20px; }
+      .menu-right .menu-contact .telcontact {
+        font-size: 20px; }
+      .menu-right .menu-contact .mail {
+        font-size: 20px; } }
+.menu-nav {
   display: none;
   margin: 2em 0 0;
   background: #1F264A;
   width: 100%; }
-  #menu ul {
+  .menu-nav ul {
     padding: 0;
     margin: 0; }
-    #menu ul li {
+    .menu-nav ul li {
       line-height: 3em;
       text-align: center; }
-      #menu ul li a {
+      .menu-nav ul li a {
         display: inline;
         color: #EEE;
         text-decoration: none;
         padding: 1.8em 10%;
         font-size: 10px; }
-  #menu .instalacionesMenu {
+  .menu-nav .instalacionesMenu {
     color: #EEE;
     text-align: center;
     font-size: 10px;
     line-height: 50px; }
-  #menu .selected {
+  .menu-nav .selected {
     background: #F59B23; }
-  #menu .instalacionesList {
+  .menu-nav .instalacionesList {
     display: none; }
-    #menu .instalacionesList li {
+    .menu-nav .instalacionesList li {
       background: #FFFFFF;
       line-height: 3em;
       text-align: center;
       border-bottom: 1px solid #1F264A; }
-      #menu .instalacionesList li a {
+      .menu-nav .instalacionesList li a {
         display: inline;
         color: #1F264A;
         padding: 0.8em 0; }
@@ -232,8 +233,7 @@ header .logo {
     justify-content: space-around;
     -webkit-box-pack: justify;
     width: 100%;
-    background-color: #ffffff;
-    margin: 0 0 0 -5%; }
+    background-color: #1F264A; }
     .menu-nav ul {
       display: -webkit-box;
       display: -moz-box;
@@ -248,19 +248,38 @@ header .logo {
       -webkit-box-pack: justify;
       width: 100%;
       margin: 0 0 0.5em 0; }
-      .menu-nav ul li a {
-        font-size: 16px;
-        color: #1F264A;
-        margin: 0;
-        padding: 0;
-        position: relative; }
-      .menu-nav ul li li:hover {
-        background-color: 3px solid #F59B23;
-        -webkit-transition: width 1s;
-        /* For Safari 3.1 to 6.0 */
-        transition: width 1s; }
+      .menu-nav ul li {
+        width: 25%; }
+        .menu-nav ul li a {
+          color: #FFFFFF; }
+        .menu-nav ul li li:hover {
+          background-color: 3px solid #F59B23;
+          -webkit-transition: width 1s;
+          /* For Safari 3.1 to 6.0 */
+          transition: width 1s; }
       .menu-nav ul #phone-movil {
         display: none; } }
+@media only screen and (min-width: 768px) {
+  .menu-nav ul {
+    width: 80%;
+    margin: 0 0 0 20%; }
+    .menu-nav ul li {
+      width: 20%; } }
+@media only screen and (min-width: 900px) {
+  .menu-nav ul {
+    width: 60%;
+    margin: 0 7% 0 38%; }
+    .menu-nav ul li {
+      width: 15%; }
+    .menu-nav ul .efiEner {
+      width: 25%; } }
+@media only screen and (min-width: 1024px) {
+  .menu-nav ul li a {
+    font-size: 12px; }
+  .menu-nav ul .efiEner {
+    width: 27%; }
+  .menu-nav ul .instalacionesMenu {
+    font-size: 12px; } }
 .menu-movil {
   width: 100%;
   height: 50px;
@@ -306,58 +325,52 @@ header .logo {
     .cover .cover-text span {
       font-weight: 800; }
   .cover .subcover-text {
-    width: 70%;
+    width: 60%;
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 8em;
-    left: 15%; }
+    top: 7em;
+    left: 20%; }
 
 @media only screen and (min-width: 600px) {
   .cover .cover-text {
+    font-weight: 300;
     width: 80%;
     left: 10%;
-    top: .5em;
-    font-size: 20px; }
+    font-size: 18px;
+    line-height: 20px; }
   .cover .subcover-text {
-    width: 80%;
-    font-size: 12px;
-    top: 7em;
-    left: 10%; } }
+    width: 50%;
+    font-size: 10px;
+    top: 7.5em;
+    left: 25%; } }
 @media only screen and (min-width: 768px) {
   .cover .cover-text {
-    width: 80%;
-    left: 10%;
-    font-size: 25px; }
+    font-size: 24px;
+    line-height: 24px; }
   .cover .subcover-text {
-    width: 70%;
     font-size: 14px;
-    top: 7em;
-    left: 15%; } }
+    top: 7em; } }
 @media only screen and (min-width: 1024px) {
   .cover .cover-text {
-    top: -.2em;
-    font-size: 35px; }
+    font-size: 32px;
+    line-height: 32px; }
   .cover .subcover-text {
-    font-size: 15px;
-    left: 15%;
+    font-size: 16px;
     top: 8em; } }
 @media only screen and (min-width: 1280px) {
   .cover .cover-text {
-    font-weight: 300;
-    top: -.2em;
-    font-size: 40px; }
+    font-size: 38px;
+    line-height: 38px; }
   .cover .subcover-text {
     width: 70%;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    top: 7em;
+    font-size: 17px;
+    top: 9em;
     left: 15%; } }
 .claim {
   background-color: #1F264A;
   font-size: 14px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 3em 0;
   text-align: center;
   font-weight: 300; }
@@ -368,30 +381,29 @@ header .logo {
     display: none; }
 
 @media only screen and (min-width: 600px) {
-  .claim {
-    font-size: 14px; }
-    .claim p {
-      width: 90%;
-      margin-left: 5%; }
-    .claim .claimdisplay {
-      font-weight: 600;
-      display: block;
-      font-size: 14px; } }
+  .claim .claimdisplay {
+    font-weight: 700;
+    display: block;
+    font-size: 14px; } }
 @media only screen and (min-width: 768px) {
   .claim {
+    padding: 2em 0 3em;
     font-size: 16px; }
+    .claim p {
+      margin-bottom: 0.3em; }
     .claim .claimdisplay {
-      font-size: 18px; } }
+      margin-top: 0em;
+      font-size: 16px; } }
 @media only screen and (min-width: 1024px) {
   .claim {
     font-size: 18px; }
     .claim .claimdisplay {
-      font-size: 20px; } }
+      font-size: 18px; } }
 @media only screen and (min-width: 1280px) {
   .claim {
     font-size: 20px; }
     .claim .claimdisplay {
-      font-size: 25px; } }
+      font-size: 20px; } }
 .tituloservicios2, .tipoestilo2, .tituloservicios3 {
   display: none; }
 
@@ -464,7 +476,7 @@ header .logo {
     margin: 1.5em 27%;
     line-height: 18px;
     text-align: center; }
-  .serviciosdesktop article img {
+  .serviciosdesktop article .imgServicios {
     width: 45%; }
   .serviciosdesktop article h2 {
     width: 45%;
@@ -522,18 +534,18 @@ header .logo {
     .cabecera .tituloservicios2 {
       display: block;
       width: 50%;
-      font-size: 1.1em;
-      margin-left: 11.5%;
+      font-size: 16px;
+      margin-left: 13.2%;
       line-height: 1.2em; }
     .cabecera .tituloservicios3 {
       display: block;
       width: 50%;
-      font-size: 1.1em;
-      margin-left: -8%;
+      font-size: 16px;
+      margin-left: -6%;
       line-height: 1.2em; }
     .cabecera .tipoestilo2 {
       display: block;
-      font-size: 1.875em;
+      font-size: 32px;
       font-weight: 800; }
 
   .serviciosdesktop {
@@ -546,156 +558,271 @@ header .logo {
     display: -webkit-flex;
     display: flex; }
     .serviciosdesktop article p {
-      width: 90%;
-      font-size: 12px;
-      margin: 1.5em 5%;
+      width: 80%;
+      font-size: 10px;
+      margin: 1.5em 10%;
       height: 18em;
       text-align: center; }
-    .serviciosdesktop article img {
-      width: 85%; }
+    .serviciosdesktop article .imgServicios {
+      width: 66%; }
     .serviciosdesktop article h2 {
-      width: 85%;
-      margin: 0 8% 0.7em;
-      font-size: 10px; }
+      width: 66%;
+      margin: 0 17% 0.7em;
+      font-size: 9px; }
     .serviciosdesktop article .more {
       width: 40%;
       text-align: center;
       margin: 0 auto; } }
 @media only screen and (min-width: 1024px) {
   .cabecera .tituloservicios2 {
-    font-size: 1.250em;
-    margin-left: 16%;
-    line-height: 1.5em; }
+    font-size: 18px;
+    margin-left: 13%;
+    line-height: 1.2em; }
   .cabecera .tituloservicios3 {
-    font-size: 1.36em;
-    margin-left: -13%;
-    line-height: 1.3em; }
+    font-size: 18px;
+    margin-left: -6%;
+    line-height: 1.2em; }
   .cabecera .tipoestilo2 {
     display: block;
-    font-size: 1.875em;
+    font-size: 36px;
     font-weight: 800; }
 
   .serviciosdesktop {
-    width: 70%;
-    margin-left: 15%; }
+    width: 80%;
+    margin-left: 10%; }
     .serviciosdesktop article p {
-      height: 14em; } }
+      height: 16em;
+      width: 66%;
+      margin: 1.5em 17%; }
+    .serviciosdesktop article .imgServicios {
+      width: 66%; }
+    .serviciosdesktop article h2 {
+      width: 66%;
+      margin: 0 17% 0.7em;
+      font-size: 10px; } }
 @media only screen and (min-width: 1280px) {
-  .cabecera {
-    margin-bottom: -.9em; }
-    .cabecera .tituloservicios2 {
-      font-size: 1.4em;
-      margin-left: 21%;
-      line-height: 1.3em; }
-    .cabecera .tituloservicios3 {
-      font-size: 1.4em;
-      margin-left: -18%; }
-    .cabecera .tipoestilo2 {
-      font-size: 1.9em; }
+  .cabecera .tituloservicios2 {
+    font-size: 22px;
+    line-height: 1.3em;
+    margin-top: 3em; }
+  .cabecera .tituloservicios3 {
+    font-size: 22px;
+    margin-top: 3.2em; }
+  .cabecera .tipoestilo2 {
+    font-size: 44px; }
 
-  .serviciosdesktop {
-    width: 60%;
-    margin-left: 20%; }
-    .serviciosdesktop article p {
-      height: 14em; } }
+  article p {
+    max-width: 66%;
+    margin: 1.5em auto; }
+  article .imgServicios {
+    max-width: 66%; }
+  article h2 {
+    max-width: 66%;
+    margin: 0 auto 0.7em; }
+  article .more {
+    max-width: 25%;
+    margin: 0 auto; } }
 @media only screen and (min-width: 1400px) {
-  .cabecera {
-    margin-bottom: -.9em; }
-    .cabecera .tituloservicios2 {
-      font-size: 1.6em; }
-    .cabecera .tituloservicios3 {
-      font-size: 1.6em;
-      margin-left: -19%; }
-    .cabecera .tipoestilo2 {
-      font-size: 1.9em; }
-
-  .serviciosdesktop {
-    width: 60%;
-    margin-left: 20%; }
-    .serviciosdesktop article p {
-      height: 14em; } }
+  .wrapperServiciosdesktop {
+    max-width: 1270px;
+    margin: 0 auto; }
+    .wrapperServiciosdesktop .cabecera {
+      position: relative; }
+      .wrapperServiciosdesktop .cabecera .tituloservicios2 {
+        position: absolute;
+        left: -4.3%;
+        top: -5em; }
+      .wrapperServiciosdesktop .cabecera .tituloservicios3 {
+        position: absolute;
+        left: 59.7%;
+        top: -5em; }
+      .wrapperServiciosdesktop .cabecera .tipoestilo2 {
+        font-size: 44px; }
+    .wrapperServiciosdesktop .serviciosdesktop {
+      width: 90%;
+      margin: 8em auto 0;
+      padding-top: 2em; }
+      .wrapperServiciosdesktop .serviciosdesktop article p {
+        height: 12em; } }
 @media only screen and (min-width: 600px) {
   .especialistas-wrapper {
     width: 80%;
     display: block;
-    margin-left: 15%; }
-    .especialistas-wrapper p {
-      font-size: 12px;
-      width: 70%; }
-    .especialistas-wrapper .especialup, .especialistas-wrapper .especialdown {
+    margin: 0 auto; }
+    .especialistas-wrapper .especialistasp {
+      text-align: center;
+      font-weight: 300;
+      font-size: 20px;
+      width: 100%;
+      margin-top: 3em; }
+      .especialistas-wrapper .especialistasp span {
+        font-weight: 800; }
+    .especialistas-wrapper .especialup {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
-      display: flex; }
-    .especialistas-wrapper .especialistasp {
-      text-align: center;
-      font-weight: 800;
-      font-size: 20px;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-pack: justify;
       width: 100%; }
-      .especialistas-wrapper .especialistasp span {
-        font-weight: 600; }
-
-  .especialistas img {
-    width: 70%; }
-  .especialistas h2 {
-    font-size: 12px; }
-  .especialistas .calefaccion {
-    position: relative; }
-    .especialistas .calefaccion h2 {
-      position: absolute;
-      top: .5em;
-      left: 18%; }
-  .especialistas .fontaneria {
-    margin-right: 7%;
-    position: relative; }
-    .especialistas .fontaneria h2 {
-      position: absolute;
-      top: .5em;
-      left: 17%; }
-  .especialistas .gas {
-    position: relative; }
-    .especialistas .gas h2 {
-      position: absolute;
-      top: .2em;
-      left: 27%; }
-    .especialistas .gas img {
-      width: 65%; }
-  .especialistas .aire {
-    position: relative; }
-    .especialistas .aire h2 {
-      position: absolute;
-      top: .5em;
-      left: 2%; } }
+      .especialistas-wrapper .especialup article {
+        position: relative;
+        margin: 0 auto 1em;
+        width: 40%; }
+        .especialistas-wrapper .especialup article p {
+          font-size: 8px; }
+        .especialistas-wrapper .especialup article .imgEspecialistas {
+          width: 100%;
+          margin: 0 auto; }
+        .especialistas-wrapper .especialup article h2 {
+          font-size: 12px;
+          width: 100%;
+          text-align: center; }
+      .especialistas-wrapper .especialup .calefaccion h2 {
+        position: absolute;
+        top: .5em; }
+      .especialistas-wrapper .especialup .fontaneria h2 {
+        position: absolute;
+        top: .5em; }
+    .especialistas-wrapper .especialdown {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-pack: justify;
+      width: 100%; }
+      .especialistas-wrapper .especialdown article {
+        position: relative;
+        margin: 0 auto 1em;
+        width: 40%; }
+        .especialistas-wrapper .especialdown article p {
+          font-size: 8px; }
+        .especialistas-wrapper .especialdown article .imgEspecialistas {
+          width: 100%;
+          margin: 0 auto; }
+        .especialistas-wrapper .especialdown article h2 {
+          font-size: 12px;
+          width: 100%;
+          text-align: center; }
+      .especialistas-wrapper .especialdown .gas h2 {
+        position: absolute;
+        top: .5em; }
+      .especialistas-wrapper .especialdown .aire h2 {
+        position: absolute;
+        top: .5em; } }
 @media only screen and (min-width: 768px) {
-  .especialistas-wrapper {
-    width: 80%;
-    margin-left: 15%; }
-    .especialistas-wrapper .especialistasp {
-      text-align: center;
-      font-weight: 800;
-      font-size: 20px;
-      width: 100%; }
-      .especialistas-wrapper .especialistasp span {
-        font-weight: 600; }
-
   .especialistas {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
-
-  .calefaccion img {
-    width: 120%; }
-
-  .gas img {
-    width: 28%; }
-  .gas p {
-    width: 40%; }
-
-  .aire img {
-    width: 80%; } }
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-pack: justify;
+    width: 100%; }
+    .especialistas .especialup {
+      width: 50%; }
+      .especialistas .especialup article {
+        margin: 0 auto 1em;
+        width: 40%; }
+        .especialistas .especialup article p {
+          font-size: 8px; }
+        .especialistas .especialup article .imgEspecialistas {
+          width: 100%;
+          margin: 0 auto; }
+        .especialistas .especialup article h2 {
+          font-size: 10px;
+          width: 100%;
+          text-align: center; }
+    .especialistas .especialdown {
+      width: 50%; }
+      .especialistas .especialdown article {
+        margin: 0 auto 1em;
+        width: 40%; }
+        .especialistas .especialdown article p {
+          font-size: 8px; }
+        .especialistas .especialdown article .imgEspecialistas {
+          width: 100%;
+          margin: 0 auto; }
+        .especialistas .especialdown article h2 {
+          font-size: 10px;
+          width: 100%;
+          text-align: center; } }
+@media only screen and (min-width: 1024px) {
+  .especialistas-wrapper {
+    margin-bottom: 4em; }
+    .especialistas-wrapper .especialistasp {
+      font-size: 24px;
+      margin-top: 4em; }
+    .especialistas-wrapper .especialistas .especialup article h2 {
+      font-size: 12px; }
+    .especialistas-wrapper .especialistas .especialup article p {
+      font-size: 10px;
+      margin-top: 1.5em; }
+    .especialistas-wrapper .especialistas .especialdown article h2 {
+      font-size: 12px; }
+    .especialistas-wrapper .especialistas .especialdown article p {
+      font-size: 10px;
+      margin-top: 1.5em; } }
+@media only screen and (min-width: 1280px) {
+  .especialistas-wrapper {
+    max-width: 1270px;
+    margin: 0 auto;
+    margin-bottom: 4em; }
+    .especialistas-wrapper .especialistasp {
+      font-size: 24px;
+      margin-top: 4em; }
+    .especialistas-wrapper .especialistas .especialup {
+      width: 50%; }
+      .especialistas-wrapper .especialistas .especialup article {
+        width: 50%;
+        margin: 0 auto; }
+        .especialistas-wrapper .especialistas .especialup article .imgEspecialistas {
+          width: 70%;
+          margin-left: 15%; }
+        .especialistas-wrapper .especialistas .especialup article h2 {
+          font-size: 12px;
+          margin-left: 15%;
+          padding-top: 1em; }
+        .especialistas-wrapper .especialistas .especialup article p {
+          width: 100%;
+          font-size: 10px;
+          margin: 1.5em auto 0; }
+    .especialistas-wrapper .especialistas .especialdown {
+      width: 50%; }
+      .especialistas-wrapper .especialistas .especialdown article {
+        width: 50%;
+        margin: 0 auto; }
+        .especialistas-wrapper .especialistas .especialdown article .imgEspecialistas {
+          width: 70%;
+          margin-left: 15%; }
+        .especialistas-wrapper .especialistas .especialdown article h2 {
+          font-size: 12px;
+          margin-left: 15%;
+          padding-top: 1em; }
+        .especialistas-wrapper .especialistas .especialdown article p {
+          width: 100%;
+          font-size: 10px;
+          margin: 1.5em auto 0; } }
+@media only screen and (min-width: 1400px) {
+  .especialistas-wrapper .especialistas {
+    max-width: 1270px;
+    margin: 0 auto; } }
 .team {
   width: 100%; }
   .team .nosotros {
@@ -763,20 +890,20 @@ header .logo {
     width: 100%;
     background-color: #E5E6E9; }
     .team .caracteristicas {
-      width: 70%;
+      width: 50%;
       border-right: 1px solid #b0afaf; }
-      .team .caracteristicas article img {
-        width: 60px;
-        height: 60px;
-        margin: 1em 0; }
-      .team .caracteristicas p {
-        font-size: 10px; }
-      .team .caracteristicas h2 {
-        font-size: 14px;
-        line-height: 1em; }
+      .team .caracteristicas article {
+        margin-bottom: 1em; }
+        .team .caracteristicas article img {
+          width: 45px;
+          height: 45px;
+          margin: 1em 0; }
+        .team .caracteristicas article h2 {
+          font-size: 14px;
+          line-height: 1em; }
       .team .caracteristicas .legal img {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         padding: 1em; }
       .team .caracteristicas .legal .especialdiv {
         width: 70%; }
@@ -784,48 +911,70 @@ header .logo {
           font-size: 14px; }
     .team .nosotros {
       display: block;
-      width: 80%;
-      margin: 7em 5% 0 3%;
-      height: 35em; }
-      .team .nosotros article h5 {
-        margin-left: 5%;
-        font-size: 40px;
-        font-weight: 800; }
-        .team .nosotros article h5 span {
-          font-weight: 300; }
-      .team .nosotros article p {
-        margin-left: 5%;
-        margin-top: -2em;
-        font-size: 12px;
-        line-height: 1.5em; } }
-@media only screen and (min-width: 1024px) {
-  .team .caracteristicas p {
-    font-size: 12px; }
-  .team .caracteristicas .legal .especialdiv h2 {
-    font-size: 16px; }
-  .team .caracteristicas .rapidez div h2 {
-    font-size: 16px; }
-  .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
-    font-size: 16px; }
+      width: 50%;
+      margin: 7em 5% 0; }
+      .team .nosotros article {
+        margin-left: 5%; }
+        .team .nosotros article h5 {
+          line-height: 32px;
+          font-size: 34px;
+          font-weight: 800; }
+          .team .nosotros article h5 span {
+            font-weight: 300;
+            font-size: 32px; }
+        .team .nosotros article p {
+          margin-top: -2em;
+          font-size: 12px;
+          line-height: 1.5em; } }
+@media only screen and (min-width: 768px) {
+  .team .caracteristicas {
+    padding-left: 8%; }
   .team .nosotros {
-    margin: 4em 5% 0 3%; }
+    padding-right: 8%; }
+    .team .nosotros article {
+      margin-left: 0; } }
+@media only screen and (min-width: 1024px) {
+  .team .caracteristicas article {
+    margin-bottom: 1em; }
+    .team .caracteristicas article p {
+      font-size: 12px; }
+  .team .caracteristicas .legal .especialdiv h2 {
+    font-size: 14px; }
+  .team .caracteristicas .rapidez div h2 {
+    font-size: 14px; }
+  .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
+    font-size: 14px; }
+  .team .nosotros {
+    margin: 6em 4% 0; }
     .team .nosotros article h5 {
-      font-size: 55px; }
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 2em; }
+      .team .nosotros article h5 span {
+        font-weight: 300;
+        font-size: 38px; }
     .team .nosotros article p {
       margin-top: -4em;
-      font-size: 14px;
-      width: 80%; } }
+      font-size: 14px; } }
 @media only screen and (min-width: 1280px) {
   .team .caracteristicas {
     margin-left: 8%; }
-    .team .caracteristicas p {
-      font-size: 14px; }
+    .team .caracteristicas article {
+      margin-bottom: 1em; }
+      .team .caracteristicas article p {
+        font-size: 14px;
+        margin-top: 0.8em; }
+      .team .caracteristicas article img {
+        width: 50px;
+        height: 50px;
+        margin: 1em 0; }
     .team .caracteristicas .legal .especialdiv h2 {
-      font-size: 18px; }
+      font-size: 16px;
+      margin-bottom: 0; }
     .team .caracteristicas .rapidez div h2 {
-      font-size: 18px; }
+      font-size: 16px; }
     .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
-      font-size: 18px; }
+      font-size: 16px; }
   .team .nosotros {
     margin: 2em 5% 0 3%; }
     .team .nosotros article h5 {
@@ -1196,72 +1345,3 @@ footer {
 
 .clearfix:after {
   clear: both; }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster:
-       http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group; }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }

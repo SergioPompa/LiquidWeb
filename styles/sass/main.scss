@@ -131,7 +131,6 @@ body
 }
 #org-content
 {
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -257,6 +256,7 @@ header
 @media only screen and (min-width: $bp6){
     .menu-right
     {
+        margin: -6em 0 1em 40%;
         .menu-contact
         {
             margin: 0em auto 3.2em;
@@ -275,7 +275,7 @@ header
         }
     }
 }
-#menu
+.menu-nav
 {
     display: none;
     margin: 2em 0 0;
@@ -343,8 +343,7 @@ header
         justify-content: space-around;
         -webkit-box-pack: justify;
         width: 100%;
-        background-color: #ffffff;
-        margin: 0 0 0 -5%;
+        background-color: $darkpurple;;
         ul
         {
             display: -webkit-box;
@@ -362,13 +361,10 @@ header
             margin: 0 0 0.5em 0;
             li
             {
+                width: 25%;
                 a
                 {
-                    font-size: 16px;
-                    color: $darkpurple;
-                    margin: 0;
-                    padding: 0;
-                    position: relative;
+                    color: $white;
                 }
                 li:hover
                 {
@@ -380,6 +376,61 @@ header
             #phone-movil
             {
                 display: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .menu-nav
+    {
+        ul
+        {
+            width: 80%;
+            margin: 0 0 0 20%;
+            li
+            {
+                width: 20%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .menu-nav
+    {
+        ul
+        {
+            width: 60%;
+            margin: 0 7% 0 38%;
+            li
+            {
+                width: 15%;
+            }
+            .efiEner
+            {
+                width: 25%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .menu-nav
+    {
+        ul
+        {
+            li
+            {
+                a
+                {
+                    font-size: 12px;
+                }
+            }
+            .efiEner
+            {
+                width: 27%;
+            }
+            .instalacionesMenu
+            {
+                font-size: 12px;
             }
         }
     }
@@ -445,12 +496,12 @@ header
     }
     .subcover-text
     {
-        width: 70%;
+        width: 60%;
         text-align: center;
         font-size: .6em;
         position: absolute;
-        top:8em;
-        left: 15%;
+        top:7em;
+        left: 20%;
     }
 }
 @media only screen and (min-width: $bp2){
@@ -458,17 +509,18 @@ header
     {
         .cover-text
         {
+            font-weight: $texto2;
             width: 80%;
             left: 10%;
-            top: .5em;
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 20px;
         }
         .subcover-text
         {
-            width: 80%;
-            font-size: 12px;
-            top:7em;
-            left: 10%;
+            width: 50%;
+            font-size: 10px;
+            top:7.5em;
+            left: 25%;
         }
     }
 }
@@ -477,16 +529,13 @@ header
     {
         .cover-text
         {
-            width: 80%;
-            left: 10%;
-            font-size: 25px;
+            font-size: 24px;
+            line-height: 24px;
         }
         .subcover-text
         {
-            width: 70%;
             font-size: 14px;
             top:7em;
-            left: 15%;
         }
     }
 }
@@ -495,13 +544,12 @@ header
     {
         .cover-text
         {
-            top:-.2em;
-            font-size: 35px;
+            font-size: 32px;
+            line-height: 32px;
         }
         .subcover-text
         {
-            font-size: 15px;
-            left: 15%;
+            font-size: 16px;
             top:8em;
         }
     }
@@ -511,17 +559,14 @@ header
     {
         .cover-text
         {
-            font-weight: $texto2;
-            top:-.2em;
-            font-size: 40px;
+            font-size: 38px;
+            line-height: 38px;
         }
         .subcover-text
         {
             width: 70%;
-            text-align: center;
-            font-size: 20px;
-            position: absolute;
-            top:7em;
+            font-size: 17px;
+            top:9em;
             left: 15%;
         }
     }
@@ -530,15 +575,15 @@ header
 {
     background-color:$darkpurple;
     font-size:14px;
-    color:#ffffff;
+    color: $white;
     padding:3em 0;
     text-align: center;
-    font-weight:$texto;
+    font-weight: $texto;
     p
-        {
-            width: 90%;
-            margin-left: 5%;
-        }
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
     .claimdisplay
     {
         display: none;
@@ -547,15 +592,9 @@ header
 @media only screen and (min-width: $bp2){
     .claim
     {
-        font-size: 14px;
-        p
-        {
-            width: 90%;
-            margin-left: 5%;
-        }
         .claimdisplay
         {
-            font-weight: $lighttitular;
+            font-weight: $titular2;
             display: block;
             font-size: 14px;
         }
@@ -564,10 +603,16 @@ header
 @media only screen and (min-width: $bp3){
     .claim
     {
+        padding:2em 0 3em;
         font-size: 16px;
+        p
+        {
+            margin-bottom: 0.3em;
+        }
         .claimdisplay
         {
-           font-size: 18px;
+           margin-top: 0em;
+           font-size: 16px;
         }
     }
 }
@@ -577,7 +622,7 @@ header
         font-size: 18px;
         .claimdisplay
         {
-           font-size: 20px;
+           font-size: 18px;
         }
     }
 }
@@ -587,7 +632,7 @@ header
         font-size: 20px;
         .claimdisplay
         {
-           font-size: 25px;
+           font-size: 20px;
         }
     }
 }
@@ -703,7 +748,7 @@ header
                 line-height: 18px;
                 text-align: center;
             }
-            img
+            .imgServicios
             {
                 width: 45%;
             }
@@ -777,30 +822,30 @@ header
         {
             display: block;
             width: 50%;
-            font-size: 1.1em;
-            margin-left: 11.5%;
+            font-size: 16px;
+            margin-left: 13.2%;
             line-height: 1.2em;
         }
         .tituloservicios3
         {
             display: block;
             width: 50%;
-            font-size: 1.1em;
-            margin-left: -8%;
+            font-size: 16px;
+            margin-left: -6%;
             line-height: 1.2em;
         }
         .tipoestilo2
         {
             display: block;
-            font-size: 1.875em;
+            font-size: 32px;
             font-weight: $titular;
         }
     }
     .serviciosdesktop
     {
         width: 80%;
-        margin-left: 10%; 
-        margin-top: 0; 
+        margin-left: 10%;
+        margin-top: 0;
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -810,21 +855,21 @@ header
         {
             p
             {
-                width:90%;
-                font-size: 12px;
-                margin: 1.5em 5%;
+                width:80%;
+                font-size: 10px;
+                margin: 1.5em 10%;
                 height: 18em;
                 text-align: center;
             }
-            img
+            .imgServicios
             {
-                width:85%;
+                width:66%;
             }
             h2
             {
-                width: 85%;
-                margin: 0 8% 0.7em;
-                font-size: 10px;
+                width: 66%;
+                margin: 0 17% 0.7em;
+                font-size: 9px;
             }
             .more
             {
@@ -840,32 +885,44 @@ header
     {
         .tituloservicios2
         {
-            font-size: 1.250em;
-            margin-left: 16%;
-            line-height: 1.5em;
+            font-size: 18px;
+            margin-left: 13%;
+            line-height: 1.2em;
         }
         .tituloservicios3
         {
-            font-size: 1.36em;
-            margin-left: -13%;
-            line-height: 1.3em;
+            font-size: 18px;
+            margin-left: -6%;
+            line-height: 1.2em;
         }
         .tipoestilo2
         {
             display: block;
-            font-size: 1.875em;
+            font-size: 36px;
             font-weight: $titular;
         }
     }
-        .serviciosdesktop
-        {
-        width: 70%;
-        margin-left: 15%; 
+    .serviciosdesktop
+    {
+        width: 80%;
+        margin-left: 10%;
         article
         {
             p
             {
-                height: 14em;
+                height: 16em;
+                width:66%;
+                margin: 1.5em 17%;
+            }
+            .imgServicios
+            {
+                width:66%;
+            }
+            h2
+            {
+                width: 66%;
+                margin: 0 17% 0.7em;
+                font-size: 10px;
             }
         }
     }
@@ -873,63 +930,81 @@ header
 @media only screen and (min-width: $bp6){
     .cabecera
     {
-        margin-bottom: -.9em;
         .tituloservicios2
         {
-            font-size: 1.4em;
-            margin-left: 21%;
+            font-size: 22px;
             line-height: 1.3em;
+            margin-top: 3em;
         }
         .tituloservicios3
         {
-            font-size: 1.4em;
-            margin-left: -18%;
+            font-size: 22px;
+            margin-top: 3.2em;
         }
         .tipoestilo2
         {
-            font-size: 1.9em;
+            font-size: 44px;
         }
     }
-    .serviciosdesktop
+    article
+    {
+        p
         {
-        width: 60%;
-        margin-left: 20%;
-        article
+            max-width:66%;
+            margin: 1.5em auto;
+        }
+        .imgServicios
         {
-            p
-            {
-                height: 14em;
-            }
+            max-width:66%;
+        }
+        h2
+        {
+            max-width: 66%;
+            margin: 0 auto 0.7em;
+        }
+        .more
+        {
+            max-width: 25%;
+            margin: 0 auto;
         }
     }
 }
 @media only screen and (min-width: $bp7){
-    .cabecera
+    .wrapperServiciosdesktop
     {
-       margin-bottom: -.9em;
-        .tituloservicios2
+        max-width: $ancho_max;
+        margin: 0 auto;
+        .cabecera
         {
-            font-size: 1.6em;
-        }
-        .tituloservicios3
-        {
-            font-size: 1.6em;
-            margin-left: -19%;
-        }
-        .tipoestilo2
-        {
-            font-size: 1.9em;
-        }
-    }
-    .serviciosdesktop
-        {
-        width: 60%;
-        margin-left: 20%;
-        article
-        {
-            p
+            position: relative;
+            .tituloservicios2
             {
-                height: 14em;
+                position: absolute;
+                left: -4.3%;
+                top: -5em;
+            }
+            .tituloservicios3
+            {
+                position: absolute;
+                left: 59.7%;
+                top: -5em;
+            }
+            .tipoestilo2
+            {
+                font-size: 44px;
+            }
+        }
+        .serviciosdesktop
+        {
+            width: 90%;
+            margin: 8em auto 0;
+            padding-top: 2em;
+            article
+            {
+                p
+                {
+                    height: 12em;
+                }
             }
         }
     }
@@ -939,106 +1014,126 @@ header
     {
         width:80%;
         display: block;
-        margin-left:15%;
-        p
+        margin: 0 auto;
+        .especialistasp
         {
-            font-size: 12px;
-            width: 70%;
+            text-align: center;
+            font-weight: $texto;
+            font-size: 20px;
+            width: 100%;
+            margin-top: 3em;
+            span
+            {
+                font-weight: $titular;
+            }
         }
-       .especialup, .especialdown
+       .especialup
         {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-        }
-        .especialistasp
-        {
-            text-align: center;
-            font-weight: $titular;
-            font-size: 20px;
+            -webkit-justify-content: space-around;
+            -ms-justify-content: space-around;
+            -moz-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-pack: justify;
             width: 100%;
-            span
+            article
             {
-                font-weight: $lighttitular;
+                position: relative;
+                margin: 0 auto 1em;
+                width: 40%;
+                p
+                {
+                    font-size: 8px;
+                }
+                .imgEspecialistas
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                h2
+                {
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .calefaccion
+            {
+                h2
+                {
+                    position:absolute;
+                    top:.5em;
+                }
+            }
+            .fontaneria
+            {
+                h2
+                {
+                    position:absolute;
+                    top:.5em;
+                }
             }
         }
-    }
-    .especialistas
-    {
-        img
+        .especialdown
         {
-            width: 70%;
-        }
-        h2
-        {
-            font-size: 12px;
-        }
-        .calefaccion
-        {
-            position: relative;
-            h2
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-around;
+            -ms-justify-content: space-around;
+            -moz-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-pack: justify;
+            width: 100%;
+            article
             {
-                position:absolute;
-                top:.5em;
-                left: 18%;
+                position: relative;
+                margin: 0 auto 1em;
+                width: 40%;
+                p
+                {
+                    font-size: 8px;
+                }
+                .imgEspecialistas
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                h2
+                {
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: center;
+                }
             }
-        }
-        .fontaneria
-        {
-            margin-right: 7%;
-            position: relative;
-            h2
+            .gas
             {
-                position:absolute;
-                top:.5em;
-                left: 17%;
+                h2
+                {
+                    position:absolute;
+                    top:.5em;
+                }
             }
-        }
-        .gas
-        {
-            position: relative;
-            h2
+            .aire
             {
-                position:absolute;
-                top:.2em;
-                left: 27%;
-            }
-            img{
-                width: 65%;
-            }
-        }
-        .aire
-        {
-            position: relative;
-            h2
-            {
-                position:absolute;
-                top:.5em;
-                left: 2%;
+                h2
+                {
+                    position:absolute;
+                    top:.5em;
+                }
             }
         }
     }
 }
 @media only screen and (min-width: $bp3){
-    .especialistas-wrapper
-    {
-         width: 80%;
-         margin-left: 15%;
-
-        .especialistasp
-        {
-            text-align: center;
-            font-weight: $titular;
-            font-size: 20px;
-            width: 100%;
-            span
-            {
-                font-weight: $lighttitular;
-            }
-        }
-    }
     .especialistas
     {
         display: -webkit-box;
@@ -1046,30 +1141,182 @@ header
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-    }
-    .calefaccion
-    {
-        img
+        -webkit-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-pack: justify;
+        width: 100%;
+        .especialup
         {
-            width: 120%;
+            width: 50%;
+            article
+            {
+                margin: 0 auto 1em;
+                width: 40%;
+                p
+                {
+                    font-size: 8px;
+                }
+                .imgEspecialistas
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                h2
+                {
+                    font-size: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        .especialdown
+        {
+            width: 50%;
+            article
+            {
+                margin: 0 auto 1em;
+                width: 40%;
+                p
+                {
+                    font-size: 8px;
+                }
+                .imgEspecialistas
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                h2
+                {
+                    font-size: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
         }
     }
-    .gas
+}
+@media only screen and (min-width: $bp5){
+    .especialistas-wrapper
     {
-        img
+        margin-bottom: 4em;
+        .especialistasp
         {
-            width: 28%;
+            font-size: 24px;
+            margin-top: 4em;
         }
-        p
+        .especialistas
         {
-            width: 40%;
+            .especialup
+            {
+                article
+                {
+                    h2
+                    {
+                        font-size: 12px;
+                    }
+                    p
+                    {
+                        font-size: 10px;
+                        margin-top: 1.5em;
+                    }
+                }
+            }
+            .especialdown
+            {
+                article
+                {
+                    h2
+                    {
+                        font-size: 12px;
+                    }
+                    p
+                    {
+                        font-size: 10px;
+                        margin-top: 1.5em;
+                    }
+                }
+            }
         }
     }
-    .aire
+}
+@media only screen and (min-width: $bp6){
+    .especialistas-wrapper
     {
-        img
+        max-width: $ancho_max;
+        margin: 0 auto;
+        margin-bottom: 4em;
+        .especialistasp
         {
-            width:80%;
+            font-size: 24px;
+            margin-top: 4em;
+        }
+        .especialistas
+        {
+            .especialup
+            {
+                width: 50%;
+                article
+                {
+                    width: 50%;
+                    margin: 0 auto;
+                    .imgEspecialistas
+                    {
+                        width: 70%;
+                        margin-left: 15%;
+                    }
+                    h2
+                    {
+                        font-size: 12px;
+                        margin-left: 15%;
+                        padding-top: 1em;
+                    }
+                    p
+                    {
+                        width: 100%;
+                        font-size: 10px;
+                        margin: 1.5em auto 0;
+                    }
+                }
+            }
+            .especialdown
+            {
+                width: 50%;
+                article
+                {
+                    width: 50%;
+                    margin: 0 auto;
+                    .imgEspecialistas
+                    {
+                        width: 70%;
+                        margin-left: 15%;
+                    }
+                    h2
+                    {
+                        font-size: 12px;
+                        margin-left: 15%;
+                        padding-top: 1em;
+                    }
+                    p
+                    {
+                        width: 100%;
+                        font-size: 10px;
+                        margin: 1.5em auto 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp7){
+    .especialistas-wrapper
+    {
+        .especialistas
+        {
+            max-width: $ancho_max;
+            margin: 0 auto;
         }
     }
 }
@@ -1177,36 +1424,33 @@ header
         display: -webkit-flex;
         display: flex;
         width: 100%;
-        background-color:#E5E6E9;
+        background-color: $grey;
         .caracteristicas
         {
-            width: 70%;
+            width: 50%;
             border-right: 1px solid rgb(176,175,175);
             article
             {
+                margin-bottom: 1em;
                 img
                 {
-                    width:60px;
-                    height: 60px;
+                    width: 45px;
+                    height: 45px;
                     margin: 1em 0;
                 }
-            }
-            p
-            {
-                font-size: 10px;
-            }
-            h2
-            {
-                font-size: 14px;
-                line-height:1em;
+                h2
+                {
+                    font-size: 14px;
+                    line-height:1em;
+                }
             }
             .legal
             {
                 img
                 {
-                    width:60px;
-                    height: 60px;
-                    padding:1em;
+                    width: 45px;
+                    height: 45px;
+                    padding: 1em;
                 }
                 .especialdiv
                 {
@@ -1221,28 +1465,45 @@ header
         .nosotros
         {
             display: block;
-            width: 80%;
-            margin: 7em 5% 0 3%;
-            height: 35em;
+            width: 50%;
+            margin: 7em 5% 0;
             article
             {
+                margin-left: 5%;
                 h5
                 {
-                    margin-left: 5%;
-                    font-size: 40px;
+                    line-height: 32px;
+                    font-size: 34px;
                     font-weight: $titular;
                     span
                     {
                         font-weight: $texto;
+                        font-size: 32px;
                     }
                 }
                 p
                 {
-                    margin-left: 5%;
                     margin-top: -2em;
                     font-size: 12px;
                     line-height: 1.5em;
                 }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .team
+    {
+        .caracteristicas
+        {
+            padding-left: 8%;
+        }
+        .nosotros
+        {
+            padding-right: 8%;
+            article
+            {
+                margin-left: 0;
             }
         }
     }
@@ -1252,9 +1513,13 @@ header
     {
         .caracteristicas
         {
-            p
+            article
             {
-                font-size: 12px;
+                margin-bottom: 1em;
+                p
+                {
+                    font-size: 12px;
+                }
             }
             .legal
             {
@@ -1262,7 +1527,7 @@ header
                 {
                     h2
                     {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -1272,7 +1537,7 @@ header
                 {
                     h2
                     {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -1282,25 +1547,31 @@ header
                 {
                     h2
                     {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
         }
         .nosotros
         {
-            margin: 4em 5% 0 3%;
+            margin: 6em 4% 0;
             article
             {
                 h5
                 {
-                    font-size: 55px;
+                    font-size: 40px;
+                    line-height: 40px;
+                    margin-bottom: 2em;
+                    span
+                    {
+                        font-weight: $texto;
+                        font-size: 38px;
+                    }
                 }
                 p
                 {
                     margin-top: -4em;
                     font-size: 14px;
-                    width: 80%;
                 }
             }
         }
@@ -1311,9 +1582,20 @@ header
     {
         .caracteristicas
         {  margin-left: 8%;
-            p
+            article
             {
-                font-size: 14px;
+                margin-bottom: 1em;
+                p
+                {
+                    font-size: 14px;
+                    margin-top: 0.8em;
+                }
+                img
+                {
+                    width: 50px;
+                    height: 50px;
+                    margin: 1em 0;
+                }
             }
             .legal
             {
@@ -1321,7 +1603,8 @@ header
                 {
                     h2
                     {
-                        font-size: 18px;
+                        font-size: 16px;
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -1331,7 +1614,7 @@ header
                 {
                     h2
                     {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -1341,7 +1624,7 @@ header
                 {
                     h2
                     {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -1912,92 +2195,3 @@ footer
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}

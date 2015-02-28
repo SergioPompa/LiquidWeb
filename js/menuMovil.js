@@ -35,7 +35,7 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
 
   function gestionaMenu()
   {
-    $('#menu').slideToggle("slow");
+    $('.menu-nav').slideToggle("slow");
   }
 
 //función para gestionar la apertura del menú apartado de instalaciones
