@@ -437,7 +437,7 @@ header .logo {
       font-weight: 300;
       line-height: 30px;
       text-align: center; }
-    .serviciosdesktop article p {
+    .serviciosdesktop article .pInstalaciones {
       width: 46%;
       font-size: 9px;
       margin: 0 27% 1.5em;
@@ -470,7 +470,7 @@ header .logo {
     margin: 0 14% 1em; }
   .serviciosdesktop .asesor {
     margin-top: 2em; }
-  .serviciosdesktop article p {
+  .serviciosdesktop article .pInstalaciones {
     width: 46%;
     font-size: 9px;
     margin: 1.5em 27%;
@@ -557,7 +557,7 @@ header .logo {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
-    .serviciosdesktop article p {
+    .serviciosdesktop article .pInstalaciones {
       width: 80%;
       font-size: 10px;
       margin: 1.5em 10%;
@@ -590,7 +590,7 @@ header .logo {
   .serviciosdesktop {
     width: 80%;
     margin-left: 10%; }
-    .serviciosdesktop article p {
+    .serviciosdesktop article .pInstalaciones {
       height: 16em;
       width: 66%;
       margin: 1.5em 17%; }
@@ -611,7 +611,7 @@ header .logo {
   .cabecera .tipoestilo2 {
     font-size: 44px; }
 
-  article p {
+  article .pInstalaciones {
     max-width: 66%;
     margin: 1.5em auto; }
   article .imgServicios {
@@ -823,11 +823,11 @@ header .logo {
   .especialistas-wrapper .especialistas {
     max-width: 1270px;
     margin: 0 auto; } }
-.team {
+.team .wrapperTeam {
   width: 100%; }
-  .team .nosotros {
+  .team .wrapperTeam .nosotros {
     display: none; }
-  .team .caracteristicas {
+  .team .wrapperTeam .caracteristicas {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -842,198 +842,220 @@ header .logo {
     flex-direction: column;
     background-color: #E5E6E9;
     padding: 3em 1.2em 1.2em 1.2em; }
-    .team .caracteristicas p {
+    .team .wrapperTeam .caracteristicas p {
       font-size: 10px; }
-    .team .caracteristicas article {
+    .team .wrapperTeam .caracteristicas article {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
       width: 100%; }
-      .team .caracteristicas article img {
+      .team .wrapperTeam .caracteristicas article img {
         width: 50px;
         height: 45px;
         padding: 1em; }
-      .team .caracteristicas article div {
+      .team .wrapperTeam .caracteristicas article div {
         margin: .6em 0 0 10%; }
-        .team .caracteristicas article div h2 {
+        .team .wrapperTeam .caracteristicas article div h2 {
           font-size: 12px;
           line-height: 1em; }
-    .team .caracteristicas .legal img {
+    .team .wrapperTeam .caracteristicas .legal img {
       width: 50px;
       height: 50px;
       padding: 1em; }
-    .team .caracteristicas .legal .especialdiv {
+    .team .wrapperTeam .caracteristicas .legal .especialdiv {
       width: 70%; }
-      .team .caracteristicas .legal .especialdiv h2 {
+      .team .wrapperTeam .caracteristicas .legal .especialdiv h2 {
         font-size: 12px; }
-    .team .caracteristicas .rapidez div {
+    .team .wrapperTeam .caracteristicas .rapidez div {
       width: 70%; }
-      .team .caracteristicas .rapidez div h2 {
+      .team .wrapperTeam .caracteristicas .rapidez div h2 {
         font-size: 12px;
         margin-top: 0; }
-    .team .caracteristicas .precio div, .team .caracteristicas .seguridad div, .team .caracteristicas .calidad div {
+    .team .wrapperTeam .caracteristicas .precio div, .team .wrapperTeam .caracteristicas .seguridad div, .team .wrapperTeam .caracteristicas .calidad div {
       width: 70%; }
-      .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
+      .team .wrapperTeam .caracteristicas .precio div h2, .team .wrapperTeam .caracteristicas .seguridad div h2, .team .wrapperTeam .caracteristicas .calidad div h2 {
         font-size: 12px;
         margin-top: 0;
         margin-bottom: 0; }
 
 @media only screen and (min-width: 600px) {
   .team {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     width: 100%;
     background-color: #E5E6E9; }
-    .team .caracteristicas {
-      width: 50%;
-      border-right: 1px solid #b0afaf; }
-      .team .caracteristicas article {
-        margin-bottom: 1em; }
-        .team .caracteristicas article img {
+    .team .wrapperTeam {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 90%;
+      margin: 0 5%; }
+      .team .wrapperTeam .caracteristicas {
+        width: 50%;
+        border-right: 1px solid #b0afaf;
+        padding-left: 0; }
+        .team .wrapperTeam .caracteristicas article {
+          margin-bottom: 1em; }
+          .team .wrapperTeam .caracteristicas article img {
+            width: 45px;
+            height: 45px;
+            margin: 1em 0; }
+          .team .wrapperTeam .caracteristicas article h2 {
+            font-size: 14px;
+            line-height: 1em; }
+        .team .wrapperTeam .caracteristicas .legal img {
           width: 45px;
           height: 45px;
-          margin: 1em 0; }
-        .team .caracteristicas article h2 {
-          font-size: 14px;
-          line-height: 1em; }
-      .team .caracteristicas .legal img {
-        width: 45px;
-        height: 45px;
-        padding: 1em; }
-      .team .caracteristicas .legal .especialdiv {
-        width: 70%; }
-        .team .caracteristicas .legal .especialdiv h2 {
-          font-size: 14px; }
-    .team .nosotros {
-      display: block;
-      width: 50%;
-      margin: 7em 5% 0; }
-      .team .nosotros article {
-        margin-left: 5%; }
-        .team .nosotros article h5 {
-          line-height: 32px;
-          font-size: 34px;
-          font-weight: 800; }
-          .team .nosotros article h5 span {
-            font-weight: 300;
-            font-size: 32px; }
-        .team .nosotros article p {
-          margin-top: -2em;
-          font-size: 12px;
-          line-height: 1.5em; } }
+          padding: 1em; }
+        .team .wrapperTeam .caracteristicas .legal .especialdiv {
+          width: 70%; }
+          .team .wrapperTeam .caracteristicas .legal .especialdiv h2 {
+            font-size: 14px; }
+      .team .wrapperTeam .nosotros {
+        display: block;
+        width: 50%;
+        margin: 7em 0 0 5%; }
+        .team .wrapperTeam .nosotros article {
+          margin-left: 5%; }
+          .team .wrapperTeam .nosotros article h5 {
+            line-height: 32px;
+            font-size: 34px;
+            font-weight: 800; }
+            .team .wrapperTeam .nosotros article h5 span {
+              font-weight: 300;
+              font-size: 32px; }
+          .team .wrapperTeam .nosotros article p {
+            margin-top: -2em;
+            font-size: 12px;
+            line-height: 1.5em; } }
 @media only screen and (min-width: 768px) {
-  .team .caracteristicas {
-    padding-left: 8%; }
-  .team .nosotros {
-    padding-right: 8%; }
-    .team .nosotros article {
-      margin-left: 0; } }
+  .team .wrapperTeam .nosotros article {
+    margin-left: 0; } }
 @media only screen and (min-width: 1024px) {
-  .team .caracteristicas article {
-    margin-bottom: 1em; }
-    .team .caracteristicas article p {
-      font-size: 12px; }
-  .team .caracteristicas .legal .especialdiv h2 {
-    font-size: 14px; }
-  .team .caracteristicas .rapidez div h2 {
-    font-size: 14px; }
-  .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
-    font-size: 14px; }
-  .team .nosotros {
-    margin: 6em 4% 0; }
-    .team .nosotros article h5 {
-      font-size: 40px;
-      line-height: 40px;
-      margin-bottom: 2em; }
-      .team .nosotros article h5 span {
-        font-weight: 300;
-        font-size: 38px; }
-    .team .nosotros article p {
-      margin-top: -4em;
-      font-size: 14px; } }
-@media only screen and (min-width: 1280px) {
-  .team .caracteristicas {
-    margin-left: 8%; }
-    .team .caracteristicas article {
+  .team .wrapperTeam {
+    width: 80%;
+    margin: 0 10%; }
+    .team .wrapperTeam .caracteristicas article {
       margin-bottom: 1em; }
-      .team .caracteristicas article p {
-        font-size: 14px;
-        margin-top: 0.8em; }
-      .team .caracteristicas article img {
-        width: 50px;
-        height: 50px;
-        margin: 1em 0; }
-    .team .caracteristicas .legal .especialdiv h2 {
-      font-size: 16px;
-      margin-bottom: 0; }
-    .team .caracteristicas .rapidez div h2 {
-      font-size: 16px; }
-    .team .caracteristicas .precio div h2, .team .caracteristicas .seguridad div h2, .team .caracteristicas .calidad div h2 {
-      font-size: 16px; }
-  .team .nosotros {
-    margin: 2em 5% 0 3%; }
-    .team .nosotros article h5 {
-      font-size: 65px; }
-    .team .nosotros article p {
-      margin-top: -5em;
-      font-size: 14px; } }
-.logosinstalacion {
+      .team .wrapperTeam .caracteristicas article p {
+        font-size: 12px; }
+    .team .wrapperTeam .caracteristicas .legal .especialdiv h2 {
+      font-size: 14px; }
+    .team .wrapperTeam .caracteristicas .rapidez div h2 {
+      font-size: 14px; }
+    .team .wrapperTeam .caracteristicas .precio div h2, .team .wrapperTeam .caracteristicas .seguridad div h2, .team .wrapperTeam .caracteristicas .calidad div h2 {
+      font-size: 14px; }
+    .team .wrapperTeam .nosotros {
+      margin: 6em 0 0 5%; }
+      .team .wrapperTeam .nosotros article h5 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 2em; }
+        .team .wrapperTeam .nosotros article h5 span {
+          font-weight: 300;
+          font-size: 38px; }
+      .team .wrapperTeam .nosotros article p {
+        margin-top: -4em;
+        font-size: 14px; } }
+@media only screen and (min-width: 1280px) {
+  .team .wrapperTeam {
+    max-width: 1270px;
+    margin: 0 auto; }
+    .team .wrapperTeam .caracteristicas {
+      width: 50%;
+      margin-left: 7%;
+      padding: 3em 0em 1.2em; }
+      .team .wrapperTeam .caracteristicas article {
+        margin-bottom: 1em;
+        width: 95%; }
+        .team .wrapperTeam .caracteristicas article p {
+          display: inline;
+          font-size: 14px;
+          margin: 18px 0 0; }
+        .team .wrapperTeam .caracteristicas article img {
+          width: 60px;
+          height: 60px;
+          margin: 0; }
+      .team .wrapperTeam .caracteristicas .legal .especialdiv h2 {
+        font-size: 16px;
+        margin-bottom: 0.7em;
+        margin-left: 0; }
+      .team .wrapperTeam .caracteristicas .legal img {
+        width: 60px;
+        height: 60px;
+        margin: 0; }
+      .team .wrapperTeam .caracteristicas .rapidez div h2 {
+        font-size: 16px;
+        margin-left: 0; }
+      .team .wrapperTeam .caracteristicas .precio div h2, .team .wrapperTeam .caracteristicas .seguridad div h2, .team .wrapperTeam .caracteristicas .calidad div h2 {
+        font-size: 16px;
+        margin-left: 0; }
+    .team .wrapperTeam .nosotros {
+      width: 50%;
+      margin: 2em 7% 0 5%;
+      padding-right: 0; }
+      .team .wrapperTeam .nosotros article {
+        width: 95%; }
+        .team .wrapperTeam .nosotros article h5 {
+          font-size: 65px;
+          margin-bottom: 0.5em;
+          line-height: 63px; }
+          .team .wrapperTeam .nosotros article h5 span {
+            font-size: 62px; }
+        .team .wrapperTeam .nosotros article p {
+          display: inline;
+          margin: 0;
+          font-size: 14px; } }
+@media only screen and (min-width: 1400px) {
+  .team .wrapperTeam .caracteristicas {
+    margin-left: 3%; }
+  .team .wrapperTeam .nosotros {
+    margin: 2em 3% 0 5%; } }
+.wrapperLogos .logosinstalacion {
   width: 90%;
   margin: 0 5%; }
-  .logosinstalacion h1 {
+  .wrapperLogos .logosinstalacion h1 {
     width: 60%;
     margin: 1.5em auto 0;
     font-weight: 300;
     text-align: left;
     font-size: 16px;
     line-height: 20px; }
-    .logosinstalacion h1 span {
+    .wrapperLogos .logosinstalacion h1 span {
       font-weight: 800;
       font-size: 22px; }
-  .logosinstalacion .logosempresas img {
+  .wrapperLogos .logosinstalacion .logosempresas img {
     width: 25%;
     text-align: center;
     margin: 1em 1% 1.5em 5%; }
-
-.logosmarcas {
+.wrapperLogos .logosmarcas {
   display: none; }
 
 @media only screen and (min-width: 600px) {
-  .logosinstalacion {
-    width: 90%;
-    margin-left: 5%; }
-    .logosinstalacion h1 {
-      text-align: left;
-      font-size: 20px;
-      margin: 2em 0 1em 10%; }
-      .logosinstalacion h1 span {
-        font-size: 30px; }
-    .logosinstalacion div {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      margin-bottom: 2em; }
-      .logosinstalacion div img {
-        height: 70px; }
-
-  .logosmarcas {
+  .wrapperLogos .logosinstalacion h1 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 2.5em 0% 0.5em 25%; }
+    .wrapperLogos .logosinstalacion h1 span {
+      font-size: 30px; }
+  .wrapperLogos .logosinstalacion .logosempresas {
+    margin-bottom: 2em; }
+  .wrapperLogos .logosmarcas {
     display: block;
     width: 90%;
-    margin-left: 5%; }
-    .logosmarcas h2 {
+    margin: 0 5%; }
+    .wrapperLogos .logosmarcas h2 {
+      width: 100%;
       font-weight: 300;
-      font-size: 20px;
-      margin: 1em 0 1em 18%; }
-      .logosmarcas h2 span {
+      font-size: 16px;
+      margin: 1em auto;
+      text-align: center; }
+      .wrapperLogos .logosmarcas h2 span {
         font-weight: 800; }
-    .logosmarcas .marcas {
+    .wrapperLogos .logosmarcas .marcas {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -1041,53 +1063,67 @@ header .logo {
       display: flex;
       margin-bottom: 4em;
       margin-left: -5%; }
-      .logosmarcas .marcas img {
-        width: 50%;
-        height: 30px;
+      .wrapperLogos .logosmarcas .marcas img {
+        width: 40%;
+        height: 27px;
         margin-left: 5%; } }
 @media only screen and (min-width: 768px) {
-  .logosinstalacion h1 {
-    font-size: 25px; }
-    .logosinstalacion h1 span {
-      font-size: 50px; }
-
-  .logosmarcas h2 {
-    font-size: 26px;
-    margin-left: 15%; }
-  .logosmarcas .marcas {
+  .wrapperLogos .logosinstalacion h1 {
+    font-size: 25px;
+    line-height: 29px; }
+    .wrapperLogos .logosinstalacion h1 span {
+      font-size: 40px; }
+  .wrapperLogos .logosmarcas h2 {
+    font-size: 20px; }
+  .wrapperLogos .logosmarcas .marcas {
     margin: 1em 0 4em -5%; } }
+@media only screen and (min-width: 900px) {
+  .wrapperLogos .logosinstalacion h1 {
+    margin: 2.5em 0% 0.5em 30%; }
+  .wrapperLogos .logosinstalacion .logosempresas img {
+    max-width: 17%;
+    text-align: center;
+    margin: 1em 1% 1.5em 11%; }
+  .wrapperLogos .logosmarcas .marcas {
+    margin-left: 15%; }
+    .wrapperLogos .logosmarcas .marcas img {
+      max-width: 15%;
+      height: 25px;
+      margin-left: 5%; } }
 @media only screen and (min-width: 1024px) {
-  .logosinstalacion h1 {
-    font-size: 30px; }
-    .logosinstalacion h1 span {
-      font-size: 50px; }
-
-  .logosmarcas {
-    margin-top: 5em;
+  .wrapperLogos .logosinstalacion h1 {
+    font-size: 30px;
+    line-height: 34px; }
+    .wrapperLogos .logosinstalacion h1 span {
+      font-size: 46px; }
+  .wrapperLogos .logosinstalacion .logosempresas {
+    width: 70%;
+    margin: 0 auto; }
+    .wrapperLogos .logosinstalacion .logosempresas img {
+      max-width: 20%; }
+  .wrapperLogos .logosmarcas {
+    margin-top: 3,5em;
     width: 80%;
     margin-left: 10%; }
-    .logosmarcas h2 {
-      font-size: 30px; } }
+    .wrapperLogos .logosmarcas h2 {
+      font-size: 24px; } }
 @media only screen and (min-width: 1280px) {
-  .logosinstalacion h1 {
-    font-size: 40px; }
-    .logosinstalacion h1 span {
-      font-size: 60px; }
-
-  .logosmarcas {
-    margin-top: 5em;
-    width: 80%;
-    margin-left: 10%; }
-    .logosmarcas h2 {
+  .wrapperLogos {
+    max-width: 1270px;
+    margin: 0 auto; }
+    .wrapperLogos .logosinstalacion h1 {
+      margin: 2.5em 0% 0.5em 27%;
       font-size: 40px;
-      margin: 0 0 1em 15%; }
-    .logosmarcas .marcas {
-      margin-bottom: 4em;
-      margin-left: -5%; }
-      .logosmarcas .marcas img {
-        width: 20%;
-        height: 50px;
-        margin-left: 5%; } }
+      line-height: 44px; }
+      .wrapperLogos .logosinstalacion h1 span {
+        font-size: 60px; }
+    .wrapperLogos .logosmarcas {
+      margin-top: 2em; }
+      .wrapperLogos .logosmarcas h2 {
+        font-size: 28px;
+        margin: 0 auto 1em; }
+      .wrapperLogos .logosmarcas .marcas {
+        margin-bottom: 4em; } }
 @media only screen and (min-width: 1400px) {
   .logosinstalacion h1 {
     font-size: 43px; }
@@ -1102,168 +1138,182 @@ header .logo {
       margin-left: 20%; } }
 .contacto {
   background-color: #1F264A;
-  color: #ffffff;
-  height: auto;
-  padding: 1em 5% 3em 5%; }
-  .contacto .contactpregunta {
-    margin-left: -1%; }
-  .contacto .contactext {
-    margin: -1.5em 0 2em 0;
-    width: 90%; }
-
-.izda {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-box-orient: vertical;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  flex-direction: column; }
-  .izda article {
-    width: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
-  .izda img {
-    width: 39px;
-    height: 39px;
-    margin-left: -12%;
-    margin-top: .3em; }
-  .izda .house {
-    margin-top: -.7em; }
-  .izda div {
-    margin-left: 10%; }
-  .izda p {
-    font-size: 14px; }
-  .izda a {
-    color: #ffffff; }
-  .izda .contactrow {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    flex-direction: column;
-    margin-bottom: 1em; }
-    .izda .contactrow p {
-      margin-top: -.8em; }
-
-.dcha p {
-  text-align: center; }
-.dcha input, .dcha textarea {
-  margin: 6px 8%;
-  height: 42px;
-  width: 80%; }
-.dcha .submit {
-  position: relative;
-  left: 4.8%;
-  height: 42px;
-  width: 40%; }
+  width: 100%; }
+  .contacto .wrapperContacto {
+    width: 90%;
+    margin: 0 5%;
+    padding: 3em 1%;
+    color: #FFFFFF; }
+    .contacto .wrapperContacto .izda {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-box-orient: vertical;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      flex-direction: column; }
+      .contacto .wrapperContacto .izda .contactext {
+        margin: -1.5em 0 1em 0;
+        width: 90%; }
+        .contacto .wrapperContacto .izda .contactext .contactpregunta {
+          font-size: 14px;
+          font-weight: 700; }
+        .contacto .wrapperContacto .izda .contactext p {
+          font-size: 9px;
+          line-height: 14px;
+          font-weight: 300; }
+      .contacto .wrapperContacto .izda .wrapperAddress {
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin: 0.5em 0; }
+        .contacto .wrapperContacto .izda .wrapperAddress img {
+          width: 30px;
+          height: 30px;
+          margin-top: .3em; }
+        .contacto .wrapperContacto .izda .wrapperAddress .house {
+          margin-top: -.7em; }
+        .contacto .wrapperContacto .izda .wrapperAddress div {
+          margin-left: 10%; }
+          .contacto .wrapperContacto .izda .wrapperAddress div p {
+            font-size: 9px; }
+            .contacto .wrapperContacto .izda .wrapperAddress div p a {
+              color: #FFFFFF; }
+        .contacto .wrapperContacto .izda .wrapperAddress .contactrow {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          -o-box-orient: vertical;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          flex-direction: column;
+          margin-bottom: 0em; }
+          .contacto .wrapperContacto .izda .wrapperAddress .contactrow .street-address, .contacto .wrapperContacto .izda .wrapperAddress .contactrow .locality, .contacto .wrapperContacto .izda .wrapperAddress .contactrow .country-name {
+            margin-top: -.8em; }
+    .contacto .wrapperContacto .dcha {
+      /* firefox 19+ */
+      /* ie */ }
+      .contacto .wrapperContacto .dcha p {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 700; }
+      .contacto .wrapperContacto .dcha input {
+        margin: 6px auto;
+        height: 30px;
+        width: 90%; }
+      .contacto .wrapperContacto .dcha ::-webkit-input-placeholder {
+        font-size: 9px;
+        padding-left: 10px; }
+      .contacto .wrapperContacto .dcha ::-moz-placeholder {
+        font-size: 9px;
+        padding-left: 10px; }
+      .contacto .wrapperContacto .dcha :-ms-input-placeholder {
+        font-size: 9px;
+        padding-left: 10px; }
+      .contacto .wrapperContacto .dcha input:-moz-placeholder {
+        font-size: 9px;
+        padding-left: 10px; }
+      .contacto .wrapperContacto .dcha textarea {
+        margin: 6px auto;
+        height: 70px;
+        width: 90%; }
+      .contacto .wrapperContacto .dcha #send {
+        height: 30px;
+        width: 30%;
+        color: #FFFFFF;
+        background-color: #F59B23;
+        font-size: 10px;
+        text-align: center;
+        border: 0; }
 
 @media only screen and (min-width: 600px) {
-  .contacto {
+  .contacto .wrapperContacto {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
-    .contacto .contactext .contactpregunta {
-      font-weight: 800;
-      font-size: 18px; }
-    .contacto .contactext p {
-      font-size: 12px; }
-
-  .izda {
-    width: 60%;
-    margin-top: 1.5em; }
-
-  .dcha {
-    width: 50%; }
-    .dcha p {
-      font-weight: 800;
-      font-size: 18px; }
-    .dcha .required_comentarios {
-      height: 8em; } }
+    .contacto .wrapperContacto .izda {
+      width: 50%;
+      margin-top: 1.5em; }
+    .contacto .wrapperContacto .dcha {
+      width: 50%; }
+      .contacto .wrapperContacto .dcha .required_comentarios {
+        height: 8em; } }
 @media only screen and (min-width: 1024px) {
-  .izda .contactrow {
-    width: 70%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-flex-pack: distribute;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    margin-bottom: -1em; }
-    .izda .contactrow p {
-      margin-top: -.2em; } }
+  .contacto .wrapperContacto {
+    width: 80%;
+    margin: 0 10%; } }
 @media only screen and (min-width: 1280px) {
-  .contacto {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
-    .contacto .contactext .contactpregunta {
-      font-weight: 800;
-      font-size: 24px; }
-    .contacto .contactext p {
-      font-size: 12px; }
-
-  .izda {
-    margin-left: 10%; }
-
-  .dcha {
-    margin-right: 10%; }
-    .dcha p {
-      font-size: 24px; } }
+  .contacto .wrapperContacto {
+    width: 80%;
+    max-width: 1270px;
+    margin: 0 auto; }
+    .contacto .wrapperContacto .izda .contactext .contactpregunta {
+      font-size: 18px; }
+    .contacto .wrapperContacto .izda .contactext p {
+      font-size: 12px;
+      line-height: 18px; }
+    .contacto .wrapperContacto .izda .wrapperAddress div p {
+      display: inline;
+      font-size: 10px; }
+    .contacto .wrapperContacto .izda .wrapperAddress .contactrow .street-address, .contacto .wrapperContacto .izda .wrapperAddress .contactrow .locality, .contacto .wrapperContacto .izda .wrapperAddress .contactrow .country-name {
+      display: inline;
+      font-size: 10px; }
+    .contacto .wrapperContacto .izda .wrapperAddress .contactrow .street-address {
+      margin-bottom: 0; }
+    .contacto .wrapperContacto .dcha p {
+      font-size: 18px; } }
 footer {
+  width: 100%;
   background-color: #E5E6E9; }
-  footer .social {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-flex-pack: distribute;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    margin-left: 5%;
-    padding-top: 1em; }
-    footer .social .firma {
-      width: 60%;
+  footer .wrapperFooter {
+    width: 90%;
+    margin: 0 auto; }
+    footer .wrapperFooter .social {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-flex-pack: distribute;
+      justify-content: space-between;
+      -webkit-box-pack: justify;
+      padding-top: 1em; }
+      footer .wrapperFooter .social .asefosam {
+        width: 20%; }
+      footer .wrapperFooter .social .plus {
+        margin-right: 5%; }
+    footer .wrapperFooter .trade-mark .firma {
+      width: 100%;
       font-size: 9px;
       text-align: center;
       margin-top: 1em; }
-    footer .social .plus {
-      margin-right: 5%; }
+    footer .wrapperFooter .trade-mark .enlaces {
+      width: 100%;
+      font-size: 9px;
+      text-align: center;
+      margin-top: 1em;
+      padding-bottom: 1em; }
+      footer .wrapperFooter .trade-mark .enlaces a {
+        color: #1F264A;
+        padding: 0 2%; }
 
 @media only screen and (min-width: 600px) {
   footer {
@@ -1280,6 +1330,69 @@ footer {
     footer p {
       text-align: center;
       font-size: 12px; } }
+#barraaceptacion {
+  display: none;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 120px;
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 99999; }
+
+.inner {
+  width: 100%;
+  position: absolute;
+  padding-left: 5px;
+  font-family: verdana;
+  font-size: 12px;
+  top: 10%; }
+
+.inner a.ok {
+  padding: 4px;
+  color: #00ff2e;
+  text-decoration: none; }
+
+.inner a.info {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #faff00; }
+
+.cookie {
+  width: 75%;
+  margin: 2em auto; }
+  .cookie h3 {
+    padding: 3em 0 1em;
+    font-weight: bold;
+    font-size: 2em; }
+  .cookie ol li {
+    list-style: decimal; }
+  .cookie ul li {
+    list-style: circle; }
+  .cookie a {
+    text-decoration: underline; }
+
+@media screen and (min-width: 600px) {
+  #barraaceptacion {
+    padding-bottom: 60px;
+    min-height: 20px; }
+
+  .inner {
+    top: 20%; } }
+@media screen and (min-width: 1280px) {
+  #barraaceptacion {
+    padding-bottom: 55px; } }
+@media screen and (min-width: 1400px) {
+  #barraaceptacion {
+    padding-bottom: 45px;
+    min-height: 16px; }
+
+  .inner {
+    top: 15%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
