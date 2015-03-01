@@ -187,10 +187,12 @@ header .logo {
   display: none;
   margin: 2em 0 0;
   background: #1F264A;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .menu-nav ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    cursor: pointer; }
     .menu-nav ul li {
       line-height: 3em;
       text-align: center; }
@@ -201,23 +203,42 @@ header .logo {
         padding: 1.8em 10%;
         font-size: 10px; }
   .menu-nav .instalacionesMenu {
-    color: #EEE;
+    color: #FFFFFF;
     text-align: center;
     font-size: 10px;
     line-height: 50px; }
+    .menu-nav .instalacionesMenu .instalacionesList {
+      display: none;
+      cursor: pointer; }
+      .menu-nav .instalacionesMenu .instalacionesList li {
+        background: #FFFFFF;
+        line-height: 4em;
+        text-align: center;
+        border-bottom: 1px solid #1F264A;
+        cursor: pointer; }
+        .menu-nav .instalacionesMenu .instalacionesList li a {
+          display: inline;
+          color: #1F264A;
+          padding: 0.8em 0;
+          cursor: pointer; }
   .menu-nav .selected {
     background: #F59B23; }
-  .menu-nav .instalacionesList {
-    display: none; }
-    .menu-nav .instalacionesList li {
+  .menu-nav .selectedDesktop {
+    background: #F59B23;
+    margin-bottom: -1.3em;
+    z-index: 1000; }
+    .menu-nav .selectedDesktop li {
+      width: inherit;
       background: #FFFFFF;
-      line-height: 3em;
+      line-height: 4em;
       text-align: center;
-      border-bottom: 1px solid #1F264A; }
-      .menu-nav .instalacionesList li a {
+      border-bottom: 1px solid #1F264A;
+      cursor: pointer; }
+      .menu-nav .selectedDesktop li a {
         display: inline;
         color: #1F264A;
-        padding: 0.8em 0; }
+        padding: 0.8em 0;
+        cursor: pointer; }
 
 @media only screen and (min-width: 600px) {
   .menu-nav {
@@ -233,8 +254,9 @@ header .logo {
     justify-content: space-around;
     -webkit-box-pack: justify;
     width: 100%;
+    height: 50px;
     background-color: #1F264A; }
-    .menu-nav ul {
+    .menu-nav .menu-nav-ul {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -248,37 +270,45 @@ header .logo {
       -webkit-box-pack: justify;
       width: 100%;
       margin: 0 0 0.5em 0; }
-      .menu-nav ul li {
+      .menu-nav .menu-nav-ul li {
         width: 25%; }
-        .menu-nav ul li a {
+        .menu-nav .menu-nav-ul li a {
           color: #FFFFFF; }
-        .menu-nav ul li li:hover {
-          background-color: 3px solid #F59B23;
-          -webkit-transition: width 1s;
-          /* For Safari 3.1 to 6.0 */
-          transition: width 1s; }
-      .menu-nav ul #phone-movil {
+      .menu-nav .menu-nav-ul li:hover {
+        background-color: #F59B23;
+        -webkit-transition: width 1s;
+        /* For Safari 3.1 to 6.0 */
+        transition: width 1s; }
+      .menu-nav .menu-nav-ul #phone-movil {
         display: none; } }
 @media only screen and (min-width: 768px) {
-  .menu-nav ul {
+  .menu-nav .menu-nav-ul {
     width: 80%;
     margin: 0 0 0 20%; }
-    .menu-nav ul li {
-      width: 20%; } }
+    .menu-nav .menu-nav-ul li {
+      width: 20%; }
+  .menu-nav .selectedDesktop {
+    margin: 0; }
+    .menu-nav .selectedDesktop li {
+      width: 100%; } }
 @media only screen and (min-width: 900px) {
-  .menu-nav ul {
+  .menu-nav .menu-nav-ul {
     width: 60%;
     margin: 0 7% 0 38%; }
-    .menu-nav ul li {
+    .menu-nav .menu-nav-ul li {
       width: 15%; }
-    .menu-nav ul .efiEner {
-      width: 25%; } }
+    .menu-nav .menu-nav-ul .efiEner {
+      width: 25%; }
+  .menu-nav .selectedDesktop {
+    margin: 0; }
+    .menu-nav .selectedDesktop li {
+      width: 170%; } }
 @media only screen and (min-width: 1024px) {
-  .menu-nav ul li a {
+  .menu-nav .menu-nav-ul li a {
     font-size: 12px; }
-  .menu-nav ul .efiEner {
+  .menu-nav .menu-nav-ul .efiEner {
     width: 27%; }
-  .menu-nav ul .instalacionesMenu {
+  .menu-nav .menu-nav-ul .instalacionesMenu {
     font-size: 12px; } }
 .menu-movil {
   width: 100%;
@@ -568,7 +598,7 @@ header .logo {
     .serviciosdesktop article h2 {
       width: 66%;
       margin: 0 17% 0.7em;
-      font-size: 9px; }
+      font-size: 8px; }
     .serviciosdesktop article .more {
       width: 40%;
       text-align: center;
@@ -1139,6 +1169,19 @@ header .logo {
 .contacto {
   background-color: #1F264A;
   width: 100%; }
+  .contacto #c_information {
+    width: 80%;
+    margin: 1em auto -1em;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 4px 0 4px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #1F264A;
+    position: relative;
+    top: 20px; }
+  .contacto .hide {
+    display: none; }
   .contacto .wrapperContacto {
     width: 90%;
     margin: 0 5%;
@@ -1237,7 +1280,8 @@ header .logo {
         background-color: #F59B23;
         font-size: 10px;
         text-align: center;
-        border: 0; }
+        border: 0;
+        cursor: pointer; }
 
 @media only screen and (min-width: 600px) {
   .contacto .wrapperContacto {
@@ -1316,20 +1360,49 @@ footer {
         padding: 0 2%; }
 
 @media only screen and (min-width: 600px) {
-  footer {
-    background-color: #E5E6E9; }
-    footer .social {
-      width: 80%;
-      padding-top: 1em; }
-      footer .social .firma {
-        margin-left: 10%;
-        font-size: 9px; }
-      footer .social .plus img {
-        width: 30px;
-        margin-left: 150%; }
-    footer p {
-      text-align: center;
-      font-size: 12px; } }
+  footer .wrapperFooter .social {
+    width: 100%; }
+    footer .wrapperFooter .social .asefosam {
+      max-width: 20%; }
+    footer .wrapperFooter .social .plus img {
+      max-width: 30px;
+      margin-right: 5%; }
+  footer .wrapperFooter .trade-mark {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    width: 100%; }
+    footer .wrapperFooter .trade-mark .firma {
+      width: 50%; }
+    footer .wrapperFooter .trade-mark .enlaces {
+      width: 50%; } }
+@media only screen and (min-width: 768px) {
+  footer .wrapperFooter .trade-mark {
+    margin-top: 1em; }
+    footer .wrapperFooter .trade-mark .firma {
+      width: 40%;
+      text-align: right; }
+    footer .wrapperFooter .trade-mark .enlaces {
+      width: 40%;
+      text-align: left; } }
+@media only screen and (min-width: 1024px) {
+  footer .wrapperFooter .social {
+    width: 90%;
+    margin: 0 auto; } }
+@media only screen and (min-width: 1024px) {
+  footer .wrapperFooter {
+    max-width: 1270px; }
+    footer .wrapperFooter .social {
+      width: 90%;
+      margin: 0 auto; } }
 #barraaceptacion {
   display: none;
   position: fixed;

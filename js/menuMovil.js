@@ -45,6 +45,11 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
 
   function gestionaInstalaciones()
   {
-    $(this).toggleClass( 'selected');
-    $('.instalacionesList').slideToggle("slow");
+    if($(window).width()<600){
+      $(this).toggleClass( 'selected');
+      $('.instalacionesList').slideToggle("slow");
+    } else {
+      $(this).toggleClass( 'selectedDesktop');
+      $('.instalacionesList').slideToggle("slow");
+    }
   }

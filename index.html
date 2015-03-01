@@ -32,14 +32,15 @@
 						<a href="#" class="iconoMenu"><img src="img/iconMenu.png" alt="icono de menu del movil" width="96" height="96"></a>
 					</div>
 					<nav class="menu-nav" id="menu">
-						<ul>
-							<li class="instalacionesMenu">Instalaciones</li>
-							<ul class="instalacionesList">
-								<li><a href="">Fontanería</a></li>
-								<li><a href="">Calefacción</a></li>
-								<li><a href="">Gas</a></li>
-								<li><a href="">Aire Acondicionado</a></li>
-							</ul>
+						<ul class="menu-nav-ul">
+							<li class="instalacionesMenu">Instalaciones
+								<ul class="instalacionesList">
+									<li><a href="">Fontanería</a></li>
+									<li><a href="">Calefacción</a></li>
+									<li><a href="">Gas</a></li>
+									<li><a href="">Aire Acondicionado</a></li>
+								</ul>
+							</li>
 							<li class="efiEner"><a href="">Eficiencia Energética</a></li>
 							<li ><a href="">Asesoramiento</a></li>
 							<li ><a href="">Formación</a></li>
@@ -123,7 +124,7 @@
 										<source srcset="img/asesoramientoMovil.png" media="(max-width: 599px)">
 										<img class="imgServicios" srcset="img/asesoramiento.png" alt="">
 									</picture>
-									<p>Liquid Instalaciones presta servicios de asesoramiento técnico en todas las áreas de actividad de la empresa instaladora: fontanería y saneamiento, gas, calefacción, climatización y ACS</p>
+									<p class="pInstalaciones">Liquid Instalaciones presta servicios de asesoramiento técnico en todas las áreas de actividad de la empresa instaladora: fontanería y saneamiento, gas, calefacción, climatización y ACS</p>
 									<a class="more" href="" title="">LEER MÁS</a>
 								</article>
 								<article class="formacion">
@@ -132,7 +133,7 @@
 										<source srcset="img/formacionMovil.png" media="(max-width: 599px)">
 										<img class="imgServicios" srcset="img/formacion.png" alt="">
 									</picture>
-									<p>Si tienes curiosidad por aprender lo necesario para arreglar las averías del hogar, puedes solicitarnos formación personalizada en instalaciones de gas, calefacción, fontanería y aire acondicionado</p>
+									<p class="pInstalaciones">Si tienes curiosidad por aprender lo necesario para arreglar las averías del hogar, puedes solicitarnos formación personalizada en instalaciones de gas, calefacción, fontanería y aire acondicionado</p>
 									<a class="more" href="" title="">LEER MÁS</a>
 								</article>
 							</section>
@@ -238,6 +239,11 @@
 						</section>
 					</section>
 					<section class="contacto">
+						<!-- bloque confirmación de envío oculto -->
+		                <div id="c_information" class="hide">
+		                    <p>Gracias por contactar con nosotros. En breve nos pondremos en contacto con usted.</p>
+		                </div>
+		                <!-- fin de bloque confirmación de envío -->
 						<section class="wrapperContacto">
 							<article class="izda">
 								<div class="contactext">
@@ -326,6 +332,8 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/menuMovil.js"></script>
+        <script src="js/formulario.js"></script>
+        <script src="js/cookie.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

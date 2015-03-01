@@ -1,0 +1,1 @@
+function menuDesktop(){function e(){$(this).toggleClass("selectedDesktop"),$(".instalacionesList").slideToggle("slow")}$(window).width()>600&&$("instalacionesMenu").on("click",e)}$(window).resize(menuDesktop);
