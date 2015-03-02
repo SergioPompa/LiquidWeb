@@ -225,20 +225,21 @@ header .logo {
     background: #F59B23; }
   .menu-nav .selectedDesktop {
     background: #F59B23;
-    margin-bottom: -1.3em;
     z-index: 1000; }
-    .menu-nav .selectedDesktop li {
-      width: inherit;
-      background: #FFFFFF;
-      line-height: 4em;
-      text-align: center;
-      border-bottom: 1px solid #1F264A;
-      cursor: pointer; }
-      .menu-nav .selectedDesktop li a {
-        display: inline;
-        color: #1F264A;
-        padding: 0.8em 0;
+    .menu-nav .selectedDesktop ul {
+      width: 140%; }
+      .menu-nav .selectedDesktop ul li {
+        width: 100%;
+        background: #FFFFFF;
+        line-height: 4em;
+        text-align: center;
+        border-bottom: 1px solid #1F264A;
         cursor: pointer; }
+        .menu-nav .selectedDesktop ul li a {
+          display: inline;
+          color: #1F264A;
+          padding: 0.8em 0;
+          cursor: pointer; }
 
 @media only screen and (min-width: 600px) {
   .menu-nav {
@@ -271,14 +272,12 @@ header .logo {
       width: 100%;
       margin: 0 0 0.5em 0; }
       .menu-nav .menu-nav-ul li {
+        transition: 0.7s;
         width: 25%; }
         .menu-nav .menu-nav-ul li a {
           color: #FFFFFF; }
       .menu-nav .menu-nav-ul li:hover {
-        background-color: #F59B23;
-        -webkit-transition: width 1s;
-        /* For Safari 3.1 to 6.0 */
-        transition: width 1s; }
+        background-color: #F59B23; }
       .menu-nav .menu-nav-ul #phone-movil {
         display: none; } }
 @media only screen and (min-width: 768px) {

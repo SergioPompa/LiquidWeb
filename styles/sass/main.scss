@@ -335,22 +335,25 @@ header
     .selectedDesktop
     {
         background: $color_orange;
-        margin-bottom: -1.3em;
         z-index: 1000;
-        li
+        ul
         {
-            width: inherit;
-            background: $white;
-            line-height: 4em;
-            text-align: center;
-            border-bottom: 1px solid $darkpurple;
-            cursor: pointer;
-            a
+            width: 140%;
+            li
             {
-                display: inline;
-                color: $darkpurple;
-                padding: 0.8em 0;
+                width: 100%;
+                background: $white;
+                line-height: 4em;
+                text-align: center;
+                border-bottom: 1px solid $darkpurple;
                 cursor: pointer;
+                a
+                {
+                    display: inline;
+                    color: $darkpurple;
+                    padding: 0.8em 0;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -389,6 +392,7 @@ header
             margin: 0 0 0.5em 0;
             li
             {
+                transition: 0.7s;
                 width: 25%;
                 a
                 {
@@ -398,8 +402,6 @@ header
             li:hover
             {
                 background-color: $color_orange;
-                -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-                transition: width 1s;
             }
             #phone-movil
             {
