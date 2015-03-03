@@ -10,6 +10,8 @@
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 html {
   color: #222;
   font-size: 1em;
@@ -95,6 +97,150 @@ textarea {
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
+/*Estilo de la pagina de eficiencia energetica*/
+/* Variables para los breakpoints */
+/* Variables para el uso de la tipografía */
+/* Variables para los colores corporativos */
+.heroEficiencia {
+  width: 100%;
+  background-color: #C6E0F3; }
+  .heroEficiencia .eficienciaIzda {
+    display: none; }
+  .heroEficiencia .eficienciaDcha {
+    width: 84%;
+    margin: 0 8%;
+    text-align: center;
+    padding: 3em 0em; }
+    .heroEficiencia .eficienciaDcha p {
+      font-weight: 800; }
+    .heroEficiencia .eficienciaDcha span {
+      color: #72abdb;
+      font-weight: 300; }
+    .heroEficiencia .eficienciaDcha .eficienciaSubclaim {
+      width: 76%;
+      margin: 0 12%;
+      font-weight: 300;
+      font-size: 9px; }
+
+@media only screen and (min-width: 600px) {
+  .heroEficiencia div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+  .heroEficiencia .eficienciaIzda {
+    display: block; }
+    .heroEficiencia .eficienciaIzda img {
+      width: 100%;
+      height: 50%; }
+  .heroEficiencia .eficienciaDcha {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%; } }
+@media only screen and (min-width: 768px) {
+  .heroEficiencia {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .heroEficiencia .eficienciaIzda {
+      width: 60%; }
+      .heroEficiencia .eficienciaIzda img {
+        height: 420px; }
+    .heroEficiencia .eficienciaDcha {
+      width: 40%;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-box-orient: vertical;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      flex-direction: column; }
+      .heroEficiencia .eficienciaDcha p {
+        margin-top: 12em;
+        font-size: 10px;
+        width: 100%;
+        line-height: 2em; }
+      .heroEficiencia .eficienciaDcha .eficienciaClaim {
+        margin-top: -1em;
+        width: 80%;
+        margin-left: 10%; }
+      .heroEficiencia .eficienciaDcha .eficienciaSubclaim {
+        margin-top: -1em;
+        width: 70%;
+        margin-left: 15%; } }
+@media only screen and (min-width: 900px) {
+  .heroEficiencia .eficienciaIzda {
+    width: 50%; }
+  .heroEficiencia .eficienciaDcha {
+    width: 50%; }
+    .heroEficiencia .eficienciaDcha p {
+      margin-top: 7em;
+      font-size: 13px; }
+      .heroEficiencia .eficienciaDcha p span {
+        font-size: 16px; } }
+@media only screen and (min-width: 1024px) {
+  .heroEficiencia .eficienciaDcha p {
+    font-size: 16px; }
+    .heroEficiencia .eficienciaDcha p span {
+      font-size: 20px; }
+  .heroEficiencia .eficienciaDcha .eficienciaClaim {
+    margin-top: -5em;
+    font-size: 11px;
+    width: 85%;
+    margin-left: 10%; } }
+@media only screen and (min-width: 1280px) {
+  .heroEficiencia {
+    max-width: 1270px;
+    margin: 0 auto; }
+    .heroEficiencia .eficienciaDcha p {
+      font-size: 15px; }
+      .heroEficiencia .eficienciaDcha p span {
+        font-size: 22px; }
+    .heroEficiencia .eficienciaDcha .eficienciaClaim {
+      width: 80%;
+      margin-left: 10%; } }
+.wrapper .eficienciaText {
+  width: 80%;
+  margin: 2em 10%; }
+  .wrapper .eficienciaText .eficienciaTittle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700; }
+  .wrapper .eficienciaText .eficienciaParagraph {
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: 300; }
+
+@media only screen and (min-width: 600px) {
+  .wrapper .eficienciaText .eficienciaTittle {
+    text-align: left;
+    margin-bottom: 0.2em;
+    margin-top: 3em; } }
+@media only screen and (min-width: 768px) {
+  .wrapper .eficienciaText {
+    margin: 3em 10% 2em; }
+    .wrapper .eficienciaText .eficienciaParagraph {
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      column-count: 2;
+      column-gap: 20px; } }
+@media only screen and (min-width: 900px) {
+  .wrapper .eficienciaText {
+    max-width: 1024px;
+    margin: 2em auto 4em; }
+    .wrapper .eficienciaText .eficienciaTittle {
+      font-size: 18px; } }
 body {
   font-family: "Open Sans", sans-serif;
   color: #1F264A; }

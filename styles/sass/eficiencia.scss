@@ -1,0 +1,256 @@
+/*Estilo de la pagina de eficiencia energetica*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import 'breakpoints.scss';
+@import 'tipografia.scss';
+@import 'colores.scss';
+
+.heroEficiencia
+{
+    width: 100%;
+    background-color: $blueEficiencia;
+    .eficienciaIzda
+    {
+        display: none;
+    }
+    .eficienciaDcha
+    {
+        width: 84%;
+        margin: 0 8%;
+        text-align: center;
+        padding:3em 0em;
+        p
+        {
+            font-weight: $titular;
+        }
+        span
+        {
+            color:rgb(114,171,219);
+            font-weight: $texto;
+        }
+        .eficienciaSubclaim
+        {
+            width: 76%;
+            margin: 0 12%;
+            font-weight: $texto;
+            font-size: 9px;
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+    .heroEficiencia
+    {
+        div
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .eficienciaIzda
+        {
+            display: block;
+            img
+            {
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .eficienciaDcha
+        {
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 5%;
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .heroEficiencia
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        .eficienciaIzda
+        {
+            width: 60%;
+            img
+            {
+                height: 420px;
+            }
+        }
+        .eficienciaDcha
+        {
+            width: 40%;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            p
+            {
+                margin-top:12em;
+                font-size: 10px;
+                width: 100%;
+                line-height: 2em;
+            }
+            .eficienciaClaim
+            {
+                margin-top: -1em;
+                width: 80%;
+                margin-left:10%;
+            }
+            .eficienciaSubclaim
+            {
+                margin-top: -1em;
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .heroEficiencia
+    {
+        .eficienciaIzda
+        {
+            width: 50%;
+        }
+        .eficienciaDcha
+        {
+            width: 50%;
+            p
+            {
+                margin-top: 7em;
+                font-size: 13px;
+                span
+                {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .heroEficiencia
+    {
+        .eficienciaDcha
+        {
+            p
+            {
+                font-size: 16px;
+                span
+                {
+                    font-size: 20px;
+                }
+            }
+            .eficienciaClaim
+            {
+                margin-top: -5em;
+                font-size: 11px;
+                width: 85%;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .heroEficiencia
+    {
+        max-width: $ancho_max;
+        margin: 0 auto;
+        .eficienciaDcha
+        {
+            p
+            {
+                font-size: 15px;
+                span
+                {
+                    font-size: 22px;
+                }
+            }
+            .eficienciaClaim
+            {
+                width: 80%;
+                margin-left:10%;
+            }
+        }
+    }
+}
+.wrapper
+{
+    .eficienciaText
+    {
+        width: 80%;
+        margin: 2em 10%;
+        .eficienciaTittle
+        {
+            text-align: center;
+            font-size: 16px;
+            font-weight: $titular2;
+        }
+        .eficienciaParagraph
+        {
+            font-size: 10px;
+            line-height: 22px;
+            font-weight: $texto;
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+    .wrapper
+    {
+        .eficienciaText
+        {
+            .eficienciaTittle
+            {
+                text-align: left;
+                margin-bottom: 0.2em;
+                margin-top: 3em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .wrapper
+    {
+        .eficienciaText
+        {
+            margin: 3em 10% 2em;
+            .eficienciaParagraph
+            {
+                -webkit-column-count:2;
+                -webkit-column-gap:20px;
+                -moz-column-count:2;
+                -moz-column-gap:20px;
+                column-count:2;
+                column-gap:20px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .wrapper
+    {
+        .eficienciaText
+        {
+            max-width: $bp5;
+            margin: 2em auto 4em;
+            .eficienciaTittle
+            {
+               font-size: 18px;
+            }
+        }
+    }
+}
