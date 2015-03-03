@@ -136,6 +136,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/gas.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gas.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/img\/aire2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1071,6 +1080,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/sass\/eficiencia.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/eficiencia.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/sass\/gas.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/sass\/gas.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/gas.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

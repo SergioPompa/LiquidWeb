@@ -1,0 +1,403 @@
+/*Estilo de la pagina de eficiencia energetica*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import 'breakpoints.scss';
+@import 'tipografia.scss';
+@import 'colores.scss';
+
+.heroGas
+{
+    width: 100%;
+    background-color: $blueEficiencia;
+    .gasIzda
+    {
+        display: none;
+    }
+    .gasDcha
+    {
+        text-align: center;
+        padding:3em 2em;
+        p
+        {
+            font-weight: $titular;
+        }
+        span
+        {
+            color:rgb(114,171,219);
+            font-weight: $texto;
+        }
+        .gasSubclaim
+        {
+            font-weight: $texto;
+            font-size: 9px;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+    .heroGas
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        .gasIzda
+        {
+            display: block;
+            width: 50%;
+            img
+            {
+                width: 100%;
+                height: 335px;
+            }
+        }
+        .gasDcha
+        {
+            width: 50%;
+             padding-top: 5em;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            p
+            {
+                font-size: 11px;
+                width: 70%;
+                margin-left: 15%;
+                span
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .heroGas
+    {
+        .gasIzda
+        {
+
+            width: 60%;
+        }
+        .gasDcha
+        {
+            width: 50%;
+            p
+            {
+                font-size: 12px;
+                width: 90%;
+                margin-left: 5%;
+                span
+                {
+                    font-size: 14px;
+                }
+            }
+            .gasSubclaim
+            {
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .heroGas
+    {
+        height: 450px;
+        .gasIzda
+        {
+            img
+            {
+                height: 450px;
+            }
+        }
+        .gasDcha
+        {
+            padding-top:8em;
+            width: 50%;
+            p
+            {
+                font-size: 14px;
+                width: 100%;
+                margin-left: 0%;
+                span
+                {
+                    font-size: 16px;
+                }
+            }
+            .gasSubclaim
+            {
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .heroGas
+    {
+        .gasDcha
+        {
+            p
+            {
+                font-size: 16px;
+                width: 90%;
+                margin-left: 5%;
+            }
+            span
+            {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .heroGas
+    {
+        .gasIzda
+        {
+            width: 50%;
+        }
+        .gasDcha
+        {
+            padding-top:8em;
+            width: 50%;
+            p
+            {
+                font-size: 18px;
+                span
+                {
+                    font-size: 20px;
+                }
+            }
+            .gasSubclaim
+            {
+                font-size: 10px;
+            }
+        }
+    }
+}
+.wrapper
+{
+    .wrapperGas
+    {
+        h1
+        {
+            text-align: center;
+            font-size: 18px;
+        }
+        .serviciosGas
+        {
+            width: 80%;
+            margin:10%;
+            display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox;     /* TWEENER - IE 10 */
+            display: -webkit-flex;    /* NEW - Chrome */
+            display: flex;
+
+            -webkit-flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+            -moz-flex-wrap:wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+            -ms-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -ms-flex-pack: distribute;
+            justify-content: space-between;
+            -webkit-box-pack: justify;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            div
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                text-align: center;
+                img
+                {
+                    width:50px;
+                    height:50px;
+                    margin-bottom: 1em;
+                }
+                h2
+                {
+                    font-size: 9px;
+                    margin-left: 5%;
+                    margin-top: .8em;
+                    width: 60%;
+                }
+            }
+        }
+        .textInferior
+        {
+            width: 90%;
+            font-weight:$texto;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 3em;
+            .subtextInferior
+            {
+                color:rgb(106,161,215)
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp2){
+    .wrapper
+    {
+        .wrapperGas
+        {
+            .serviciosGas
+            {
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction:row;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                -o-box-orient: horizontal;
+                flex-direction: row;
+                -webkit-box-orient: vertical;
+                margin-left: 3%;
+                div
+                {
+                    -webkit-flex-direction: column;
+                    -moz-flex-direction: column;
+                    -ms-flex-direction:column;
+                    -webkit-box-orient: vertical;
+                    -moz-box-orient: vertical;
+                    -o-box-orient: vertical;
+                    flex-direction: column;
+                    width: 21%;
+                    margin-left: 5%;
+                    h2
+                    {
+                        width: 150%;
+                        font-size: 10px;
+                        margin-bottom: 2em;
+                    }
+                    img
+                    {
+                        margin-bottom: .5em;
+                        margin-left: 60%;
+                    }
+                }
+            }
+            .textInferior
+            {
+                margin-left:5%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .wrapper
+    {
+        .wrapperGas
+        {
+            .serviciosGas
+            {
+                margin-left: 5%;
+                div
+                {
+                    width: 21%;
+                    img
+                    {
+                        margin-left: 60%;
+                    }
+                }
+                .tramite
+                {
+                    margin-left: 60%;
+                }
+                .tramiteText
+                {
+                    margin-left: 7%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .wrapper
+    {
+        .wrapperGas
+        {
+            .serviciosGas
+            {
+                div
+                {
+                    width: 1%;
+                    img
+                    {
+                        margin-left: 25%;
+                    }
+                    h2
+                    {
+                        width: 1800%;
+                        margin-left: -600%;
+                    }
+                }
+                .tramite
+                {
+                    margin-left: 20%;
+                }
+                .tramiteText
+                {
+                    margin-left: -590%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .wrapper
+    {
+        .wrapperGas
+        {
+            .serviciosGas
+            {
+                div
+                {
+                    h2
+                    {
+                        font-size: 9px;
+                        width: 1600%;
+                        margin-left: -560%;
+                    }
+                }
+            }
+            .textInferior
+            {
+                font-size: 15px;
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .wrapper
+    {
+        .wrapperGas
+        {
+            .textInferior
+            {
+                width: 100%;
+                margin-left: 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
