@@ -226,16 +226,16 @@ header .logo {
   .menu-nav .selectedDesktop {
     background: #F59B23;
     z-index: 1000; }
-    .menu-nav .selectedDesktop ul {
-      width: 140%; }
-      .menu-nav .selectedDesktop ul li {
+    .menu-nav .selectedDesktop .instalacionesList {
+      width: 140%;
+      height: auto; }
+      .menu-nav .selectedDesktop .instalacionesList li {
         width: 100%;
         background: #FFFFFF;
-        line-height: 4em;
         text-align: center;
         border-bottom: 1px solid #1F264A;
         cursor: pointer; }
-        .menu-nav .selectedDesktop ul li a {
+        .menu-nav .selectedDesktop .instalacionesList li a {
           display: inline;
           color: #1F264A;
           padding: 0.8em 0;
@@ -285,11 +285,7 @@ header .logo {
     width: 80%;
     margin: 0 0 0 20%; }
     .menu-nav .menu-nav-ul li {
-      width: 20%; }
-  .menu-nav .selectedDesktop {
-    margin: 0; }
-    .menu-nav .selectedDesktop li {
-      width: 100%; } }
+      width: 20%; } }
 @media only screen and (min-width: 900px) {
   .menu-nav .menu-nav-ul {
     width: 60%;
@@ -297,11 +293,7 @@ header .logo {
     .menu-nav .menu-nav-ul li {
       width: 15%; }
     .menu-nav .menu-nav-ul .efiEner {
-      width: 25%; }
-  .menu-nav .selectedDesktop {
-    margin: 0; }
-    .menu-nav .selectedDesktop li {
-      width: 170%; } }
+      width: 25%; } }
 @media only screen and (min-width: 1024px) {
   .menu-nav .menu-nav-ul li a {
     font-size: 12px; }

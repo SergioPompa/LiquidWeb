@@ -336,14 +336,14 @@ header
     {
         background: $color_orange;
         z-index: 1000;
-        ul
+        .instalacionesList
         {
             width: 140%;
+            height: auto;
             li
             {
                 width: 100%;
                 background: $white;
-                line-height: 4em;
                 text-align: center;
                 border-bottom: 1px solid $darkpurple;
                 cursor: pointer;
@@ -422,14 +422,6 @@ header
                 width: 20%;
             }
         }
-        .selectedDesktop
-        {
-            margin: 0;
-            li
-            {
-                width: 100%;
-            }
-        }
     }
 }
 @media only screen and (min-width: $bp4){
@@ -446,14 +438,6 @@ header
             .efiEner
             {
                 width: 25%;
-            }
-        }
-        .selectedDesktop
-        {
-            margin: 0;
-            li
-            {
-                width: 170%;
             }
         }
     }
