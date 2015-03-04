@@ -1,46 +1,208 @@
-/*pagina calefaccion*/
+/*Estilo de la pagina de calefaccion*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import 'breakpoints.scss';
+@import 'tipografia.scss';
+@import 'colores.scss';
 
-.calefaccionizda
+.heroCalefaccion
 {
-    display: none;
-}
-.calefacciondcha
-{
-    background-color:#C6E0F3;
-    text-align: center;
-    padding:3em 2em;
-    p 
+    width: 100%;
+    .calefaccionIzda
     {
-    font-weight: $titular;
+        display: none;
     }
-    span
+    .calefaccionDcha
     {
-     color:rgb(114,171,219);
-     font-weight: $texto;
-    }    
-    .calefaccionsubclaim
-    {
-    font-weight: $texto;
-    font-size: 9px;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 7em;
-    }
-    .marcas 
-    {
-        img 
+        background-color:#C6E0F3;
+        text-align: center;
+        padding:3em 2em;
+        h1 
         {
-            width: 20%;
-            margin-left: 1%;
+        font-weight: $titular;
+            span
+            {
+             color:rgb(114,171,219);
+             font-weight: $texto;
+            } 
+        }           
+        .calefaccionSubclaim
+        {
+        font-weight: $texto;
+        font-size: 9px;
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 7em;
+        }
+        .marcas 
+        {
+            img 
+            {
+                width: 20%;
+                margin-left: 1%;
+            }
         }
     }
 }
-h1 
-{
-    text-align: center;
-    font-size: 18px;
+@media only screen and (min-width: $bp2){
+    .heroCalefaccion
+    {
+        .calefaccionIzda
+        {
+            display: block;       
+            img 
+            {
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .calefaccionDcha
+        {
+            padding:2em 0;           
+            h1
+            {
+                font-size: 11px;
+                width: 70%;
+                margin-left: 15%;
+                span 
+                {
+                  font-size: 12px;  
+                }
+            }
+            .marcas 
+            {
+                img 
+                {
+                    width: 15%;
+                    margin-left: 2%;
+                }
+            }             
+        }
+    }
 }
-.servicioscalefaccion
+@media only screen and (min-width: $bp3){
+    .heroCalefaccion
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;    
+       .calefaccionIzda
+        {
+            width: 50%;
+            img 
+            {
+                height: 380px;
+            }
+        }
+        .calefaccionDcha
+        {
+            width: 50%;           
+            h1
+            {
+                font-size: 12px;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 5em;
+                span
+                {
+                    font-size: 14px;
+                }
+            }
+            .calefaccionSubclaim
+            {               
+                font-size: 10px;
+                margin-top: -.5em;
+                margin-bottom: 9em;
+            }        
+        }
+    }
+}
+@media only screen and (min-width: $bp4){
+    .heroCalefaccion
+    {
+        height: 400px;
+        .calefaccionIzda
+        {
+            img 
+            {
+                height: 400px;
+            }
+        }
+        .calefaccionDcha
+        {     
+            h1
+            {
+                font-size: 14px;
+                width: 100%;
+                margin-left: 0%;
+                span
+                {
+                    font-size: 16px;
+                }
+            }
+            .calefaccionSubclaim
+            {            
+                font-size: 10px;
+                margin-top: -1em;
+                margin-bottom: 11em;
+            }        
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .heroCalefaccion
+    {
+        height: 500px;
+        .calefaccionIzda
+        {
+            img
+            {
+                height: 500px;
+            }
+        }
+        .calefaccionDcha
+        {      
+            h1
+            {            
+                font-size: 16px;
+                width: 90%;
+                margin-left: 5%;
+            }
+            span
+            {
+                font-size: 18px;
+            } 
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .heroCalefaccion
+    {
+        height: 600px;
+        .calefaccionIzda
+        {
+            img
+            {
+                height: 600px;
+            }
+        }
+        .calefaccionDcha
+        {                
+            h1
+            {
+                font-size: 18px;
+            }
+            .calefaccionSubclaim
+            {            
+                font-size: 12px;
+                margin-bottom: 5em;
+            }        
+        }
+    }
+}
+.serviciosCalefaccion
 {
         width: 80%;
         margin:10%;
@@ -91,13 +253,13 @@ h1
         }    
     }
 }
-.textcalefaccion
+.textCalefaccion
 {
     width: 90%;
     margin-left: 5%;
     font-weight:$texto;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 3em;
     span 
     {
@@ -105,33 +267,7 @@ h1
     }
 }
 @media only screen and (min-width: $bp2){
-    .calefaccionizda
-    {
-        display: block;       
-        img 
-        {
-            width: 100%;
-        }
-    }
-    .calefacciondcha
-    {
-         padding:2em 0;           
-        p
-        {
-            font-size: 14px;
-            width: 90%;
-            margin-left: 5%;
-        }
-        .marcas 
-        {
-            img 
-            {
-                width: 15%;
-                margin-left: 2%;
-            }
-        }             
-    }
-    .servicioscalefaccion
+    .serviciosCalefaccion
     {
             -webkit-flex-direction: row;
             -moz-flex-direction: row;
@@ -162,50 +298,15 @@ h1
             img 
             {
                 margin-bottom: .5em;
-                margin-left: 60%;
+                margin-left: 55%;
             }
         }
     }
 }
 @media only screen and (min-width: $bp3){
-    .herocalefaccion
+    .serviciosCalefaccion
     {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;        
-    }
-   .calefaccionizda
-    {
-        width: 50%;
-        img 
-        {
-            height: 300px;
-        }
-    }
-    .calefacciondcha
-    {
-       width: 50%; 
-       padding:0;
-        p
-        {
-            font-size: 12px;
-            width: 95%;
-            margin-left: 2.5%;
-            margin-top: 5em;
-        }
-        .calefaccionsubclaim
-        {
-            width: 80%;
-            margin-left: 10%;
-            font-size: 10px;
-            margin-top: -.5em;
-            margin-bottom: 9em;
-        }        
-    }
-    .servicioscalefaccion
-    {
+        margin-top: 3em;
         margin-left: 5%;        
         div
         {          
@@ -216,48 +317,21 @@ h1
             }
         }
     }
-    .textcalefaccion
+    .textCalefaccion
     {
         font-size: 12px;
         margin-bottom: 3em;
     }
 }
 @media only screen and (min-width: $bp4){
-.herocalefaccion
-{
-    height: 400px;
-}
-    .calefaccionizda
-    {
-        img 
-        {
-            height: 400px;
-        }
-    }
-    .calefacciondcha
-    {       
-        p
-        {
-            padding-top:3em;
-            font-size: 14px;
-            width: 100%;
-            margin-left: 0%;
-        }
-        .calefaccionsubclaim
-        {            
-            font-size: 10px;
-            margin-top: -2em;
-            margin-bottom: 11em;
-        }        
-    }
-    .servicioscalefaccion
+    .serviciosCalefaccion
     {         
         div
         {          
             width: 1%;
             img 
             {
-                margin-left: 25%;
+                margin-left: -50%;
             }
             h2
             {              
@@ -266,27 +340,9 @@ h1
             }
         }
     }
-    .textcalefaccion
-    {
-        font-size: 14px;
-        margin-bottom: 3em;
-    }
 }
 @media only screen and (min-width: $bp5){
-    .calefacciondcha
-    {      
-        p
-        {            
-            font-size: 16px;
-            width: 90%;
-            margin-left: 5%;
-        }
-        span
-        {
-            font-size: 18px;
-        } 
-    }
-    .servicioscalefaccion
+    .serviciosCalefaccion
     {       
         div
         {          
@@ -302,45 +358,20 @@ h1
             }
         }
     }
-    .textcalefaccion
+    .textCalefaccion
     {
         font-size: 15px;
         margin-bottom: 3em;
     }
 }
 @media only screen and (min-width: $bp6){
-    .calefacciondcha
-    {      
-        p
+    .serviciosCalefaccion
+    {       
+     .textInferior
         {
+            width: 100%;
+            margin-left: 0;
             font-size: 18px;
         }
-        .calefaccionsubclaim
-        {            
-            font-size: 12px;
-            margin-bottom: 5em;
-        }        
-    }
-    .servicioscalefaccion
-    {       
-        div
-        {          
-            img 
-            {
-                margin-left: 25%;
-            }
-            h2
-            {
-                font-size: 9px;
-                width: 1600%;
-                margin-left: -560%;
-            }
-        }
-    }
-    .textinferiorcalefaccion
-    {
-        width: 100%;
-        margin-left: 0;
-        font-size: 18px;
     }
 }

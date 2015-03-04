@@ -14,6 +14,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 html {
   color: #222;
   font-size: 1em;
@@ -201,22 +205,27 @@ textarea {
     margin-left: 10%; } }
 @media only screen and (min-width: 1280px) {
   .heroEficiencia {
-    max-width: 1270px;
     margin: 0 auto; }
-    .heroEficiencia .eficienciaDcha p {
-      font-size: 15px; }
-      .heroEficiencia .eficienciaDcha p span {
-        font-size: 22px; }
-    .heroEficiencia .eficienciaDcha .eficienciaClaim {
-      width: 80%;
-      margin-left: 10%; } }
+    .heroEficiencia .eficienciaIzda img {
+      height: 600px; }
+    .heroEficiencia .eficienciaDcha {
+      height: 500px; }
+      .heroEficiencia .eficienciaDcha p {
+        font-size: 15px; }
+        .heroEficiencia .eficienciaDcha p span {
+          font-size: 22px; }
+      .heroEficiencia .eficienciaDcha .eficienciaClaim {
+        width: 80%;
+        margin-left: 10%; } }
 .wrapper .eficienciaText {
   width: 80%;
   margin: 2em 10%; }
   .wrapper .eficienciaText .eficienciaTittle {
     text-align: center;
     font-size: 16px;
-    font-weight: 700; }
+    font-weight: 600; }
+    .wrapper .eficienciaText .eficienciaTittle span {
+      font-weight: 800; }
   .wrapper .eficienciaText .eficienciaParagraph {
     font-size: 10px;
     line-height: 22px;
@@ -226,7 +235,9 @@ textarea {
   .wrapper .eficienciaText .eficienciaTittle {
     text-align: left;
     margin-bottom: 0.2em;
-    margin-top: 3em; } }
+    margin-top: 3em; }
+    .wrapper .eficienciaText .eficienciaTittle span {
+      font-size: 18px; } }
 @media only screen and (min-width: 768px) {
   .wrapper .eficienciaText {
     margin: 3em 10% 2em; }
@@ -242,8 +253,10 @@ textarea {
     max-width: 1024px;
     margin: 2em auto 4em; }
     .wrapper .eficienciaText .eficienciaTittle {
-      font-size: 18px; } }
-/*Estilo de la pagina de eficiencia energetica*/
+      font-size: 18px; }
+      .wrapper .eficienciaText .eficienciaTittle span {
+        font-size: 22px; } }
+/*Estilo de la pagina de gas*/
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
@@ -267,6 +280,20 @@ textarea {
       margin-left: 15%; }
 
 @media only screen and (min-width: 600px) {
+  .heroGas .gasIzda {
+    display: block; }
+    .heroGas .gasIzda img {
+      width: 100%;
+      height: 400px; }
+  .heroGas .gasDcha {
+    padding-top: 5em; }
+    .heroGas .gasDcha p {
+      font-size: 11px;
+      width: 70%;
+      margin-left: 15%; }
+      .heroGas .gasDcha p span {
+        font-size: 12px; } }
+@media only screen and (min-width: 768px) {
   .heroGas {
     display: -webkit-box;
     display: -moz-box;
@@ -274,40 +301,17 @@ textarea {
     display: -webkit-flex;
     display: flex; }
     .heroGas .gasIzda {
-      display: block;
-      width: 50%; }
-      .heroGas .gasIzda img {
-        width: 100%;
-        height: 335px; }
+      width: 60%; }
     .heroGas .gasDcha {
-      width: 50%;
-      padding-top: 5em;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      -o-box-orient: vertical;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      flex-direction: column; }
+      width: 50%; }
       .heroGas .gasDcha p {
-        font-size: 11px;
-        width: 70%;
-        margin-left: 15%; }
+        font-size: 12px;
+        width: 90%;
+        margin-left: 5%; }
         .heroGas .gasDcha p span {
-          font-size: 12px; } }
-@media only screen and (min-width: 768px) {
-  .heroGas .gasIzda {
-    width: 60%; }
-  .heroGas .gasDcha {
-    width: 50%; }
-    .heroGas .gasDcha p {
-      font-size: 12px;
-      width: 90%;
-      margin-left: 5%; }
-      .heroGas .gasDcha p span {
-        font-size: 14px; }
-    .heroGas .gasDcha .gasSubclaim {
-      font-size: 10px; } }
+          font-size: 14px; }
+      .heroGas .gasDcha .gasSubclaim {
+        font-size: 10px; } }
 @media only screen and (min-width: 900px) {
   .heroGas {
     height: 450px; }
@@ -465,6 +469,407 @@ textarea {
   .wrapper .wrapperGas .textInferior {
     width: 100%;
     margin-left: 0;
+    font-size: 18px; } }
+/*Estilo de la pagina de calefaccion*/
+/* Variables para los breakpoints */
+/* Variables para el uso de la tipografía */
+/* Variables para los colores corporativos */
+.heroCalefaccion {
+  width: 100%; }
+  .heroCalefaccion .calefaccionIzda {
+    display: none; }
+  .heroCalefaccion .calefaccionDcha {
+    background-color: #C6E0F3;
+    text-align: center;
+    padding: 3em 2em; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-weight: 800; }
+      .heroCalefaccion .calefaccionDcha h1 span {
+        color: #72abdb;
+        font-weight: 300; }
+    .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+      font-weight: 300;
+      font-size: 9px;
+      width: 70%;
+      margin-left: 15%;
+      margin-bottom: 7em; }
+    .heroCalefaccion .calefaccionDcha .marcas img {
+      width: 20%;
+      margin-left: 1%; }
+
+@media only screen and (min-width: 600px) {
+  .heroCalefaccion .calefaccionIzda {
+    display: block; }
+    .heroCalefaccion .calefaccionIzda img {
+      width: 100%;
+      height: 400px; }
+  .heroCalefaccion .calefaccionDcha {
+    padding: 2em 0; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-size: 11px;
+      width: 70%;
+      margin-left: 15%; }
+      .heroCalefaccion .calefaccionDcha h1 span {
+        font-size: 12px; }
+    .heroCalefaccion .calefaccionDcha .marcas img {
+      width: 15%;
+      margin-left: 2%; } }
+@media only screen and (min-width: 768px) {
+  .heroCalefaccion {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .heroCalefaccion .calefaccionIzda {
+      width: 50%; }
+      .heroCalefaccion .calefaccionIzda img {
+        height: 380px; }
+    .heroCalefaccion .calefaccionDcha {
+      width: 50%; }
+      .heroCalefaccion .calefaccionDcha h1 {
+        font-size: 12px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5em; }
+        .heroCalefaccion .calefaccionDcha h1 span {
+          font-size: 14px; }
+      .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+        font-size: 10px;
+        margin-top: -.5em;
+        margin-bottom: 9em; } }
+@media only screen and (min-width: 900px) {
+  .heroCalefaccion {
+    height: 400px; }
+    .heroCalefaccion .calefaccionIzda img {
+      height: 400px; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-size: 14px;
+      width: 100%;
+      margin-left: 0%; }
+      .heroCalefaccion .calefaccionDcha h1 span {
+        font-size: 16px; }
+    .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+      font-size: 10px;
+      margin-top: -1em;
+      margin-bottom: 11em; } }
+@media only screen and (min-width: 1024px) {
+  .heroCalefaccion {
+    height: 500px; }
+    .heroCalefaccion .calefaccionIzda img {
+      height: 500px; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-size: 16px;
+      width: 90%;
+      margin-left: 5%; }
+    .heroCalefaccion .calefaccionDcha span {
+      font-size: 18px; } }
+@media only screen and (min-width: 1280px) {
+  .heroCalefaccion {
+    height: 600px; }
+    .heroCalefaccion .calefaccionIzda img {
+      height: 600px; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-size: 18px; }
+    .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+      font-size: 12px;
+      margin-bottom: 5em; } }
+.serviciosCalefaccion {
+  width: 80%;
+  margin: 10%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  flex-direction: column; }
+  .serviciosCalefaccion div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center; }
+    .serviciosCalefaccion div img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1em; }
+    .serviciosCalefaccion div h2 {
+      font-size: 9px;
+      margin-left: 5%;
+      margin-top: .8em;
+      width: 60%; }
+
+.textCalefaccion {
+  width: 90%;
+  margin-left: 5%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 3em; }
+  .textCalefaccion span {
+    color: #6aa1d7; }
+
+@media only screen and (min-width: 600px) {
+  .serviciosCalefaccion {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-box-orient: vertical;
+    margin-left: 3%; }
+    .serviciosCalefaccion div {
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -o-box-orient: vertical;
+      flex-direction: column;
+      width: 21%;
+      margin-left: 5%; }
+      .serviciosCalefaccion div h2 {
+        width: 150%;
+        font-size: 10px;
+        margin-bottom: 2em; }
+      .serviciosCalefaccion div img {
+        margin-bottom: .5em;
+        margin-left: 55%; } }
+@media only screen and (min-width: 768px) {
+  .serviciosCalefaccion {
+    margin-top: 3em;
+    margin-left: 5%; }
+    .serviciosCalefaccion div {
+      width: 21%; }
+      .serviciosCalefaccion div img {
+        margin-left: 60%; }
+
+  .textCalefaccion {
+    font-size: 12px;
+    margin-bottom: 3em; } }
+@media only screen and (min-width: 900px) {
+  .serviciosCalefaccion div {
+    width: 1%; }
+    .serviciosCalefaccion div img {
+      margin-left: -50%; }
+    .serviciosCalefaccion div h2 {
+      width: 1800%;
+      margin-left: -600%; } }
+@media only screen and (min-width: 1024px) {
+  .serviciosCalefaccion div img {
+    margin-left: 25%; }
+  .serviciosCalefaccion div h2 {
+    font-size: 9px;
+    width: 1600%;
+    margin-left: -560%; }
+
+  .textCalefaccion {
+    font-size: 15px;
+    margin-bottom: 3em; } }
+@media only screen and (min-width: 1280px) {
+  .serviciosCalefaccion .textInferior {
+    width: 100%;
+    margin-left: 0;
+    font-size: 18px; } }
+/* Variables para los breakpoints */
+/* Variables para el uso de la tipografía */
+/* Variables para los colores corporativos */
+.aireIzda {
+  display: none; }
+
+.aireDcha {
+  background-color: #C6E0F3;
+  text-align: center;
+  padding: 3em 2em; }
+  .aireDcha p {
+    font-weight: 800; }
+  .aireDcha span {
+    color: #72abdb;
+    font-weight: 300; }
+  .aireDcha .aireSubclaim {
+    font-weight: 300;
+    font-size: 9px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 7em; }
+
+.serviciosAire {
+  width: 70%;
+  margin-left: 30%; }
+  .serviciosAire div {
+    margin: 3em 10%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column; }
+    .serviciosAire div img {
+      width: 60%;
+      margin-bottom: 1em; }
+  .serviciosAire .logosAire {
+    margin-left: 20%; }
+    .serviciosAire .logosAire img {
+      width: 40%; }
+
+.textAire {
+  width: 90%;
+  margin-left: 5%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 3em; }
+  .textAire span {
+    color: #6aa1d7; }
+
+@media only screen and (min-width: 600px) {
+  .aireIzda {
+    display: block; }
+    .aireIzda img {
+      width: 100%; }
+
+  .aireDcha {
+    padding: 3em 0 2em 0; }
+    .aireDcha p {
+      font-size: 14px;
+      width: 90%;
+      margin-left: 5%; }
+
+  .serviciosAire div {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -20%; }
+    .serviciosAire div img {
+      width: 30%;
+      height: 30%; }
+  .serviciosAire .logosAire {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -20%; }
+    .serviciosAire .logosAire img {
+      width: 20%;
+      margin-left: 2%; } }
+@media only screen and (min-width: 768px) {
+  .heroAire {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+
+  .aireIzda {
+    width: 50%; }
+    .aireIzda img {
+      height: 300px; }
+
+  .aireDcha {
+    width: 50%;
+    padding: 0; }
+    .aireDcha p {
+      font-size: 12px;
+      width: 95%;
+      margin-left: 2.5%;
+      margin-top: 5em; }
+    .aireDcha .aireSubclaim {
+      width: 80%;
+      margin-left: 10%;
+      font-size: 10px;
+      margin-top: -.5em;
+      margin-bottom: 9em; }
+
+  .textAire {
+    font-size: 12px;
+    margin-bottom: 3em; } }
+@media only screen and (min-width: 900px) {
+  .heroAire {
+    height: 400px; }
+
+  .aireIzda img {
+    height: 400px; }
+
+  .aireDcha p {
+    padding-top: 3em;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 0%; }
+  .aireDcha .calefaccionSubclaim {
+    font-size: 10px;
+    margin-top: -2em;
+    margin-bottom: 11em; }
+
+  .serviciosAire {
+    margin-left: 40%; }
+    .serviciosAire div img {
+      width: 20%;
+      margin-bottom: 1em; }
+    .serviciosAire .logosAire {
+      margin-left: -18%; }
+      .serviciosAire .logosAire img {
+        width: 12%; }
+
+  .textAire {
+    font-size: 12px;
+    margin-bottom: 3em; } }
+@media only screen and (min-width: 1024px) {
+  .heroAire .aireDcha p {
+    font-size: 16px;
+    width: 90%;
+    margin-left: 5%; }
+  .heroAire .aireDcha span {
     font-size: 18px; } }
 body {
   font-family: "Open Sans", sans-serif;
