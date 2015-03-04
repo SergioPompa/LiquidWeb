@@ -3,38 +3,40 @@
 @import 'breakpoints.scss';
 @import 'tipografia.scss';
 @import 'colores.scss';
-
-.aireIzda
+.heroAire
 {
-    display: none;
-}
-.aireDcha
-{
-    background-color:#C6E0F3;
-    text-align: center;
-    padding:3em 2em;
-    p 
+    .aireIzda
     {
-    font-weight: $titular;
+        display: none;
     }
-    span
+    .aireDcha
     {
-     color:rgb(114,171,219);
-     font-weight: $texto;
-    }    
-    .aireSubclaim
-    {
-    font-weight: $texto;
-    font-size: 9px;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 7em;
+        background-color:#C6E0F3;
+        text-align: center;
+        padding:3em 2em;
+        p 
+        {
+        font-weight: $titular;
+        }
+        span
+        {
+         color:rgb(114,171,219);
+         font-weight: $texto;
+        }    
+        .aireSubclaim
+        {
+        font-weight: $texto;
+        font-size: 9px;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 7em;
+        }
     }
 }
 .serviciosAire
 {
-        width: 70%;
-        margin-left:30%; 
+    width: 70%;
+    margin-left:30%; 
     div 
     {
         margin:3em 10%;
@@ -81,23 +83,25 @@
     }
 }
 @media only screen and (min-width: $bp2){
-    .aireIzda
-    {
-        display: block;       
-        img 
+    .heroAire{
+        .aireIzda
         {
-            width: 100%;
+            display: block;       
+            img 
+            {
+                width: 100%;
+            }
         }
-    }
-    .aireDcha
-    {
-         padding:3em 0 2em 0;           
-        p
+        .aireDcha
         {
-            font-size: 14px;
-            width: 90%;
-            margin-left: 5%;
-        }     
+             padding:3em 0 2em 0;           
+            p
+            {
+                font-size: 14px;
+                width: 90%;
+                margin-left: 5%;
+            }     
+        }
     }
     .serviciosAire
     {
@@ -152,35 +156,35 @@
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex;        
-    }
-   .aireIzda
-    {
-        width: 50%;
-        img 
+        display: flex;
+        .aireIzda
         {
-            height: 300px;
+            width: 50%;
+            img 
+            {
+                height: 300px;
+            }
         }
-    }
-    .aireDcha
-    {
-       width: 50%; 
-       padding:0;
-        p
+        .aireDcha
         {
-            font-size: 12px;
-            width: 95%;
-            margin-left: 2.5%;
-            margin-top: 5em;
+           width: 50%; 
+           padding:0;
+            p
+            {
+                font-size: 12px;
+                width: 95%;
+                margin-left: 2.5%;
+                margin-top: 5em;
+            }
+            .aireSubclaim
+            {
+                width: 80%;
+                margin-left: 10%;
+                font-size: 10px;
+                margin-top: -.5em;
+                margin-bottom: 9em;
+            }        
         }
-        .aireSubclaim
-        {
-            width: 80%;
-            margin-left: 10%;
-            font-size: 10px;
-            margin-top: -.5em;
-            margin-bottom: 9em;
-        }        
     }
     .textAire
     {
@@ -189,54 +193,53 @@
     }
 }
 @media only screen and (min-width: $bp4){
-.heroAire
-{
-    height: 400px;
-}
-    .aireIzda
+    .heroAire
     {
-        img 
+        height: 400px;
+        .aireIzda
         {
-            height: 400px;
+            img 
+            {
+                height: 400px;
+            }
         }
-    }
-    .aireDcha
-    {       
-        p
-        {
-            padding-top:3em;
-            font-size: 14px;
-            width: 100%;
-            margin-left: 0%;
+        .aireDcha
+        {       
+            p
+            {
+                padding-top:3em;
+                font-size: 14px;
+                width: 100%;
+                margin-left: 0%;
+            }
+            .calefaccionSubclaim
+            {            
+                font-size: 10px;
+                margin-top: -2em;
+                margin-bottom: 11em;
+            }        
         }
-        .calefaccionSubclaim
-        {            
-            font-size: 10px;
-            margin-top: -2em;
-            margin-bottom: 11em;
-        }        
     }
     .serviciosAire
     {
         margin-left: 40%;        
         div 
+        {        
+            img 
+            {
+                width: 20%;
+                margin-bottom: 1em;         
+            }
+        }
+        .logosAire 
         {
-        
-        img 
-        {
-            width: 20%;
-            margin-bottom: 1em;         
+            margin-left: -18%;
+            img 
+            {
+               width: 12%; 
+            }        
         }
     }
-    .logosAire 
-    {
-        margin-left: -18%;
-        img 
-        {
-           width: 12%; 
-        }        
-    }
-}
   .textAire
     {
         font-size: 12px;
@@ -259,5 +262,31 @@
                 font-size: 18px;
             }
         }
+    }
+    .serviciosAire
+    {
+        margin-left: 46%;        
+        div 
+        {        
+            img 
+            {
+                width: 15%;
+                margin-bottom: 1em;         
+            }
+        }
+        .logosAire 
+        {
+            margin-left: -18%;
+            img 
+            {
+               width: 8%; 
+            }        
+        }
+    }
+    .textAire
+    {
+        width: 100%;
+        margin-left: 0;
+        font-size: 18px;
     }
 }
