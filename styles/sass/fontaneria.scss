@@ -228,39 +228,27 @@
         }
     }
 }
+h1 
+{
+    font-weight: $titular;
+    width: 90%;
+    text-align: center;
+   margin:2em 0 3em 5%;
+    font-size: 14px;
+    span
+    {
+        color:rgb(114,171,219);
+        font-weight: $texto;
+    } 
+}
 .fontaneriaServicios
 {
-    
-    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;     /* TWEENER - IE 10 */
-    display: -webkit-flex;    /* NEW - Chrome */
-    display: flex;
-
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-box-orient: vertical;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    flex-direction: column;
-    h1 
-    {
-        font-weight: $titular;
-        width: 80%;
-        text-align: center;
-        margin-left: 10%;
-        font-size: 14px;
-        span
-        {
-            color:rgb(114,171,219);
-            font-weight: $texto;
-        } 
-    }
-    ul 
-    {       
+ 
+    ul
+    {  
         li 
-        {            
+        {
+
             font-size: 11px;
             margin-left: 10%;
             margin-bottom: 1.1em;
@@ -282,7 +270,42 @@
         }
     }   
 }
+@media only screen and (min-width: $bp6){
+    
+.fontaneriaServicios
+{
+    ul 
+    { 
+        
+        width: 20%;      
+        li 
+        {   
 
+            font-size: 11px;
+            margin-left: 30%;
+            margin-bottom: 1.1em;
+            margin-top: 1em;            
+            position: relative;
+        }
+        li:before
+        {
+            padding:10px;
+            padding-left:10px;
+            padding-right:9px;           
+            background-color: rgb(104,159,214);
+            border-radius: 10px 10px 10px 10px;
+            content: "";
+            color:#000;
+            position: absolute;
+            top:-.001em;
+            left: -15%;
+        }
+    }   
+}
+
+
+
+}
 
 
 
