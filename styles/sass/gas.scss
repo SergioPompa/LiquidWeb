@@ -18,14 +18,14 @@
     {
         text-align: center;
         padding:3em 2em;
-        p
-        {
-            font-weight: $titular;
-        }
-        span
+        h1
         {
             color:rgb(114,171,219);
             font-weight: $texto;
+        }
+        p
+        {
+            font-weight: $titular;
         }
         .gasSubclaim
         {
@@ -51,15 +51,15 @@
         .gasDcha
         {           
             padding-top: 5em;
+            h1
+            {
+                font-size: 12px;
+            }
             p
             {
                 font-size: 11px;
                 width: 70%;
                 margin-left: 15%;
-                span
-                {
-                    font-size: 12px;
-                }
             }
         }
     }
@@ -74,21 +74,20 @@
         display: flex; 
         .gasIzda
         {
-
             width: 60%;
         }
         .gasDcha
         {
             width: 50%;
+            h1
+            {
+                font-size: 14px;
+            }
             p
             {
                 font-size: 12px;
                 width: 90%;
                 margin-left: 5%;
-                span
-                {
-                    font-size: 14px;
-                }
             }
             .gasSubclaim
             {
@@ -112,15 +111,15 @@
         {
             padding-top:8em;
             width: 50%;
+            h1
+            {
+                font-size: 16px;
+            }
             p
             {
                 font-size: 14px;
                 width: 100%;
                 margin-left: 0%;
-                span
-                {
-                    font-size: 16px;
-                }
             }
             .gasSubclaim
             {
@@ -134,15 +133,15 @@
     {
         .gasDcha
         {
+            h1
+            {
+                font-size: 18px;
+            }
             p
             {
                 font-size: 16px;
                 width: 90%;
                 margin-left: 5%;
-            }
-            span
-            {
-                font-size: 18px;
             }
         }
     }
@@ -158,13 +157,13 @@
         {
             padding-top:8em;
             width: 50%;
+            h1
+            {
+                font-size: 20px;
+            }
             p
             {
                 font-size: 18px;
-                span
-                {
-                    font-size: 20px;
-                }
             }
             .gasSubclaim
             {
@@ -177,11 +176,6 @@
 {
     .wrapperGas
     {
-        h1
-        {
-            text-align: center;
-            font-size: 18px;
-        }
         .serviciosGas
         {
             width: 80%;
@@ -191,7 +185,6 @@
             display: -ms-flexbox;     /* TWEENER - IE 10 */
             display: -webkit-flex;    /* NEW - Chrome */
             display: flex;
-
             -webkit-flex-wrap:wrap;
             -ms-flex-wrap:wrap;
             -moz-flex-wrap:wrap;
@@ -328,12 +321,15 @@
         {
             .serviciosGas
             {
+                margin-left: 11%;
+                margin-top: 3em;
                 div
                 {
                     width: 1%;
+                    margin-left: -5%;
                     img
                     {
-                        margin-left: 25%;
+                        margin-left: -55%;
                     }
                     h2
                     {
@@ -343,12 +339,17 @@
                 }
                 .tramite
                 {
-                    margin-left: 20%;
+                    margin-left: -55%;
                 }
                 .tramiteText
                 {
                     margin-left: -590%;
                 }
+            }
+            .textInferior
+            {
+                font-size: 12px;
+                margin-top: -5em;
             }
         }
     }
@@ -373,7 +374,6 @@
             .textInferior
             {
                 font-size: 15px;
-                margin-bottom: 3em;
             }
         }
     }
@@ -385,9 +385,9 @@
         {
             .textInferior
             {
-                width: 100%;
-                margin-left: 0;
-                font-size: 18px;
+            
+                margin:-5em auto 2em;
+                font-size: 15px;
             }
         }
     }

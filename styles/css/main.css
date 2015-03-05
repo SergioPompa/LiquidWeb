@@ -110,7 +110,6 @@ textarea {
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
 .heroEficiencia {
-  width: 100%;
   background-color: #C6E0F3; }
   .heroEficiencia .eficienciaIzda {
     display: none; }
@@ -141,7 +140,7 @@ textarea {
     display: block; }
     .heroEficiencia .eficienciaIzda img {
       width: 100%;
-      height: 50%; }
+      height: 350px; }
   .heroEficiencia .eficienciaDcha {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -209,9 +208,9 @@ textarea {
   .heroEficiencia {
     margin: 0 auto; }
     .heroEficiencia .eficienciaIzda img {
-      height: 600px; }
+      height: 400px; }
     .heroEficiencia .eficienciaDcha {
-      height: 500px; }
+      height: 300px; }
       .heroEficiencia .eficienciaDcha p {
         font-size: 15px; }
         .heroEficiencia .eficienciaDcha p span {
@@ -251,12 +250,12 @@ textarea {
       column-count: 2;
       column-gap: 20px; } }
 @media only screen and (min-width: 900px) {
-  .wrapper .eficienciaText {
+  .wrapperPaginaInterior .eficienciaText {
     max-width: 1024px;
     margin: 2em auto 4em; }
-    .wrapper .eficienciaText .eficienciaTittle {
+    .wrapperPaginaInterior .eficienciaText .eficienciaTittle {
       font-size: 18px; }
-      .wrapper .eficienciaText .eficienciaTittle span {
+      .wrapperPaginaInterior .eficienciaText .eficienciaTittle span {
         font-size: 22px; } }
 /*Estilo de la pagina de gas*/
 /* Variables para los breakpoints */
@@ -270,11 +269,11 @@ textarea {
   .heroGas .gasDcha {
     text-align: center;
     padding: 3em 2em; }
-    .heroGas .gasDcha p {
-      font-weight: 800; }
-    .heroGas .gasDcha span {
+    .heroGas .gasDcha h1 {
       color: #72abdb;
       font-weight: 300; }
+    .heroGas .gasDcha p {
+      font-weight: 800; }
     .heroGas .gasDcha .gasSubclaim {
       font-weight: 300;
       font-size: 9px;
@@ -289,12 +288,12 @@ textarea {
       height: 400px; }
   .heroGas .gasDcha {
     padding-top: 5em; }
+    .heroGas .gasDcha h1 {
+      font-size: 12px; }
     .heroGas .gasDcha p {
       font-size: 11px;
       width: 70%;
-      margin-left: 15%; }
-      .heroGas .gasDcha p span {
-        font-size: 12px; } }
+      margin-left: 15%; } }
 @media only screen and (min-width: 768px) {
   .heroGas {
     display: -webkit-box;
@@ -306,12 +305,12 @@ textarea {
       width: 60%; }
     .heroGas .gasDcha {
       width: 50%; }
+      .heroGas .gasDcha h1 {
+        font-size: 14px; }
       .heroGas .gasDcha p {
         font-size: 12px;
         width: 90%;
         margin-left: 5%; }
-        .heroGas .gasDcha p span {
-          font-size: 14px; }
       .heroGas .gasDcha .gasSubclaim {
         font-size: 10px; } }
 @media only screen and (min-width: 900px) {
@@ -322,36 +321,33 @@ textarea {
     .heroGas .gasDcha {
       padding-top: 8em;
       width: 50%; }
+      .heroGas .gasDcha h1 {
+        font-size: 16px; }
       .heroGas .gasDcha p {
         font-size: 14px;
         width: 100%;
         margin-left: 0%; }
-        .heroGas .gasDcha p span {
-          font-size: 16px; }
       .heroGas .gasDcha .gasSubclaim {
         font-size: 10px; } }
 @media only screen and (min-width: 1024px) {
+  .heroGas .gasDcha h1 {
+    font-size: 18px; }
   .heroGas .gasDcha p {
     font-size: 16px;
     width: 90%;
-    margin-left: 5%; }
-  .heroGas .gasDcha span {
-    font-size: 18px; } }
+    margin-left: 5%; } }
 @media only screen and (min-width: 1280px) {
   .heroGas .gasIzda {
     width: 50%; }
   .heroGas .gasDcha {
     padding-top: 8em;
     width: 50%; }
+    .heroGas .gasDcha h1 {
+      font-size: 20px; }
     .heroGas .gasDcha p {
       font-size: 18px; }
-      .heroGas .gasDcha p span {
-        font-size: 20px; }
     .heroGas .gasDcha .gasSubclaim {
       font-size: 10px; } }
-.wrapper .wrapperGas h1 {
-  text-align: center;
-  font-size: 18px; }
 .wrapper .wrapperGas .serviciosGas {
   width: 80%;
   margin: 10%;
@@ -448,36 +444,48 @@ textarea {
     .wrapper .wrapperGas .serviciosGas .tramiteText {
       margin-left: 7%; } }
 @media only screen and (min-width: 900px) {
-  .wrapper .wrapperGas .serviciosGas div {
-    width: 1%; }
-    .wrapper .wrapperGas .serviciosGas div img {
-      margin-left: 25%; }
-    .wrapper .wrapperGas .serviciosGas div h2 {
-      width: 1800%;
-      margin-left: -600%; }
-  .wrapper .wrapperGas .serviciosGas .tramite {
-    margin-left: 20%; }
-  .wrapper .wrapperGas .serviciosGas .tramiteText {
-    margin-left: -590%; } }
+  .wrapper .wrapperGas .serviciosGas {
+    margin-left: 11%;
+    margin-top: 3em; }
+    .wrapper .wrapperGas .serviciosGas div {
+      width: 1%;
+      margin-left: -5%; }
+      .wrapper .wrapperGas .serviciosGas div img {
+        margin-left: -55%; }
+      .wrapper .wrapperGas .serviciosGas div h2 {
+        width: 1800%;
+        margin-left: -600%; }
+    .wrapper .wrapperGas .serviciosGas .tramite {
+      margin-left: -55%; }
+    .wrapper .wrapperGas .serviciosGas .tramiteText {
+      margin-left: -590%; }
+  .wrapper .wrapperGas .textInferior {
+    font-size: 12px;
+    margin-top: -5em; } }
 @media only screen and (min-width: 1024px) {
   .wrapper .wrapperGas .serviciosGas div h2 {
     font-size: 9px;
     width: 1600%;
     margin-left: -560%; }
   .wrapper .wrapperGas .textInferior {
-    font-size: 15px;
-    margin-bottom: 3em; } }
+    font-size: 15px; } }
 @media only screen and (min-width: 1280px) {
   .wrapper .wrapperGas .textInferior {
-    width: 100%;
-    margin-left: 0;
-    font-size: 18px; } }
+    margin: -5em auto 2em;
+    font-size: 15px; } }
 /*Estilo de la pagina de calefaccion*/
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
+.wrapperInterior {
+  max-width: 1270px;
+  margin: 0 auto; }
+
+header {
+  max-width: 3000px; }
+
 .heroCalefaccion {
-  width: 100%; }
+  text-aline: center; }
   .heroCalefaccion .calefaccionIzda {
     display: none; }
   .heroCalefaccion .calefaccionDcha {
@@ -500,33 +508,63 @@ textarea {
       margin-left: 1%; }
 
 @media only screen and (min-width: 600px) {
-  .heroCalefaccion .calefaccionIzda {
-    display: block; }
-    .heroCalefaccion .calefaccionIzda img {
-      width: 100%;
-      height: 400px; }
-  .heroCalefaccion .calefaccionDcha {
-    padding: 2em 0; }
-    .heroCalefaccion .calefaccionDcha h1 {
-      font-size: 11px;
-      width: 70%;
-      margin-left: 15%; }
-      .heroCalefaccion .calefaccionDcha h1 span {
-        font-size: 12px; }
-    .heroCalefaccion .calefaccionDcha .marcas img {
-      width: 15%;
-      margin-left: 2%; } }
+  .heroCalefaccion {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-pack: justify; }
+    .heroCalefaccion .calefaccionIzda {
+      display: block;
+      webkit-order: -1;
+      order: -1; }
+      .heroCalefaccion .calefaccionIzda img {
+        width: 100%;
+        height: 300px; }
+    .heroCalefaccion .calefaccionDcha {
+      padding: 2em 0; }
+      .heroCalefaccion .calefaccionDcha h1 {
+        font-size: 11px;
+        width: 70%;
+        margin-left: 15%; }
+        .heroCalefaccion .calefaccionDcha h1 span {
+          font-size: 12px; }
+      .heroCalefaccion .calefaccionDcha .marcas img {
+        width: 15%;
+        margin-left: 2%; } }
 @media only screen and (min-width: 768px) {
   .heroCalefaccion {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    flex-direction: row; }
     .heroCalefaccion .calefaccionIzda {
+      webkit-order: 1;
+      order: 1;
       width: 50%; }
       .heroCalefaccion .calefaccionIzda img {
-        height: 380px; }
+        height: 400px; }
     .heroCalefaccion .calefaccionDcha {
       width: 50%; }
       .heroCalefaccion .calefaccionDcha h1 {
@@ -557,25 +595,26 @@ textarea {
       margin-bottom: 11em; } }
 @media only screen and (min-width: 1024px) {
   .heroCalefaccion {
-    height: 500px; }
-    .heroCalefaccion .calefaccionIzda img {
-      height: 500px; }
+    margin: 0 auto;
+    height: 400px; }
     .heroCalefaccion .calefaccionDcha h1 {
       font-size: 16px;
-      width: 90%;
-      margin-left: 5%; }
+      width: 85%;
+      margin-left: 7%; }
     .heroCalefaccion .calefaccionDcha span {
-      font-size: 18px; } }
-@media only screen and (min-width: 1280px) {
-  .heroCalefaccion {
-    height: 600px; }
-    .heroCalefaccion .calefaccionIzda img {
-      height: 600px; }
-    .heroCalefaccion .calefaccionDcha h1 {
       font-size: 18px; }
-    .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
-      font-size: 12px;
-      margin-bottom: 5em; } }
+    .heroCalefaccion .calefaccionDcha .marcas img {
+      width: 15%;
+      margin-top: -5em; } }
+@media only screen and (min-width: 1280px) {
+  .heroCalefaccion .calefaccionDcha h1 {
+    font-size: 18px; }
+  .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+    font-size: 12px;
+    margin-bottom: 5em; }
+  .heroCalefaccion .calefaccionDcha .marcas img {
+    width: 15%;
+    margin-top: -1em; } }
 .serviciosCalefaccion {
   width: 80%;
   margin: 10%;
@@ -681,21 +720,9 @@ textarea {
       width: 1800%;
       margin-left: -600%; } }
 @media only screen and (min-width: 1024px) {
-  .serviciosCalefaccion div img {
-    margin-left: 25%; }
-  .serviciosCalefaccion div h2 {
-    font-size: 9px;
-    width: 1600%;
-    margin-left: -560%; }
-
   .textCalefaccion {
     font-size: 15px;
-    margin-bottom: 3em; } }
-@media only screen and (min-width: 1280px) {
-  .serviciosCalefaccion .textInferior {
-    width: 100%;
-    margin-left: 0;
-    font-size: 18px; } }
+    margin-top: -5em; } }
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
