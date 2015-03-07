@@ -748,7 +748,7 @@ header {
   width: 70%;
   margin-left: 25%; }
   .serviciosAire div {
-    margin: 3em 10%;
+    margin: 3em 10% 2em;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;
@@ -770,9 +770,16 @@ header {
       width: 60%;
       margin-bottom: 1em; }
   .serviciosAire .logosAire {
-    margin-left: 20%; }
-    .serviciosAire .logosAire img {
-      width: 40%; }
+    margin-top: -2em; }
+    .serviciosAire .logosAire .left {
+      margin-left: 15%; }
+      .serviciosAire .logosAire .left img {
+        width: 40%; }
+    .serviciosAire .logosAire .right {
+      margin-top: -2em;
+      margin-left: 15%; }
+      .serviciosAire .logosAire .right img {
+        width: 40%; }
 
 .textAire {
   width: 90%;
@@ -796,41 +803,51 @@ header {
       width: 90%;
       margin-left: 5%; }
 
-  .serviciosAire div {
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    flex-direction: row;
-    -webkit-box-orient: vertical;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -14%; }
-    .serviciosAire div img {
-      width: 30%;
-      height: 30%;
-      padding: 0 0.3em; }
-  .serviciosAire .logosAire {
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -o-box-orient: horizontal;
-    flex-direction: row;
-    -webkit-box-orient: vertical;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -20%; }
-    .serviciosAire .logosAire img {
-      width: 20%;
-      margin-left: 2%; } }
+  .serviciosAire {
+    margin-bottom: 6em; }
+    .serviciosAire div {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -o-box-orient: horizontal;
+      flex-direction: row;
+      -webkit-box-orient: vertical;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-left: -14%;
+      position: relative; }
+      .serviciosAire div img {
+        width: 30%;
+        height: 30%;
+        padding: 0 0.3em; }
+    .serviciosAire .logosAire {
+      margin-left: -20%;
+      width: 100%; }
+      .serviciosAire .logosAire .left {
+        width: 50%;
+        margin-left: 15%;
+        position: absolute;
+        top: -2em;
+        left: 0%; }
+        .serviciosAire .logosAire .left img {
+          width: 30%;
+          margin-left: 2%;
+          display: inline-block; }
+      .serviciosAire .logosAire .right {
+        width: 50%;
+        float: right;
+        margin-top: -2em;
+        margin-left: 15%;
+        position: absolute;
+        top: 2.5em;
+        left: 40%; }
+        .serviciosAire .logosAire .right img {
+          width: 30%;
+          margin-left: 2%; } }
 @media only screen and (min-width: 768px) {
   .heroAire {
     display: -webkit-box;
@@ -858,6 +875,9 @@ header {
         font-size: 10px;
         margin-top: -.5em;
         margin-bottom: 9em; }
+
+  .serviciosAire {
+    margin-bottom: 8em; }
 
   .textAire {
     font-size: 12px;
@@ -887,8 +907,15 @@ header {
       padding: 0 0.6em; }
     .serviciosAire .logosAire {
       margin-left: -9%; }
-      .serviciosAire .logosAire img {
-        width: 14%; }
+      .serviciosAire .logosAire .left {
+        left: -10%; }
+        .serviciosAire .logosAire .left img {
+          width: 25%; }
+      .serviciosAire .logosAire .right {
+        top: 2.8em;
+        left: 25%; }
+        .serviciosAire .logosAire .right img {
+          width: 25%; }
 
   .textAire {
     font-size: 12px;
@@ -905,6 +932,29 @@ header {
     width: 100%;
     margin-left: 0;
     font-size: 16px; } }
+@media only screen and (min-width: 1280px) {
+  .serviciosAire {
+    margin-left: 32%; }
+    .serviciosAire div img {
+      width: 23%;
+      margin-bottom: 1em;
+      padding: 0 0.6em; }
+    .serviciosAire .logosAire {
+      margin-left: -9%; }
+      .serviciosAire .logosAire .left {
+        top: -10em;
+        left: -48%; }
+        .serviciosAire .logosAire .left img {
+          width: 21%; }
+      .serviciosAire .logosAire .right {
+        top: -5em;
+        left: 58%; }
+        .serviciosAire .logosAire .right img {
+          width: 21%; }
+
+  .textAire {
+    font-size: 12px;
+    margin-bottom: 3em; } }
 /*Estilo de la pagina de gas*/
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */

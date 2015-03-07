@@ -39,7 +39,7 @@
     margin-left: 25%;
     div 
     {
-        margin:3em 10%;
+        margin:3em 10% 2em;
         display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
         display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
         display: -ms-flexbox;     /* TWEENER - IE 10 */
@@ -56,17 +56,29 @@
         img 
         {
            width: 60%;
-            margin-bottom: 1em;         
+            margin-bottom: 1em;
         }
     }
     .logosAire 
     {
-        margin-left: 20%;
-        img 
+        margin-top: -2em;
+        .left
         {
-           width: 40%; 
+            margin-left: 15%;
+            img
+            {
+               width: 40%;
+            }
         }
-        
+        .right
+        {
+            margin-top: -2em;
+            margin-left: 15%;
+            img
+            {
+               width: 40%;
+            }
+        }
     }
 }
 .textAire
@@ -106,6 +118,7 @@
     }
     .serviciosAire
     {
+        margin-bottom: 6em;
         div
         {
             -webkit-flex-direction: row;
@@ -121,32 +134,46 @@
             -moz-flex-wrap:wrap;
             flex-wrap: wrap;
             margin-left: -14%;
-            img 
+            position: relative;
+            img
             {
                 width: 30%;
                 height: 30%;
                 padding: 0 0.3em;
-            }        
+            }
         }
         .logosAire
         {
-            -webkit-flex-direction: row;
-            -moz-flex-direction: row;
-            -ms-flex-direction:row;
-            -webkit-box-orient: horizontal;
-            -moz-box-orient: horizontal;
-            -o-box-orient: horizontal;
-            flex-direction: row;
-            -webkit-box-orient: vertical;
-            -webkit-flex-wrap:wrap;
-            -ms-flex-wrap:wrap;
-            -moz-flex-wrap:wrap;
-            flex-wrap: wrap;
             margin-left: -20%;
-            img 
+            width: 100%;
+            .left
             {
-                width: 20%;
-                margin-left: 2%;
+                width: 50%;
+                margin-left: 15%;
+                position: absolute;
+                top: -2em;
+                left: 0%;
+                img
+                {
+                    width: 30%;
+                    margin-left: 2%;
+                    display: inline-block;
+                }
+            }
+            .right
+            {
+                width: 50%;
+                float: right;
+                margin-top: -2em;
+                margin-left: 15%;
+                position: absolute;
+                top: 2.5em;
+                left: 40%;
+                img
+                {
+                    width: 30%;
+                    margin-left: 2%;
+                }
             }
         }
     }
@@ -189,6 +216,10 @@
                 margin-bottom: 9em;
             }        
         }
+    }
+    .serviciosAire
+    {
+        margin-bottom: 8em;
     }
     .textAire
     {
@@ -240,10 +271,23 @@
         .logosAire 
         {
             margin-left: -9%;
-            img 
+            .left
             {
-               width: 14%; 
-            }        
+                left: -10%;
+                img
+                {
+                    width: 25%; 
+                }
+            }
+            .right
+            {
+                top: 2.8em;
+                left: 25%;
+                img
+                {
+                    width: 25%; 
+                }
+            }
         }
     }
   .textAire
@@ -275,4 +319,46 @@
         margin-left: 0;
         font-size: 16px;
     }
+}
+@media only screen and (min-width: $bp6){
+    .serviciosAire
+    {
+        margin-left: 32%;        
+        div 
+        {        
+            img 
+            {
+                width: 23%;
+                margin-bottom: 1em;
+                padding: 0 0.6em;
+            }
+        }
+        .logosAire 
+        {
+            margin-left: -9%;
+            .left
+            {
+                top: -10em;
+                left: -48%;
+                img
+                {
+                    width: 21%; 
+                }
+            }
+            .right
+            {
+                top: -5em;
+                left: 58%;
+                img
+                {
+                    width: 21%; 
+                }
+            }
+        }
+    }
+  .textAire
+    {
+        font-size: 12px;
+        margin-bottom: 3em;
+    }  
 }
