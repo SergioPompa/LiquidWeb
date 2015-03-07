@@ -1963,7 +1963,7 @@ header .logo {
           margin-left: 15%;
           padding-top: 1em; }
         .especialistas-wrapper .especialistas .especialup article p {
-          width: 100%;
+          width: 70%;
           font-size: 10px;
           margin: 1.5em auto 0; }
     .especialistas-wrapper .especialistas .especialdown {
@@ -1979,7 +1979,7 @@ header .logo {
           margin-left: 15%;
           padding-top: 1em; }
         .especialistas-wrapper .especialistas .especialdown article p {
-          width: 100%;
+          width: 70%;
           font-size: 10px;
           margin: 1.5em auto 0; } }
 @media only screen and (min-width: 1400px) {
