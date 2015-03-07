@@ -515,12 +515,12 @@ header
     }
     .cover-text
     {
-        width:90%;
+        width:92%;
         text-align: center;
         font-size: 14px;
         position: absolute;
         top:1em;
-        left: 5%;
+        left: 4%;
         color: $darkpurple;
         font-weight: $lighttitular;
         span
@@ -530,12 +530,12 @@ header
     }
     .subcover-text
     {
-        width: 60%;
+        width: 70%;
         text-align: center;
         font-size: .6em;
         position: absolute;
-        top:7em;
-        left: 20%;
+        top: 8em;
+        left: 15%;
     }
 }
 @media only screen and (min-width: $bp2){
@@ -682,19 +682,19 @@ header
     .tituloservicios
     {
         text-align: left;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: $lighttitular;
-        width: 60%;
-        margin: 0 20%;
+        width: 64%;
+        margin: 0 18%;
     }
     .tipoestilo
     {
         text-align: left;
-        width: 60%;
-        font-size: 22px;
+        width: 64%;
+        font-size: 23px;
         font-weight: $titular;
-        margin: 0 20% 1em;
-        line-height: 14px;
+        margin: 0 18% 1em;
+        line-height: 18px;
     }
     article
     {
@@ -705,8 +705,8 @@ header
         }
         h2
         {
-            width: 60%;
-            margin: 0 20%;
+            width: 64%;
+            margin: 0 18%;
             font-size: 12px;
             background-color:$color_orange;
             color: #ffffff;
@@ -716,9 +716,9 @@ header
         }
         .pInstalaciones
         {
-            width: 46%;
-            font-size: 9px;
-            margin: 0 27% 1.5em;
+            width: 50%;
+            font-size: 10px;
+            margin: 0 25% 1.5em;
             line-height: 18px;
             text-align: center;
         }

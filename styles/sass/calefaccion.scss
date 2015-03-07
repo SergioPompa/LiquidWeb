@@ -7,7 +7,7 @@
 
 .wrapperInterior
 {
-    max-width: $ancho_max; 
+    max-width: $ancho_max;
     margin: 0 auto; 
 }
 header
@@ -24,7 +24,7 @@ header
     }
     .calefaccionDcha
     {
-        background-color:#C6E0F3;
+        background-color:$blue;
         text-align: center;
         padding:3em 2em;
         h1 
@@ -212,7 +212,7 @@ header
                 img 
                 {
                     width: 15%;
-                    margin-top:-5em;
+                    margin-top:-8em;
                 }
             }    
         }

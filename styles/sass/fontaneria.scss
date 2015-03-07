@@ -37,7 +37,7 @@
         }
         .marcasFontaneria
         {
-            img 
+            img
             {
                 width: 20%;
                 margin-left: 2%;
@@ -187,7 +187,7 @@
             {
                 img 
                 {
-                    margin-top: 5em;
+                    margin-top: 2em;
                     width: 12%;
                 }
             }    
@@ -230,7 +230,7 @@
 }
 h1 
 {
-    font-weight: $titular;
+    font-weight: $texto;
     width: 90%;
     text-align: center;
     margin:2em 0 3em 5%;
@@ -238,7 +238,7 @@ h1
     span
     {
         color:rgb(114,171,219);
-        font-weight: $texto;
+        font-weight: $titular;
     } 
 }
 .fontaneriaServicios
@@ -255,9 +255,9 @@ h1
         }
         li:before
         {
-            padding:10px;
-            padding-left:10px;
-            padding-right:9px;           
+            padding:6px;
+            padding-left:5px;
+            padding-right:6px;           
             background-color: rgb(104,159,214);
             border-radius: 10px 10px 10px 10px;
             content: "";
@@ -268,42 +268,177 @@ h1
         }
     }   
 }
-@media only screen and (min-width: $bp6){    
-    .fontaneriaServicios
+.textInferior
+{
+    width: 90%;
+    margin: 3em auto;
+    font-weight:$texto;
+    text-align: center;
+    font-size: 12px;
+    span
     {
-        ul 
-        {        
-            width: 20%;      
-            li 
-            {
-                font-size: 11px;
-                margin-left: 30%;
-                margin-bottom: 1.1em;
-                margin-top: 1em;            
-                position: relative;
-            }
-            li:before
-            {
-                padding:10px;
-                padding-left:10px;
-                padding-right:9px;           
-                background-color: rgb(104,159,214);
-                border-radius: 10px 10px 10px 10px;
-                content: "";
-                color:#000;
-                position: absolute;
-                top:-.001em;
-                left: -15%;
-            }
-        }   
+        font-weight:$titular;
+        color:rgb(106,161,215)
     }
 }
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: $bp2){
+    .fontaneriaServicios
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        .serviciosUp
+        {
+            width: 50%;
+            ul
+            {
+                width: 90%;
+            }
+        }
+        .serviciosDown
+        {
+            width: 50%;
+            ul
+            {
+                width: 90%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp5){
+    .fontaneriaServicios
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-box-orient: vertical;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        .serviciosUp
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            -o-box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            flex-direction: row;
+            width: 100%;
+            border-bottom: 4px dotted $blue;
+            ul
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                width: 100%;
+                padding-left: 13%;
+                li
+                {
+                    width: 19%;
+                    padding: 0 2%;
+                    margin: 0;
+                    font-size: 12px;
+                }
+                li:before
+                {
+                    padding:6px;
+                    padding-left:5px;
+                    padding-right:6px;
+                    background-color: rgb(104,159,214);
+                    border-radius: 10px 10px 10px 10px;
+                    content: "";
+                    color:#000;
+                    position: absolute;
+                    top: 5em;
+                    left: 28%;
+                }
+            }
+        }
+        .serviciosDown
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            -o-box-orient: horizontal;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            flex-direction: row;
+            width: 100%;
+            ul
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                width: 100%;
+                li
+                {
+                    width: 20%;
+                    padding: 0 3%;
+                    margin: 0;
+                    font-size: 12px;
+                }
+                li:before
+        {
+            padding:6px;
+            padding-left:5px;
+            padding-right:6px;
+            background-color: rgb(104,159,214);
+            border-radius: 10px 10px 10px 10px;
+            content: "";
+            color:#000;
+            position: absolute;
+            top:-1.95em;
+            left: 30%;
+        }
+            }
+        }
+    }
+    h1
+    {
+        font-size: 18px;
+    }
+    .textInferior
+    {
+        font-size: 15px;
+    }
+}

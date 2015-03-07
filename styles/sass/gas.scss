@@ -9,7 +9,7 @@
 .heroGas
 {
     width: 100%;
-    background-color: $blueEficiencia;
+    background-color: $blue;
     .gasIzda
     {
         display: none;
@@ -49,15 +49,15 @@
             }
         }
         .gasDcha
-        {           
+        {
             padding-top: 5em;
             h1
             {
-                font-size: 12px;
+                font-size: 14px;
             }
             p
             {
-                font-size: 11px;
+                font-size: 12px;
                 width: 70%;
                 margin-left: 15%;
             }
@@ -78,7 +78,7 @@
         }
         .gasDcha
         {
-            width: 50%;
+            width: 40%;
             h1
             {
                 font-size: 14px;
@@ -228,10 +228,10 @@
         .textInferior
         {
             width: 90%;
+            margin: 0 auto 3em;
             font-weight:$texto;
             text-align: center;
             font-size: 12px;
-            margin-bottom: 3em;
             .subtextInferior
             {
                 color:rgb(106,161,215)

@@ -289,9 +289,9 @@ textarea {
   .heroGas .gasDcha {
     padding-top: 5em; }
     .heroGas .gasDcha h1 {
-      font-size: 12px; }
+      font-size: 14px; }
     .heroGas .gasDcha p {
-      font-size: 11px;
+      font-size: 12px;
       width: 70%;
       margin-left: 15%; } }
 @media only screen and (min-width: 768px) {
@@ -304,7 +304,7 @@ textarea {
     .heroGas .gasIzda {
       width: 60%; }
     .heroGas .gasDcha {
-      width: 50%; }
+      width: 40%; }
       .heroGas .gasDcha h1 {
         font-size: 14px; }
       .heroGas .gasDcha p {
@@ -395,10 +395,10 @@ textarea {
       width: 60%; }
 .wrapper .wrapperGas .textInferior {
   width: 90%;
+  margin: 0 auto 3em;
   font-weight: 300;
   text-align: center;
-  font-size: 12px;
-  margin-bottom: 3em; }
+  font-size: 12px; }
   .wrapper .wrapperGas .textInferior .subtextInferior {
     color: #6aa1d7; }
 
@@ -605,7 +605,7 @@ header {
       font-size: 18px; }
     .heroCalefaccion .calefaccionDcha .marcas img {
       width: 15%;
-      margin-top: -5em; } }
+      margin-top: -8em; } }
 @media only screen and (min-width: 1280px) {
   .heroCalefaccion .calefaccionDcha h1 {
     font-size: 18px; }
@@ -746,7 +746,7 @@ header {
 
 .serviciosAire {
   width: 70%;
-  margin-left: 30%; }
+  margin-left: 25%; }
   .serviciosAire div {
     margin: 3em 10%;
     display: -webkit-box;
@@ -809,10 +809,11 @@ header {
     -ms-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: -20%; }
+    margin-left: -14%; }
     .serviciosAire div img {
       width: 30%;
-      height: 30%; }
+      height: 30%;
+      padding: 0 0.3em; }
   .serviciosAire .logosAire {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -845,7 +846,7 @@ header {
         height: 300px; }
     .heroAire .aireDcha {
       width: 50%;
-      padding: 0; }
+      padding: 4em 0 0; }
       .heroAire .aireDcha p {
         font-size: 12px;
         width: 95%;
@@ -866,25 +867,28 @@ header {
     height: 400px; }
     .heroAire .aireIzda img {
       height: 400px; }
-    .heroAire .aireDcha p {
-      padding-top: 3em;
-      font-size: 14px;
-      width: 100%;
-      margin-left: 0%; }
-    .heroAire .aireDcha .calefaccionSubclaim {
-      font-size: 10px;
-      margin-top: -2em;
-      margin-bottom: 11em; }
+    .heroAire .aireDcha {
+      padding: 7em 0 0; }
+      .heroAire .aireDcha p {
+        padding-top: 1em;
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0%; }
+      .heroAire .aireDcha .calefaccionSubclaim {
+        font-size: 10px;
+        margin-top: -2em;
+        margin-bottom: 11em; }
 
   .serviciosAire {
-    margin-left: 40%; }
+    margin-left: 30%; }
     .serviciosAire div img {
-      width: 20%;
-      margin-bottom: 1em; }
+      width: 25%;
+      margin-bottom: 1em;
+      padding: 0 0.6em; }
     .serviciosAire .logosAire {
-      margin-left: -18%; }
+      margin-left: -9%; }
       .serviciosAire .logosAire img {
-        width: 12%; }
+        width: 14%; }
 
   .textAire {
     font-size: 12px;
@@ -897,20 +901,10 @@ header {
   .heroAire .aireDcha span {
     font-size: 18px; }
 
-  .serviciosAire {
-    margin-left: 46%; }
-    .serviciosAire div img {
-      width: 15%;
-      margin-bottom: 1em; }
-    .serviciosAire .logosAire {
-      margin-left: -18%; }
-      .serviciosAire .logosAire img {
-        width: 8%; }
-
   .textAire {
     width: 100%;
     margin-left: 0;
-    font-size: 18px; } }
+    font-size: 16px; } }
 /*Estilo de la pagina de gas*/
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
@@ -1008,7 +1002,7 @@ header {
     .heroFontaneria .fontaneriaDcha span {
       font-size: 18px; }
     .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
-      margin-top: 5em;
+      margin-top: 2em;
       width: 12%; } }
 @media only screen and (min-width: 1280px) {
   .heroFontaneria {
@@ -1025,14 +1019,14 @@ header {
       margin-top: 10em;
       width: 12%; } }
 h1 {
-  font-weight: 800;
+  font-weight: 300;
   width: 90%;
   text-align: center;
   margin: 2em 0 3em 5%;
   font-size: 14px; }
   h1 span {
     color: #72abdb;
-    font-weight: 300; }
+    font-weight: 800; }
 
 .fontaneriaServicios ul li {
   font-size: 11px;
@@ -1041,9 +1035,9 @@ h1 {
   margin-top: 1em;
   position: relative; }
 .fontaneriaServicios ul li:before {
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 9px;
+  padding: 6px;
+  padding-left: 5px;
+  padding-right: 6px;
   background-color: #689fd6;
   border-radius: 10px 10px 10px 10px;
   content: "";
@@ -1052,26 +1046,145 @@ h1 {
   top: -.001em;
   left: -12%; }
 
-@media only screen and (min-width: 1280px) {
-  .fontaneriaServicios ul {
-    width: 20%; }
-    .fontaneriaServicios ul li {
-      font-size: 11px;
-      margin-left: 30%;
-      margin-bottom: 1.1em;
-      margin-top: 1em;
-      position: relative; }
-    .fontaneriaServicios ul li:before {
-      padding: 10px;
-      padding-left: 10px;
-      padding-right: 9px;
-      background-color: #689fd6;
-      border-radius: 10px 10px 10px 10px;
-      content: "";
-      color: #000;
-      position: absolute;
-      top: -.001em;
-      left: -15%; } }
+.textInferior {
+  width: 90%;
+  margin: 3em auto;
+  font-weight: 300;
+  text-align: center;
+  font-size: 12px; }
+  .textInferior span {
+    font-weight: 800;
+    color: #6aa1d7; }
+
+@media only screen and (min-width: 600px) {
+  .fontaneriaServicios {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 90%;
+    margin: 0 auto; }
+    .fontaneriaServicios .serviciosUp {
+      width: 50%; }
+      .fontaneriaServicios .serviciosUp ul {
+        width: 90%; }
+    .fontaneriaServicios .serviciosDown {
+      width: 50%; }
+      .fontaneriaServicios .serviciosDown ul {
+        width: 90%; } }
+@media only screen and (min-width: 1024px) {
+  .fontaneriaServicios {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+    .fontaneriaServicios .serviciosUp {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      width: 100%;
+      border-bottom: 4px dotted #C6E0F3; }
+      .fontaneriaServicios .serviciosUp ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 13%; }
+        .fontaneriaServicios .serviciosUp ul li {
+          width: 19%;
+          padding: 0 2%;
+          margin: 0;
+          font-size: 12px; }
+        .fontaneriaServicios .serviciosUp ul li:before {
+          padding: 6px;
+          padding-left: 5px;
+          padding-right: 6px;
+          background-color: #689fd6;
+          border-radius: 10px 10px 10px 10px;
+          content: "";
+          color: #000;
+          position: absolute;
+          top: 5em;
+          left: 28%; }
+    .fontaneriaServicios .serviciosDown {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      width: 100%; }
+      .fontaneriaServicios .serviciosDown ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-box-orient: horizontal;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        flex-direction: row;
+        width: 100%; }
+        .fontaneriaServicios .serviciosDown ul li {
+          width: 20%;
+          padding: 0 3%;
+          margin: 0;
+          font-size: 12px; }
+        .fontaneriaServicios .serviciosDown ul li:before {
+          padding: 6px;
+          padding-left: 5px;
+          padding-right: 6px;
+          background-color: #689fd6;
+          border-radius: 10px 10px 10px 10px;
+          content: "";
+          color: #000;
+          position: absolute;
+          top: -1.95em;
+          left: 30%; }
+
+  h1 {
+    font-size: 18px; }
+
+  .textInferior {
+    font-size: 15px; } }
 body {
   font-family: "Open Sans", sans-serif;
   color: #1F264A; }
@@ -1312,23 +1425,23 @@ header .logo {
   .cover img {
     width: 100%; }
   .cover .cover-text {
-    width: 90%;
+    width: 92%;
     text-align: center;
     font-size: 14px;
     position: absolute;
     top: 1em;
-    left: 5%;
+    left: 4%;
     color: #1F264A;
     font-weight: 600; }
     .cover .cover-text span {
       font-weight: 800; }
   .cover .subcover-text {
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 7em;
-    left: 20%; }
+    top: 8em;
+    left: 15%; }
 
 @media only screen and (min-width: 600px) {
   .cover .cover-text {
@@ -1411,24 +1524,24 @@ header .logo {
   text-align: center; }
   .serviciosdesktop .tituloservicios {
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
-    width: 60%;
-    margin: 0 20%; }
+    width: 64%;
+    margin: 0 18%; }
   .serviciosdesktop .tipoestilo {
     text-align: left;
-    width: 60%;
-    font-size: 22px;
+    width: 64%;
+    font-size: 23px;
     font-weight: 800;
-    margin: 0 20% 1em;
-    line-height: 14px; }
+    margin: 0 18% 1em;
+    line-height: 18px; }
   .serviciosdesktop article {
     width: 100%; }
     .serviciosdesktop article img {
       width: 37vw; }
     .serviciosdesktop article h2 {
-      width: 60%;
-      margin: 0 20%;
+      width: 64%;
+      margin: 0 18%;
       font-size: 12px;
       background-color: #F59B23;
       color: #ffffff;
@@ -1436,9 +1549,9 @@ header .logo {
       line-height: 30px;
       text-align: center; }
     .serviciosdesktop article .pInstalaciones {
-      width: 46%;
-      font-size: 9px;
-      margin: 0 27% 1.5em;
+      width: 50%;
+      font-size: 10px;
+      margin: 0 25% 1.5em;
       line-height: 18px;
       text-align: center; }
     .serviciosdesktop article .more {
