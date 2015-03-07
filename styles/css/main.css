@@ -927,6 +927,8 @@ header {
     margin-left: 5%; }
   .heroAire .aireDcha span {
     font-size: 18px; }
+  .heroAire .aireDcha .aireSubclaim {
+    font-size: 14px; }
 
   .textAire {
     width: 100%;
@@ -1068,13 +1070,13 @@ header {
     .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
       margin-top: 10em;
       width: 12%; } }
-h1 {
+.especialist {
   font-weight: 300;
   width: 90%;
   text-align: center;
   margin: 2em 0 3em 5%;
   font-size: 14px; }
-  h1 span {
+  .especialist span {
     color: #72abdb;
     font-weight: 800; }
 
@@ -1230,7 +1232,7 @@ h1 {
           top: -1.95em;
           left: 30%; }
 
-  h1 {
+  .especialist {
     font-size: 18px; }
 
   .textInferior {
@@ -2183,7 +2185,8 @@ header .logo {
     font-weight: 300;
     text-align: left;
     font-size: 16px;
-    line-height: 20px; }
+    line-height: 20px;
+    color: #1F264A; }
     .wrapperLogos .logosinstalacion h1 span {
       font-weight: 800;
       font-size: 22px; }
