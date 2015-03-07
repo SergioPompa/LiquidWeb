@@ -86,8 +86,8 @@
     .heroAire
     {
         .aireIzda
-        {
-            display: block;       
+        { 
+            display: block;      
             img 
             {
                 width: 100%;
@@ -161,6 +161,8 @@
         .aireIzda
         {
             width: 50%;
+            webkit-order:1;
+            order:1; 
             img 
             {
                 height: 300px;

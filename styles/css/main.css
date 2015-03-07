@@ -838,7 +838,9 @@ header {
     display: -webkit-flex;
     display: flex; }
     .heroAire .aireIzda {
-      width: 50%; }
+      width: 50%;
+      webkit-order: 1;
+      order: 1; }
       .heroAire .aireIzda img {
         height: 300px; }
     .heroAire .aireDcha {
