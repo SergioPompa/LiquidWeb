@@ -1044,9 +1044,9 @@ header {
       margin-bottom: 11em; } }
 @media only screen and (min-width: 1024px) {
   .heroFontaneria {
-    height: 500px; }
+    height: 400px; }
     .heroFontaneria .fontaneriaIzda img {
-      height: 500px; }
+      height: 400px; }
     .heroFontaneria .fontaneriaDcha p {
       font-size: 16px;
       width: 90%;
@@ -1054,22 +1054,18 @@ header {
     .heroFontaneria .fontaneriaDcha span {
       font-size: 18px; }
     .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
-      margin-top: 2em;
+      margin-top: 1em;
       width: 12%; } }
 @media only screen and (min-width: 1280px) {
-  .heroFontaneria {
-    height: 600px; }
-    .heroFontaneria .fontaneriaIzda img {
-      height: 600px; }
-    .heroFontaneria .fontaneriaDcha p {
-      margin-top: 8em;
-      font-size: 18px; }
-    .heroFontaneria .fontaneriaDcha .fontaneriaSubclaim {
-      font-size: 12px;
-      margin-bottom: 5em; }
-    .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
-      margin-top: 10em;
-      width: 12%; } }
+  .heroFontaneria .fontaneriaDcha p {
+    margin-top: 5em;
+    font-size: 18px; }
+  .heroFontaneria .fontaneriaDcha .fontaneriaSubclaim {
+    font-size: 12px;
+    margin-bottom: 5em; }
+  .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
+    margin-top: 1em;
+    width: 12%; } }
 .especialist {
   font-weight: 300;
   width: 90%;

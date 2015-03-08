@@ -163,12 +163,12 @@
 @media only screen and (min-width: $bp5){
     .heroFontaneria
     {
-        height: 500px;
+        height: 400px;
         .fontaneriaIzda
         {
             img
             {
-                height: 500px;
+                height: 400px;
             }
         }
         .fontaneriaDcha
@@ -187,7 +187,7 @@
             {
                 img 
                 {
-                    margin-top: 2em;
+                    margin-top: 1em;
                     width: 12%;
                 }
             }    
@@ -197,19 +197,11 @@
 @media only screen and (min-width: $bp6){
     .heroFontaneria
     {
-        height: 600px;
-        .fontaneriaIzda
-        {
-            img
-            {
-                height: 600px;
-            }
-        }
         .fontaneriaDcha
         {                
             p
             {
-                margin-top: 8em;
+                margin-top: 5em;
                 font-size: 18px;
             }
             .fontaneriaSubclaim
@@ -221,7 +213,7 @@
             {
                 img 
                 {
-                    margin-top: 10em;
+                    margin-top: 1em;
                     width: 12%;
                 }
             }            
