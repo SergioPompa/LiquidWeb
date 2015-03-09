@@ -1,0 +1,107 @@
+/*Estilo de la pagina de eficiencia energetica*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import 'breakpoints.scss';
+@import 'tipografia.scss';
+@import 'colores.scss';
+
+
+.asesoramientoText
+{    
+    h1
+    {
+        font-size: 12px;
+        text-align: center;
+    }    
+    p
+    {
+        font-weight: $texto;
+        font-size:12px; 
+    } 
+    .quest 
+    {
+        font-size: 15px;
+        font-weight: $titular;
+    }    
+}
+.asesoramientoList
+{
+    .formacionText
+    {
+        font-size: 12px;
+        font-weight: $texto !important; 
+    }
+    .quest 
+    {
+    font-size: 15px;
+    font-weight: $titular;
+    } 
+}
+.textFormacion
+{
+    width: 90%;
+    font-weight: $texto;
+    font-size: 12px;
+    margin-left:5%;
+    font-style: italic; 
+}
+@media only screen and (min-width: $bp2){
+    .asesoramientoText
+        {    
+        h1
+        {
+            font-size: 14px;
+        }    
+        p
+        {
+            font-size:13px;
+            width: 90%; 
+        } 
+        .quest 
+        {
+            font-size: 18px;
+        }    
+    }
+    .asesoramientoList
+    {
+        .formacionText
+        {
+            font-size: 13px;         
+        }
+        .quest 
+        {
+            font-size: 18px;
+        } 
+    }
+    .textFormacion
+    {
+        width: 90%;
+        font-weight: $texto;
+        font-size: 12px;
+        margin:3em 0 3em 5%;
+        font-style: italic; 
+    }
+}
+@media only screen and (min-width: $bp3){
+    .asesoramientoText
+    {    
+        h1
+        {
+            font-size: 16px;
+        }    
+    }
+}
+@media only screen and (min-width: $bp5){
+    .textFormacion
+    {
+        font-weight: $texto;
+        font-size: 15px;
+        text-align:center;
+        span 
+        {
+           color:rgb(114,171,219); 
+        }
+    }
+
+}
