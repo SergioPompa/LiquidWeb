@@ -1911,7 +1911,6 @@ header .logo {
 @media only screen and (min-width: 1280px) {
   .cabecera .tituloservicios2 {
     font-size: 22px;
-    line-height: 1.3em;
     margin-top: 3em; }
   .cabecera .tituloservicios3 {
     font-size: 22px;
@@ -1934,22 +1933,15 @@ header .logo {
   .wrapperServiciosdesktop {
     max-width: 1270px;
     margin: 0 auto; }
-    .wrapperServiciosdesktop .cabecera {
-      position: relative; }
-      .wrapperServiciosdesktop .cabecera .tituloservicios2 {
-        position: absolute;
-        left: -4.3%;
-        top: -5em; }
-      .wrapperServiciosdesktop .cabecera .tituloservicios3 {
-        position: absolute;
-        left: 59.7%;
-        top: -5em; }
-      .wrapperServiciosdesktop .cabecera .tipoestilo2 {
-        font-size: 44px; }
+    .wrapperServiciosdesktop .cabecera .tituloservicios2 {
+      margin-left: 8.5%; }
+    .wrapperServiciosdesktop .cabecera .tituloservicios3 {
+      margin-left: -2.5%; }
+    .wrapperServiciosdesktop .cabecera .tipoestilo2 {
+      font-size: 44px; }
     .wrapperServiciosdesktop .serviciosdesktop {
       width: 90%;
-      margin: 8em auto 0;
-      padding-top: 2em; }
+      margin: -.5em auto 0; }
       .wrapperServiciosdesktop .serviciosdesktop article p {
         height: 12em; } }
 @media only screen and (min-width: 600px) {

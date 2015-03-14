@@ -930,7 +930,7 @@ header
         {
             font-size: 18px;
             margin-left: -6%;
-            line-height: 1.2em;
+            line-height: 1.2em;            
         }
         .tipoestilo2
         {
@@ -970,11 +970,12 @@ header
         .tituloservicios2
         {
             font-size: 22px;
-            line-height: 1.3em;
             margin-top: 3em;
+
         }
         .tituloservicios3
         {
+
             font-size: 22px;
             margin-top: 3.2em;
         }
@@ -1012,19 +1013,14 @@ header
         max-width: $ancho_max;
         margin: 0 auto;
         .cabecera
-        {
-            position: relative;
+        {            
             .tituloservicios2
             {
-                position: absolute;
-                left: -4.3%;
-                top: -5em;
+                margin-left: 8.5%;
             }
             .tituloservicios3
             {
-                position: absolute;
-                left: 59.7%;
-                top: -5em;
+               margin-left: -2.5%;
             }
             .tipoestilo2
             {
@@ -1034,8 +1030,7 @@ header
         .serviciosdesktop
         {
             width: 90%;
-            margin: 8em auto 0;
-            padding-top: 2em;
+            margin: -.5em auto 0;
             article
             {
                 p
