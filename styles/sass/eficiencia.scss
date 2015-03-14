@@ -84,7 +84,7 @@
             width: 60%;
             img
             {
-                height: 420px;
+                height: 300px;
             }
         }
         .eficienciaDcha
@@ -99,7 +99,7 @@
             flex-direction: column;
             p
             {
-                margin-top:12em;
+                margin-top:6em;
                 font-size: 10px;
                 width: 100%;
                 line-height: 2em;
@@ -131,7 +131,7 @@
             width: 50%;
             p
             {
-                margin-top: 7em;
+                margin-top: 2em;
                 font-size: 13px;
                 span
                 {
@@ -148,18 +148,11 @@
         {
             p
             {
-                font-size: 16px;
+                font-size: 14px;
                 span
                 {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
-            }
-            .eficienciaClaim
-            {
-                margin-top: -5em;
-                font-size: 11px;
-                width: 85%;
-                margin-left: 10%;
             }
         }
     }
@@ -181,6 +174,7 @@
             p
             {
                 font-size: 15px;
+                margin-top: 5em;
                 span
                 {
                     font-size: 22px;

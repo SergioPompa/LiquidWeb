@@ -165,7 +165,7 @@ textarea {
     .heroEficiencia .eficienciaIzda {
       width: 60%; }
       .heroEficiencia .eficienciaIzda img {
-        height: 420px; }
+        height: 300px; }
     .heroEficiencia .eficienciaDcha {
       width: 40%;
       -webkit-flex-direction: column;
@@ -176,7 +176,7 @@ textarea {
       -moz-box-orient: vertical;
       flex-direction: column; }
       .heroEficiencia .eficienciaDcha p {
-        margin-top: 12em;
+        margin-top: 6em;
         font-size: 10px;
         width: 100%;
         line-height: 2em; }
@@ -194,20 +194,15 @@ textarea {
   .heroEficiencia .eficienciaDcha {
     width: 50%; }
     .heroEficiencia .eficienciaDcha p {
-      margin-top: 7em;
+      margin-top: 2em;
       font-size: 13px; }
       .heroEficiencia .eficienciaDcha p span {
         font-size: 16px; } }
 @media only screen and (min-width: 1024px) {
   .heroEficiencia .eficienciaDcha p {
-    font-size: 16px; }
+    font-size: 14px; }
     .heroEficiencia .eficienciaDcha p span {
-      font-size: 20px; }
-  .heroEficiencia .eficienciaDcha .eficienciaClaim {
-    margin-top: -5em;
-    font-size: 11px;
-    width: 85%;
-    margin-left: 10%; } }
+      font-size: 16px; } }
 @media only screen and (min-width: 1280px) {
   .heroEficiencia {
     margin: 0 auto; }
@@ -216,7 +211,8 @@ textarea {
     .heroEficiencia .eficienciaDcha {
       height: 300px; }
       .heroEficiencia .eficienciaDcha p {
-        font-size: 15px; }
+        font-size: 15px;
+        margin-top: 5em; }
         .heroEficiencia .eficienciaDcha p span {
           font-size: 22px; }
       .heroEficiencia .eficienciaDcha .eficienciaClaim {
@@ -289,7 +285,7 @@ textarea {
     display: block; }
     .heroGas .gasIzda img {
       width: 100%;
-      height: 400px; }
+      height: 450px; }
   .heroGas .gasDcha {
     padding-top: 5em; }
     .heroGas .gasDcha h1 {
@@ -304,9 +300,12 @@ textarea {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    height: 350px; }
     .heroGas .gasIzda {
       width: 60%; }
+      .heroGas .gasIzda img {
+        height: 350px; }
     .heroGas .gasDcha {
       width: 40%; }
       .heroGas .gasDcha h1 {
@@ -319,11 +318,11 @@ textarea {
         font-size: 10px; } }
 @media only screen and (min-width: 900px) {
   .heroGas {
-    height: 450px; }
+    height: 350px; }
     .heroGas .gasIzda img {
-      height: 450px; }
+      height: 350px; }
     .heroGas .gasDcha {
-      padding-top: 8em;
+      padding-top: 4em;
       width: 50%; }
       .heroGas .gasDcha h1 {
         font-size: 16px; }
@@ -334,17 +333,21 @@ textarea {
       .heroGas .gasDcha .gasSubclaim {
         font-size: 10px; } }
 @media only screen and (min-width: 1024px) {
-  .heroGas .gasDcha h1 {
-    font-size: 18px; }
-  .heroGas .gasDcha p {
-    font-size: 16px;
-    width: 90%;
-    margin-left: 5%; } }
+  .heroGas {
+    height: 400px; }
+    .heroGas .gasIzda img {
+      height: 400px; }
+    .heroGas .gasDcha h1 {
+      font-size: 18px; }
+    .heroGas .gasDcha p {
+      font-size: 16px;
+      width: 90%;
+      margin-left: 5%; } }
 @media only screen and (min-width: 1280px) {
   .heroGas .gasIzda {
     width: 50%; }
   .heroGas .gasDcha {
-    padding-top: 8em;
+    padding-top: 6em;
     width: 50%; }
     .heroGas .gasDcha h1 {
       font-size: 20px; }
@@ -562,31 +565,34 @@ header {
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     -o-box-orient: horizontal;
-    flex-direction: row; }
+    flex-direction: row;
+    height: 300px; }
     .heroCalefaccion .calefaccionIzda {
       webkit-order: 1;
       order: 1;
       width: 50%; }
       .heroCalefaccion .calefaccionIzda img {
-        height: 400px; }
+        height: 300px; }
     .heroCalefaccion .calefaccionDcha {
       width: 50%; }
       .heroCalefaccion .calefaccionDcha h1 {
         font-size: 12px;
         width: 90%;
         margin-left: 5%;
-        margin-top: 5em; }
+        margin-top: 3em; }
         .heroCalefaccion .calefaccionDcha h1 span {
           font-size: 14px; }
+      .heroCalefaccion .calefaccionDcha .marcas img {
+        width: 15%;
+        margin-top: -3em; }
       .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
         font-size: 10px;
-        margin-top: -.5em;
-        margin-bottom: 9em; } }
+        margin-top: -.5em; } }
 @media only screen and (min-width: 900px) {
   .heroCalefaccion {
-    height: 400px; }
+    height: 350px; }
     .heroCalefaccion .calefaccionIzda img {
-      height: 400px; }
+      height: 350px; }
     .heroCalefaccion .calefaccionDcha h1 {
       font-size: 14px;
       width: 100%;
@@ -594,31 +600,40 @@ header {
       .heroCalefaccion .calefaccionDcha h1 span {
         font-size: 16px; }
     .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+      width: 80%;
       font-size: 10px;
       margin-top: -1em;
-      margin-bottom: 11em; } }
+      margin-bottom: 6em;
+      margin-left: 10%; }
+    .heroCalefaccion .calefaccionDcha .marcas img {
+      width: 15%;
+      margin-top: 1em; } }
 @media only screen and (min-width: 1024px) {
   .heroCalefaccion {
-    margin: 0 auto;
-    height: 400px; }
+    margin: 0 auto; }
     .heroCalefaccion .calefaccionDcha h1 {
       font-size: 16px;
-      width: 85%;
-      margin-left: 7%; }
+      margin-top: 3em;
+      width: 90%;
+      margin-left: 5%; }
     .heroCalefaccion .calefaccionDcha span {
       font-size: 18px; }
     .heroCalefaccion .calefaccionDcha .marcas img {
       width: 15%;
-      margin-top: -8em; } }
+      margin-top: 1em; } }
 @media only screen and (min-width: 1280px) {
-  .heroCalefaccion .calefaccionDcha h1 {
-    font-size: 18px; }
-  .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
-    font-size: 12px;
-    margin-bottom: 5em; }
-  .heroCalefaccion .calefaccionDcha .marcas img {
-    width: 15%;
-    margin-top: -1em; } }
+  .heroCalefaccion {
+    height: 400px; }
+    .heroCalefaccion .calefaccionIzda img {
+      height: 400px; }
+    .heroCalefaccion .calefaccionDcha h1 {
+      font-size: 18px; }
+    .heroCalefaccion .calefaccionDcha .calefaccionSubclaim {
+      font-size: 12px;
+      margin-bottom: 5em; }
+    .heroCalefaccion .calefaccionDcha .marcas img {
+      width: 15%;
+      margin-top: 5em; } }
 .serviciosCalefaccion {
   width: 80%;
   margin: 10%;
@@ -735,7 +750,9 @@ header {
 .heroAire .aireDcha {
   background-color: #C6E0F3;
   text-align: center;
-  padding: 3em 2em; }
+  padding: 2em 2em; }
+  .heroAire .aireDcha h1 {
+    margin-top: 4em; }
   .heroAire .aireDcha p {
     font-weight: 800; }
   .heroAire .aireDcha span {
@@ -867,7 +884,7 @@ header {
         height: 300px; }
     .heroAire .aireDcha {
       width: 50%;
-      padding: 4em 0 0; }
+      padding: 2em 0 0; }
       .heroAire .aireDcha p {
         font-size: 12px;
         width: 95%;
@@ -888,11 +905,11 @@ header {
     margin-bottom: 3em; } }
 @media only screen and (min-width: 900px) {
   .heroAire {
-    height: 400px; }
+    height: 350px; }
     .heroAire .aireIzda img {
-      height: 400px; }
+      height: 350px; }
     .heroAire .aireDcha {
-      padding: 7em 0 0; }
+      padding: 4em 0 0; }
       .heroAire .aireDcha p {
         padding-top: 1em;
         font-size: 14px;
@@ -1011,31 +1028,33 @@ header {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    height: 280px; }
     .heroFontaneria .fontaneriaIzda {
       width: 50%; }
       .heroFontaneria .fontaneriaIzda img {
-        height: 380px; }
+        height: 280px; }
     .heroFontaneria .fontaneriaDcha {
       width: 50%; }
       .heroFontaneria .fontaneriaDcha p {
         font-size: 12px;
         width: 90%;
         margin-left: 5%;
-        margin-top: 5em; }
+        margin-top: 4em; }
         .heroFontaneria .fontaneriaDcha p span {
           font-size: 14px; }
       .heroFontaneria .fontaneriaDcha .marcasFontaneria img {
-        width: 15%; }
+        width: 15%;
+        margin-top: -6em; }
       .heroFontaneria .fontaneriaDcha .fontaneriaSubclaim {
         font-size: 10px;
         margin-top: -.5em;
         margin-bottom: 9em; } }
 @media only screen and (min-width: 900px) {
   .heroFontaneria {
-    height: 400px; }
+    height: 330px; }
     .heroFontaneria .fontaneriaIzda img {
-      height: 400px; }
+      height: 330px; }
     .heroFontaneria .fontaneriaDcha p {
       font-size: 14px;
       width: 100%;

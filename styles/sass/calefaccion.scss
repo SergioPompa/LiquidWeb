@@ -15,8 +15,7 @@ header
     max-width: 3000px;
 }
 .heroCalefaccion
-{
-  
+{  
     text-aline:center;
     .calefaccionIzda
     {
@@ -124,7 +123,8 @@ header
         -webkit-box-orient: horizontal;
         -moz-box-orient: horizontal;
         -o-box-orient: horizontal;
-        flex-direction: row;   
+        flex-direction: row; 
+        height: 300px;  
        .calefaccionIzda
         {
             webkit-order:1;
@@ -132,7 +132,7 @@ header
             width: 50%;
             img 
             {
-                height: 400px;
+                height: 300px;
             }
         }
         .calefaccionDcha
@@ -143,17 +143,24 @@ header
                 font-size: 12px;
                 width: 90%;
                 margin-left: 5%;
-                margin-top: 5em;
+                margin-top: 3em;
                 span
                 {
                     font-size: 14px;
                 }
             }
+            .marcas 
+            {
+                img 
+                {
+                    width: 15%;
+                    margin-top: -3em;
+                }
+            }      
             .calefaccionSubclaim
             {               
                 font-size: 10px;
                 margin-top: -.5em;
-                margin-bottom: 9em;
             }        
         }
     }
@@ -161,12 +168,12 @@ header
 @media only screen and (min-width: $bp4){
     .heroCalefaccion
     {
-        height: 400px;
+        height: 350px;
         .calefaccionIzda
         {
             img 
             {
-                height: 400px;
+                height: 350px;
             }
         }
         .calefaccionDcha
@@ -182,11 +189,21 @@ header
                 }
             }
             .calefaccionSubclaim
-            {            
+            { 
+                width: 80%;           
                 font-size: 10px;
                 margin-top: -1em;
-                margin-bottom: 11em;
-            }        
+                margin-bottom: 6em;
+                margin-left: 10%;
+            }
+            .marcas 
+            {
+                img 
+                {
+                    width: 15%;
+                    margin-top: 1em;
+                }
+            }            
         }
     }
 }
@@ -194,14 +211,15 @@ header
     .heroCalefaccion
     {
         margin: 0 auto;
-        height: 400px;        
+              
         .calefaccionDcha
         {      
             h1
             {            
                 font-size: 16px;
-                width: 85%;
-                margin-left: 7%;
+                margin-top: 3em;
+                width: 90%;
+                margin-left: 5%;
             }
             span
             {
@@ -212,7 +230,7 @@ header
                 img 
                 {
                     width: 15%;
-                    margin-top:-8em;
+                    margin-top:1em;
                 }
             }    
         }
@@ -221,6 +239,14 @@ header
 @media only screen and (min-width: $bp6){
     .heroCalefaccion
     {
+        height: 400px;
+        .calefaccionIzda
+        {
+            img 
+            {
+                height: 400px;
+            }
+        }
         .calefaccionDcha
         {                
             h1
@@ -237,7 +263,7 @@ header
                 img 
                 {
                     width: 15%;
-                    margin-top:-1em;
+                    margin-top:5em;
                 }
             }    
         }

@@ -45,7 +45,7 @@
             img
             {
                 width: 100%;
-                height: 400px;
+                height: 450px;
             }
         }
         .gasDcha
@@ -72,9 +72,14 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex; 
+        height: 350px;
         .gasIzda
         {
             width: 60%;
+            img
+            {
+                height: 350px;
+            }
         }
         .gasDcha
         {
@@ -99,17 +104,17 @@
 @media only screen and (min-width: $bp4){
     .heroGas
     {
-        height: 450px;
+        height: 350px;
         .gasIzda
         {
             img
             {
-                height: 450px;
+                height: 350px;
             }
         }
         .gasDcha
         {
-            padding-top:8em;
+            padding-top:4em;
             width: 50%;
             h1
             {
@@ -131,6 +136,14 @@
 @media only screen and (min-width: $bp5){
     .heroGas
     {
+        height: 400px;
+        .gasIzda
+        {
+            img
+            {
+                height: 400px;
+            }
+        }
         .gasDcha
         {
             h1
@@ -155,7 +168,7 @@
         }
         .gasDcha
         {
-            padding-top:8em;
+            padding-top:6em;
             width: 50%;
             h1
             {

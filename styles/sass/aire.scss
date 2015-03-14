@@ -13,7 +13,11 @@
     {
         background-color:#C6E0F3;
         text-align: center;
-        padding:3em 2em;
+        padding:2em 2em;
+        h1 
+        {
+            margin-top: 4em;
+        }
         p
         {
         font-weight: $titular;
@@ -55,7 +59,7 @@
         flex-direction: column;
         img 
         {
-           width: 60%;
+            width: 60%;
             margin-bottom: 1em;
         }
     }
@@ -199,7 +203,7 @@
         .aireDcha
         {
            width: 50%; 
-           padding: 4em 0 0;
+           padding: 2em 0 0;
             p
             {
                 font-size: 12px;
@@ -230,17 +234,17 @@
 @media only screen and (min-width: $bp4){
     .heroAire
     {
-        height: 400px;
+        height: 350px;
         .aireIzda
         {
             img 
             {
-                height: 400px;
+                height: 350px;
             }
         }
         .aireDcha
         {
-            padding: 7em 0 0;
+            padding: 4em 0 0;
             p
             {
                 padding-top:1em;
