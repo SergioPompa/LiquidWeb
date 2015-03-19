@@ -1086,6 +1086,7 @@ header
                 {
                     width: 100%;
                     margin: 0 auto;
+                    
                 }
                 h2
                 {
@@ -1138,6 +1139,7 @@ header
                 {
                     width: 100%;
                     margin: 0 auto;
+                    border-color:5px solid rgb(237,237,242);
                 }
                 h2
                 {
@@ -1235,7 +1237,6 @@ header
                 {
                     font-size: 10px;
                     width: 100%;
-                    text-align: center;
                 }
             }
         }
@@ -1244,6 +1245,10 @@ header
 @media only screen and (min-width: $bp4){
     .especialistas-wrapper
     {
+        .imgEspecialistas:hover
+        {
+           border:5px solid rgb(237,237,242);
+        }
         h5:before
         {
             content: "";   
@@ -1278,7 +1283,7 @@ header
     .especialistas-wrapper
     {
         margin-bottom: 4em;
-         h5:before
+        h5:before
         {
             width: 26%;  
         }
@@ -1290,15 +1295,17 @@ header
         { 
             width: 26%;
         }
+        
         .especialistas
         {
             .especialup
             {
                 article
                 {
+
                     h2
                     {
-                        font-size: 12px;
+                        font-size: 13px;
                     }
                     p
                     {
@@ -1313,7 +1320,7 @@ header
                 {
                     h2
                     {
-                        font-size: 12px;
+                        font-size: 13px;
                     }
                     p
                     {
@@ -1345,6 +1352,10 @@ header
             width: 28%; 
             right: 4%; 
         }
+        .imgEspecialistas:hover
+        {
+           border:6px solid rgb(237,237,242);
+        }
         .especialistas
         {
             .especialup
@@ -1361,9 +1372,9 @@ header
                     }
                     h2
                     {
-                        font-size: 12px;
-                        margin-left: 15%;
-                        padding-top: 1em;
+                        font-size: 14px;
+                        margin-left: 18%;
+                        padding-top: .8em;
                     }
                     p
                     {
@@ -1387,15 +1398,23 @@ header
                     }
                     h2
                     {
-                        font-size: 12px;
-                        margin-left: 15%;
-                        padding-top: 1em;
+                        font-size: 14px;
+                        margin-left: 17%;
+                        padding-top: .8em;
                     }
+
                     p
                     {
                         width: 70%;
                         font-size: 10px;
                         margin: 1.5em auto 0;
+                    }
+                }
+                .gas 
+                {
+                    h2
+                    {
+                        margin-left: 18%;
                     }
                 }
             }
@@ -1405,6 +1424,10 @@ header
 @media only screen and (min-width: $bp7){
     .especialistas-wrapper
     {
+        .imgEspecialistas:hover
+        {
+           border:10px solid rgb(237,237,242);
+        }
         .especialistas
         {
             max-width: $ancho_max;
