@@ -282,7 +282,7 @@
                     h2
                     {
                         width: 150%;
-                        font-size: 10px;
+                        font-size: 9px;
                         margin-bottom: 2em;
                     }
                     img
@@ -348,6 +348,7 @@
                     {
                         width: 1800%;
                         margin-left: -600%;
+
                     }
                 }
                 .tramite
@@ -376,6 +377,10 @@
             {
                 div
                 {
+                    img
+                    {
+                        margin-left:-40%;
+                    }
                     h2
                     {
                         font-size: 9px;
@@ -396,6 +401,22 @@
     {
         .wrapperGas
         {
+            .serviciosGas
+            {
+                div
+                {
+                    img
+                    {
+                        margin-left:-25%;
+                    }
+                    h2
+                    {
+                        font-size: 9px;
+                        width: 1600%;
+                        margin-left: -560%;
+                    }
+                }
+            }
             .textInferior
             {
             

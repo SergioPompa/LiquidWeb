@@ -432,7 +432,7 @@ textarea {
       margin-left: 5%; }
       .wrapper .wrapperGas .serviciosGas div h2 {
         width: 150%;
-        font-size: 10px;
+        font-size: 9px;
         margin-bottom: 2em; }
       .wrapper .wrapperGas .serviciosGas div img {
         margin-bottom: .5em;
@@ -470,6 +470,8 @@ textarea {
     font-size: 12px;
     margin-top: -5em; } }
 @media only screen and (min-width: 1024px) {
+  .wrapper .wrapperGas .serviciosGas div img {
+    margin-left: -40%; }
   .wrapper .wrapperGas .serviciosGas div h2 {
     font-size: 9px;
     width: 1600%;
@@ -477,6 +479,12 @@ textarea {
   .wrapper .wrapperGas .textInferior {
     font-size: 15px; } }
 @media only screen and (min-width: 1280px) {
+  .wrapper .wrapperGas .serviciosGas div img {
+    margin-left: -25%; }
+  .wrapper .wrapperGas .serviciosGas div h2 {
+    font-size: 9px;
+    width: 1600%;
+    margin-left: -560%; }
   .wrapper .wrapperGas .textInferior {
     margin: -5em auto 2em;
     font-size: 15px; } }
@@ -713,7 +721,7 @@ header {
       margin-left: 5%; }
       .serviciosCalefaccion div h2 {
         width: 150%;
-        font-size: 10px;
+        font-size: 9px;
         margin-bottom: 2em; }
       .serviciosCalefaccion div img {
         margin-bottom: .5em;
@@ -734,14 +742,24 @@ header {
   .serviciosCalefaccion div {
     width: 1%; }
     .serviciosCalefaccion div img {
-      margin-left: -50%; }
+      margin-left: -20%; }
     .serviciosCalefaccion div h2 {
       width: 1800%;
       margin-left: -600%; } }
 @media only screen and (min-width: 1024px) {
+  .serviciosCalefaccion div {
+    width: 1%; }
+    .serviciosCalefaccion div img {
+      margin-left: -5%; }
+
   .textCalefaccion {
     font-size: 15px;
     margin-top: -5em; } }
+@media only screen and (min-width: 1280px) {
+  .serviciosCalefaccion div {
+    width: 1%; }
+    .serviciosCalefaccion div img {
+      margin-left: 32%; } }
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
