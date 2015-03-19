@@ -1952,7 +1952,7 @@ header .logo {
     .especialistas-wrapper .especialistasp {
       text-align: center;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 24px;
       width: 100%;
       margin-top: 3em; }
       .especialistas-wrapper .especialistasp span {
@@ -2022,6 +2022,11 @@ header .logo {
         position: absolute;
         top: .5em; } }
 @media only screen and (min-width: 768px) {
+  .especialistas-wrapper .especialistasp {
+    font-size: 26px; }
+    .especialistas-wrapper .especialistasp span {
+      font-weight: 800; }
+
   .especialistas {
     display: -webkit-box;
     display: -moz-box;
@@ -2063,12 +2068,36 @@ header .logo {
           font-size: 10px;
           width: 100%;
           text-align: center; } }
+@media only screen and (min-width: 900px) {
+  .especialistas-wrapper h5:before {
+    content: "";
+    width: 23%;
+    border-bottom: 1px solid #2d2d2a;
+    position: absolute;
+    left: 2%;
+    top: .7em;
+    color: #000; }
+  .especialistas-wrapper .especialistasp {
+    position: relative;
+    font-size: 28px; }
+    .especialistas-wrapper .especialistasp span {
+      font-weight: 800; }
+  .especialistas-wrapper h5:after {
+    content: "";
+    width: 23%;
+    border-bottom: 1px solid #b0afaf;
+    position: absolute;
+    top: .7em;
+    right: 2%; } }
 @media only screen and (min-width: 1024px) {
   .especialistas-wrapper {
     margin-bottom: 4em; }
+    .especialistas-wrapper h5:before {
+      width: 26%; }
     .especialistas-wrapper .especialistasp {
-      font-size: 24px;
       margin-top: 4em; }
+    .especialistas-wrapper h5:after {
+      width: 26%; }
     .especialistas-wrapper .especialistas .especialup article h2 {
       font-size: 12px; }
     .especialistas-wrapper .especialistas .especialup article p {
@@ -2084,9 +2113,14 @@ header .logo {
     max-width: 1270px;
     margin: 0 auto;
     margin-bottom: 4em; }
+    .especialistas-wrapper h5:before {
+      width: 28%;
+      left: 4%; }
     .especialistas-wrapper .especialistasp {
-      font-size: 24px;
-      margin-top: 4em; }
+      font-size: 28px; }
+    .especialistas-wrapper h5:after {
+      width: 28%;
+      right: 4%; }
     .especialistas-wrapper .especialistas .especialup {
       width: 50%; }
       .especialistas-wrapper .especialistas .especialup article {
@@ -2122,7 +2156,11 @@ header .logo {
 @media only screen and (min-width: 1400px) {
   .especialistas-wrapper .especialistas {
     max-width: 1270px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .especialistas-wrapper h5:before {
+    width: 30%; }
+  .especialistas-wrapper h5:after {
+    width: 30%; } }
 .team .wrapperTeam {
   width: 100%; }
   .team .wrapperTeam .nosotros {
