@@ -7,101 +7,346 @@
 @import 'colores.scss';
 
 
-.asesoramientoText
-{    
-    h1
-    {
-        font-size: 12px;
-        text-align: center;
-    }    
-    p
-    {
-        font-weight: $texto;
-        font-size:12px; 
-    } 
-    .quest 
+.formacionTextWrapper
+{
+    width: 90%;
+    margin: 0 5%;
+    .formacionTittle
     {
         font-size: 15px;
-        font-weight: $titular;
-    }    
-}
-.asesoramientoList
-{
+        text-align: center;
+        margin: 2.5em 0;
+    }
     .formacionText
     {
-        font-size: 12px;
-        font-weight: $texto !important; 
+        font-weight: $texto;
+        font-size:12px;
+        line-height: 20px;
+        .quest
+        {
+            font-size: 14px;
+            font-weight: $titular;
+            line-height: 34px;
+        }
     }
-    .quest 
+}
+@media only screen and (min-width: $bp3){
+    .formacionTextWrapper
     {
-    font-size: 15px;
-    font-weight: $titular;
-    } 
+        .formacionTittle
+        {
+            font-size: 17px;
+        }
+        .formacionText
+        {
+            font-size: 14px;
+            line-height: 24px;
+            .quest
+            {
+                font-size: 16px;
+                line-height: 38px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .formacionTextWrapper
+    {
+        .formacionTittle
+        {
+            font-size: 20px;
+        }
+        .formacionText
+        {
+            font-size: 16px;
+            line-height: 26px;
+            .quest
+            {
+                font-size: 18px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+.formacionServicios
+{
+    width: 90%;
+    margin: 0 5%;
+    .formacionList
+    {
+        .formacionText
+        {
+            font-size: 12px;
+            font-weight: $texto !important;
+            line-height: 20px;
+            .quest
+            {
+                font-size: 14px;
+                font-weight: $titular;
+                line-height: 34px;
+            }
+        }
+        .listUp
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            .indicate
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    width: 70%;
+                    margin-left: 10%;
+                }
+            }
+            .tools
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 10%;
+                    width: 70%;
+                }
+            }
+        }
+        .listDown
+        {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            .materials
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 10%;
+                    width: 70%;
+                }
+            }
+            .route
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 10%;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp3){
+    .formacionServicios
+    {
+        .formacionList
+        {
+            .formacionText
+            {
+                font-size: 14px;
+                line-height: 24px;
+                .quest
+                {
+                    font-size: 16px;
+                    line-height: 38px;
+                }
+            }
+            .listUp
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                .indicate
+                {
+                    h2
+                    {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+                .tools
+                {
+                    margin-left: 5%;
+                    h2
+                    {
+                        margin-left: 5%;
+                    }
+                }
+            }
+            .listDown
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin-top: 2em;
+                .materials
+                {
+                    h2
+                    {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+                .route
+                {
+                    margin-left: 5%;
+                    h2
+                    {
+                        margin-left: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .formacionServicios
+    {
+        .formacionList
+        {
+            .formacionText
+            {
+                font-size: 16px;
+                line-height: 26px;
+                .quest
+                {
+                    font-size: 18px;
+                    line-height: 42px;
+                }
+            }
+            .listUp
+            {
+                .tools
+                {
+                    margin-left: 18%;
+                    h2
+                    {
+                        margin-left: 5%;
+                    }
+                }
+            }
+            .listDown
+            {
+                .route
+                {
+                    margin-left: 15%;
+                }
+            }
+        }
+    }
 }
 .textFormacion
 {
     width: 90%;
     font-weight: $texto;
     font-size: 12px;
-    margin-left:5%;
-    font-style: italic; 
-}
-@media only screen and (min-width: $bp2){
-    .asesoramientoText
-        {    
-        h1
-        {
-            font-size: 14px;
-        }    
-        p
-        {
-            font-size:13px;
-            width: 90%; 
-        } 
-        .quest 
-        {
-            font-size: 18px;
-        }    
-    }
-    .asesoramientoList
-    {
-        .formacionText
-        {
-            font-size: 13px;         
-        }
-        .quest 
-        {
-            font-size: 18px;
-        } 
-    }
-    .textFormacion
-    {
-        width: 90%;
-        font-weight: $texto;
-        font-size: 12px;
-        margin:3em 0 3em 5%;
-        font-style: italic; 
-    }
+    margin: 2.5em 5%;
+    font-style: italic;
+    line-height: 20px;
 }
 @media only screen and (min-width: $bp3){
-    .asesoramientoText
-    {    
-        h1
-        {
-            font-size: 16px;
-        }    
-    }
-}
-@media only screen and (min-width: $bp5){
     .textFormacion
     {
-        font-weight: $texto;
-        font-size: 15px;
-        text-align:center;
-        span 
-        {
-           color:rgb(114,171,219); 
-        }
+        font-size: 14px;
+        line-height: 24px;
     }
-
+}
+@media only screen and (min-width: $bp6){
+    .textFormacion
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }

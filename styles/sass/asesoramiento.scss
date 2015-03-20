@@ -15,36 +15,36 @@
         width: 90%;
         margin-left: 5%;
     }
-    p 
+    p
     {
-      font-weight: $texto;  
+      font-weight: $texto;
       font-size: 10px;
       width: 80%;
       margin-left: 5%;
     }
 }
 .asesoramientoServicios
-{  
+{
     .asesoramientoList
-    { 
+    {
         margin-left: 5%;
-        p 
+        p
         {
             font-weight: $titular;
         }
-        h2 
+        h2
         {
-           font-weight: $lighttitular; 
-           font-size: 11px;
-           position: relative;
-           margin-left: 5%;
-           width: 80%;
+            font-weight: $lighttitular;
+            font-size: 11px;
+            position: relative;
+            margin-left: 5%;
+            width: 80%;
         }
-        h2:before 
+        h2:before
         {
             padding:6px;
             padding-left:5px;
-            padding-right:6px;           
+            padding-right:6px;
             background-color: rgb(104,159,214);
             border-radius: 10px 10px 10px 10px;
             content: "";
@@ -52,35 +52,33 @@
             position: absolute;
             top:-.001em;
             left: -5%;
-           
         }
     }
 }
 @media only screen and (min-width: $bp3){
     .asesoramientoServicios
-    {          
+    {
         .asesoramientoList
-        { 
+        {
             margin-left: 5%;
             margin-bottom: 2em;
-            p 
+            p
             {
                 font-weight: $titular;
             }
-            h2 
+            h2
             {
                 width: 40%;
             }
             .listUp, .listDown
             {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
             }
-        }         
+        }
     }
 }
 @media only screen and (min-width: $bp5){
@@ -88,41 +86,33 @@
     {
         h1
         {
-            
             font-size: 15px;
         }
-        p 
+        p
         {
-          font-size: 13px;
-          margin-bottom: 4em;
+            font-size: 13px;
+            margin-bottom: 4em;
         }
     }
     .asesoramientoServicios
-    {          
+    {
         .asesoramientoList
-        { 
+        {
             margin-left: 5%;
             margin-bottom: 4em;
-            p 
+            p
             {
                 font-size: 15px;
             }
-            h2 
+            h2
             {
                 width: 40%;
                 font-size: 14px;
             }
             .listUp
             {
-            margin-top: 3em;
-
+                margin-top: 3em;
             }
-        }         
+        }
     }
 }
-
-
-
-
-
-
