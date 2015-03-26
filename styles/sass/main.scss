@@ -128,8 +128,10 @@ textarea
 @import 'asesoramiento.scss';
 @import 'formacion.scss';
 
-html{
-
+.wrapper-cookies
+{
+    width: 90%;
+    padding: 2em 5%;
 }
 body
 {

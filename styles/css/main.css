@@ -1571,6 +1571,10 @@ header {
   .textFormacion {
     font-size: 16px;
     line-height: 26px; } }
+.wrapper-cookies {
+  width: 90%;
+  padding: 2em 5%; }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #1F264A; }
