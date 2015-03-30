@@ -2168,7 +2168,8 @@ header .logo {
         margin: 0 auto 1em;
         width: 40%; }
         .especialistas-wrapper .especialup article p {
-          font-size: 8px; }
+          font-size: 8px;
+          margin: 5px 5px 0; }
         .especialistas-wrapper .especialup article .imgEspecialistas {
           width: 100%;
           margin: 0 auto; }
@@ -2176,6 +2177,8 @@ header .logo {
           font-size: 12px;
           width: 100%;
           text-align: center; }
+        .especialistas-wrapper .especialup article .especialidadWrapper {
+          border: 5px solid #FFFFFF; }
       .especialistas-wrapper .especialup .calefaccion h2 {
         position: absolute;
         top: .5em; }
@@ -2200,7 +2203,8 @@ header .logo {
         margin: 0 auto 1em;
         width: 40%; }
         .especialistas-wrapper .especialdown article p {
-          font-size: 8px; }
+          font-size: 8px;
+          margin: 5px 5px 0; }
         .especialistas-wrapper .especialdown article .imgEspecialistas {
           width: 100%;
           margin: 0 auto;
@@ -2209,6 +2213,8 @@ header .logo {
           font-size: 12px;
           width: 100%;
           text-align: center; }
+        .especialistas-wrapper .especialdown article .especialidadWrapper {
+          border: 5px solid #FFFFFF; }
       .especialistas-wrapper .especialdown .gas h2 {
         position: absolute;
         top: .5em; }
@@ -2216,10 +2222,12 @@ header .logo {
         position: absolute;
         top: .5em; } }
 @media only screen and (min-width: 768px) {
-  .especialistas-wrapper .especialistasp {
-    font-size: 26px; }
-    .especialistas-wrapper .especialistasp span {
-      font-weight: 800; }
+  .especialistas-wrapper {
+    margin-bottom: 2em; }
+    .especialistas-wrapper .especialistasp {
+      font-size: 26px; }
+      .especialistas-wrapper .especialistasp span {
+        font-weight: 800; }
 
   .especialistas {
     display: -webkit-box;
@@ -2262,8 +2270,18 @@ header .logo {
           font-size: 10px;
           width: 100%; } }
 @media only screen and (min-width: 900px) {
-  .especialistas-wrapper .imgEspecialistas:hover {
-    border: 5px solid #ededf2; }
+  .especialistas-wrapper .especialup article .especialidadWrapper:hover {
+    border: 5px solid #ededf2;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease; }
+  .especialistas-wrapper .especialdown article .especialidadWrapper:hover {
+    border: 5px solid #ededf2;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease; }
   .especialistas-wrapper h5:before {
     content: "";
     width: 23%;
