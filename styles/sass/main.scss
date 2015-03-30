@@ -730,7 +730,7 @@ header
         .more
         {
             display:inline-block;
-            color:#ffffff;
+            color: $white;
             background-color:$darkpurple;
             padding:.6em;
             margin-bottom:4em;
@@ -807,6 +807,7 @@ header
                 width: 20%;
                 text-align: center;
                 margin: 0 auto;
+                border: 1px solid $darkpurple;
             }
         }
     }
@@ -919,6 +920,23 @@ header
         }
     }
 }
+@media only screen and (min-width: $bp4){
+    .serviciosdesktop
+    {
+        article
+        {
+            .more:hover
+            {
+                border: 1px solid $color_orange;
+                background-color: $color_orange;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
 @media only screen and (min-width: $bp5){
     .cabecera
     {
@@ -932,7 +950,7 @@ header
         {
             font-size: 18px;
             margin-left: -6%;
-            line-height: 1.2em;            
+            line-height: 1.2em;
         }
         .tipoestilo2
         {

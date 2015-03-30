@@ -1946,7 +1946,7 @@ header .logo {
       text-align: center; }
     .serviciosdesktop article .more {
       display: inline-block;
-      color: #ffffff;
+      color: #FFFFFF;
       background-color: #1F264A;
       padding: .6em;
       margin-bottom: 4em;
@@ -1991,7 +1991,8 @@ header .logo {
     background-color: #1F264A;
     width: 20%;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 1px solid #1F264A; }
 
   .hacemos {
     display: -webkit-box;
@@ -2074,6 +2075,14 @@ header .logo {
       width: 40%;
       text-align: center;
       margin: 0 auto; } }
+@media only screen and (min-width: 900px) {
+  .serviciosdesktop article .more:hover {
+    border: 1px solid #F59B23;
+    background-color: #F59B23;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; } }
 @media only screen and (min-width: 1024px) {
   .cabecera .tituloservicios2 {
     font-size: 18px;
