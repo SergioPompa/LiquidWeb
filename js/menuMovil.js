@@ -25,6 +25,7 @@ var altura_del_menu_movil = $('.menu-movil').outerHeight(true);
       $('.wrapper').css('margin-top', (altura_del_menu_movil) + 'px');
     }else{
       $('.menu-movil').css('display', 'none');
+      $('.wrapper').css('margin-top', 0 + 'px');
     }
   }
 
