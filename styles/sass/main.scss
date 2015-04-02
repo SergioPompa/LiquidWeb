@@ -307,6 +307,10 @@ header
                 padding: 1.8em 35%;
                 font-size: 10px;
             }
+            .tel-menu
+            {
+                padding: 1.8em 25%;
+            }
         }
     }
     .instalacionesMenu
@@ -331,6 +335,14 @@ header
                     color: $darkpurple;
                     padding: 1em 38%;
                     cursor: pointer;
+                }
+                .aireEnlace
+                {
+                    padding: 1.3em 20%;
+                }
+                .gasEnlace
+                {
+                    padding: 1.3em 45%;
                 }
             }
         }
