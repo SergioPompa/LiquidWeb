@@ -322,10 +322,9 @@ header
             li
             {
                 background: $white;
-                line-height: 4em;
+                line-height: 50px;
                 text-align: center;
                 border-bottom: 1px solid $darkpurple;
-                cursor: pointer;
                 a
                 {
                     display: inline;
@@ -412,6 +411,12 @@ header
                     height: 50px;
                     width: 100%;
                 }
+                .efiEnerEnlace
+                {
+                    width: 100%;
+                    padding-left: 17%;
+                    padding-right: 17%;
+                }
             }
             li:hover
             {
@@ -426,6 +431,30 @@ header
                 display: none;
             }
         }
+        .instalacionesMenu
+        {
+            width: 100%;
+            .instalacionesList
+            {
+                width: 100%;
+                li
+                {
+                    width: 100%;
+                    a
+                    {
+                        padding: 1.3em 32%;
+                    }
+                    .aireEnlace
+                    {
+                        padding: 1.3em 18%;
+                    }
+                    .gasEnlace
+                    {
+                        padding: 1.3em 38%;
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: $bp3){
@@ -438,6 +467,37 @@ header
             li
             {
                 width: 20%;
+                a
+                {
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                .efiEnerEnlace
+                {
+                    padding-left: 9%;
+                    padding-right: 9%;
+                }
+            }
+        }
+        .instalacionesMenu
+        {
+            .instalacionesList
+            {
+                li
+                {
+                    a
+                    {
+                        padding: 1.3em 28%;
+                    }
+                    .aireEnlace
+                    {
+                        padding: 1.3em 10%;
+                    }
+                    .gasEnlace
+                    {
+                        padding: 1.3em 35%;
+                    }
+                }
             }
         }
     }
@@ -451,11 +511,38 @@ header
             margin: 0 7% 0 38%;
             li
             {
-                width: 15%;
-            }
-            .efiEner
-            {
                 width: 25%;
+                a
+                {
+                    padding-left: 20%;
+                    padding-right: 20%;
+                }
+                .efiEnerEnlace
+                {
+                    padding-left: 11%;
+                    padding-right: 11%;
+                }
+            }
+        }
+        .instalacionesMenu
+        {
+            .instalacionesList
+            {
+                li
+                {
+                    a
+                    {
+                        padding: 1.3em 28%;
+                    }
+                    .aireEnlace
+                    {
+                        padding: 1.3em 12%;
+                    }
+                    .gasEnlace
+                    {
+                        padding: 1.3em 35%;
+                    }
+                }
             }
         }
     }
@@ -479,6 +566,65 @@ header
             .instalacionesMenu
             {
                 font-size: 12px;
+            }
+        }
+        .instalacionesMenu
+        {
+            .instalacionesList
+            {
+                li
+                {
+                    .aireEnlace
+                    {
+                        padding: 1.3em 10%;
+                    }
+                    .gasEnlace
+                    {
+                        padding: 1.3em 35%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .menu-nav
+    {
+        .menu-nav-ul
+        {
+            li
+            {
+                a
+                {
+                    padding-left: 26%;
+                    padding-right: 26%;
+                }
+                .efiEnerEnlace
+                {
+                    padding-left: 17%;
+                    padding-right: 17%;
+                }
+            }
+        }
+        .instalacionesMenu
+        {
+            .instalacionesList
+            {
+                li
+                {
+                    a
+                    {
+                        padding: 1.3em 31%;
+                    }
+                    .aireEnlace
+                    {
+                        padding: 1.3em 17%;
+                    }
+                    .gasEnlace
+                    {
+                        padding: 1.3em 41%;
+                    }
+                }
             }
         }
     }
@@ -2517,6 +2663,7 @@ footer
             {
                 width: 90%;
                 margin: 0 auto;
+
             }
         }
     }

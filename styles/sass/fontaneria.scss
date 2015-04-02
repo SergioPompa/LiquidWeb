@@ -50,8 +50,8 @@
     {
         .fontaneriaIzda
         {
-            display: block;       
-            img 
+            display: block;
+            img
             {
                 width: 100%;
                 height: 400px;
@@ -59,25 +59,25 @@
         }
         .fontaneriaDcha
         {
-            padding:2em 0;           
+            padding:2em 0;
             p
             {
                 font-size: 11px;
                 width: 70%;
                 margin-left: 15%;
-                span 
+                span
                 {
-                  font-size: 12px;  
+                  font-size: 12px;
                 }
             }
-            .marcasFontaneria 
+            .marcasFontaneria
             {
-                img 
+                img
                 {
                     width: 10%;
                     margin-left: 2%;
                 }
-            }             
+            }
         }
     }
 }
@@ -88,19 +88,19 @@
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
-        display: flex;  
-        height: 280px;  
+        display: flex;
+        height: 280px;
        .fontaneriaIzda
         {
             width: 50%;
-            img 
+            img
             {
                 height: 280px;
             }
         }
         .fontaneriaDcha
         {
-            width: 50%;           
+            width: 50%;
             p
             {
                 font-size: 12px;
@@ -112,21 +112,20 @@
                     font-size: 14px;
                 }
              }
-            .marcasFontaneria 
+            .marcasFontaneria
             {
-                img 
+                img
                 {
                     width: 15%;
                     margin-top: -6em;
                 }
-            }    
-           
+            }
             .fontaneriaSubclaim
-            {               
+            {
                 font-size: 10px;
                 margin-top: -.5em;
                 margin-bottom: 9em;
-            }        
+            }
         }
     }
 }
@@ -136,7 +135,7 @@
         height: 330px;
         .fontaneriaIzda
         {
-            img 
+            img
             {
                 height: 330px;
             }
@@ -154,11 +153,11 @@
                 }
             }
             .fontaneriaSubclaim
-            {            
+            {
                 font-size: 10px;
                 margin-top: -1em;
                 margin-bottom: 11em;
-            }        
+            }
         }
     }
 }
@@ -174,9 +173,9 @@
             }
         }
         .fontaneriaDcha
-        {      
+        {
             p
-            {            
+            {
                 font-size: 16px;
                 width: 90%;
                 margin-left: 5%;
@@ -185,14 +184,19 @@
             {
                 font-size: 18px;
             }
-            .marcasFontaneria 
+            .fontaneriaSubclaim
             {
-                img 
+                width: 80%;
+                margin-left: 10%;
+            }
+            .marcasFontaneria
+            {
+                img
                 {
                     margin-top: 1em;
                     width: 12%;
                 }
-            }    
+            }
         }
     }
 }
