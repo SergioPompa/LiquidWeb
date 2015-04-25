@@ -1983,8 +1983,8 @@ header .logo {
     padding: 1.3em 35%; } }
 @media only screen and (min-width: 900px) {
   .menu-nav .menu-nav-ul {
-    width: 60%;
-    margin: 0 7% 0 38%; }
+    width: 66%;
+    margin: 0 5% 0 30%; }
     .menu-nav .menu-nav-ul li {
       width: 25%; }
       .menu-nav .menu-nav-ul li a {
@@ -1993,6 +1993,8 @@ header .logo {
       .menu-nav .menu-nav-ul li .efiEnerEnlace {
         padding-left: 11%;
         padding-right: 11%; }
+    .menu-nav .menu-nav-ul .efiEner {
+      width: 30%; }
   .menu-nav .instalacionesMenu .instalacionesList li a {
     padding: 1.3em 28%; }
   .menu-nav .instalacionesMenu .instalacionesList li .aireEnlace {
