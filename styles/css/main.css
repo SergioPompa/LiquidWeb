@@ -2067,8 +2067,15 @@ header .logo {
     left: 4%;
     color: #1F264A;
     font-weight: 600; }
-    .cover .cover-text span {
-      font-weight: 800; }
+  .cover #heroTitleSpan {
+    width: 92%;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    top: 3.5em;
+    left: 4%;
+    color: #1F264A;
+    font-weight: 800; }
   .cover .subcover-text {
     width: 70%;
     text-align: center;
@@ -2084,6 +2091,11 @@ header .logo {
     left: 10%;
     font-size: 18px;
     line-height: 20px; }
+  .cover #heroTitleSpan {
+    width: 80%;
+    left: 10%;
+    font-size: 18px;
+    line-height: 20px; }
   .cover .subcover-text {
     width: 50%;
     font-size: 10px;
@@ -2091,6 +2103,11 @@ header .logo {
     left: 25%; } }
 @media only screen and (min-width: 768px) {
   .cover .cover-text {
+    top: 0.5em;
+    font-size: 24px;
+    line-height: 24px; }
+  .cover #heroTitleSpan {
+    top: 3em;
     font-size: 24px;
     line-height: 24px; }
   .cover .subcover-text {
@@ -2100,11 +2117,17 @@ header .logo {
   .cover .cover-text {
     font-size: 32px;
     line-height: 32px; }
+  .cover #heroTitleSpan {
+    font-size: 32px;
+    line-height: 32px; }
   .cover .subcover-text {
     font-size: 16px;
     top: 8em; } }
 @media only screen and (min-width: 1280px) {
   .cover .cover-text {
+    font-size: 38px;
+    line-height: 38px; }
+  .cover #heroTitleSpan {
     font-size: 38px;
     line-height: 38px; }
   .cover .subcover-text {

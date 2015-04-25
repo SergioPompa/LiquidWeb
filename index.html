@@ -13,8 +13,9 @@
 		<link rel="stylesheet" href="styles/css/main.css">
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 		<script src="js/vendor/picturefill-2.1.0.min.js"></script>
+		<script src="js/imagenHero.js"></script>
 	</head>
-	<body>
+	<body onload="mostrarImagen()">
 		<!--[if lt IE 8]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -55,11 +56,11 @@
 				</section>
 				<section class="cover">
 					<picture>
-						<source srcset="img/heroMovil.png" media="(max-width: 599px)" alt"Imagen de personas dándose un baño en aguas termales">
-						<img srcset="img/hero.jpg" alt="Imagen de personas dándose un baño en aguas termales">
+						<source id="heroImgMovil" srcset="img/heroMovil.png" media="(max-width: 599px)" alt"Imagen de personas dándose un baño en aguas termales">
+						<img name ="heroImg" id="heroImg" src="img/hero.jpg" alt="Imagen de personas dándose un baño en aguas termales">
 					</picture>
-					<p class="cover-text">PORQUE EL FRÍO SÓLO PUEDE SER AGRADABLE <span><br>CUANDO ESTÁS FUERA DE CASA</span></p>
-					<p class="subcover-text">Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste</p>
+					<p id="heroTitle" class="cover-text">PORQUE EL FRÍO SÓLO PUEDE SER AGRADABLE</p><span id="heroTitleSpan"><br>CUANDO ESTÁS FUERA DE CASA</span>
+					<p id="heroText" class="subcover-text">Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste</p>
 				</section>
 			</section>
 			<section class="wrapper">

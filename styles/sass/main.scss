@@ -699,10 +699,17 @@ header
         left: 4%;
         color: $darkpurple;
         font-weight: $lighttitular;
-        span
-        {
-            font-weight: $titular;
-        }
+    }
+    #heroTitleSpan
+    {
+        width:92%;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        top:3.5em;
+        left: 4%;
+        color: $darkpurple;
+        font-weight: $titular;
     }
     .subcover-text
     {
@@ -725,6 +732,13 @@ header
             font-size: 18px;
             line-height: 20px;
         }
+        #heroTitleSpan
+        {
+            width: 80%;
+            left: 10%;
+            font-size: 18px;
+            line-height: 20px;
+        }
         .subcover-text
         {
             width: 50%;
@@ -739,6 +753,13 @@ header
     {
         .cover-text
         {
+            top:0.5em;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        #heroTitleSpan
+        {
+            top:3em;
             font-size: 24px;
             line-height: 24px;
         }
@@ -757,6 +778,11 @@ header
             font-size: 32px;
             line-height: 32px;
         }
+        #heroTitleSpan
+        {
+            font-size: 32px;
+            line-height: 32px;
+        }
         .subcover-text
         {
             font-size: 16px;
@@ -768,6 +794,11 @@ header
     .cover
     {
         .cover-text
+        {
+            font-size: 38px;
+            line-height: 38px;
+        }
+        #heroTitleSpan
         {
             font-size: 38px;
             line-height: 38px;
