@@ -14,7 +14,7 @@ function mostrarImagen() {
 	} else if (mes>=8 && dia>=23) {
 		imagen="img/otonoHero.png";
 		imagenMovil="img/otonoHeroMovil.png";
-		titular="ACONDICIONA TU HOGAR ANTES QUE LLEGUE";
+		titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 		span="EL FRÍO DEL INVIERNO";
 		texto="Renueve su caldera y mejore la instalación de los radiadores.";
 	} else if (mes>=5 && dia>=21) {
