@@ -6,52 +6,205 @@
 @import 'tipografia.scss';
 @import 'colores.scss';
 
-.asesoramientoText
+.asesoramientoTextWrapper
 {
-    h1
+    width: 90%;
+    margin: 0 5%;
+    .asesoramientoTittle
     {
-        font-weight: $titular;
-        font-size: 12px;
-        width: 90%;
-        margin-left: 5%;
+        font-size: 15px;
+        text-align: center;
+        margin: 2.5em 0;
     }
-    p
+    .asesoramientoText
     {
-      font-weight: $texto;
-      font-size: 10px;
-      width: 80%;
-      margin-left: 5%;
+        font-weight: $texto;
+        font-size:12px;
+        line-height: 20px;
+    }
+}
+@media only screen and (min-width: $bp3){
+    .asesoramientoTextWrapper
+    {
+        .asesoramientoTittle
+        {
+            font-size: 17px;
+        }
+        .asesoramientoText
+        {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+@media only screen and (min-width: $bp6){
+    .asesoramientoTextWrapper
+    {
+        .asesoramientoTittle
+        {
+            font-size: 20px;
+        }
+        .asesoramientoText
+        {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 4em;
+        }
     }
 }
 .asesoramientoServicios
 {
+    width: 90%;
+    margin: 0 5% 2em;
     .asesoramientoList
     {
-        margin-left: 5%;
-        p
+        .asesoramientoText
         {
-            font-weight: $titular;
+            font-size: 12px;
+            font-weight: $texto !important;
+            line-height: 20px;
         }
-        h2
+        .listUp
         {
-            font-weight: $lighttitular;
-            font-size: 11px;
-            position: relative;
-            margin-left: 5%;
-            width: 80%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            .reglamentos
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    width: 70%;
+                    margin-left: 10%;
+                }
+                img
+                {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .industria
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 5%;
+                    width: 70%;
+                }
+                img
+                {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
         }
-        h2:before
+        .listDown
         {
-            padding:6px;
-            padding-left:5px;
-            padding-right:6px;
-            background-color: rgb(104,159,214);
-            border-radius: 10px 10px 10px 10px;
-            content: "";
-            color:#000;
-            position: absolute;
-            top:-.001em;
-            left: -5%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            -o-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            flex-direction: column;
+            .canalIsabel
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 10%;
+                    width: 70%;
+                }
+                img
+                {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .renove
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin: 0.8em 0;
+                h2
+                {
+                    font-weight: $lighttitular;
+                    font-size: 12px;
+                    margin-left: 10%;
+                    width: 70%;
+                }
+                img
+                {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
         }
     }
 }
@@ -60,58 +213,133 @@
     {
         .asesoramientoList
         {
-            margin-left: 5%;
             margin-bottom: 2em;
-            p
+            .asesoramientoText
             {
-                font-weight: $titular;
+                font-size: 14px;
+                line-height: 24px;
             }
-            h2
-            {
-                width: 40%;
-            }
-            .listUp, .listDown
+            .listUp
             {
                 display: -webkit-box;
                 display: -moz-box;
                 display: -ms-flexbox;
                 display: -webkit-flex;
                 display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                width: 100%;
+                .reglamentos
+                {
+                    width: 45%;
+                    h2
+                    {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+                .industria
+                {
+                    width: 45%;
+                    margin-left: 5%;
+                    h2
+                    {
+                        margin-left: 5%;
+                    }
+                }
+            }
+            .listDown
+            {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                -o-box-orient: horizontal;
+                -webkit-box-orient: horizontal;
+                -moz-box-orient: horizontal;
+                flex-direction: row;
+                margin-top: 2em;
+                width: 100%;
+                .canalIsabel
+                {
+                    width: 45%;
+                    h2
+                    {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                }
+                .renove
+                {
+                    width: 45%;
+                    margin-left: 5%;
+                    h2
+                    {
+                        margin-left: 10%;
+                    }
+                }
             }
         }
     }
 }
-@media only screen and (min-width: $bp5){
-    .asesoramientoText
-    {
-        h1
-        {
-            font-size: 15px;
-        }
-        p
-        {
-            font-size: 13px;
-            margin-bottom: 4em;
-        }
-    }
+@media only screen and (min-width: $bp6){
     .asesoramientoServicios
     {
         .asesoramientoList
         {
             margin-left: 5%;
             margin-bottom: 4em;
-            p
+            .asesoramientoText
             {
-                font-size: 15px;
-            }
-            h2
-            {
-                width: 40%;
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 26px;
             }
             .listUp
             {
-                margin-top: 3em;
+                .reglamentos
+                {
+                    img
+                    {
+                        width: 140px;
+                        height: 120px;
+                    }
+                }
+                .industria
+                {
+                    img
+                    {
+                        width: 140px;
+                        height: 100px;
+                    }
+                }
+            }
+            .listDown
+            {
+                .canalIsabel
+                {
+                    img
+                    {
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                .renove
+                {
+                    img
+                    {
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
             }
         }
     }

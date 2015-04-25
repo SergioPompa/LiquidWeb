@@ -1281,70 +1281,227 @@ header {
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
 /* Variables para los colores corporativos */
-.asesoramientoText h1 {
-  font-weight: 800;
-  font-size: 12px;
+.asesoramientoTextWrapper {
   width: 90%;
-  margin-left: 5%; }
-.asesoramientoText p {
-  font-weight: 300;
-  font-size: 10px;
-  width: 80%;
-  margin-left: 5%; }
-
-.asesoramientoServicios .asesoramientoList {
-  margin-left: 5%; }
-  .asesoramientoServicios .asesoramientoList p {
-    font-weight: 800; }
-  .asesoramientoServicios .asesoramientoList h2 {
-    font-weight: 600;
-    font-size: 11px;
-    position: relative;
-    margin-left: 5%;
-    width: 80%; }
-  .asesoramientoServicios .asesoramientoList h2:before {
-    padding: 6px;
-    padding-left: 5px;
-    padding-right: 6px;
-    background-color: #689fd6;
-    border-radius: 10px 10px 10px 10px;
-    content: "";
-    color: #000;
-    position: absolute;
-    top: -.001em;
-    left: -5%; }
+  margin: 0 5%; }
+  .asesoramientoTextWrapper .asesoramientoTittle {
+    font-size: 15px;
+    text-align: center;
+    margin: 2.5em 0; }
+  .asesoramientoTextWrapper .asesoramientoText {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px; }
 
 @media only screen and (min-width: 768px) {
-  .asesoramientoServicios .asesoramientoList {
-    margin-left: 5%;
-    margin-bottom: 2em; }
-    .asesoramientoServicios .asesoramientoList p {
-      font-weight: 800; }
-    .asesoramientoServicios .asesoramientoList h2 {
-      width: 40%; }
-    .asesoramientoServicios .asesoramientoList .listUp, .asesoramientoServicios .asesoramientoList .listDown {
+  .asesoramientoTextWrapper .asesoramientoTittle {
+    font-size: 17px; }
+  .asesoramientoTextWrapper .asesoramientoText {
+    font-size: 14px;
+    line-height: 24px; } }
+@media only screen and (min-width: 1280px) {
+  .asesoramientoTextWrapper .asesoramientoTittle {
+    font-size: 20px; }
+  .asesoramientoTextWrapper .asesoramientoText {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 4em; } }
+.asesoramientoServicios {
+  width: 90%;
+  margin: 0 5% 2em; }
+  .asesoramientoServicios .asesoramientoList .asesoramientoText {
+    font-size: 12px;
+    font-weight: 300 !important;
+    line-height: 20px; }
+  .asesoramientoServicios .asesoramientoList .listUp {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column; }
+    .asesoramientoServicios .asesoramientoList .listUp .reglamentos {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
-      display: flex; } }
-@media only screen and (min-width: 1024px) {
-  .asesoramientoText h1 {
-    font-size: 15px; }
-  .asesoramientoText p {
-    font-size: 13px;
-    margin-bottom: 4em; }
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      margin: 0.8em 0; }
+      .asesoramientoServicios .asesoramientoList .listUp .reglamentos h2 {
+        font-weight: 600;
+        font-size: 12px;
+        width: 70%;
+        margin-left: 10%; }
+      .asesoramientoServicios .asesoramientoList .listUp .reglamentos img {
+        height: 80px;
+        width: 80px; }
+    .asesoramientoServicios .asesoramientoList .listUp .industria {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      margin: 0.8em 0; }
+      .asesoramientoServicios .asesoramientoList .listUp .industria h2 {
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 5%;
+        width: 70%; }
+      .asesoramientoServicios .asesoramientoList .listUp .industria img {
+        height: 100px;
+        width: 100px; }
+  .asesoramientoServicios .asesoramientoList .listDown {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    flex-direction: column; }
+    .asesoramientoServicios .asesoramientoList .listDown .canalIsabel {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      margin: 0.8em 0; }
+      .asesoramientoServicios .asesoramientoList .listDown .canalIsabel h2 {
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 10%;
+        width: 70%; }
+      .asesoramientoServicios .asesoramientoList .listDown .canalIsabel img {
+        height: 80px;
+        width: 80px; }
+    .asesoramientoServicios .asesoramientoList .listDown .renove {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      margin: 0.8em 0; }
+      .asesoramientoServicios .asesoramientoList .listDown .renove h2 {
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 10%;
+        width: 70%; }
+      .asesoramientoServicios .asesoramientoList .listDown .renove img {
+        height: 80px;
+        width: 80px; }
 
+@media only screen and (min-width: 768px) {
+  .asesoramientoServicios .asesoramientoList {
+    margin-bottom: 2em; }
+    .asesoramientoServicios .asesoramientoList .asesoramientoText {
+      font-size: 14px;
+      line-height: 24px; }
+    .asesoramientoServicios .asesoramientoList .listUp {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      width: 100%; }
+      .asesoramientoServicios .asesoramientoList .listUp .reglamentos {
+        width: 45%; }
+        .asesoramientoServicios .asesoramientoList .listUp .reglamentos h2 {
+          margin-left: 5%;
+          margin-right: 5%; }
+      .asesoramientoServicios .asesoramientoList .listUp .industria {
+        width: 45%;
+        margin-left: 5%; }
+        .asesoramientoServicios .asesoramientoList .listUp .industria h2 {
+          margin-left: 5%; }
+    .asesoramientoServicios .asesoramientoList .listDown {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      flex-direction: row;
+      margin-top: 2em;
+      width: 100%; }
+      .asesoramientoServicios .asesoramientoList .listDown .canalIsabel {
+        width: 45%; }
+        .asesoramientoServicios .asesoramientoList .listDown .canalIsabel h2 {
+          margin-left: 5%;
+          margin-right: 5%; }
+      .asesoramientoServicios .asesoramientoList .listDown .renove {
+        width: 45%;
+        margin-left: 5%; }
+        .asesoramientoServicios .asesoramientoList .listDown .renove h2 {
+          margin-left: 10%; } }
+@media only screen and (min-width: 1280px) {
   .asesoramientoServicios .asesoramientoList {
     margin-left: 5%;
     margin-bottom: 4em; }
-    .asesoramientoServicios .asesoramientoList p {
-      font-size: 15px; }
-    .asesoramientoServicios .asesoramientoList h2 {
-      width: 40%;
-      font-size: 14px; }
-    .asesoramientoServicios .asesoramientoList .listUp {
-      margin-top: 3em; } }
+    .asesoramientoServicios .asesoramientoList .asesoramientoText {
+      font-size: 16px;
+      line-height: 26px; }
+    .asesoramientoServicios .asesoramientoList .listUp .reglamentos img {
+      width: 140px;
+      height: 120px; }
+    .asesoramientoServicios .asesoramientoList .listUp .industria img {
+      width: 140px;
+      height: 100px; }
+    .asesoramientoServicios .asesoramientoList .listDown .canalIsabel img {
+      width: 140px;
+      height: 140px; }
+    .asesoramientoServicios .asesoramientoList .listDown .renove img {
+      width: 140px;
+      height: 140px; } }
 /*Estilo de la pagina de eficiencia energetica*/
 /* Variables para los breakpoints */
 /* Variables para el uso de la tipografía */
