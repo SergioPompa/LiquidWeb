@@ -14,6 +14,6 @@ $com = $_POST['comentarios'];
 
 
 				//mando el correo...
-				mail("spompag@gmail.com","Liquid Instalaciones: Formulario de contacto",utf8_decode($cuerpo),"De: Contacto desde la Web");
+				mail("info@liquidinstalaciones.es","Liquid Instalaciones: Formulario de contacto",utf8_decode($cuerpo),"De: Contacto desde la Web");
 
 ?>
