@@ -26,7 +26,7 @@ function mostrarImagen() {
 	} else if (mes>=2 && dia>=21) {
 		imagen="img/primaveraHero.png";
 		imagenMovil="img/primaveraHeroMovil.png";
-		titular="ACONDICIONA TU HOGAR ANTES QUE LLEGUE";
+		titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 		span="EL CALOR DEL VERANO";
 		texto="";
 	} else if (mes>=0 && dia>=0) {
