@@ -41,16 +41,16 @@ function mostrarImagen() {
 			span="CUANDO ESTÁS FUERA DE CASA";
 			texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
 		} else {
-			imagen="../img/primaveraHero.png";
-			imagenMovil="../img/primaveraHeroMovil.png";
+			imagen="../img/primaveraHero.jpg";
+			imagenMovil="../img/primaveraHeroMovil.jpg";
 			titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 			span="EL CALOR DEL VERANO";
 			texto="";
 		}
 	} else if (mes==2) {
 		if (dia>=21) {
-			imagen="../img/primaveraHero.png";
-			imagenMovil="../img/primaveraHeroMovil.png";
+			imagen="../img/primaveraHero.jpg";
+			imagenMovil="../img/primaveraHeroMovil.jpg";
 			titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 			span="EL CALOR DEL VERANO";
 			texto="";
