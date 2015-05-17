@@ -2070,9 +2070,9 @@ header .logo {
   .cover #heroTitleSpan {
     width: 92%;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     position: absolute;
-    top: 3.5em;
+    top: 5em;
     left: 4%;
     color: #1F264A;
     font-weight: 800; }
@@ -2081,7 +2081,7 @@ header .logo {
     text-align: center;
     font-size: .6em;
     position: absolute;
-    top: 8em;
+    top: 10.5em;
     left: 15%; }
 
 @media only screen and (min-width: 600px) {
