@@ -68,8 +68,8 @@ function mostrarImagen() {
 		span="CUANDO ESTÁS FUERA DE CASA";
 		texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
 	} else if (mes==3 || mes==4 ) {
-		imagen="../img/primaveraHero.png";
-		imagenMovil="../img/primaveraHeroMovil.png";
+		imagen="img/primaveraHero.png";
+		imagenMovil="img/primaveraHeroMovil.png";
 		titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 		span="EL CALOR DEL VERANO";
 		texto="";
