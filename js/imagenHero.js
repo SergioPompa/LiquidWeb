@@ -41,16 +41,16 @@ function mostrarImagen() {
 			span="CUANDO ESTÁS FUERA DE CASA";
 			texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
 		} else {
-			imagen="../img/primaveraHero.png";
-			imagenMovil="../img/primaveraHeroMovil.png";
+			imagen="../img/primaveraHero.jpg";
+			imagenMovil="../img/primaveraHeroMovil.jpg";
 			titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 			span="EL CALOR DEL VERANO";
 			texto="";
 		}
 	} else if (mes==2) {
 		if (dia>=21) {
-			imagen="../img/primaveraHero.png";
-			imagenMovil="../img/primaveraHeroMovil.png";
+			imagen="../img/primaveraHero.jpg";
+			imagenMovil="../img/primaveraHeroMovil.jpg";
 			titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 			span="EL CALOR DEL VERANO";
 			texto="";
@@ -68,14 +68,14 @@ function mostrarImagen() {
 		span="CUANDO ESTÁS FUERA DE CASA";
 		texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
 	} else if (mes==3 || mes==4 ) {
-		imagen="img/primaveraHero.png";
-		imagenMovil="img/primaveraHeroMovil.png";
+		imagen="img/primaveraHero.jpg";
+		imagenMovil="img/primaveraHeroMovil.jpg";
 		titular="ACONDICIONA TU HOGAR ANTES DE QUE LLEGUE";
 		span="EL CALOR DEL VERANO";
 		texto="";
 	} else if (mes==6 || mes==7 ) {
-		imagen="img/veranoHero.png";
-		imagenMovil="img/veranoHeroMovil.png";
+		imagen="img/veranoHero.jpg";
+		imagenMovil="img/veranoHeroMovil.jpg";
 		titular="PORQUE EL CALOR SÓLO PUEDE SER AGRADABLE";
 		span="CUANDO ESTÁS FUERA DE CASA";
 		texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
