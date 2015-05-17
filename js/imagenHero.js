@@ -27,16 +27,16 @@ function mostrarImagen() {
 			span="EL FRÍO DEL INVIERNO";
 			texto="Renueve su caldera y mejore la instalación de los radiadores.";
 		} else {
-			imagen="img/veranoHero.png";
-			imagenMovil="img/veranoHeroMovil.png";
+			imagen="img/veranoHero.jpg";
+			imagenMovil="img/veranoHeroMovil.jpg";
 			titular="PORQUE EL CALOR SÓLO PUEDE SER AGRADABLE";
 			span="CUANDO ESTÁS FUERA DE CASA";
 			texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
 		}
 	} else if (mes==5) {
 		if (dia>=21) {
-			imagen="img/veranoHero.png";
-			imagenMovil="img/veranoHeroMovil.png";
+			imagen="img/veranoHero.jpg";
+			imagenMovil="img/veranoHeroMovil.jpg";
 			titular="PORQUE EL CALOR SÓLO PUEDE SER AGRADABLE";
 			span="CUANDO ESTÁS FUERA DE CASA";
 			texto="Con lo que vas a ahorrar podrás disfrutar con tu familia en lo que más te guste";
