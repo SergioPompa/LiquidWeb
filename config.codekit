@@ -929,6 +929,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/primaveraHero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 321928,
+		"inputAbbreviatedPath": "\/img\/primaveraHero.jpg",
+		"outputAbbreviatedPath": "\/img\/primaveraHero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/primaveraHeroMovil.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25041,
+		"inputAbbreviatedPath": "\/img\/primaveraHeroMovil.jpg",
+		"outputAbbreviatedPath": "\/img\/primaveraHeroMovil.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/rapidez.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1101,6 +1123,28 @@
 		"initialSize": 3042,
 		"inputAbbreviatedPath": "\/img\/vaillant.png",
 		"outputAbbreviatedPath": "\/img\/vaillant.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/veranoHero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 239385,
+		"inputAbbreviatedPath": "\/img\/veranoHero.jpg",
+		"outputAbbreviatedPath": "\/img\/veranoHero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/veranoHeroMovil.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17617,
+		"inputAbbreviatedPath": "\/img\/veranoHeroMovil.jpg",
+		"outputAbbreviatedPath": "\/img\/veranoHeroMovil.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
