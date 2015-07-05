@@ -588,6 +588,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 870346,
+		"inputAbbreviatedPath": "\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg",
+		"outputAbbreviatedPath": "\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/galp.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -617,6 +628,17 @@
 		"initialSize": 987,
 		"inputAbbreviatedPath": "\/img\/gas.png",
 		"outputAbbreviatedPath": "\/img\/gas.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/gas1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 169712,
+		"inputAbbreviatedPath": "\/img\/gas1.jpg",
+		"outputAbbreviatedPath": "\/img\/gas1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
