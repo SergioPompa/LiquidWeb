@@ -588,6 +588,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/Fotolia_46297303_Subscription_Monthly_M.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 411501,
+		"inputAbbreviatedPath": "\/img\/Fotolia_46297303_Subscription_Monthly_M.jpg",
+		"outputAbbreviatedPath": "\/img\/Fotolia_46297303_Subscription_Monthly_M.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -595,6 +606,17 @@
 		"initialSize": 870346,
 		"inputAbbreviatedPath": "\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg",
 		"outputAbbreviatedPath": "\/img\/Fotolia_46600438_Subscription_Monthly_M.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Fotolia_67579345_Subscription_Monthly_M.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 471510,
+		"inputAbbreviatedPath": "\/img\/Fotolia_67579345_Subscription_Monthly_M.jpg",
+		"outputAbbreviatedPath": "\/img\/Fotolia_67579345_Subscription_Monthly_M.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -914,6 +936,72 @@
 		"initialSize": 1123,
 		"inputAbbreviatedPath": "\/img\/obra_nueva.png",
 		"outputAbbreviatedPath": "\/img\/obra_nueva.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otono2DesktopOptim.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223636,
+		"inputAbbreviatedPath": "\/img\/otono2DesktopOptim.jpg",
+		"outputAbbreviatedPath": "\/img\/otono2DesktopOptim.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otono2MovilOptim.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67712,
+		"inputAbbreviatedPath": "\/img\/otono2MovilOptim.jpg",
+		"outputAbbreviatedPath": "\/img\/otono2MovilOptim.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otono2TabletOptim.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107376,
+		"inputAbbreviatedPath": "\/img\/otono2TabletOptim.jpg",
+		"outputAbbreviatedPath": "\/img\/otono2TabletOptim.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otonoDesktopOptim.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 190722,
+		"inputAbbreviatedPath": "\/img\/otonoDesktopOptim.jpg",
+		"outputAbbreviatedPath": "\/img\/otonoDesktopOptim.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otonoHerMovil.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 82783,
+		"inputAbbreviatedPath": "\/img\/otonoHerMovil.jpg",
+		"outputAbbreviatedPath": "\/img\/otonoHerMovil.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/otonoTabletOptim.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86964,
+		"inputAbbreviatedPath": "\/img\/otonoTabletOptim.jpg",
+		"outputAbbreviatedPath": "\/img\/otonoTabletOptim.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
